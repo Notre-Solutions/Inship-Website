@@ -1,0 +1,38 @@
+.product-main{
+
+  .product {
+    margin-bottom: 5rem;
+    height: 95vh;
+    background-image: linear-gradient($inship-color-background-darker),
+      url(../img/calculator.jpg);
+    background-size: cover;
+    background-position: top;
+    color: $APC-light;
+
+    clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
+    position: relative;
+
+    &-heading {
+      padding: 5rem;
+      display: block;
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      font-size: 5rem;
+    }
+
+    .text-box {
+      border-radius: 1rem;
+      background-color: rgba(139, 139, 139, 0.76);
+      margin-right: 5rem;
+      padding: 2rem;
+      text-align: justify;
+      display: block;
+      position: absolute;
+      font-size: 1.5rem;
+      top: 40%;
+      left: 5%;
+    }
+  }
+}
