@@ -1,9 +1,9 @@
 import React from "react"
-
+import '../css/main.css'
 const Product = ({ data }) => {
   const { html } = data.markdownRemark
   const { product } = data.markdownRemark.frontmatter
-
+  console.log(product)
   return (
     <div class="product-main">
       <section class="product">
