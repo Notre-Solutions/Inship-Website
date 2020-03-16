@@ -1,6 +1,7 @@
 ---
 templateKey: product
-product: Accounts Payable Combined
+title: Accounts Payable Combined
+featuredimage:
 ---
 
 # Accounts Payable Combined
