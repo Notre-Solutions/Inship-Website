@@ -1,7 +1,8 @@
 ---
 templateKey: product
 title: Tick To Post
-featuredimage:
+featuredimage: /img/t2p-logo.jpeg
+featuredpost: true
 ---
 
 # Tick To Post
