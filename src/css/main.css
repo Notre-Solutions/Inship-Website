@@ -19,59 +19,6 @@ html {
   font-size: 10px;
   scroll-behavior: smooth; }
 
-.header {
-  height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/large-boat.jpg);
-  background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/large-boat.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-  .header-text-box {
-    position: absolute;
-    text-align: center;
-    top: 35%;
-    left: 50%; }
-  .header .heading {
-    color: white; }
-  .header .main-header {
-    text-transform: uppercase;
-    letter-spacing: 1.6rem;
-    font-size: 3rem;
-    display: block;
-    -webkit-animation-name: moveInFromTop;
-            animation-name: moveInFromTop;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s; }
-  .header .sub-header {
-    font-weight: 200;
-    letter-spacing: 0.2rem;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s; }
-  .header .btn {
-    margin-top: 1rem;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #46bbb5;
-    padding: 1rem 3rem;
-    background-color: white;
-    position: relative;
-    display: inline-block;
-    -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
-            box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2); }
-  .header .btn:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
-  .header .btn:active {
-    -webkit-transform: translateY(0.2rem);
-            transform: translateY(0.2rem);
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
 @-webkit-keyframes moveInFromTop {
   0% {
     opacity: 0;
@@ -103,6 +50,123 @@ html {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@-webkit-keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem); } }
+
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem); } }
+
+@-webkit-keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem); } }
+
+@keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem); } }
+
+@-webkit-keyframes spin720 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg); } }
+
+@keyframes spin720 {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg); } }
+
+.header {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/large-boat.jpg);
+  background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/large-boat.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .header-text-box {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 55%;
+    width: 35%; }
+  .header .heading {
+    color: white; }
+  .header .bold {
+    font-weight: 700; }
+  .header .main-header {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 5rem;
+    display: block;
+    -webkit-animation-name: moveInFromTop;
+            animation-name: moveInFromTop;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; }
+  .header .sub-header {
+    display: block;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    font-weight: 100; }
+  .header .btn {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #46bbb5;
+    padding: 1rem 3rem;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+            box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .header .btn:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  .header .btn:active {
+    -webkit-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .main-page .section-a {
   margin: 5rem;
@@ -290,7 +354,7 @@ html {
 .main-page .section-d {
   margin-top: 5rem;
   position: relative;
-  border-radius: 2rem;
+  border-radius: 1rem;
   height: 50rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/contact-image.jpg);
   background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/contact-image.jpg);
@@ -636,3 +700,38 @@ html {
       color: white; }
       .footer .social-icons a:hover {
         color: #46bbb5; }
+
+.contact {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/map.jpg);
+  background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/map.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .contact-text-box {
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    top: 35%;
+    left: 55%; }
+    .contact-text-box .right {
+      display: block;
+      -webkit-animation-name: moveInFromRight;
+              animation-name: moveInFromRight;
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s; }
+    .contact-text-box .left {
+      margin-top: -2.5rem;
+      display: block;
+      -webkit-animation-name: moveInFromLeft;
+              animation-name: moveInFromLeft;
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s; }
+    .contact-text-box .spin {
+      -webkit-animation-name: spin720;
+              animation-name: spin720;
+      -webkit-animation-duration: 3s;
+              animation-duration: 3s; }

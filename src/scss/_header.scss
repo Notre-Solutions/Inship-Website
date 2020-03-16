@@ -18,17 +18,20 @@
     position: absolute;
     text-align: center;
     top: 35%;
-    left: 50%;
+    left: 55%;
+    width: 35%;
   }
 
   .heading {
     color: white;
   }
-
+  .bold {
+    font-weight: 700;
+  }
   .main-header {
     text-transform: uppercase;
-    letter-spacing: 1.6rem;
-    font-size: 3rem;
+    font-weight: 100;
+    font-size: 5rem;
     display: block;
 
     animation-name: moveInFromTop;
@@ -36,10 +39,12 @@
   }
 
   .sub-header {
-    font-weight: 200;
-    letter-spacing: 0.2rem;
+    // letter-spacing: 0.2rem;
+    display: block;
+    text-align: center;
     animation-name: fadeIn;
     animation-duration: 3s;
+    font-weight: 100;
   }
 
   .btn {
@@ -62,27 +67,5 @@
   .btn:active {
     transform: translateY(0.2rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  }
-}
-
-@keyframes moveInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-5rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

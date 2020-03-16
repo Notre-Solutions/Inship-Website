@@ -34,36 +34,36 @@ function showSectionD(show, title) {
   if (show) {
     return (
       <section className="section-d">
-          <h1 className="title">{title}</h1>
-          <form className="cf container">
-            <div className="half left cf">
-              <div className="field">
-                <input type="text" required autoComplete="off" />
-                <label htmlFor="Name" title="Name"></label>
-              </div>
-              <div className="field">
-                <input type="text" required autoComplete="off" />
-                <label htmlFor="email" title="Email"></label>
-              </div>
-              <div className="field">
-                <input type="text" required autoComplete="off" />
-                <label htmlFor="subject" title="Subject"></label>
-              </div>
+        <h1 className="title">{title}</h1>
+        <form className="cf container">
+          <div className="half left cf">
+            <div className="field">
+              <input type="text" required autoComplete="off" />
+              <label htmlFor="Name" title="Name"></label>
             </div>
-            <div className="half right cf">
-              <div className="field">
-                <input type="text" required autoComplete="off" />
-                <label htmlFor="message" title="Message"></label>
-              </div>
+            <div className="field">
+              <input type="text" required autoComplete="off" />
+              <label htmlFor="email" title="Email"></label>
             </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="input-submit"
-              className="submit-btn"
-            />
-          </form>
-        </section>
+            <div className="field">
+              <input type="text" required autoComplete="off" />
+              <label htmlFor="subject" title="Subject"></label>
+            </div>
+          </div>
+          <div className="half right cf">
+            <div className="field">
+              <input type="text" required autoComplete="off" />
+              <label htmlFor="message" title="Message"></label>
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            id="input-submit"
+            className="submit-btn"
+          />
+        </form>
+      </section>
     )
   }
 }
@@ -128,7 +128,7 @@ const Landing = ({ data }) => {
     sectionA,
     sectionB,
     sectionC,
-    sectionD
+    sectionD,
   } = data.markdownRemark.frontmatter.landingPage
 
   return (
@@ -137,7 +137,9 @@ const Landing = ({ data }) => {
       <header className="header">
         <div className="header-text-box">
           <h1 className="heading">
-            <span className="main-header">{title}</span>
+            <span className="main-header">
+              IN<span className="bold">SHIP</span> APS
+            </span>
             <span className="sub-header">{subtitle}</span>
           </h1>
           <a href="#what-we-do" className="btn btn-white">
@@ -176,10 +178,10 @@ export const pageQuery = graphql`
             show
             body
           }
-          sectionC{
+          sectionC {
             show
           }
-          sectionD{
+          sectionD {
             title
             show
           }
