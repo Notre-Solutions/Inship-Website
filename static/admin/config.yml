@@ -44,13 +44,11 @@ collections:
                 {label: "Body", name: body, widget: string, required: true}
               ]},
               {label: "Products", name: sectionC, widget: object, fields:[
-                {label: "Title", name: title, widget: string, required: true},
-                {label: "Show?", name: show, widget: boolean, required: true, default: true},
-                {label: "Body", name: body, widget: string, required: true}
+                {label: "Show?", name: show, widget: boolean, required: true, default: true}
               ]},
               {label: "Contact Us", name: sectionD, widget: object, fields:[
                 {label: "Title", name: title, widget: string, required: true},
-                {label: "Body", name: body, widget: string, required: true}
+                {label: "Show?", name: show, widget: boolean, required: true, default: true}
               ]}
           ]}
       
