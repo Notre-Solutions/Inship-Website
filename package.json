@@ -21,6 +21,7 @@
     "gatsby-remark-smartypants": "^2.1.21",
     "gatsby-source-contentful": "^2.1.86",
     "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-googlemaps-geocoding": "^1.0.0",
     "gatsby-transformer-remark": "^2.6.53",
     "gatsby-transformer-sharp": "^2.3.14",
     "netlify-cms-app": "^2.11.26",
@@ -28,6 +29,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-fontawesome": "^1.7.1",
+    "react-google-maps": "^9.4.5",
     "react-helmet": "^5.2.1",
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"

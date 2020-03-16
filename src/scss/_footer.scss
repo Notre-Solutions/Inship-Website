@@ -1,11 +1,85 @@
 .footer {
+  display: grid;
+  margin-top: 2rem;
   background-color: gray;
+  height: 30rem;
+  position: relative;
+  opacity: 0.8;
+  // border-radius: 2rem;
+
+  .inship-logo {
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+    font-size: 2.5rem;
+    .main {
+      font-weight: 700;
+
+      .bold {
+        font-weight: 50;
+        font-family: sans-serif;
+      }
+    }
+
+    .sub {
+      margin-top: -1rem;
+      font-size: 0.9rem;
+      font-weight: 100;
+    }
+  }
+
+  .address {
+    color: white;
+    margin: 2rem;
+    position: absolute;
+    right: 5%;
+    font-size: 1.2rem;
+
+    .phone-number-line {
+      color: $inship-color;
+    }
+
+    .email-line {
+      color: $inship-color;
+    }
+
+    .email-line:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .line {
+    background-color: white;
+    text-align: center;
+    height: 0.1rem;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 70%;
+  }
+
+  .copy-right {
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+  }
 
   .social-icons {
-    color: white;
-
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    color: black;
     a {
-      text-decoration: none;
+      text-decoration: none !important;
+      padding: 0.4rem;
+      @include transition-ease;
+      color: white;
+
+      &:hover {
+        color: $inship-color;
+      }
     }
   }
 }

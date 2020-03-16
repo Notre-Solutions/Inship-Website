@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 body {
   font-family: "Asap", sans-serif;
   font-weight: 400;
@@ -288,7 +291,7 @@ html {
   margin-top: 5rem;
   position: relative;
   border-radius: 2rem;
-  height: 60vh;
+  height: 50rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/contact-image.jpg);
   background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/contact-image.jpg);
   background-size: cover;
@@ -572,8 +575,64 @@ html {
     visibility: visible; }
 
 .footer {
-  background-color: gray; }
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2rem;
+  background-color: gray;
+  height: 30rem;
+  position: relative;
+  opacity: 0.8; }
+  .footer .inship-logo {
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left: 10rem;
+    font-size: 2.5rem; }
+    .footer .inship-logo .main {
+      font-weight: 700; }
+      .footer .inship-logo .main .bold {
+        font-weight: 50;
+        font-family: sans-serif; }
+    .footer .inship-logo .sub {
+      margin-top: -1rem;
+      font-size: 0.9rem;
+      font-weight: 100; }
+  .footer .address {
+    color: white;
+    margin: 2rem;
+    position: absolute;
+    right: 5%;
+    font-size: 1.2rem; }
+    .footer .address .phone-number-line {
+      color: #46bbb5; }
+    .footer .address .email-line {
+      color: #46bbb5; }
+    .footer .address .email-line:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+  .footer .line {
+    background-color: white;
+    text-align: center;
+    height: 0.1rem;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 70%; }
+  .footer .copy-right {
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 5%; }
   .footer .social-icons {
-    color: white; }
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    color: black; }
     .footer .social-icons a {
-      text-decoration: none; }
+      text-decoration: none !important;
+      padding: 0.4rem;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      color: white; }
+      .footer .social-icons a:hover {
+        color: #46bbb5; }

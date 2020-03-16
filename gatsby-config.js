@@ -5,6 +5,12 @@ module.exports = {
     author: `@notrestudio`,
   },
   plugins: [
+    // {
+    //   resolve: "gatsby-source-googlemaps-geocoding",
+    //   options: {
+    //     key: "AIzaSyBUJF5mJRgdjkrjAPn0LK_Wfq2Zwkp5--0",
+    //     address: "Grangegorman, Dublin, Ireland",
+    //   },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
     {
@@ -15,17 +21,17 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/content`,
-        name: 'content',
+        name: "content",
       },
     },
     {
@@ -47,7 +53,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-relative-images`
+            resolve: `gatsby-remark-relative-images`,
           },
           {
             resolve: `gatsby-remark-images`,
@@ -61,7 +67,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          
+
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
