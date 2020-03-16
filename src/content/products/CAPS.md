@@ -1,7 +1,8 @@
 ---
 templateKey: product
 title: Complete Accounts Payable Solutions
-featuredimage:
+featuredimage: /img/caps-logo.jpeg
+featuredpost: true
 ---
 
 # Complete Accounts Payable Solutions
