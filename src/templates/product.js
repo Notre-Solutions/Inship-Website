@@ -8,7 +8,7 @@ const Product = ({ data }) => {
   console.log(product)
   return (
     <div>
-      <Nav></Nav>
+      <Nav current={product}></Nav>
       <div className="product-main">
         <section className="product">
           <h1 className="product-heading">{product}</h1>

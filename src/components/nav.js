@@ -48,7 +48,7 @@ export default class Nav extends React.Component {
   render() {
     var active = "menu-nav__item active"
     var home = "menu-nav__item",
-      about = "menu-nav__item",
+      APC = "menu-nav__item",
       news = "menu-nav__item",
       contact = "menu-nav__item",
       project = "menu-nav__item"
@@ -57,8 +57,8 @@ export default class Nav extends React.Component {
       case "Home":
         home = active
         break
-      case "About":
-        about = active
+      case "Accounts Payable Combined":
+        APC = active
         break
       case "Projects":
         project = active
@@ -76,9 +76,8 @@ export default class Nav extends React.Component {
 
     return (
       <div>
-        <div className="menu-btn">
+        <div className="menu-btn" onClick={this.toggleClass}>
           <span
-            onClick={this.toggleClass}
             className={
               this.state.active ? "menu-btn__burger" : "menu-btn__burger open"
             }
@@ -103,7 +102,7 @@ export default class Nav extends React.Component {
                 Home{" "}
               </Link>
             </li>
-            <li className={this.state.active ? about : about + " open"}>
+            <li className={this.state.active ? APC : APC + " open"}>
               <Link
                 to="/products/APC"
                 className={

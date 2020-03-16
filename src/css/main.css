@@ -429,14 +429,46 @@ html {
     font-size: 6px; }
   .nav {
     visibility: hidden;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     opacity: 0.99; }
     .nav.open {
       visibility: visible; }
+      .nav.open .menu-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background: black !important;
+        list-style-type: none;
+        padding-right: 1rem;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+        -webkit-transform: translateY(0);
+                transform: translateY(0); }
+        .nav.open .menu-nav__item {
+          -webkit-transform: translateX(100vw);
+                  transform: translateX(100vw);
+          -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+          -webkit-transform: translateX(0);
+                  transform: translateX(0); }
+          .nav.open .menu-nav__item.active > a {
+            border-bottom: solid 0.1rem white; }
   .menu-btn {
-    position: absolute;
+    position: fixed;
     z-index: 10;
     right: 4rem;
     top: 4rem;
@@ -526,6 +558,8 @@ html {
     display: inline;
     padding-right: 1.5rem;
     text-decoration: none; }
+    .nav .menu-nav__item.active > a {
+      border-bottom: solid 0.1rem white; }
   .nav .menu-nav__link {
     text-decoration: none;
     color: white;
@@ -533,6 +567,13 @@ html {
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
     .nav .menu-nav__link:hover {
-      color: gray; }
+      border-bottom: solid 0.1rem white; }
   .nav.open {
     visibility: visible; }
+
+.footer {
+  background-color: gray; }
+  .footer .social-icons {
+    color: white; }
+    .footer .social-icons a {
+      text-decoration: none; }

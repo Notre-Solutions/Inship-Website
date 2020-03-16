@@ -3,6 +3,7 @@ import { useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import "../css/main.css"
 import Nav from "../components/nav"
+import Footer from "../components/footer"
 
 const Landing = () => {
   // const data = useStaticQuery(graphql`
@@ -169,8 +170,8 @@ const Landing = () => {
           </form>
         </section>
       </div>
-
-      <footer>This is the footer woo</footer>
+      <Footer></Footer>
+      {/* <footer>This is the footer woo</footer> */}
     </div>
   )
 }
