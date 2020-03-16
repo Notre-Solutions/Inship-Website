@@ -32,7 +32,7 @@ collections:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "landing-page"}
           - {label: "Landing Page", name: landingPage, widget: object, fields:[
               {label: "Title", name: title, widget: string, required: true},
-              {label: "Subtitle", name: subtite, widget: string, required: true},
+              {label: "Subtitle", name: subtitle, widget: string, required: true},
               {label: "What We Do", name: sectionA, widget: object, fields:[
                 {label: "Title", name: title, widget: string, required: true},
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
