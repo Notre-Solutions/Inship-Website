@@ -51,4 +51,5 @@ collections:
                 {label: "Show?", name: show, widget: boolean, required: true, default: true}
               ]}
           ]}
+          - {label: "Body", name: "name", widget: "markdown", required: false}
       
