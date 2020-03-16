@@ -12,8 +12,8 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "product"
-    label: "Product"
+  - name: "products"
+    label: "Products"
     folder: "src/content/products"
     create: true
     slug: "{{slug}}"
