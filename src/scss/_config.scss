@@ -22,7 +22,7 @@ $T2P-bg: #252941;
 }
 
 body {
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
@@ -47,7 +47,7 @@ html {
   color: $text-color;
   background-color: $background-color;
   padding: 1rem 3rem;
-  @if ($shadow = 'light') {
+  @if ($shadow = "light") {
     box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
   } @else {
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -61,9 +61,39 @@ html {
 
 @mixin click-affect($shadow) {
   transform: translateY(0.2rem);
-  @if ($shadow = 'light') {
+  @if ($shadow = "light") {
     box-shadow: 0 0.5rem 1rem rgba(225, 225, 225, 0.2);
   } @else {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+@mixin media-sm {
+  @media screen and (min-width: 400px) {
+    @content;
+  }
+}
+
+@mixin media-sm-rev {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
   }
 }

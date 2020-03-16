@@ -1,19 +1,22 @@
 import React from "react"
-import '../css/main.css'
+import "../css/main.css"
+import Nav from "../components/nav"
+
 const Product = ({ data }) => {
   const { html } = data.markdownRemark
   const { product } = data.markdownRemark.frontmatter
   console.log(product)
   return (
-    <div class="product-main">
-      <section class="product">
-        <h1 class="product-heading">{product}</h1>
-        <div class="text-box">
-          <p>
-            <section dangerouslySetInnerHTML={{ __html: html }} />
-          </p>
-        </div>
-      </section>
+    <div>
+      <Nav></Nav>
+      <div className="product-main">
+        <section className="product">
+          <h1 className="product-heading">{product}</h1>
+          <div className="text-box">
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
+        </section>
+      </div>
     </div>
   )
 }

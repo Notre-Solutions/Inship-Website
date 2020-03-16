@@ -1,18 +1,19 @@
-.product-main{
+.product-main {
+  margin-bottom: 5rem;
+  height: 95vh;
+  background-image: linear-gradient(
+      $inship-color-background-darker,
+      $inship-color-background-darker
+    ),
+    url(../img/calculator.jpg);
+  background-size: cover;
+  background-position: top;
+  color: $APC-light;
 
+  clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
+  position: relative;
   .product {
-    margin-bottom: 5rem;
-    height: 95vh;
-    background-image: linear-gradient($inship-color-background-darker),
-      url(../img/calculator.jpg);
-    background-size: cover;
-    background-position: top;
-    color: $APC-light;
-
-    clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
-    position: relative;
-
     &-heading {
       padding: 5rem;
       display: block;

@@ -1,0 +1,153 @@
+@include media-sm-rev {
+  body {
+    padding: 0;
+  }
+  .cards {
+    grid-template-columns: 1fr !important;
+    .card {
+      margin: 1rem;
+    }
+  }
+  //   .nav {
+  //     .menu-nav {
+  //       display: flex;
+  //       flex-flow: column wrap;
+  //       align-items: center;
+  //       justify-content: center;
+  //       height: 100vh;
+  //       overflow: hidden;
+  //       background: black !important;
+  //       list-style-type: none;
+  //       padding-right: 1rem;
+  //       transform: translateY(-100%);
+  //       @include transition-ease;
+
+  //       &.open {
+  //         transform: translateY(0);
+  //       }
+
+  //       &__item {
+  //         transform: translateX(100vw);
+  //         @include transition-ease;
+
+  //         &.open {
+  //           transform: translateX(0);
+  //         }
+
+  //         &.active > a {
+  //           color: white;
+  //         }
+  //       }
+
+  //       &__link {
+  //         display: inline-block;
+  //         font-size: 1rem;
+  //         text-transform: uppercase;
+  //         padding: 2rem 0;
+  //         font-weight: 300;
+  //         @include transition-ease;
+
+  //         &:hover {
+  //           color: white;
+  //         }
+  //       }
+  //     }
+  //   }
+}
+
+@include media-sm {
+  html {
+    font-size: 6px;
+  }
+
+  .nav {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.99;
+
+    &.open {
+      visibility: visible;
+    }
+  }
+
+  .menu-btn {
+    position: absolute;
+    z-index: 10;
+    right: 4rem;
+    top: 4rem;
+    height: 2rem;
+    width: 3rem;
+    cursor: pointer;
+    @include transition-ease;
+
+    &__burger {
+      z-index: 1;
+      position: absolute;
+      margin-top: 1rem;
+      right: 0;
+      top: 0.5rem;
+      width: 3rem;
+      height: 0.3rem;
+      background: white;
+
+      @include transition-ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -0.8rem;
+        width: 3rem;
+        height: 0.3rem;
+        background: white;
+        @include transition-ease;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0.8rem;
+        width: 2.5rem;
+        height: 0.3rem;
+        background: white;
+        @include transition-ease;
+      }
+
+      &.open {
+        transform: rotate(720deg);
+        background: transparent;
+
+        &::before {
+          transform: rotate(45deg) translate(0.5rem, 0.8rem);
+        }
+
+        &::after {
+          width: 3rem;
+          transform: rotate(-45deg) translate(0.3rem, -0.7rem);
+        }
+      }
+    }
+  }
+}
+
+@include media-md {
+  .nav {
+    visibility: visible;
+  }
+  .menu-btn {
+    visibility: hidden;
+  }
+}
+
+@include media-lg {
+  html {
+    font-size: 10px;
+  }
+}
+
+@include media-xl {
+  html {
+    font-size: 11px;
+  }
+}

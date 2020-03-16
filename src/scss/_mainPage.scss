@@ -41,7 +41,10 @@
 
   .section-b {
     height: 95vh;
-    background-image: linear-gradient($inship-color-background-darker),
+    background-image: linear-gradient(
+        $inship-color-background-darker,
+        $inship-color-background-darker
+      ),
       url(../img/calculator.jpg);
     background-size: cover;
     background-position: top;
@@ -87,7 +90,7 @@
     .cards {
       display: grid;
       grid-gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
     }
 
     .card {
@@ -97,7 +100,7 @@
         font-size: 3rem;
       }
 
-      img {
+      .img {
         border-radius: 1rem;
         border: 0.1rem solid white;
         margin-top: 1rem;
@@ -125,7 +128,8 @@
         }
 
         .btn {
-          @include btn($APC-bg, $APC-dark, 'light');
+          @include btn($APC-bg, $APC-dark, "light");
+          @include transition-ease;
         }
 
         .btn:hover {
@@ -135,7 +139,7 @@
         }
 
         .btn:active {
-          @include click-affect('light');
+          @include click-affect("light");
         }
       }
 
@@ -150,7 +154,8 @@
           color: $CAPS-light;
         }
         .btn {
-          @include btn($CAPS-bg, $CAPS-light, 'light');
+          @include btn($CAPS-bg, $CAPS-light, "light");
+          @include transition-ease;
         }
 
         .btn:hover {
@@ -160,7 +165,7 @@
         }
 
         .btn:active {
-          @include click-affect('light');
+          @include click-affect("light");
         }
       }
 
@@ -176,7 +181,8 @@
         }
 
         .btn {
-          @include btn($T2P-bg, $T2P-color, 'light');
+          @include btn($T2P-bg, $T2P-color, "light");
+          @include transition-ease;
         }
 
         .btn:hover {
@@ -186,9 +192,147 @@
         }
 
         .btn:active {
-          @include click-affect('light');
+          @include click-affect("light");
         }
       }
+      @include transition-ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .section-d {
+    margin-top: 5rem;
+    position: relative;
+    border-radius: 2rem;
+    height: 60vh;
+    background-image: linear-gradient(
+        to right bottom,
+        $inship-color-background,
+        $inship-color-background-darker
+      ),
+      url(../img/contact-image.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+      padding-top: 2%;
+      text-align: center;
+      font-size: 4rem;
+      color: white;
+    }
+
+    .label-before {
+      line-height: 2rem;
+      font-size: 1.2rem;
+      top: -1.5rem;
+      background: #fff;
+      padding: 0 0.6rem;
+      left: 0.9rem;
+    }
+
+    .container {
+      width: 80%;
+      margin: 3rem 10%;
+    }
+
+    .field {
+      position: relative;
+      margin-bottom: 1.5rem;
+      label::before {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 1.5rem;
+        line-height: 4rem;
+        font-size: 1.4rem;
+        color: #777;
+        transition: 300ms all;
+      }
+      input {
+        background: transparent;
+        width: 100%;
+        line-height: 4rem;
+        padding: 0 1.5rem;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        color: #222;
+        border: none;
+        border-bottom: 0.1rem solid #ccc;
+        &:focus {
+          // background: transparent;
+          outline: 0;
+        }
+        &:valid + label::before {
+          @extend .label-before;
+          content: attr(data-title);
+        }
+        &:focus + label::before {
+          @extend .label-before;
+          background: transparent;
+        }
+      }
+    }
+
+    .half {
+      float: left;
+      width: 50%;
+      margin-bottom: 1em;
+    }
+
+    .right {
+      width: 48%;
+    }
+
+    .left {
+      margin-right: 2%;
+    }
+
+    @media (max-width: 480px) {
+      .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+      }
+    }
+
+    /* Clearfix */
+    .cf:before,
+    .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+    }
+
+    .cf:after {
+      clear: both;
+    }
+
+    .submit-btn {
+      position: absolute;
+      margin-top: 1rem;
+      border-radius: 1rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $inship-color;
+      padding: 1rem 3rem;
+      background-color: white;
+      top: 75%;
+      left: 45%;
+      display: inline-block;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+      border: none;
+    }
+
+    .submit-btn:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .submit-btn:active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     }
   }
 }

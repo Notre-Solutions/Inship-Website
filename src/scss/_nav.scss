@@ -1,0 +1,47 @@
+.nav {
+  padding-right: 4.5rem;
+  padding-left: 3rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 1;
+
+  .menu-nav-scrolling {
+    background: transparent !important;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+  }
+
+  .menu-nav {
+    display: block;
+    height: 100%;
+    text-align: right;
+    text-decoration: none;
+    background: rgba(46, 122, 117, 0.9);
+    padding: 1.5rem;
+    @include transition-ease;
+  }
+
+  .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+    text-decoration: none;
+  }
+
+  .menu-nav__link {
+    text-decoration: none;
+    color: white;
+    // color: $inship-color;
+    font-size: 1.5rem;
+    @include transition-ease;
+    &:hover {
+      color: gray;
+    }
+  }
+
+  &.open {
+    visibility: visible;
+  }
+}
