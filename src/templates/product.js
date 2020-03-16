@@ -4,14 +4,14 @@ import Nav from "../components/nav"
 
 const Product = ({ data }) => {
   const { html } = data.markdownRemark
-  const { product } = data.markdownRemark.frontmatter
-  console.log(product)
+  const { title } = data.markdownRemark.frontmatter
+  console.log(title)
   return (
     <div>
-      <Nav current={product}></Nav>
+      <Nav current={title}></Nav>
       <div className="product-main">
         <section className="product">
-          <h1 className="product-heading">{product}</h1>
+          <h1 className="product-heading">{title}</h1>
           <div className="text-box">
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </div>
@@ -29,7 +29,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        product
+        title
       }
     }
   }

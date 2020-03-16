@@ -12,14 +12,15 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "product"
-    label: "Product"
+  - name: "products"
+    label: "Products"
     folder: "src/content/products"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
-      - {label: "Product", name: "product", widget: "text"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured Image", name: "featuredimage", widget: "image"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
@@ -29,8 +30,27 @@ collections:
         label: "Landing Page"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "landing-page"}
-          - {label: "Title White", name: titleWhite, widget: string}
-          - {label: "Title Blue", name: titleBlue, widget: string}
-          - {label: Description, name: description, widget: string}
+          - {label: "Template Key", name: templateKey, widget: "hidden", default: "landing-page"}
+          - {label: "Landing Page", name: landingPage, widget: object, fields:[
+              {label: "Title", name: title, widget: string, required: true},
+              {label: "Subtitle", name: subtitle, widget: string, required: true},
+              {label: "What We Do", name: sectionA, widget: object, fields:[
+                {label: "Title", name: title, widget: string, required: true},
+                {label: "Show?", name: show, widget: boolean, required: true, default: true},
+                {label: "Body", name: body, widget: string, required: true}
+              ]},
+              {label: "The Problem", name: sectionB, widget: object, fields:[
+                {label: "Title", name: title, widget: string, required: true},
+                {label: "Show?", name: show, widget: boolean, required: true, default: true},
+                {label: "Body", name: body, widget: string, required: true}
+              ]},
+              {label: "Products", name: sectionC, widget: object, fields:[
+                {label: "Show?", name: show, widget: boolean, required: true, default: true}
+              ]},
+              {label: "Contact Us", name: sectionD, widget: object, fields:[
+                {label: "Title", name: title, widget: string, required: true},
+                {label: "Show?", name: show, widget: boolean, required: true, default: true}
+              ]}
+          ]}
+          - {label: "Body", name: "name", widget: "markdown", required: false}
       
