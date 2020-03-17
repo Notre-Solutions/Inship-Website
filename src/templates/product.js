@@ -30,6 +30,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 1500) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
       }
     }
   }

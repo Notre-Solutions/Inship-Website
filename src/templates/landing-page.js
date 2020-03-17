@@ -161,6 +161,7 @@ export default Landing
 
 export const pageQuery = graphql`
   query LandingPageQuery($id: String!) {
+    
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         landingPage {
