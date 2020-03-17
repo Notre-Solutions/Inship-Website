@@ -6,45 +6,42 @@ landingPage:
   sectionA:
     title: What We Do
     show: true
-    body: >
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-      eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-      perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-      assumenda. Rerum ex sint quisquam blanditiis dolor! Amet earum dicta nemo
-      repellendus cumque, ipsa delectus officia veritatis rerum quasi rem
-      perspiciatis quas eligendi eveniet necessitatibus nostrum dolor nihil
-      magni illum deserunt! Accusantium laudantium autem aperiam iste sequi
-      quasi ut accusamus rem harum molestiae illum dolor tempora officiis,
-      eligendi eveniet consequatur iure veniam dolorem asperiores fugiat. Aut
-      laboriosam similique maxime sint consequuntur! Facilis quo, soluta laborum
-      eum dolorem nihil, maxime dolore consectetur quae perspiciatis itaque
-      nostrum.
+    body: >-
+      InShip specializes in offering Accounts Payable plug in solutions for
+      accounting and e.r.p. software, we can add a new functional module and
+      revenue stream in approximately eight weeks. Our commercial offering
+      allows total freedom in your customer pricing model and our offering gives
+      you the possibility of retaining up to 80% of the revenue while still
+      going to the market with a competitively priced product. We have 3
+      different versions, from a simple A.I. data extraction hidden module to
+      add to an accounts package to a full Accounts Payable Solution that can be
+      tailored to meet the needs of most medium and large business.
   sectionB:
     title: The Problem
     show: true
-    body: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, eos
-      tempora? Ea odio sequi hic facilis dolore? Praesentium tempore assumenda
-      provident! Magnam in eligendi dolorum atque sint nulla, quibusdam sit
-      laboriosam ea, deserunt nobis voluptates! Accusantium, voluptatem suscipit
-      nesciunt at molestiae ipsa corporis dolorum alias commodi reprehenderit
-      labore sequi! Debitis deleniti architecto itaque quasi exercitationem
-      ipsum magni nobis magnam beatae! Excepturi, eligendi totam officiis
-      corrupti, saepe aliquam voluptate voluptas ab aspernatur ipsum aperiam
-      ipsa nihil non laboriosam incidunt sint? Illo harum ipsa velit ducimus
-      nemo? Alias fuga minus culpa omnis tenetur! Quaerat tenetur facilis cumque
-      accusamus, corrupti officiis possimus sequi ut voluptatem nobis iure
-      repudiandae non temporibus porro veritatis corporis culpa dolores amet.
-      Saepe omnis sunt architecto soluta, quaerat nemo et in quibusdam! Rerum
-      nobis voluptas officia eaque id quia. Rem in nihil eaque provident sunt
-      culpa soluta corporis molestiae perferendis iste asperiores molestias
-      temporibus tenetur quas animi distinctio, maiores praesentium quia vero,
-      dolore saepe minima maxime sit labore. Cupiditate fuga reprehenderit
-      ducimus ea nisi doloribus consectetur qui inventore laboriosam quaerat
-      velit dolores illo amet iusto expedita quibusdam ipsum porro, a,
-      recusandae fugiat aliquam voluptatem! Quis soluta, iusto autem voluptate
-      obcaecati mollitia rem atque reiciendis provident ipsa, hic libero
-      exercitationem.
+    body: >-
+      Accounts Payable is a very manual process, business received documents by
+      post and email, they are then matched, sorted, approved by one or many
+      people, entered into an accounting or e.r.p. system, then filed,
+      reconciled and stored for years.  This process is costly (based on  pwc
+      report) costs up to $4.50 per invoice, as all businesses are always
+      looking for cost and efficiency improvements introducing a InShip process
+      will reduce a 8-10 stage manual process to an automatic that is  up to 9
+      times faster and removed between 80% and 90% of the cost. Reduce
+      processing costs significantly • Flexible access to your suppliers’
+      invoices from anywhere • Easy control of issues with a system that watches
+      for price increases • No more lost invoices, accounting errors, accounts
+      put on hold, lost VAT reclaims and unnecessary overpayments INSHIP is a
+      simple solution to all of these problems. In a few easy steps, your
+      accounts payable process changes from data entry to review. And that puts
+      you back in control of your business. Reduce processing costs
+      significantly • Flexible access to your suppliers’ invoices from anywhere
+      • Easy control of issues with a system that watches for price increases •
+      No more lost invoices, accounting errors, accounts put on hold, lost VAT
+      reclaims and unnecessary overpayments INSHIP is a simple solution to all
+      of these problems. In a few easy steps, your accounts payable process
+      changes from data entry to review. And that puts you back in control of
+      your business.
   sectionC:
     show: true
   sectionD:

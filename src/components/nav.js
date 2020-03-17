@@ -124,7 +124,7 @@ export default class Nav extends React.Component {
                 News{" "}
               </Link>
             </li> */}
-            {/* <li className={this.state.active ? contact : contact + " open"}>
+            <li className={this.state.active ? contact : contact + " open"}>
               <Link
                 to="/contact"
                 className={
@@ -135,7 +135,7 @@ export default class Nav extends React.Component {
                 Contact{" "}
               </Link>
             </li>
-            <li className={this.state.active ? project : project + " open"}>
+            {/* <li className={this.state.active ? project : project + " open"}>
               <Link
                 to="/projects"
                 className={
