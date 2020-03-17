@@ -27,7 +27,21 @@ landingPage:
       report) costs up to $4.50 per invoice, as all businesses are always
       looking for cost and efficiency improvements introducing a InShip process
       will reduce a 8-10 stage manual process to an automatic that is  up to 9
-      times faster and removed between 80% and 90% of the cost.
+      times faster and removed between 80% and 90% of the cost. Reduce
+      processing costs significantly • Flexible access to your suppliers’
+      invoices from anywhere • Easy control of issues with a system that watches
+      for price increases • No more lost invoices, accounting errors, accounts
+      put on hold, lost VAT reclaims and unnecessary overpayments INSHIP is a
+      simple solution to all of these problems. In a few easy steps, your
+      accounts payable process changes from data entry to review. And that puts
+      you back in control of your business. Reduce processing costs
+      significantly • Flexible access to your suppliers’ invoices from anywhere
+      • Easy control of issues with a system that watches for price increases •
+      No more lost invoices, accounting errors, accounts put on hold, lost VAT
+      reclaims and unnecessary overpayments INSHIP is a simple solution to all
+      of these problems. In a few easy steps, your accounts payable process
+      changes from data entry to review. And that puts you back in control of
+      your business.
   sectionC:
     show: true
   sectionD:
