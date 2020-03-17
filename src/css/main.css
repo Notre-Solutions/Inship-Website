@@ -641,8 +641,8 @@ html {
     display: -ms-grid;
     display: grid;
     grid-gap: 10rem;
-    -ms-grid-columns: (minmax(37rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr)); }
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
   .contact-page .section-a .card {
     text-align: center; }
     .contact-page .section-a .card .title {
@@ -784,7 +784,7 @@ html {
     text-align: center;
     top: 20%;
     left: 15%;
-    width: 35%; }
+    width: 40%; }
   .product .header .heading {
     color: white; }
   .product .header .bold {
@@ -792,7 +792,7 @@ html {
   .product .header .main-header {
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 5rem;
+    font-size: 4rem;
     display: block;
     -webkit-animation-name: moveInFromTop;
             animation-name: moveInFromTop;
