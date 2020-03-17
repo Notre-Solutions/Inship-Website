@@ -4,13 +4,18 @@ import Img from "gatsby-image"
 import "../css/main.css"
 import Nav from "../components/nav"
 import Footer from "../components/footer"
+import Markdown from '../components/markdown'
+
+
 
 function showSectionA(show, title, body) {
   if (show) {
     return (
       <section id="what-we-do" className="section-a">
         <h2 className="section-a-heading">{title}</h2>
-        <div className="text-box">{body}</div>
+        <div className="text-box">
+          <Markdown markdown={body}/>
+        </div>
         <a href="#" className="btn">
           Play our video
         </a>
@@ -24,7 +29,9 @@ function showSectionB(show, title, body) {
     return (
       <section className="section-b">
         <h2 className="section-b-heading">{title}</h2>
-        <div className="text-box">{body}</div>
+        <div className="text-box">
+          <Markdown markdown={body}/>
+        </div>
       </section>
     )
   }
