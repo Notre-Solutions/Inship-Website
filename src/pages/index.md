@@ -6,19 +6,17 @@ landingPage:
   sectionA:
     title: What We Do
     show: true
-    body: >
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-      eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-      perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-      assumenda. Rerum ex sint quisquam blanditiis dolor! Amet earum dicta nemo
-      repellendus cumque, ipsa delectus officia veritatis rerum quasi rem
-      perspiciatis quas eligendi eveniet necessitatibus nostrum dolor nihil
-      magni illum deserunt! Accusantium laudantium autem aperiam iste sequi
-      quasi ut accusamus rem harum molestiae illum dolor tempora officiis,
-      eligendi eveniet consequatur iure veniam dolorem asperiores fugiat. Aut
-      laboriosam similique maxime sint consequuntur! Facilis quo, soluta laborum
-      eum dolorem nihil, maxime dolore consectetur quae perspiciatis itaque
-      nostrum.
+    body: >-
+      InShip specializes in offering Accounts Payable plug in Solutions for
+      e.r.p. providers ,we allow you add a new function and revenue stream in
+      approximately eight weeks. <div>$yourparagraph</div>Our commercial
+      offering allows total freedom in your customer pricing model and our
+      offering gives you the possibility of retaining up to 80% of the revenue
+      while still going to the market with a competitively priced product.
+      <div>$yourparagraph</div>We have 3 different versions, from a simple AI
+      data extraction hidden module to add to an accounts package to a full
+      Accounts Payable Solution that can be tailored to meet the needs of most
+      medium and large business.
   sectionB:
     title: The Problem
     show: true
