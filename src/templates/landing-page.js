@@ -39,39 +39,39 @@ function showSectionB(show, title, body) {
 
 function showSectionD(show, title) {
   if (show) {
-    return (
-      <section className="section-d">
-        <h1 className="title">{title}</h1>
-        <form className="cf container">
-          <div className="half left cf">
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="Name" title="Name"></label>
-            </div>
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="email" title="Email"></label>
-            </div>
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="subject" title="Subject"></label>
-            </div>
-          </div>
-          <div className="half right cf">
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="message" title="Message"></label>
-            </div>
-          </div>
-          <input
-            type="submit"
-            value="Submit"
-            id="input-submit"
-            className="submit-btn"
-          />
-        </form>
-      </section>
-    )
+    // return (
+    // <section className="section-d">
+    //   <h1 className="title">{title}</h1>
+    //   <form className="cf container">
+    //     <div className="half left cf">
+    //       <div className="field">
+    //         <input type="text" required autoComplete="off" />
+    //         <label htmlFor="Name" title="Name"></label>
+    //       </div>
+    //       <div className="field">
+    //         <input type="text" required autoComplete="off" />
+    //         <label htmlFor="email" title="Email"></label>
+    //       </div>
+    //       <div className="field">
+    //         <input type="text" required autoComplete="off" />
+    //         <label htmlFor="subject" title="Subject"></label>
+    //       </div>
+    //     </div>
+    //     <div className="half right cf">
+    //       <div className="field">
+    //         <input type="text" required autoComplete="off" />
+    //         <label htmlFor="message" title="Message"></label>
+    //       </div>
+    //     </div>
+    //     <input
+    //       type="submit"
+    //       value="Submit"
+    //       id="input-submit"
+    //       className="submit-btn"
+    //     />
+    //   </form>
+    // </section>
+    // )
   }
 }
 
