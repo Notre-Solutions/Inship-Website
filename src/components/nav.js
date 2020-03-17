@@ -51,7 +51,7 @@ export default class Nav extends React.Component {
       APC = "menu-nav__item",
       news = "menu-nav__item",
       contact = "menu-nav__item",
-      project = "menu-nav__item"
+      CAPS = "menu-nav__item"
 
     switch (this.props.current) {
       case "Home":
@@ -60,8 +60,8 @@ export default class Nav extends React.Component {
       case "Accounts Payable Combined":
         APC = active
         break
-      case "Projects":
-        project = active
+      case "CAPS":
+        CAPS = active
         break
       case "Contact":
         contact = active
@@ -124,6 +124,17 @@ export default class Nav extends React.Component {
                 News{" "}
               </Link>
             </li> */}
+            <li className={this.state.active ? CAPS : CAPS + " open"}>
+              <Link
+                to="/CAPS"
+                className={
+                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
+                }
+              >
+                {" "}
+                CAPS{" "}
+              </Link>
+            </li>
             <li className={this.state.active ? contact : contact + " open"}>
               <Link
                 to="/contact"
@@ -135,17 +146,6 @@ export default class Nav extends React.Component {
                 Contact{" "}
               </Link>
             </li>
-            {/* <li className={this.state.active ? project : project + " open"}>
-              <Link
-                to="/projects"
-                className={
-                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
-                }
-              >
-                {" "}
-                Projects{" "}
-              </Link>
-            </li> */}
           </ul>
         </nav>
       </div>
