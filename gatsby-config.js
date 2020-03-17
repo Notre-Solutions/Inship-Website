@@ -59,10 +59,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-<<<<<<< HEAD
-=======
-
->>>>>>> 1bbf08d35b0efd9d77ef703b7e3271f0fa61ba94
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
