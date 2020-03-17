@@ -20,29 +20,15 @@ landingPage:
   sectionB:
     title: The Problem
     show: true
-    body: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, eos
-      tempora? Ea odio sequi hic facilis dolore? Praesentium tempore assumenda
-      provident! Magnam in eligendi dolorum atque sint nulla, quibusdam sit
-      laboriosam ea, deserunt nobis voluptates! Accusantium, voluptatem suscipit
-      nesciunt at molestiae ipsa corporis dolorum alias commodi reprehenderit
-      labore sequi! Debitis deleniti architecto itaque quasi exercitationem
-      ipsum magni nobis magnam beatae! Excepturi, eligendi totam officiis
-      corrupti, saepe aliquam voluptate voluptas ab aspernatur ipsum aperiam
-      ipsa nihil non laboriosam incidunt sint? Illo harum ipsa velit ducimus
-      nemo? Alias fuga minus culpa omnis tenetur! Quaerat tenetur facilis cumque
-      accusamus, corrupti officiis possimus sequi ut voluptatem nobis iure
-      repudiandae non temporibus porro veritatis corporis culpa dolores amet.
-      Saepe omnis sunt architecto soluta, quaerat nemo et in quibusdam! Rerum
-      nobis voluptas officia eaque id quia. Rem in nihil eaque provident sunt
-      culpa soluta corporis molestiae perferendis iste asperiores molestias
-      temporibus tenetur quas animi distinctio, maiores praesentium quia vero,
-      dolore saepe minima maxime sit labore. Cupiditate fuga reprehenderit
-      ducimus ea nisi doloribus consectetur qui inventore laboriosam quaerat
-      velit dolores illo amet iusto expedita quibusdam ipsum porro, a,
-      recusandae fugiat aliquam voluptatem! Quis soluta, iusto autem voluptate
-      obcaecati mollitia rem atque reiciendis provident ipsa, hic libero
-      exercitationem.
+    body: >-
+      Accounts Payable is a very manual process, business received documents by
+      post and email, they are then matched, sorted, approved by one or many
+      people, entered into an accounting or e.r.p. system, then filed,
+      reconciled and stored for years. <div>$yourparagraph</div> This process
+      costs up to $4.50 per invoice (based on a pwc report), as all businesses
+      are always looking for cost and efficiency improvements introducing a
+      InShip process will reduce a 8-10 stage manual process to an automatic
+      that is  up to 9 times faster and removed between 80% and 90% of the cost.
   sectionC:
     show: true
   sectionD:
