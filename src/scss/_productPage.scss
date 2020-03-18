@@ -1,39 +1,53 @@
-.product-main {
-  margin-bottom: 5rem;
-  height: 95vh;
-  background-image: linear-gradient(
-      $inship-color-background-darker,
-      $inship-color-background-darker
-    ),
-    url(../img/calculator.jpg);
-  background-size: cover;
-  background-position: top;
-  color: $APC-light;
+.product-header {
+  @include header-bg(
+    "../img/boats.jpg",
+    $inship-color-background,
+    $inship-color-background-darker
+  );
 
-  clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
   position: relative;
-  .product {
-    &-heading {
-      padding: 5rem;
-      display: block;
-      position: absolute;
-      top: 15%;
-      left: 5%;
-      font-size: 5rem;
+
+  .header-text-box {
+    color: white;
+    position: absolute;
+    left: 18%;
+    top: 30%;
+
+    .heading {
+      .main-header {
+        display: block;
+        font-size: 4rem;
+
+        animation-name: moveInFromRight;
+        animation-duration: 2s;
+      }
+
+      .sub-header {
+        display: block;
+        font-size: 1.5rem;
+
+        animation-name: moveInFromLeft;
+        animation-duration: 2s;
+      }
     }
 
-    .text-box {
-      border-radius: 1rem;
-      background-color: rgba(139, 139, 139, 0.76);
-      margin-right: 5rem;
-      padding: 2rem;
-      text-align: justify;
-      display: block;
-      position: absolute;
-      font-size: 1.5rem;
-      top: 40%;
-      left: 5%;
+    .btn {
+      @include btn($inship-color, white, $shadow);
+      margin: 1rem;
     }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.product-main {
+  &-about {
   }
 }

@@ -81,13 +81,13 @@
     text-align: center;
     display: grid;
     margin-top: 4rem;
-    height: 100vh;
 
     &-heading {
       font-size: 5rem;
     }
 
     .cards {
+      text-align: center;
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
@@ -105,7 +105,8 @@
         border: 0.1rem solid white;
         margin-top: 1rem;
         object-fit: cover;
-        width: 50%;
+        width: 65%;
+        margin-left: 17.5%;
       }
 
       .text-box {

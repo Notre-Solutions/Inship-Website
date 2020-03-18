@@ -31,7 +31,7 @@ const Product = ({ data }) => {
       <Nav current={alias}></Nav>
       <div className="product">
         <header className="header">
-          <Img className="image" fixed={featuredimage.childImageSharp.fixed} />
+          <Img className="image" fluid={featuredimage.childImageSharp.fluid} />
           <div className="header-text-box">
             <h1 className="heading">
               <span className="main-header">{title}</span>
@@ -47,10 +47,9 @@ const Product = ({ data }) => {
             </a>
           </div>
         </header>
-        
       </div>
-      <div className="main-page">
-          {showSectionA(true, "About", description, "what-we-do", "section-a")}
+      <div className="main-page container">
+        {showSectionA(true, "About", description, "what-we-do", "section-a")}
       </div>
 
       <Footer></Footer>
@@ -71,8 +70,8 @@ export const pageQuery = graphql`
         description
         featuredimage {
           childImageSharp {
-            fixed(width: 250, height: 250) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 1000, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
