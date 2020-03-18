@@ -20,9 +20,11 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Alias", name: "alias", widget: "string"}
       - {label: "Featured Image", name: "featuredimage", widget: "image"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Card Style", name: "cardStyle", widget: "select", multiple: false,  options: ["card card-color-1", "card card-color-2", "card card-color-3"]}
+      - {label: "Description", name: "description", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:

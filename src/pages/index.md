@@ -7,9 +7,6 @@ landingPage:
     title: What We Do
     show: true
     body: >-
-      # Inship
-
-
       InShip specializes in offering Accounts Payable plug in solutions for
       accounting and e.r.p. software, we can add a new functional module and
       revenue stream in approximately eight weeks. Our commercial offering
@@ -58,5 +55,5 @@ landingPage:
     show: true
   sectionD:
     title: Contact Us
-    show: true
+    show: false
 ---

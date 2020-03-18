@@ -1,22 +1,59 @@
 import React from "react"
 import "../css/main.css"
 import Nav from "../components/nav"
+import Footer from "../components/footer"
+import Markdown from "../components/markdown"
+import Img from "gatsby-image"
+
+function showSectionA(show, title, body, id, className) {
+  if (show) {
+    console.log(title)
+    return (
+      <section id={id} className={className}>
+        <h2 className="section-a-heading">{title}</h2>
+        <div className="text-box">
+          <Markdown markdown={body} />
+        </div>
+      </section>
+    )
+  }
+}
 
 const Product = ({ data }) => {
-  const { html } = data.markdownRemark
-  const { title } = data.markdownRemark.frontmatter
-  console.log(title)
+  const {
+    title,
+    description,
+    featuredimage,
+    alias,
+  } = data.markdownRemark.frontmatter
   return (
     <div>
-      <Nav current={title}></Nav>
-      <div className="product-main">
-        <section className="product">
-          <h1 className="product-heading">{title}</h1>
-          <div className="text-box">
-            <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Nav current={alias}></Nav>
+      <div className="product">
+        <header className="header">
+          <Img className="image" fixed={featuredimage.childImageSharp.fixed} />
+          <div className="header-text-box">
+            <h1 className="heading">
+              <span className="main-header">{title}</span>
+              <span className="sub-header">
+                <Markdown markdown={description} />
+              </span>
+            </h1>
+            <a href="" className="btn btn-white">
+              Ask for A Demo
+            </a>
+            <a href="" className="btn btn-white">
+              Watch a video
+            </a>
           </div>
-        </section>
+        </header>
+        
       </div>
+      <div className="main-page">
+          {showSectionA(true, "About", description, "what-we-do", "section-a")}
+      </div>
+
+      <Footer></Footer>
     </div>
   )
 }
@@ -30,7 +67,15 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        
+        alias
+        description
+        featuredimage {
+          childImageSharp {
+            fixed(width: 250, height: 250) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     }
   }

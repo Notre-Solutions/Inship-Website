@@ -12,6 +12,9 @@ module.exports = {
     //     address: "Grangegorman, Dublin, Ireland",
     //   },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify-cms-paths`,
+    `gatsby-plugin-netlify`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -44,6 +47,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: `gatsby-remark-relative-images`,
           },
@@ -77,9 +81,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/img/icon.jpg`, // This path is relative to the root of the site.
       },
-    },
-    `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-netlify`
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
