@@ -20,13 +20,14 @@
     align-items: center;
     left: 70%;
     top:25%;
+    opacity: 0.7;
   }
 
   .header {
     &-text-box {
       position: absolute;
       text-align: center;
-      top: 5%;
+      top: 20%;
       left: 15%;
       width: 40%;
     }

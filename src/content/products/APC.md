@@ -2,7 +2,7 @@
 templateKey: product
 title: Accounts Payable Combined
 alias: APC
-featuredimage: /img/APC-logo-trans.png
+featuredimage: /img/apc-logo.jpeg
 featuredpost: true
 cardStyle: card card-color-1
 description: >-

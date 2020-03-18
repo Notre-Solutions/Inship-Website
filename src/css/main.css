@@ -837,42 +837,59 @@ html {
 }
 
 .contact-page .section-a {
-  margin-top: 5rem; }
-  .contact-page .section-a .cards {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 10rem;
-    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
-  .contact-page .section-a .card {
-    text-align: center; }
-    .contact-page .section-a .card .title {
-      font-size: 2rem; }
-    .contact-page .section-a .card .icon {
-      padding: 1rem;
-      font-size: 10rem; }
-    .contact-page .section-a .card p {
-      padding: 4rem; }
-    .contact-page .section-a .card .btn {
-      margin-top: 1rem;
-      border-radius: 1rem;
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: #46bbb5;
-      background-color: white;
-      padding: 1rem 3rem;
-      -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-              box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-      display: inline-block; }
-    .contact-page .section-a .card .btn:hover {
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05);
-      cursor: pointer; }
-    .contact-page .section-a .card .btn:active {
-      -webkit-transform: translateY(0.2rem);
-              transform: translateY(0.2rem);
-      -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  margin-top: 5rem;
+}
+
+.contact-page .section-a .cards {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10rem;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.contact-page .section-a .card {
+  text-align: center;
+}
+
+.contact-page .section-a .card .title {
+  font-size: 2rem;
+}
+
+.contact-page .section-a .card .icon {
+  padding: 1rem;
+  font-size: 10rem;
+}
+
+.contact-page .section-a .card p {
+  padding: 4rem;
+}
+
+.contact-page .section-a .card .btn {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #46bbb5;
+  background-color: white;
+  padding: 1rem 3rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+  display: inline-block;
+}
+
+.contact-page .section-a .card .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.contact-page .section-a .card .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
 
 .contact-page .section-b {
   margin-top: 5rem;
@@ -1017,71 +1034,92 @@ html {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-  .product .image {
-    position: absolute;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    left: 70%;
-    top: 25%;
-  }
-  
-  .product .header-text-box {
-    position: absolute;
-    text-align: center;
-    top: 5%;
-    left: 15%;
-    width: 35%;
-  }
-  .product .header .heading {
-    color: white; }
-  .product .header .bold {
-    font-weight: 700; }
-  .product .header .main-header {
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 4rem;
-    display: block;
-    -webkit-animation-name: moveInFromTop;
-            animation-name: moveInFromTop;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s; }
-  .product .header .sub-header {
-    display: block;
-    text-align: center;
-    -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    font-weight: 100; }
-  .product .header .btn {
-    margin-top: 1rem;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #46bbb5;
-    background-color: white;
-    padding: 1rem 3rem;
-    -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-            box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-    display: inline-block;
-    margin: 1rem; }
-  .product .header .btn:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05); }
-  .product .header .btn:active {
-    -webkit-transform: translateY(0.2rem);
-            transform: translateY(0.2rem);
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-  .product .test {
-    z-index: 12000;
-    color: black;
-    font-size: 7rem; }
-  .product-about .title {
-    color: black;
-    font-size: 100rem; }
+  position: relative;
+}
+
+.product .image {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 70%;
+  top: 25%;
+  opacity: 0.7;
+}
+
+.product .header-text-box {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 15%;
+  width: 40%;
+}
+
+.product .header .heading {
+  color: white;
+}
+
+.product .header .bold {
+  font-weight: 700;
+}
+
+.product .header .main-header {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 4rem;
+  display: block;
+  -webkit-animation-name: moveInFromTop;
+          animation-name: moveInFromTop;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.product .header .sub-header {
+  display: block;
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  font-weight: 100;
+}
+
+.product .header .btn {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #46bbb5;
+  background-color: white;
+  padding: 1rem 3rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin: 1rem;
+}
+
+.product .header .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.product .header .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.product .test {
+  z-index: 12000;
+  color: black;
+  font-size: 7rem;
+}
+
+.product-about .title {
+  color: black;
+  font-size: 100rem;
+}
