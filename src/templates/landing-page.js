@@ -86,7 +86,7 @@ function showSectionC(show, edges) {
               description,
               featuredpost,
               cardStyle,
-              featuredimage
+              featuredimage,
             } = edge.node.frontmatter
             if (featuredpost) {
               return (
@@ -94,7 +94,7 @@ function showSectionC(show, edges) {
                   title={title}
                   body={description}
                   cardStyle={cardStyle}
-                  fixedImage={featuredimage.childImageSharp.fixed}
+                  fluidImage={featuredimage.childImageSharp.fluid}
                 />
               )
             }
@@ -131,13 +131,22 @@ const Landing = ({ data }) => {
           </a>
         </div>
       </header>
-      <div className="main-page">
-        {showSectionA(sectionA.show, sectionA.title, sectionA.body, 'what-we-do','section-a')}
+      <div className="main-page container">
+        {showSectionA(
+          sectionA.show,
+          sectionA.title,
+          sectionA.body,
+          "what-we-do",
+          "section-a"
+        )}
         {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
         {showSectionC(sectionC.show, edges)}
         {showSectionD(sectionD.show, sectionD.title)}
       </div>
-      <Footer></Footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
+
       {/* <footer>This is the footer woo</footer> */}
     </div>
   )
@@ -159,8 +168,8 @@ export const pageQuery = graphql`
             featuredpost
             featuredimage {
               childImageSharp {
-                fixed(width: 125, height: 125) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 1000, quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -195,3 +204,54 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// export const pageQuery = graphql`
+//   query LandingPageQuery($id: String!) {
+//     allMarkdownRemark(
+//       filter: { frontmatter: { templateKey: { eq: "product" } } }
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             description
+//             cardStyle
+//             featuredpost
+//             featuredimage {
+//               childImageSharp {
+//                 fixed(width: 125, height: 125) {
+//                   ...GatsbyImageSharpFixed
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//     markdownRemark(id: { eq: $id }) {
+//       frontmatter {
+//         landingPage {
+//           title
+//           subtitle
+//           sectionA {
+//             body
+//             title
+//             show
+//           }
+//           sectionB {
+//             title
+//             show
+//             body
+//           }
+//           sectionC {
+//             show
+//           }
+//           sectionD {
+//             title
+//             show
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

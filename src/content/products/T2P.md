@@ -1,7 +1,7 @@
 ---
 templateKey: product
 title: Tick To Post
-alias: TTP
+alias: T2P
 featuredimage: /img/t2p-logo.jpeg
 cardStyle: card card-color-3
 featuredpost: true

@@ -302,7 +302,6 @@ html {
   display: -ms-grid;
   display: grid;
   margin-top: 4rem;
-  height: 100vh;
 }
 
 .main-page .section-c-heading {
@@ -310,6 +309,7 @@ html {
 }
 
 .main-page .section-c .cards {
+  text-align: center;
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
@@ -334,7 +334,8 @@ html {
   margin-top: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 50%;
+  width: 65%;
+  margin-left: 17.5%;
 }
 
 .main-page .section-c .card .text-box {
@@ -471,39 +472,66 @@ html {
           transform: scale(1.05);
 }
 
-.product-main {
-  margin-bottom: 5rem;
+.product-header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 122, 117, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/calculator.jpg);
-  background-image: linear-gradient(rgba(46, 122, 117, 0.7), rgba(46, 122, 117, 0.7)), url(../img/calculator.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url("../img/boats.jpg");
+  background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url("../img/boats.jpg");
   background-size: cover;
   background-position: top;
-  color: #ded4a2;
-  clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
 
-.product-main .product-heading {
-  padding: 5rem;
-  display: block;
+.product-header .header-text-box {
+  color: white;
   position: absolute;
-  top: 15%;
-  left: 5%;
-  font-size: 5rem;
+  left: 18%;
+  top: 30%;
 }
 
-.product-main .product .text-box {
-  border-radius: 1rem;
-  background-color: rgba(139, 139, 139, 0.76);
-  margin-right: 5rem;
-  padding: 2rem;
-  text-align: justify;
+.product-header .header-text-box .heading .main-header {
   display: block;
-  position: absolute;
+  font-size: 4rem;
+  -webkit-animation-name: moveInFromRight;
+          animation-name: moveInFromRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.product-header .header-text-box .heading .sub-header {
+  display: block;
   font-size: 1.5rem;
-  top: 40%;
-  left: 5%;
+  -webkit-animation-name: moveInFromLeft;
+          animation-name: moveInFromLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.product-header .header-text-box .btn {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #46bbb5;
+  background-color: white;
+  padding: 1rem 3rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  margin: 1rem;
+}
+
+.product-header .header-text-box .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.product-header .header-text-box .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 550px) {
@@ -513,9 +541,18 @@ html {
   .cards {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
+    width: 90%;
+    margin-left: 5%;
   }
   .cards .card {
-    margin: 1rem;
+    margin: 1rem 10rem 0 10rem;
+  }
+  .cards .card .img {
+    width: 50% !important;
+    left: 8%;
+  }
+  .cards .card .text-box {
+    padding: 0 6rem 0 6rem !important;
   }
 }
 
@@ -625,6 +662,22 @@ html {
     -webkit-transform: rotate(-45deg) translate(0.3rem, -0.7rem);
             transform: rotate(-45deg) translate(0.3rem, -0.7rem);
   }
+  .menu-nav__item:nth-child(1) {
+    -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+  }
+  .menu-nav__item:nth-child(2) {
+    -webkit-transition-delay: 0.35s;
+            transition-delay: 0.35s;
+  }
+  .menu-nav__item:nth-child(3) {
+    -webkit-transition-delay: 0.45s;
+            transition-delay: 0.45s;
+  }
+  .menu-nav__item:nth-child(4) {
+    -webkit-transition-delay: 0.55s;
+            transition-delay: 0.55s;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -645,6 +698,11 @@ html {
 @media screen and (min-width: 1600px) {
   html {
     font-size: 11px;
+  }
+  .container {
+    text-align: center;
+    max-width: 2048px;
+    margin: 0 10%;
   }
 }
 
@@ -703,8 +761,8 @@ html {
 }
 
 .footer {
-  display: -ms-grid;
-  display: grid;
+  display: block;
+  bottom: 0;
   margin-top: 2rem;
   background-color: gray;
   height: 30rem;
@@ -1024,102 +1082,4 @@ html {
           transform: translateY(0.2rem);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.product {
-  height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/large-boat.jpg);
-  background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/large-boat.jpg);
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative;
-}
-
-.product .image {
-  position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 70%;
-  top: 25%;
-  opacity: 0.7;
-}
-
-.product .header-text-box {
-  position: absolute;
-  text-align: center;
-  top: 20%;
-  left: 15%;
-  width: 40%;
-}
-
-.product .header .heading {
-  color: white;
-}
-
-.product .header .bold {
-  font-weight: 700;
-}
-
-.product .header .main-header {
-  text-transform: uppercase;
-  font-weight: 100;
-  font-size: 4rem;
-  display: block;
-  -webkit-animation-name: moveInFromTop;
-          animation-name: moveInFromTop;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
-.product .header .sub-header {
-  display: block;
-  text-align: center;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  font-weight: 100;
-}
-
-.product .header .btn {
-  margin-top: 1rem;
-  border-radius: 1rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #46bbb5;
-  background-color: white;
-  padding: 1rem 3rem;
-  -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-          box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-  display: inline-block;
-  margin: 1rem;
-}
-
-.product .header .btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.product .header .btn:active {
-  -webkit-transform: translateY(0.2rem);
-          transform: translateY(0.2rem);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.product .test {
-  z-index: 12000;
-  color: black;
-  font-size: 7rem;
-}
-
-.product-about .title {
-  color: black;
-  font-size: 100rem;
 }

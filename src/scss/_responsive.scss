@@ -4,8 +4,18 @@
   }
   .cards {
     grid-template-columns: 1fr !important;
+    width: 90%;
+    margin-left: 5%;
     .card {
-      margin: 1rem;
+      margin: 1rem 10rem 0 10rem;
+      .img {
+        width: 50% !important;
+        left: 8%;
+      }
+
+      .text-box {
+        padding: 0 6rem 0 6rem !important;
+      }
     }
   }
   //   .nav {
@@ -156,6 +166,12 @@
       }
     }
   }
+
+  @for $i from 1 through 4 {
+    .menu-nav__item:nth-child(#{$i}) {
+      transition-delay: ($i * 0.1s) + 0.15s;
+    }
+  }
 }
 
 @include media-md {
@@ -176,5 +192,10 @@
 @include media-xl {
   html {
     font-size: 11px;
+  }
+  .container {
+    text-align: center;
+    max-width: 2048px;
+    margin: 0 10%;
   }
 }

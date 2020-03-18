@@ -24,35 +24,91 @@ const Product = ({ data }) => {
     title,
     description,
     featuredimage,
-    alias,
+    alias
   } = data.markdownRemark.frontmatter
   return (
     <div>
-      <Nav current={alias}></Nav>
-      <div className="product">
-        <header className="header">
-          <Img className="image" fixed={featuredimage.childImageSharp.fixed} />
-          <div className="header-text-box">
-            <h1 className="heading">
-              <span className="main-header">{title}</span>
-              <span className="sub-header">
-                <Markdown markdown={description} />
-              </span>
-            </h1>
-            <a href="" className="btn btn-white">
-              Ask for A Demo
-            </a>
-            <a href="" className="btn btn-white">
-              Watch a video
-            </a>
-          </div>
-        </header>
-        
-      </div>
-      <div className="main-page">
-          {showSectionA(true, "About", description, "what-we-do", "section-a")}
-      </div>
+      <Nav current={"CAPS"}></Nav>
 
+      <header className="product-header">
+        <div className="header-text-box">
+          <h1 className="heading">
+            <span className="main-header">
+              Complete Accounts Payable Solutions
+            </span>
+            <span className="sub-header">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </span>
+          </h1>
+          <a href="" className="btn">
+            Ask for A Demo
+          </a>
+          <a href="" className="btn">
+            Watch a video
+          </a>
+        </div>
+      </header>
+      <div className="product-main">
+        <div className="product-main-about">
+          <div className="product-main-about-title">About</div>
+          <div className="product-main-about-item">
+            <div className="product-main-about-item">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </div>
+            <div className="product-main-about-item">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </div>
+            <div className="product-main-about-item">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </div>
+          </div>
+        </div>
+        <div className="product-main-features">
+          <div className="product-main-features-title">Features</div>
+          <div className="cards">
+            <div className="card">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </div>
+            <div className="card">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </div>
+            <div className="card">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </div>
+            <div className="card">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
+              molestiae perspiciatis cupiditate expedita temporibus neque modi
+              velit nesciunt assumenda.
+            </div>
+          </div>
+        </div>
+        <div className="product-main-video">
+          <div className="product-main-video-title">Video</div>
+          <div className="product-main-video-container"></div>
+        </div>
+      </div>
       <Footer></Footer>
     </div>
   )
@@ -71,8 +127,8 @@ export const pageQuery = graphql`
         description
         featuredimage {
           childImageSharp {
-            fixed(width: 250, height: 250) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 1000, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
