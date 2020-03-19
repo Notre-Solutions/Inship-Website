@@ -181,3 +181,8 @@ html {
   font-size: 2rem;
   padding: 2rem;
 }
+
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
