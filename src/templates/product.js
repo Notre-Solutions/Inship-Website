@@ -5,6 +5,7 @@ import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import TimeLine from "../components/timeline"
 
 function showSectionA(show, title, body, id, className) {
   if (show) {
@@ -71,26 +72,7 @@ const Product = () => {
       <div className="product-main container">
         <div className="product-main-section-a">
           <div className="product-main-section-a-title">About</div>
-          <div className="product-main-section-a-item">
-            <div className="product-main-section-a-item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
-              molestiae perspiciatis cupiditate expedita temporibus neque modi
-              velit nesciunt assumenda.
-            </div>
-            <div className="product-main-section-a-item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
-              molestiae perspiciatis cupiditate expedita temporibus neque modi
-              velit nesciunt assumenda.
-            </div>
-            <div className="product-main-section-a-item">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
-              molestiae perspiciatis cupiditate expedita temporibus neque modi
-              velit nesciunt assumenda.
-            </div>
-          </div>
+          <TimeLine></TimeLine>
         </div>
         <div className="product-main-section-b">
           <div className="product-main-section-b-title">Features</div>
@@ -143,7 +125,7 @@ const Product = () => {
 
           <div className="cards">
             <div className="card">
-              <div className="c100 p70 center">
+              <div className="c100 p70 center green">
                 <span>70%</span>
                 <div className="slice">
                   <div className="bar"></div>
@@ -156,7 +138,7 @@ const Product = () => {
               </div>
             </div>
             <div className="card">
-              <div className="c100 p93 center">
+              <div className="c100 p93 center green">
                 <span>93%</span>
 
                 <div className="slice">
@@ -171,7 +153,7 @@ const Product = () => {
               </div>
             </div>
             <div className="card">
-              <div className="c100 p89 center">
+              <div className="c100 p89 center green">
                 <span>89%</span>
 
                 <div className="slice">
@@ -186,7 +168,7 @@ const Product = () => {
               </div>
             </div>
             <div className="card">
-              <div className="c100 p100 center">
+              <div className="c100 p100 center green">
                 <span>100%</span>
 
                 <div className="slice">

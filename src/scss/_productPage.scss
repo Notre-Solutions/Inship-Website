@@ -54,6 +54,26 @@
       font-size: 3rem;
       text-align: center;
     }
+
+    &-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 3fr;
+    }
+
+    &-item {
+      justify-content: end;
+    }
+
+    @for $i from 1 through 4 {
+      &-item:nth-child(#{$i}) {
+        @if $i % 2 == 0 {
+          grid-column-start: 2;
+        } @else {
+          grid-column-start: 1;
+        }
+      }
+    }
   }
 
   &-section-b {

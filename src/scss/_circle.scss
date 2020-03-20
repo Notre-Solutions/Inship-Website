@@ -1,9 +1,58 @@
-// VARS
-@import "_variables";
-// mixins
-@import "_mixins";
-// CIRCLE
-// classes 2 extend
+$circle-width: 0.08em;
+$circle-width-hover: 0.04em;
+// colors default
+$primary-color: #307bbb;
+$secondary-color: #ccc;
+$bg-color: #f5f5f5;
+$primary-color-green: #4db53c;
+$primary-color-orange: #dd9d22;
+// colors dark skin
+$primary-color-dark: #c6ff00;
+$secondary-color-dark: #777;
+$bg-color-dark: #666;
+$primary-color-green-dark: #5fd400;
+$primary-color-orange-dark: #e08833;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin rotate($rotation) {
+  -webkit-transform: rotate($rotation);
+  -moz-transform: rotate($rotation);
+  -ms-transform: rotate($rotation);
+  -o-transform: rotate($rotation);
+  transform: rotate($rotation);
+}
+
+@mixin box-sizing($box-sizing) {
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+@mixin transition-property($transition) {
+  -webkit-transition-property: $transition;
+  -moz-transition-property: $transition;
+  -o-transition-property: $transition;
+  transition-property: $transition;
+}
+
+@mixin transition-duration($duration) {
+  -webkit-transition-duration: $duration;
+  -moz-transition-duration: $duration;
+  -o-transition-duration: $duration;
+  transition-duration: $duration;
+}
+
+@mixin transition-timing-function($timing) {
+  -webkit-transition-timing-function: $timing;
+  -moz-transition-timing-function: $timing;
+  -o-transition-timing-function: $timing;
+  transition-timing-function: $timing;
+}
 .rect-auto {
   clip: rect(auto, auto, auto, auto);
 }
@@ -154,11 +203,11 @@
   &.green {
     .bar,
     .fill {
-      border-color: $primary-color-green !important;
+      border-color: $inship-color !important;
     }
     &:hover {
       > span {
-        color: $primary-color-green;
+        color: $inship-color;
       }
     }
   }
