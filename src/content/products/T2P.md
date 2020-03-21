@@ -2,6 +2,7 @@
 templateKey: product
 title: Tick To Post
 alias: T2P
+id: 2
 featuredimage: /img/t2p-logo.jpeg
 cardStyle: card card-color-3
 featuredpost: true
@@ -11,4 +12,9 @@ description: >-
   perferendis hic minus eaque laudantium voluptates, totam dolore
   similique necessitatibus. Praesentium similique nulla nesciunt
   perspiciatis facere, eius esse necessitatibus ipsum recusandae
+features:
+  feature1: 12 Users
+  feature2: true
+  feature3: true
+  feature4: true
 ---
