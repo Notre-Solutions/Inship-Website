@@ -1,9 +1,5 @@
 .product-header {
-  @include header-bg(
-    "../img/boats.jpg",
-    $inship-color-background,
-    $inship-color-background-darker
-  );
+  @include header-gb-no-color("../img/medium.jpg");
 
   position: relative;
 
@@ -50,35 +46,18 @@
 .product-main {
   &-section-a {
     &-title {
+      margin-bottom: 4rem;
       color: $inship-color;
       font-size: 3rem;
       text-align: center;
-    }
-
-    &-items {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 3fr;
-    }
-
-    &-item {
-      justify-content: end;
-    }
-
-    @for $i from 1 through 4 {
-      &-item:nth-child(#{$i}) {
-        @if $i % 2 == 0 {
-          grid-column-start: 2;
-        } @else {
-          grid-column-start: 1;
-        }
-      }
     }
   }
 
   &-section-b {
     text-align: center;
     &-title {
+      margin-bottom: 4rem;
+      margin-top: 4rem;
       font-size: 3rem;
       color: $inship-color;
     }
@@ -114,7 +93,7 @@
       text-align: center;
       font-size: 3rem;
       color: $inship-color;
-      margin: 3rem 0 3rem 0;
+      margin: 6rem 0 6rem 0;
 
       &-sub {
         display: block;
@@ -145,37 +124,33 @@
   &-section-d {
     text-align: center;
     &-title {
-      display: block;
-      justify-content: center;
-      text-align: center;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
       font-size: 3rem;
       color: $inship-color;
-      margin: 3rem 0 3rem 0;
     }
 
     .cards {
-      text-align: left;
-      justify-content: left;
+      margin-top: 3rem;
       display: grid;
-      grid-gap: 2rem;
-      grid-template-columns: 30% 30% 30%;
-      grid-auto-rows: 30% 30% 30%;
+      justify-content: center;
+      grid-gap: 4rem;
+      grid-template-columns: 40% 40%;
+      grid-template-rows: auto auto;
       .card {
-        justify-content: center;
-        @include transition-ease;
-      }
+        background-color: $inship-color;
+        padding: 4rem;
+        border-radius: 1.5rem;
+        align-items: start;
+        justify-content: space-evenly;
 
-      .card:hover {
-        transform: scale(1.05);
-      }
-
-      .img {
-        margin-left: 12.5%;
-        border-radius: 1rem;
-        border: 0.1rem solid white;
-        width: 100%;
-        height: 100%;
-        // object-fit: cover;
+        .icon {
+          font-size: 3rem;
+        }
+        .text-box {
+          padding: 0 3rem 0 2rem;
+          font-size: 1.4rem;
+        }
       }
     }
   }

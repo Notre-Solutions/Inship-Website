@@ -1,11 +1,13 @@
 .header {
   height: 95vh;
+  z-index: -1;
   background-image: linear-gradient(
       to right bottom,
-      $inship-color-background,
-      $inship-color-background-darker
+      rgba(128, 128, 128, 0.541),
+      rgba(128, 128, 128, 0.541)
     ),
-    url(../img/large-boat.jpg);
+    url(../img/large.jpg);
+
   background-size: cover;
   background-position: top;
 

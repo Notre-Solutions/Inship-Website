@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import classnames from "classnames"
 import "../css/main.css"
+import { slide as Menu } from "react-burger-menu"
 
 export default class Nav extends React.Component {
   constructor(props) {
@@ -74,89 +75,93 @@ export default class Nav extends React.Component {
         news = active
         break
     }
-    console.log(this.state.prevScrollpos)
-    console.log(this.state.active)
-    console.log(this.state.visible)
 
     return (
       <div>
-        <div className="menu-btn" onClick={this.toggleClass}>
-          <span
-            className={
-              this.state.active ? "menu-btn__burger" : "menu-btn__burger open"
-            }
-          ></span>
-        </div>
-        <nav className={this.state.active ? "nav" : "nav open"}>
-          <ul
-            // className={this.state.active ? "menu-nav" : "menu-nav open"}
-            className={classnames("menu-nav", {
-              "menu-nav-scrolling": !this.state.visible,
-              open: !this.state.active,
+        <div className="navigation">
+          <div className="navigation__button" onClick={this.toggleClass}>
+            <span
+              className={classnames("navigation__icon", {
+                "open-button": !this.state.active,
+              })}
+            >
+              &nbsp;
+            </span>
+          </div>
+          <div
+            className={classnames("navigation__background", {
+              "open-background": !this.state.active,
             })}
           >
-            <li className={this.state.active ? home : home + " open"}>
-              <Link
-                to="/"
-                className={
-                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
-                }
-              >
+            &nbsp;
+          </div>
+          <nav
+            className={classnames("navigation__nav", {
+              "open-nav": !this.state.active,
+            })}
+          >
+            <ul className="navigation__list">
+              <li className="">
+                <Link to="/" className="navigation__link">
+                  Home
+                </Link>
+              </li>
+              <li className="navigation__item">
+                <Link to="/products/APC" className="navigation__link">
+                  APC
+                </Link>
+              </li>
+              <li className="navigation__item">
+                <Link to="/products/CAPS" className="navigation__link">
+                  CAPS
+                </Link>
+              </li>
+              <li className="navigation__item">
+                <Link to="/products/T2P" className="navigation__link">
+                  T2P
+                </Link>
+              </li>
+              <li className="navigation__item">
+                <Link to="/contact" className="navigation__link">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav className="nav">
+          <ul
+            className={classnames("menu-nav", {
+              "menu-nav-scrolling": !this.state.visible,
+            })}
+          >
+            <li className={home}>
+              <Link to="/" className="menu-nav__link">
                 {" "}
                 Home{" "}
               </Link>
             </li>
-            <li className={this.state.active ? APC : APC + " open"}>
-              <Link
-                to="/products/APC"
-                className={
-                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
-                }
-              >
+            <li className={APC}>
+              <Link to="/products/APC" className="menu-nav__link ">
                 {" "}
                 APC{" "}
               </Link>
             </li>
-            {/* <li className={this.state.active ? news : news + " open"}>
-              <Link
-                to="/news"
-                className={
-                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
-                }
-              >
-                {" "}
-                News{" "}
-              </Link>
-            </li> */}
-            <li className={this.state.active ? CAPS : CAPS + " open"}>
-              <Link
-                to="products/CAPS"
-                className={
-                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
-                }
-              >
+
+            <li className={CAPS}>
+              <Link to="products/CAPS" className="menu-nav__link ">
                 {" "}
                 CAPS{" "}
               </Link>
             </li>
-            <li className={this.state.active ? T2P : T2P + " open"}>
-              <Link
-                to="products/T2P"
-                className={
-                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
-                }
-              >
+            <li className={T2P}>
+              <Link to="products/T2P" className="menu-nav__link ">
                 {" "}
                 T2P{" "}
               </Link>
             </li>
-            <li className={this.state.active ? contact : contact + " open"}>
-              <Link
-                to="/contact"
-                className={
-                  this.state.active ? "menu-nav__link" : "menu-nav__link open"
-                }
-              >
+            <li className={contact}>
+              <Link to="/contact" className="menu-nav__link ">
                 {" "}
                 Contact{" "}
               </Link>

@@ -31,7 +31,12 @@ const Footer = () => {
             <span className="bold">IN</span>SHIP
           </div>
 
-          <div className="sub">Invoice Parternship</div>
+          <div className="sub">
+            Providing the Technology Behind{" "}
+            <span className="secondLine">
+              Automated Accounts Payable Processes
+            </span>
+          </div>
         </div>
 
         <div className="address">
@@ -50,19 +55,19 @@ const Footer = () => {
         <div>
           <div className="social-icons">
             <a href="#!">
-              <i className="fa fa-twitter fa-4x"></i>
+              <i className="fa fa-twitter "></i>
             </a>
             <a href="#!">
-              <i className="fa fa-facebook fa-4x"></i>
+              <i className="fa fa-facebook "></i>
             </a>
             <a href="#!">
-              <i className="fa fa-instagram fa-4x"></i>
+              <i className="fa fa-instagram "></i>
             </a>
             <a href="#!">
-              <i className="fa fa-youtube fa-4x"></i>
+              <i className="fa fa-youtube "></i>
             </a>
             <a href="#!">
-              <i className="fa fa-linkedin fa-4x"></i>
+              <i className="fa fa-linkedin "></i>
             </a>
           </div>
           <div className="copy-right">

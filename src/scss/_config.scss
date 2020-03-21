@@ -15,10 +15,12 @@ $T2P-color: white;
 $T2P-bg: #252941;
 
 // setting init val
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 a {
@@ -32,10 +34,11 @@ body {
   color: #777;
   padding: 3rem;
   background: $inship-color-background-light;
+  box-sizing: border-box;
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -164,6 +167,16 @@ html {
   height: 95vh;
   background-image: linear-gradient(to right bottom, $color1, $color2),
     url($img);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+@mixin header-gb-no-color($img) {
+  height: 95vh;
+  background-image: url($img);
   background-size: cover;
   background-position: top;
 

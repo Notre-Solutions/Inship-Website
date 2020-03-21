@@ -9,7 +9,7 @@
   opacity: 1;
 
   .menu-nav-scrolling {
-    background: transparent !important;
+    // background: transparent !important;
     margin-top: 3rem;
     border-radius: 0.5rem;
   }
@@ -31,7 +31,10 @@
 
     &.active > a {
       //   color: gray;
-      border-bottom: solid 0.1rem white;
+      color: black;
+      // padding: 0.2rem;
+      // border: solid 0.1rem white;
+      // border-radius: 0.4rem;
     }
   }
 
@@ -42,11 +45,126 @@
     @include transition-ease;
     &:hover {
       //   color: gray;
-      border-bottom: solid 0.1rem white;
+      color: black;
+      // border-bottom: solid 0.1rem white;
     }
   }
 
   &.open {
     visibility: visible;
+  }
+}
+
+.navigation {
+  visibility: hidden;
+  &__button {
+    background-color: white;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    @include transition-ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .open-background {
+    transform: scale(80);
+  }
+
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    z-index: 1500;
+    background-image: radial-gradient(
+      $inship-color-background,
+      $inship-color-background
+    );
+    @include transition-ease;
+  }
+
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    @include transition-ease;
+
+    opacity: 0;
+    width: 0%;
+  }
+
+  .open-nav {
+    opacity: 1;
+    width: 100%;
+  }
+
+  .open-button {
+    background-color: transparent;
+
+    &::after {
+      transform: rotate(45deg);
+      width: 3rem;
+      top: 0;
+    }
+    &::before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+
+  &__link {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-top: 3.5rem;
+    position: relative;
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 0.2rem;
+      background-color: gray;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+    }
+
+    &::before {
+      top: -1rem;
+    }
+    &::after {
+      top: 1rem;
+      width: 2.5rem;
+    }
   }
 }

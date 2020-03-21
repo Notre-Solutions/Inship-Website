@@ -1,8 +1,9 @@
 import React from "react"
 import Markdown from "./markdown"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
-const ProductCard = ({ title, body, cardStyle, fluidImage }) => {
+const ProductCard = ({ title, body, cardStyle, fluidImage, alias }) => {
   return (
     <div className={cardStyle}>
       <Img fluid={fluidImage} className="img" />
@@ -12,9 +13,9 @@ const ProductCard = ({ title, body, cardStyle, fluidImage }) => {
       <div className="text-box">
         <Markdown markdown={body} />
       </div>
-      <a href="" className="btn">
+      <Link to={"/products/" + alias} className="btn">
         Learn More
-      </a>
+      </Link>
     </div>
   )
 }

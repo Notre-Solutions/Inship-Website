@@ -1,28 +1,19 @@
 .contact-page {
   .contact {
-    height: 95vh;
-    background-image: linear-gradient(
-        to right bottom,
-        $inship-color-background,
-        $inship-color-background-darker
-      ),
-      url(../img/map.jpg);
-    background-size: cover;
-    background-position: top;
-
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    @include header-gb-no-color("../img/contact.jpg");
 
     position: relative;
 
     &-text-box {
+      padding: 3rem;
+      border-radius: 2rem;
+      background-color: white;
       position: absolute;
       font-size: 2.5rem;
-      color: white;
+      color: $inship-color;
       text-align: center;
-      top: 35%;
-      left: 55%;
-      // width: 30%;
+      top: 25%;
+      left: 15%;
 
       .right {
         display: block;

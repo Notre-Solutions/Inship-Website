@@ -87,6 +87,7 @@ function showSectionC(show, edges) {
               featuredpost,
               cardStyle,
               featuredimage,
+              alias,
             } = edge.node.frontmatter
             if (featuredpost) {
               return (
@@ -95,6 +96,7 @@ function showSectionC(show, edges) {
                   body={description}
                   cardStyle={cardStyle}
                   fluidImage={featuredimage.childImageSharp.fluid}
+                  alias={alias}
                 />
               )
             }
@@ -106,6 +108,7 @@ function showSectionC(show, edges) {
 }
 
 const Landing = ({ data }) => {
+  console.log(data)
   const {
     title,
     subtitle,
@@ -115,6 +118,7 @@ const Landing = ({ data }) => {
     sectionD,
   } = data.markdownRemark.frontmatter.landingPage
   const edges = data.allMarkdownRemark.edges
+
   return (
     <div>
       <Nav current={"Home"}></Nav>
@@ -142,7 +146,15 @@ const Landing = ({ data }) => {
         {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
         {showSectionC(sectionC.show, edges)}
         {showSectionD(sectionD.show, sectionD.title)}
+        <div className="section-d">
+          <div className="section-d-title">The Process</div>
+          <Img
+            fluid={data.images.edges[0].node.childImageSharp.fluid}
+            className="prosses-img"
+          />
+        </div>
       </div>
+
       <footer>
         <Footer></Footer>
       </footer>
@@ -162,6 +174,7 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
+            alias
             title
             description
             cardStyle
@@ -202,56 +215,18 @@ export const pageQuery = graphql`
         }
       }
     }
+    images: allFile(filter: { relativePath: { eq: "Process.jpg" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            fluid(maxWidth: 10000, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          name
+        }
+      }
+    }
   }
 `
-
-// export const pageQuery = graphql`
-//   query LandingPageQuery($id: String!) {
-//     allMarkdownRemark(
-//       filter: { frontmatter: { templateKey: { eq: "product" } } }
-//     ) {
-//       edges {
-//         node {
-//           frontmatter {
-//             title
-//             description
-//             cardStyle
-//             featuredpost
-//             featuredimage {
-//               childImageSharp {
-//                 fixed(width: 125, height: 125) {
-//                   ...GatsbyImageSharpFixed
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//     markdownRemark(id: { eq: $id }) {
-//       frontmatter {
-//         landingPage {
-//           title
-//           subtitle
-//           sectionA {
-//             body
-//             title
-//             show
-//           }
-//           sectionB {
-//             title
-//             show
-//             body
-//           }
-//           sectionC {
-//             show
-//           }
-//           sectionD {
-//             title
-//             show
-//           }
-//         }
-//       }
-//     }
-//   }
-// `

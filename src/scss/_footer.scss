@@ -14,7 +14,7 @@
     position: absolute;
     top: 3rem;
     left: 10rem;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     .main {
       font-weight: 700;
 
@@ -28,6 +28,10 @@
       margin-top: -1rem;
       font-size: 0.9rem;
       font-weight: 100;
+    }
+
+    .secondLine {
+      display: block;
     }
   }
 
@@ -71,8 +75,9 @@
   .social-icons {
     position: absolute;
     top: 80%;
-    left: 42%;
+    left: 45%;
     color: black;
+    font-size: 2.5rem;
     a {
       text-decoration: none !important;
       padding: 0.4rem;

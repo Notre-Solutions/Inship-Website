@@ -41,8 +41,6 @@ const Product = () => {
       }
     }
   `)
-  console.log("hi")
-  console.log(data)
 
   return (
     <div>
@@ -61,9 +59,7 @@ const Product = () => {
               velit nesciunt assumenda.
             </span>
           </h1>
-          <a href="" className="btn">
-            Ask for A Demo
-          </a>
+
           <a href="" className="btn">
             Watch a video
           </a>
@@ -71,7 +67,7 @@ const Product = () => {
       </header>
       <div className="product-main container">
         <div className="product-main-section-a">
-          <div className="product-main-section-a-title">About</div>
+          <div className="product-main-section-a-title">Process Flow</div>
           <TimeLine></TimeLine>
         </div>
         <div className="product-main-section-b">
@@ -185,18 +181,44 @@ const Product = () => {
           </div>
         </div>
         <div className="product-main-section-d">
-          <div className="product-main-section-d-title">Intergrations</div>
+          <div className="product-main-section-d-title">Integrations</div>
           <div className="cards">
-            {data.images.edges.map(edge => {
-              return (
-                <div className="card">
-                  <Img
-                    fluid={edge.node.childImageSharp.fluid}
-                    className="img"
-                  />
-                </div>
-              )
-            })}
+            <div className="card">
+              <i className="icon fa fa-file fa-2x"></i>
+              <div className="text-box">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusantium, eligendi quia, mollitia nobis eaque voluptates
+                fugiat molestiae perspiciatis cupiditate expedita temporibus
+                neque modi velit nesciunt assumenda.
+              </div>
+            </div>
+            <div className="card">
+              <i className="icon fa fa-calculator fa-2x"></i>
+              <div className="text-box">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusantium, eligendi quia, mollitia nobis eaque voluptates
+                fugiat molestiae perspiciatis cupiditate expedita temporibus
+                neque modi velit nesciunt assumenda.
+              </div>
+            </div>
+            <div className="card">
+              <i className="icon fa fa-check-circle fa-2x"></i>
+              <div className="text-box">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusantium, eligendi quia, mollitia nobis eaque voluptates
+                fugiat molestiae perspiciatis cupiditate expedita temporibus
+                neque modi velit nesciunt assumenda.
+              </div>
+            </div>
+            <div className="card">
+              <i className="icon fa fa-check-circle fa-2x"></i>
+              <div className="text-box">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusantium, eligendi quia, mollitia nobis eaque voluptates
+                fugiat molestiae perspiciatis cupiditate expedita temporibus
+                neque modi velit nesciunt assumenda.
+              </div>
+            </div>
           </div>
         </div>
       </div>
