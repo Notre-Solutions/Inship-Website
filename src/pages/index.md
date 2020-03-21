@@ -9,13 +9,18 @@ landingPage:
     body: >-
       InShip specializes in offering Accounts Payable plug in solutions for
       accounting and e.r.p. software, we can add a new functional module and
-      revenue stream in approximately eight weeks. Our commercial offering
-      allows total freedom in your customer pricing model and our offering gives
-      you the possibility of retaining up to 80% of the revenue while still
-      going to the market with a competitively priced product. We have 3
-      different versions, from a simple A.I. data extraction hidden module to
-      add to an accounts package to a full Accounts Payable Solution that can be
-      tailored to meet the needs of most medium and large business.
+      revenue stream in approximately eight weeks. 
+
+
+      Our commercial offering allows total freedom in your customer pricing
+      model and our offering gives you the possibility of retaining up to 80% of
+      the revenue while still going to the market with a competitively priced
+      product. 
+
+
+      We have 3 different versions, from a simple A.I. data extraction hidden
+      module to add to an accounts package to a full Accounts Payable Solution
+      that can be tailored to meet the needs of most medium and large business.
   sectionB:
     title: The Problem
     show: true
@@ -31,8 +36,10 @@ landingPage:
       processing costs significantly 
 
 
-      • Flexible access to your suppliers’ invoices from anywhere • Easy control
-      of issues with a system that watches for price increases 
+      • Flexible access to your suppliers’ invoices from anywhere 
+
+
+      • Easy control of issues with a system that watches for price increases 
 
 
       • No more lost invoices, accounting errors, accounts put on hold, lost VAT
@@ -42,8 +49,10 @@ landingPage:
       your business. Reduce processing costs significantly 
 
 
-      • Flexible access to your suppliers’ invoices from anywhere • Easy control
-      of issues with a system that watches for price increases 
+      • Flexible access to your suppliers’ invoices from anywhere 
+
+
+      • Easy control of issues with a system that watches for price increases 
 
 
       • No more lost invoices, accounting errors, accounts put on hold, lost VAT
