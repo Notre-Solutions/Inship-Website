@@ -1,0 +1,221 @@
+@import './codyhouse-framework/assets/css/base/accessibility.scss';
+@import './codyhouse-framework/assets/css/base/breakpoints.scss';
+
+.pricing-page {
+  .pricing-table {
+    margin: 4rem 4rem 0 4rem;
+    
+
+    
+  }
+  .header {
+    height: 120vh;
+    z-index: -1;
+    background-image: linear-gradient(
+        to right bottom,
+        $inship-color-background,
+        $inship-color-background-darker
+      ),
+      url(../img/docks.jpg);
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+    position: relative;
+
+    &-text-box {
+      position: absolute;
+      text-align: center;
+      top: 35%;
+      left: 55%;
+      width: 35%;
+    }
+
+    .heading {
+      color: white;
+    }
+    .bold {
+      font-weight: 700;
+    }
+    .main-header {
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 5rem;
+      display: block;
+
+      animation-name: moveInFromTop;
+      animation-duration: 3s;
+    }
+
+    .sub-header {
+      // letter-spacing: 0.2rem;
+      display: block;
+      text-align: center;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+      font-weight: 100;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      border-radius: 1rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $inship-color;
+      padding: 1rem 3rem;
+      background-color: white;
+      position: relative;
+      display: inline-block;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .section-c {
+    text-align: center;
+    display: grid;
+
+    &-heading {
+      font-size: 5rem;
+      color: white;
+
+      animation-name: moveInFromRight;
+      animation-duration: 3s;
+    }
+
+    .cards {
+      padding: 0;
+      z-index: 1;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      border-radius: 1rem;
+      margin: 2rem;
+      width: 35rem;
+      padding: 2rem;
+      
+      &-title {
+        font-size: 3rem;
+      }
+
+      .img {
+        border-radius: 1rem;
+        border: 0.1rem solid white;
+        margin-top: 1rem;
+        object-fit: cover;
+        width: 65%;
+        margin-left: 17.5%;
+      }
+
+      .text-box {
+        font-size: 1.7rem;
+        li{
+          list-style: none;
+        }
+        
+        padding: 2rem;
+      }
+
+      .t2p {
+        display: block;
+      }
+
+      &-color-1 {
+        background-color: $APC-bg;
+        h3 {
+          color: $APC-light;
+        }
+
+        .text-box {
+          color: $APC-dark;
+        }
+
+        .btn {
+          @include btn($APC-bg, $APC-dark, "light");
+          @include transition-ease;
+        }
+
+        .btn:hover {
+          border: 0.1rem solid white;
+          color: $APC-dark;
+          background-color: $APC-bg;
+        }
+
+        .btn:active {
+          @include click-affect("light");
+        }
+      }
+
+      &-color-2 {
+        background-color: $CAPS-bg;
+
+        h3 {
+          color: $CAPS-dark;
+        }
+
+        .text-box {
+          color: $CAPS-light;
+        }
+        .btn {
+          @include btn($CAPS-bg, $CAPS-light, "light");
+          @include transition-ease;
+        }
+
+        .btn:hover {
+          border: 0.1rem solid white;
+          color: $CAPS-light;
+          background-color: $CAPS-bg;
+        }
+
+        .btn:active {
+          @include click-affect("light");
+        }
+      }
+
+      &-color-3 {
+        background-color: $T2P-bg;
+
+        h3 {
+          color: $T2P-color;
+        }
+
+        .text-box {
+          color: $T2P-color;
+        }
+
+        .btn {
+          @include btn($T2P-bg, $T2P-color, "light");
+          @include transition-ease;
+        }
+
+        .btn:hover {
+          border: 0.1rem solid white;
+          color: $T2P-color;
+          background-color: $T2P-bg;
+        }
+
+        .btn:active {
+          @include click-affect("light");
+        }
+      }
+      @include transition-ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  }
+}

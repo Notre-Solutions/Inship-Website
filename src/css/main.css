@@ -23,6 +23,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.isFeature {
+  color: #46bbb5;
+}
+
+.notFeature {
+  color: #333;
+}
+
+li {
+  text-decoration: none;
+}
+
 @-webkit-keyframes moveInFromTop {
   0% {
     opacity: 0;
@@ -537,6 +549,15 @@ html {
 @media screen and (max-width: 550px) {
   body {
     padding: 0;
+  }
+  .pricing-page .section-c .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cards {
     -ms-grid-columns: 1fr !important;
@@ -1082,4 +1103,284 @@ html {
           transform: translateY(0.2rem);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+.pricing-page .pricing-table {
+  margin: 4rem 4rem 0 4rem;
+}
+
+.pricing-page .header {
+  height: 120vh;
+  z-index: -1;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/docks.jpg);
+  background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/docks.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+}
+
+.pricing-page .header-text-box {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 55%;
+  width: 35%;
+}
+
+.pricing-page .header .heading {
+  color: white;
+}
+
+.pricing-page .header .bold {
+  font-weight: 700;
+}
+
+.pricing-page .header .main-header {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 5rem;
+  display: block;
+  -webkit-animation-name: moveInFromTop;
+          animation-name: moveInFromTop;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.pricing-page .header .sub-header {
+  display: block;
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  font-weight: 100;
+}
+
+.pricing-page .header .btn {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #46bbb5;
+  padding: 1rem 3rem;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.pricing-page .header .btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.pricing-page .header .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.pricing-page .section-c {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.pricing-page .section-c-heading {
+  font-size: 5rem;
+  color: white;
+  -webkit-animation-name: moveInFromRight;
+          animation-name: moveInFromRight;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.pricing-page .section-c .cards {
+  padding: 0;
+  z-index: 1;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing-page .section-c .card {
+  border-radius: 1rem;
+  margin: 2rem;
+  width: 35rem;
+  padding: 2rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing-page .section-c .card-title {
+  font-size: 3rem;
+}
+
+.pricing-page .section-c .card .img {
+  border-radius: 1rem;
+  border: 0.1rem solid white;
+  margin-top: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 65%;
+  margin-left: 17.5%;
+}
+
+.pricing-page .section-c .card .text-box {
+  font-size: 1.7rem;
+  padding: 2rem;
+}
+
+.pricing-page .section-c .card .text-box li {
+  list-style: none;
+}
+
+.pricing-page .section-c .card .t2p {
+  display: block;
+}
+
+.pricing-page .section-c .card-color-1 {
+  background-color: #14182f;
+}
+
+.pricing-page .section-c .card-color-1 h3 {
+  color: #ded4a2;
+}
+
+.pricing-page .section-c .card-color-1 .text-box {
+  color: #a67440;
+}
+
+.pricing-page .section-c .card-color-1 .btn {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #14182f;
+  background-color: #a67440;
+  padding: 1rem 3rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing-page .section-c .card-color-1 .btn:hover {
+  border: 0.1rem solid white;
+  color: #a67440;
+  background-color: #14182f;
+}
+
+.pricing-page .section-c .card-color-1 .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(225, 225, 225, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(225, 225, 225, 0.2);
+}
+
+.pricing-page .section-c .card-color-2 {
+  background-color: #222222;
+}
+
+.pricing-page .section-c .card-color-2 h3 {
+  color: #576aa6;
+}
+
+.pricing-page .section-c .card-color-2 .text-box {
+  color: #5fb6d6;
+}
+
+.pricing-page .section-c .card-color-2 .btn {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #222222;
+  background-color: #5fb6d6;
+  padding: 1rem 3rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing-page .section-c .card-color-2 .btn:hover {
+  border: 0.1rem solid white;
+  color: #5fb6d6;
+  background-color: #222222;
+}
+
+.pricing-page .section-c .card-color-2 .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(225, 225, 225, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(225, 225, 225, 0.2);
+}
+
+.pricing-page .section-c .card-color-3 {
+  background-color: #252941;
+}
+
+.pricing-page .section-c .card-color-3 h3 {
+  color: white;
+}
+
+.pricing-page .section-c .card-color-3 .text-box {
+  color: white;
+}
+
+.pricing-page .section-c .card-color-3 .btn {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #252941;
+  background-color: white;
+  padding: 1rem 3rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing-page .section-c .card-color-3 .btn:hover {
+  border: 0.1rem solid white;
+  color: white;
+  background-color: #252941;
+}
+
+.pricing-page .section-c .card-color-3 .btn:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(225, 225, 225, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(225, 225, 225, 0.2);
+}
+
+.pricing-page .section-c .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }

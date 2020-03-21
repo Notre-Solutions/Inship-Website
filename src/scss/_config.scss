@@ -39,6 +39,17 @@ html {
   scroll-behavior: smooth;
 }
 
+.isFeature{
+    color:$inship-color;
+}
+.notFeature{
+    color:#333;
+}
+
+li{
+  text-decoration: none;
+}
+
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;
 }

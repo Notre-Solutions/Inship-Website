@@ -1,11 +1,10 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 import "../css/main.css"
 import Nav from "../components/nav"
 import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import ProductCard from "../components/productCard"
+import { graphql } from 'gatsby'
 
 function showSectionA(show, title, body, id, className) {
   if (show) {
@@ -205,53 +204,3 @@ export const pageQuery = graphql`
   }
 `
 
-// export const pageQuery = graphql`
-//   query LandingPageQuery($id: String!) {
-//     allMarkdownRemark(
-//       filter: { frontmatter: { templateKey: { eq: "product" } } }
-//     ) {
-//       edges {
-//         node {
-//           frontmatter {
-//             title
-//             description
-//             cardStyle
-//             featuredpost
-//             featuredimage {
-//               childImageSharp {
-//                 fixed(width: 125, height: 125) {
-//                   ...GatsbyImageSharpFixed
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//     markdownRemark(id: { eq: $id }) {
-//       frontmatter {
-//         landingPage {
-//           title
-//           subtitle
-//           sectionA {
-//             body
-//             title
-//             show
-//           }
-//           sectionB {
-//             title
-//             show
-//             body
-//           }
-//           sectionC {
-//             show
-//           }
-//           sectionD {
-//             title
-//             show
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
