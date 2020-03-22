@@ -598,10 +598,10 @@ li {
 }
 
 .product-header .header-text-box {
-  color: white;
+  color: #46bbb5;
   position: absolute;
-  left: 18%;
-  top: 30%;
+  right: 18%;
+  top: 15%;
 }
 
 .product-header .header-text-box .heading .main-header {
@@ -628,12 +628,13 @@ li {
   font-size: 1.5rem;
   text-decoration: none;
   color: #46bbb5;
-  background-color: white;
+  background-color: rgba(82, 218, 211, 0.7);
   padding: 1rem 3rem;
   -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
           box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
   display: inline-block;
   margin: 1rem;
+  color: white;
 }
 
 .product-header .header-text-box .btn:hover {
@@ -646,6 +647,16 @@ li {
           transform: translateY(0.2rem);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.product-main .line {
+  background-color: #46bbb5;
+  text-align: center;
+  height: 0.23rem;
+  left: 10%;
+  width: 80%;
+  position: absolute;
+  margin-top: 6rem;
 }
 
 .product-main-section-a-title {
@@ -661,7 +672,7 @@ li {
 
 .product-main-section-b-title {
   margin-bottom: 4rem;
-  margin-top: 4rem;
+  margin-top: 10rem;
   font-size: 4rem;
   color: #46bbb5;
 }
@@ -688,12 +699,16 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.product-main-section-b .cards .card div {
+  display: block;
 }
 
 .product-main-section-b .cards .card .icon {
@@ -842,7 +857,7 @@ li {
   }
   .product-main-section-b .card {
     width: 90%;
-    margin-left: 5%;
+    margin-left: 10%;
   }
   .product-main-section-d .card {
     width: 90%;
