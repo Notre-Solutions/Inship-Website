@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import classnames from "classnames"
 import "../css/main.css"
-import { slide as Menu } from "react-burger-menu"
 
 export default class Nav extends React.Component {
   constructor(props) {
