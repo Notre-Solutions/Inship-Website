@@ -4,8 +4,10 @@ import Nav from "../components/nav"
 import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import TimeLine from "../components/timeline"
+
+import Player from "../components/player"
+import Modal from "../components/modal"
 
 function showSectionA(show, title, body, id, className) {
   if (show) {
@@ -60,7 +62,7 @@ const Product = () => {
             </span>
           </h1>
 
-          <a href="" className="btn">
+          <a href="#video" className="btn">
             Watch a video
           </a>
         </div>
@@ -220,6 +222,10 @@ const Product = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div id="video" className="product-main-section-d">
+          <div className="product-main-section-d-title">How it works</div>
+          <Player url="https://www.youtube.com/watch?v=Itm3x-4rgL0"></Player>
         </div>
       </div>
       <Footer></Footer>
