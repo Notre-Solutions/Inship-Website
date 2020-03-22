@@ -113,7 +113,7 @@ const Table = ({ productFeatures }) => {
   return (
     <section className="pricing-table">
       <DataTable
-        title={"Features List"}
+        title={"Full Features List"}
         striped={true}
         columns={columns}
         data={data}

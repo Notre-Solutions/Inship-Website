@@ -737,6 +737,10 @@ li {
         -ms-flex-align: center;
             align-items: center;
   }
+  .pricing-page .section-c .card {
+    margin: 2rem 0rem 2rem 0rem !important;
+    width: 20rem;
+  }
   .cards {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
@@ -2002,13 +2006,13 @@ li {
 }
 
 .pricing-page .header {
-  height: 95vh;
+  height: 100vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/docks.jpg);
   background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/docks.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
   position: relative;
 }
 
@@ -2104,7 +2108,7 @@ li {
 
 .pricing-page .section-c .card {
   border-radius: 1rem;
-  margin: 2rem;
+  margin: 0rem 2rem 0rem 2rem;
   width: 35rem;
   padding: 2rem;
   -webkit-transition: all 0.5s ease-in-out;

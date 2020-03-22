@@ -3,7 +3,7 @@
     margin: 4rem 4rem 0 4rem;
   }
   .header {
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(
         to right bottom,
         $inship-color-background,
@@ -13,8 +13,8 @@
     background-size: cover;
     background-position: top;
 
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
 
     position: relative;
 
@@ -94,7 +94,7 @@
 
     .card {
       border-radius: 1rem;
-      margin: 2rem;
+      margin: 0rem 2rem 0rem 2rem;
       width: 35rem;
       padding: 2rem;
 
