@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 timeline:
   - title: Easy to use
     description: >-
@@ -47,7 +45,6 @@ timeline:
       is up to 9 times faster and removed between 80% and 90% of the cost.
       Reduce processing costs significantly
 cardStyle: card card-color-1
->>>>>>> ff76e52... Product changes
 templateKey: product
 title: Accounts Payable Combined
 alias: APC
