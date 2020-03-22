@@ -40,13 +40,34 @@
     }
   }
 
-  .product-main-section-c {
-    .cards {
-      text-align: center;
-      margin-left: 5%;
+  .product-main {
+    &-section-c {
+      .cards {
+        text-align: center;
+        margin-left: 5%;
+      }
+    }
+    &-section-b {
+      .card {
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+    &-section-d {
+      .card {
+        width: 90%;
+        margin-left: 5%;
+      }
     }
   }
   .main-page {
+    .section-c {
+      .card {
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+
     .section-d {
       .prosses-img {
         margin-top: 3%;
