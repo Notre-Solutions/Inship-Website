@@ -1,8 +1,10 @@
 ---
 templateKey: landing-page
 landingPage:
-  title: Inship Aps
-  subtitle: Providing the Technology Behind Automated Accounts Payable Processes
+  subtitle: 
+    line1: Providing the Technology 
+    line2: Behind Automated Accounts 
+    line3: Payable Processes
   sectionA:
     title: What We Do
     show: true
