@@ -188,7 +188,6 @@ const Landing = ({ data }) => {
           </p>
         </div>
       </div>
-
       <footer>
         <Footer></Footer>
       </footer>

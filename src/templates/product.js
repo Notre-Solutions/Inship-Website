@@ -2,13 +2,16 @@ import React from "react"
 import "../css/main.css"
 import Nav from "../components/nav"
 import Footer from "../components/footer"
+import Markdown from "../components/markdown"
+import { useStaticQuery, graphql } from "gatsby"
 import TimeLine from "../components/timeline"
+import Player from "../components/player"
 
 function featureCard(feature) {
   return (
     <div className="card">
       <i className="icon fa fa-check-circle fa-2x"></i>
-      <div >
+      <div>
         <h1>{feature.title}</h1>
         <div className="text-box">{feature.description}</div>
       </div>
@@ -34,7 +37,7 @@ const Product = ({ data }) => {
             <span className="sub-header">{description}</span>
           </h1>
 
-          <a href="" className="btn">
+          <a href="#video" className="btn">
             Watch a video
           </a>
         </div>
@@ -122,7 +125,9 @@ const Product = ({ data }) => {
           </div>
         </div>
         <div className="product-main-section-d">
-          <div className="product-main-section-d-title">Integration Options</div>
+          <div className="product-main-section-d-title">
+            Integration Options
+          </div>
           <div className="cards">
             <div className="card">
               <i className="icon fa fa-file fa-2x"></i>
@@ -161,6 +166,10 @@ const Product = ({ data }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div id="video" className="product-main-section-d">
+          <div className="product-main-section-d-title">How it works</div>
+          <Player url="https://www.youtube.com/watch?v=Itm3x-4rgL0"></Player>
         </div>
       </div>
       <Footer></Footer>

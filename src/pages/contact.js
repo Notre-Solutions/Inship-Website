@@ -1,8 +1,9 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
 import "../css/main.css"
 import Nav from "../components/nav"
 import Footer from "../components/footer"
+import ReactModal from "../components/modal"
+import Form from "../components/form"
 
 const Contact = () => {
   return (
@@ -31,9 +32,14 @@ const Contact = () => {
                 fugiat molestiae perspiciatis cupiditate expedita temporibus
                 neque modi velit nesciunt assumenda.{" "}
               </p>
-              <a href="" className="btn">
+              <ReactModal
+                content={<Form formTitle="Ask For A Demo"></Form>}
+                buttonStyle="btn"
+                buttonName="Ask for a Demo"
+              ></ReactModal>
+              {/* <a href="" className="btn">
                 Ask for a Demo
-              </a>
+              </a> */}
             </div>
             <div className="card">
               {" "}
@@ -46,9 +52,11 @@ const Contact = () => {
                 fugiat molestiae perspiciatis cupiditate expedita temporibus
                 neque modi velit nesciunt assumenda.{" "}
               </p>
-              <a href="" className="btn">
-                Contact Support
-              </a>
+              <ReactModal
+                content={<Form formTitle="Contact Support"></Form>}
+                buttonStyle="btn"
+                buttonName="Contact Support"
+              ></ReactModal>
             </div>
             <div className="card">
               {" "}
@@ -61,9 +69,11 @@ const Contact = () => {
                 fugiat molestiae perspiciatis cupiditate expedita temporibus
                 neque modi velit nesciunt assumenda.{" "}
               </p>
-              <a href="" className="btn">
-                Contact Sales
-              </a>
+              <ReactModal
+                content={<Form formTitle="Contact Sales"></Form>}
+                buttonStyle="btn"
+                buttonName="Contact Sales"
+              ></ReactModal>
             </div>
           </div>
         </section>

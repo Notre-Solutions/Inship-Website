@@ -2,9 +2,9 @@
   // display: grid;
   display: block;
   bottom: 0;
-  margin-top: 2rem;
+  margin-top: 3rem;
   background-color: gray;
-  height: 30rem;
+  height: 21rem;
   position: relative;
   opacity: 0.8;
   // border-radius: 2rem;
@@ -12,7 +12,7 @@
   .inship-logo {
     color: white;
     position: absolute;
-    top: 3rem;
+    top: 1rem;
     left: 10rem;
     font-size: 3.5rem;
     .main {
@@ -62,20 +62,20 @@
     width: 90%;
     position: absolute;
     left: 5%;
-    top: 70%;
+    top: 90%;
   }
 
   .copy-right {
     color: white;
     position: absolute;
-    top: 85%;
-    left: 5%;
+    top: 17rem;
+    left: 10rem;
   }
 
   .social-icons {
     position: absolute;
-    top: 80%;
-    left: 45%;
+    top: 13rem;
+    left: 10rem;
     color: black;
     font-size: 2.5rem;
     a {
