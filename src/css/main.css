@@ -117,7 +117,6 @@ html {
 
 .header {
   height: 95vh;
-  z-index: -1;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(128, 128, 128, 0.541)), to(rgba(128, 128, 128, 0.541))), url(../img/large.jpg);
   background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.541), rgba(128, 128, 128, 0.541)), url(../img/large.jpg);
   background-size: cover;
@@ -424,7 +423,7 @@ html {
 .product-main-section-a-title {
   margin-bottom: 4rem;
   color: #46bbb5;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center; }
 
 .product-main-section-b {
@@ -432,7 +431,7 @@ html {
   .product-main-section-b-title {
     margin-bottom: 4rem;
     margin-top: 4rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #46bbb5; }
   .product-main-section-b .cards {
     margin-top: 3rem;
@@ -465,18 +464,19 @@ html {
         color: green; }
       .product-main-section-b .cards .card .text-box {
         padding: 0 3rem 0 2rem;
-        font-size: 1.4rem; }
+        font-size: 1.6rem; }
 
 .product-main-section-c-title {
   display: block;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #46bbb5;
-  margin: 6rem 0 6rem 0; }
+  margin: 6rem 0 6rem 0;
+  padding: 0 4rem 0 4rem; }
   .product-main-section-c-title-sub {
     display: block;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #46bbb5; }
 
 .product-main-section-c .cards {
@@ -492,14 +492,14 @@ html {
     display: grid;
     grid-gap: 1rem; }
     .product-main-section-c .cards .card .text-box {
-      font-size: 1.2rem; }
+      font-size: 1.5rem; }
 
 .product-main-section-d {
   text-align: center; }
   .product-main-section-d-title {
     margin-bottom: 4rem;
     margin-top: 4rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #46bbb5; }
   .product-main-section-d .cards {
     margin-top: 3rem;
@@ -524,8 +524,11 @@ html {
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly; }
       .product-main-section-d .cards .card .icon {
-        font-size: 3rem; }
+        font-size: 5rem;
+        color: white;
+        margin-bottom: 2rem; }
       .product-main-section-d .cards .card .text-box {
+        color: white;
         padding: 0 3rem 0 2rem;
         font-size: 1.4rem; }
 
@@ -559,6 +562,8 @@ html {
 @media screen and (min-width: 400px) {
   html {
     font-size: 6px; }
+  .time-line {
+    font-size: 1.5rem !important; }
   .nav {
     visibility: hidden;
     position: fixed !important;
@@ -566,9 +571,17 @@ html {
     left: 0;
     opacity: 0.99; }
   .navigation {
-    visibility: visible !important; } }
+    visibility: visible !important; }
+  .product-main-section-d {
+    font-size: 2rem; }
+    .product-main-section-d .card .text-box {
+      font-size: 2rem !important; } }
 
 @media screen and (min-width: 768px) {
+  .product-main-section-d {
+    font-size: 2rem; }
+    .product-main-section-d .card .text-box {
+      font-size: 1.4rem !important; }
   .nav {
     visibility: visible; }
   .navigation {
