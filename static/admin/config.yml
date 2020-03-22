@@ -32,10 +32,10 @@ collections:
         {label: "Feature 3", name: "feature3", widget: boolean, required: true},
         {label: "Feature 4", name: "feature4", widget: boolean, required: true}
       ]}
-      - {label: "Timeline Items", name: "timeline", widget: list, fields:[{
+      - {label: "Timeline Items", name: "timeline", widget: list, fields:[
           {label: "Title", name: "title", widget: string, required: true},
           {label: "Description", name: "description", widget: string, required: true}
-        }]}
+        ]}
             
   - name: "pages"
     label: "Pages"
