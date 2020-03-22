@@ -1,10 +1,12 @@
 .main-page {
   .section-a {
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     margin: 5rem;
-    height: 60vh;
+    height: 100%;
     text-align: center;
-
+    
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 
     &-heading {
@@ -15,12 +17,15 @@
 
     .text-box {
       font-size: 2rem;
-      padding: 2rem;
+      padding: 0 5rem 2rem 5rem;
     }
 
     .btn {
       border-radius: 1rem;
       font-size: 1.2rem;
+      align-self: center;
+      width: 20%;
+      margin-bottom: 2rem;
       text-decoration: none;
       color: $inship-color;
       padding: 1rem 1rem;
@@ -42,11 +47,14 @@
 
   .section-b {
     height: 95vh;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
     background-image: linear-gradient(
         $inship-color-background-darker,
         $inship-color-background-darker
       ),
-      url(../img/calculator.jpg);
+      url(../img/messy_room.jpg);
     background-size: cover;
     background-position: top;
     color: white;
@@ -55,26 +63,32 @@
     -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
     position: relative;
 
+    ol li {
+      margin-left: 2em;
+    }
+
     &-heading {
       padding: 5rem;
       display: block;
       position: absolute;
-      top: 15%;
+      top: 5%;
       left: 5%;
       font-size: 5rem;
     }
 
     .text-box {
+      width : 50%;
       border-radius: 1rem;
       background-color: rgba(139, 139, 139, 0.76);
       padding: 5rem;
-      margin-right: 5rem;
+      margin-top: 2rem;
+
       text-align: justify;
       position: absolute;
       display: block;
       font-size: 1.5rem;
-      top: 40%;
-      left: 5%;
+      top: 20%;
+      left: 45rem;
     }
   }
 
@@ -95,6 +109,10 @@
     }
 
     .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       border-radius: 1rem;
       padding: 2rem;
       &-title {
@@ -105,9 +123,10 @@
         border-radius: 1rem;
         border: 0.1rem solid white;
         margin-top: 1rem;
+        margin-bottom: 3rem;
         object-fit: cover;
-        width: 65%;
-        margin-left: 17.5%;
+        height: 50%;
+        width: 50%;
       }
 
       .text-box {
@@ -119,10 +138,19 @@
         display: block;
       }
 
+      .btn{
+        max-width: 20rem;
+        align-self: center;
+      }
+
       &-color-1 {
         background-color: $APC-bg;
         h3 {
           color: $APC-light;
+        }
+
+        .title{
+          width: 30rem;
         }
 
         .text-box {
@@ -152,6 +180,10 @@
           color: $CAPS-dark;
         }
 
+        .title{
+          width: 30rem;
+        }
+
         .text-box {
           color: $CAPS-light;
         }
@@ -176,6 +208,10 @@
 
         h3 {
           color: $T2P-color;
+        }
+
+        .title{
+          width: 12rem;
         }
 
         .text-box {
@@ -206,20 +242,32 @@
   }
 
   .section-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 6%;
+    border-radius: 2rem;
+      border: 1rem solid white;
     &-title {
       text-align: center;
       font-size: 4rem;
       font-weight: 600;
     }
+    p{
+      margin: 1rem 2rem;
+      padding: 2rem;
+      font-size: 2rem;
+      border: 1rem solid white;
+      border-radius: 2rem;
+      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+      width: 80%;
+    }
 
     .prosses-img {
       margin-top: 3%;
       border-radius: 2rem;
-      border: 1rem solid white;
       object-fit: cover;
       width: 80%;
-      margin-left: 10%;
     }
   }
 }

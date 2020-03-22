@@ -5,18 +5,20 @@ import { Link } from "gatsby"
 
 const ProductCard = ({ title, body, cardStyle, fluidImage, alias }) => {
   return (
-    <div className={cardStyle}>
-      <Img fluid={fluidImage} className="img" />
-      <h3 className="card-title">
-        <Markdown markdown={title} />
-      </h3>
-      <div className="text-box">
-        <Markdown markdown={body} />
+    <Link to={"/products/" + alias}>
+      <div className={cardStyle}>
+        <Img fluid={fluidImage} className="img" />
+        <h3 className="card-title title">
+          <Markdown markdown={title} />
+        </h3>
+        <div className="text-box">
+          <Markdown markdown={body} />
+        </div>
+        <Link to={"/products/" + alias} className="btn">
+          Learn More
+        </Link>
       </div>
-      <Link to={"/products/" + alias} className="btn">
-        Learn More
-      </Link>
-    </div>
+    </Link>
   )
 }
 
