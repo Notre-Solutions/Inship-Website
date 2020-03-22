@@ -52,7 +52,8 @@ export default class Nav extends React.Component {
       news = "menu-nav__item",
       contact = "menu-nav__item",
       CAPS = "menu-nav__item",
-      T2P = "menu-nav__item"
+      T2P = "menu-nav__item",
+      Pricing = "menu-nav__item"
 
     switch (this.props.current) {
       case "Home":
@@ -73,6 +74,9 @@ export default class Nav extends React.Component {
       case "News":
         news = active
         break
+      case "Pricing":     
+        Pricing = active
+        break 
     }
 
     return (
@@ -121,6 +125,11 @@ export default class Nav extends React.Component {
                 </Link>
               </li>
               <li className="navigation__item">
+                <Link to="/pricing" className="navigation__link">
+                  Pricing
+                </Link>
+              </li>
+              <li className="navigation__item">
                 <Link to="/contact" className="navigation__link">
                   Contact
                 </Link>
@@ -157,6 +166,12 @@ export default class Nav extends React.Component {
               <Link to="products/T2P" className="menu-nav__link ">
                 {" "}
                 T2P{" "}
+              </Link>
+            </li>
+            <li className={Pricing}>
+              <Link to="/pricing" className="menu-nav__link ">
+                {" "}
+                Pricing{" "}
               </Link>
             </li>
             <li className={contact}>
