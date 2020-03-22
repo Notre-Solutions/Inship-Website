@@ -104,6 +104,17 @@
       }
     }
   }
+  .footer {
+    .social-icons {
+      left: 4rem !important;
+    }
+    .inship-logo {
+      left: 4rem !important;
+    }
+    .copy-right {
+      left: 4rem !important;
+    }
+  }
 }
 
 @include media-sm {

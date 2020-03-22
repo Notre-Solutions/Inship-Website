@@ -48,10 +48,9 @@ const Footer = () => {
           <div className="address-line">Dublin,Ireland</div>
           <div className="phone-number-line">+353 1 556 3499</div>
           <a href="info@inship.ie" className="email-line">
-            info@inship.ie
+            info@inshipaps.ie
           </a>
         </div>
-        <div className="line"></div>
         <div>
           <div className="social-icons">
             <a href="#!">
@@ -74,6 +73,7 @@ const Footer = () => {
             &copy; 2020 Inship Accounts Payable Solutions Ltd.
           </div>
         </div>
+        <div className="line"></div>
       </section>
     </div>
   )
