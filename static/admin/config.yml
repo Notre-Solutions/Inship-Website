@@ -22,9 +22,9 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Alias", name: "alias", widget: "string"}
+      - {label: "Video URL", name: "url", widget: 'string', required: true}
       - {label: "Featured Image", name: "featuredimage", widget: "image"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: true}
-      - {label: "Card Style", name: "cardStyle", widget: "select", multiple: false,  options: ["card card-color-1", "card card-color-2", "card card-color-3"]}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Features", name: "features", widget: object, fields: [
         {label: "Feature 1", name: "feature1", widget: string, required: true},
@@ -32,6 +32,11 @@ collections:
         {label: "Feature 3", name: "feature3", widget: boolean, required: true},
         {label: "Feature 4", name: "feature4", widget: boolean, required: true}
       ]}
+      - {label: "Timeline Items", name: "timeline", widget: list, fields:[{
+          {label: "Title", name: "title", widget: string, required: true},
+          {label: "Description", name: "description", widget: string, required: true}
+        }]}
+            
   - name: "pages"
     label: "Pages"
     files:

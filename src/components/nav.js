@@ -59,7 +59,7 @@ export default class Nav extends React.Component {
       case "Home":
         home = active
         break
-      case "Accounts Payable Combined":
+      case "APC":
         APC = active
         break
       case "CAPS":

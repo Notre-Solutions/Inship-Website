@@ -2,61 +2,25 @@ import React from "react"
 import "../css/main.css"
 import Nav from "../components/nav"
 import Footer from "../components/footer"
-import Markdown from "../components/markdown"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import TimeLine from "../components/timeline"
 
-function showSectionA(show, title, body, id, className) {
-  if (show) {
-    console.log(title)
-    return (
-      <section id={id} className={className}>
-        <h2 className="section-a-heading">{title}</h2>
-        <div className="text-box">
-          <Markdown markdown={body} />
-        </div>
-      </section>
-    )
-  }
-}
-
-const Product = () => {
-  const data = useStaticQuery(graphql`
-    query Photos {
-      images: allFile(
-        filter: { relativeDirectory: { eq: "intergated-products" } }
-      ) {
-        edges {
-          node {
-            id
-            childImageSharp {
-              fluid(maxWidth: 10000, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-            name
-          }
-        }
-      }
-    }
-  `)
-
+const Product = ({data}) => {
+  const {
+    alias,
+    description,
+    title,
+  } = data.markdownRemark.frontmatter
   return (
     <div>
-      <Nav current={"CAPS"}></Nav>
-
+      <Nav current={alias}></Nav>
       <header className="product-header">
         <div className="header-text-box">
           <h1 className="heading">
             <span className="main-header">
-              Complete Accounts Payable Solutions
+              {title}
             </span>
             <span className="sub-header">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
-              molestiae perspiciatis cupiditate expedita temporibus neque modi
-              velit nesciunt assumenda.
+              {description}
             </span>
           </h1>
 
@@ -228,3 +192,15 @@ const Product = () => {
 }
 
 export default Product
+
+export const pageQuery = graphql`
+  query ProductQuery($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        title
+        description
+        alias
+      }
+    }
+  }
+`
