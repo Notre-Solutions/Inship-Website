@@ -34,8 +34,13 @@ collections:
       ]}
       - {label: "Timeline Items", name: "timeline", widget: list, fields:[{
           {label: "Title", name: "title", widget: string, required: true},
+<<<<<<< HEAD
           {label: "Description", name: "description", widget: string, required: true}
         }]}
+=======
+          {label: "Description", name: "description", widget: "markdown", required: true}
+        ]}
+>>>>>>> ff76e52... Product changes
             
   - name: "pages"
     label: "Pages"

@@ -200,6 +200,10 @@ export const pageQuery = graphql`
         title
         description
         alias
+        timeline{
+          title
+          description
+        }
       }
     }
   }
