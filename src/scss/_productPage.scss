@@ -4,10 +4,10 @@
   position: relative;
 
   .header-text-box {
-    color: white;
+    color: $inship-color;
     position: absolute;
-    left: 18%;
-    top: 30%;
+    right: 18%;
+    top: 15%;
 
     .heading {
       .main-header {
@@ -28,8 +28,9 @@
     }
 
     .btn {
-      @include btn($inship-color, white, $shadow);
+      @include btn($inship-color, $inship-color-background, $shadow);
       margin: 1rem;
+      color: white;
     }
 
     .btn:hover {
@@ -44,6 +45,16 @@
 }
 
 .product-main {
+  .line {
+    background-color: $inship-color;
+    text-align: center;
+    height: 0.23rem;
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    margin-top: 6rem;
+    
+  }
   &-section-a {
     &-title {
       margin-bottom: 4rem;
@@ -57,7 +68,7 @@
     text-align: center;
     &-title {
       margin-bottom: 4rem;
-      margin-top: 4rem;
+      margin-top: 10rem;
       font-size: 4rem;
       color: $inship-color;
     }
@@ -72,8 +83,12 @@
       .card {
         display: flex;
         flex-direction: row;
-        align-items: start;
+        align-items: center;
         justify-content: center;
+
+        div{
+          display: block;
+        }
 
         .icon {
           font-size: 3rem;

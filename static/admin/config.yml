@@ -32,10 +32,23 @@ collections:
         {label: "Feature 3", name: "feature3", widget: boolean, required: true},
         {label: "Feature 4", name: "feature4", widget: boolean, required: true}
       ]}
+<<<<<<< HEAD
       - {label: "Timeline Items", name: "timeline", widget: list, fields:[
           {label: "Title", name: "title", widget: string, required: true},
           {label: "Description", name: "description", widget: "markdown", required: true}
         ]}
+=======
+      - {label: "Product Page", name: "productpage", widget: "object", fields: [
+          {label: "Timeline Items", name: "timeline", widget: list, fields:[
+            {label: "Title", name: "title", widget: string, required: true},
+            {label: "Description", name: "description", widget: "markdown", required: true}
+          ]},
+          {label: "Features", name: "features", widget: list, fields:[
+            {label: "Title", name: "title", widget: string, required: true},
+            {label: "Description", name: "description", widget: "markdown", required: true}
+          ]}
+      ]}
+>>>>>>> sprint-2-nash
             
   - name: "pages"
     label: "Pages"

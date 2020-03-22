@@ -4,24 +4,34 @@ import Nav from "../components/nav"
 import Footer from "../components/footer"
 import TimeLine from "../components/timeline"
 
-const Product = ({data}) => {
+function featureCard(feature) {
+  return (
+    <div className="card">
+      <i className="icon fa fa-check-circle fa-2x"></i>
+      <div >
+        <h1>{feature.title}</h1>
+        <div className="text-box">{feature.description}</div>
+      </div>
+    </div>
+  )
+}
+
+const Product = ({ data }) => {
   const {
     alias,
     description,
     title,
+    productpage,
   } = data.markdownRemark.frontmatter
+  const { timeline, features } = productpage
   return (
     <div>
       <Nav current={alias}></Nav>
       <header className="product-header">
         <div className="header-text-box">
           <h1 className="heading">
-            <span className="main-header">
-              {title}
-            </span>
-            <span className="sub-header">
-              {description}
-            </span>
+            <span className="main-header">{title}</span>
+            <span className="sub-header">{description}</span>
           </h1>
 
           <a href="" className="btn">
@@ -32,47 +42,15 @@ const Product = ({data}) => {
       <div className="product-main container">
         <div className="product-main-section-a">
           <div className="product-main-section-a-title">Process Flow</div>
-          <TimeLine></TimeLine>
+          <TimeLine timeline={timeline}></TimeLine>
         </div>
+        <div className="line"></div>
         <div className="product-main-section-b">
           <div className="product-main-section-b-title">Features</div>
           <div className="cards">
-            <div className="card">
-              <i className="icon fa fa-check-circle fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
-            </div>
-            <div className="card">
-              <i className="icon fa fa-check-circle fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
-            </div>
-            <div className="card">
-              <i className="icon fa fa-check-circle fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
-            </div>
-            <div className="card">
-              <i className="icon fa fa-check-circle fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
-            </div>
+            {features.map(feature => {
+              return featureCard(feature)
+            })}
           </div>
         </div>
         <div className="product-main-section-c">
@@ -82,7 +60,6 @@ const Product = ({data}) => {
               Custermers reported
             </div>
           </div>
-
           <div className="cards">
             <div className="card">
               <div className="c100 p70 center green">
@@ -145,7 +122,7 @@ const Product = ({data}) => {
           </div>
         </div>
         <div className="product-main-section-d">
-          <div className="product-main-section-d-title">Integrations</div>
+          <div className="product-main-section-d-title">Integration Options</div>
           <div className="cards">
             <div className="card">
               <i className="icon fa fa-file fa-2x"></i>
@@ -200,6 +177,16 @@ export const pageQuery = graphql`
         title
         description
         alias
+        productpage {
+          timeline {
+            description
+            title
+          }
+          features {
+            description
+            title
+          }
+        }
       }
     }
   }
