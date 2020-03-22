@@ -43,6 +43,9 @@
   html {
     font-size: 6px;
   }
+  .time-line {
+    font-size: 1.5rem !important;
+  }
 
   .nav {
     visibility: hidden;
@@ -54,9 +57,25 @@
   .navigation {
     visibility: visible !important;
   }
+  .product-main-section-d {
+    font-size: 2rem;
+    .card {
+      .text-box {
+        font-size: 2rem !important;
+      }
+    }
+  }
 }
 
 @include media-md {
+  .product-main-section-d {
+    font-size: 2rem;
+    .card {
+      .text-box {
+        font-size: 1.4rem !important;
+      }
+    }
+  }
   .nav {
     visibility: visible;
   }

@@ -11,13 +11,17 @@ const TimeLine = () => {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        contentStyle={{
+          background: "rgb(33, 150, 243)",
+          color: "#fff",
+          fontSize: "2.5rem",
+        }}
         contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         // icon={<WorkIcon />}
       >
         <h3 className="vertical-timeline-element-title">Easy to use</h3>
-        <p>
+        <p className="time-line">
           Accounts Payable is a very manual process, business received documents
           by post and email, they are then matched, sorted, approved by one or
           many people, entered into an accounting or e.r.p. system, then filed,
@@ -32,13 +36,16 @@ const TimeLine = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        contentStyle={{
+          fontSize: "2.5rem",
+        }}
         // icon={<WorkIcon />}
       >
         <h3 className="vertical-timeline-element-title">
           Intergrates with your account package
         </h3>
 
-        <p>
+        <p className="time-line">
           Accounts Payable is a very manual process, business received documents
           by post and email, they are then matched, sorted, approved by one or
           many people, entered into an accounting or e.r.p. system, then filed,
@@ -52,14 +59,21 @@ const TimeLine = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{
+          background: "rgb(33, 150, 243)",
+          color: "#fff",
+          fontSize: "2.5rem",
+        }}
+        contentStyle={{
+          fontSize: "2.5rem",
+        }}
         // icon={<WorkIcon />}
       >
         <h3 className="vertical-timeline-element-title">
           Statment Reconsiulation
         </h3>
 
-        <p>
+        <p className="time-line">
           {" "}
           Accounts Payable is a very manual process, business received documents
           by post and email, they are then matched, sorted, approved by one or
@@ -74,7 +88,11 @@ const TimeLine = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        contentStyle={{
+          background: "rgb(33, 150, 243)",
+          color: "#fff",
+          fontSize: "2.5rem",
+        }}
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         // icon={<WorkIcon />}
       >
@@ -82,7 +100,7 @@ const TimeLine = () => {
           Grabbing infomation off your invoices
         </h3>
 
-        <p>
+        <p className="time-line">
           {" "}
           Accounts Payable is a very manual process, business received documents
           by post and email, they are then matched, sorted, approved by one or

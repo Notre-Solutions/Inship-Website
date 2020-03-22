@@ -48,7 +48,7 @@
     &-title {
       margin-bottom: 4rem;
       color: $inship-color;
-      font-size: 3rem;
+      font-size: 4rem;
       text-align: center;
     }
   }
@@ -58,7 +58,7 @@
     &-title {
       margin-bottom: 4rem;
       margin-top: 4rem;
-      font-size: 3rem;
+      font-size: 4rem;
       color: $inship-color;
     }
 
@@ -81,7 +81,7 @@
         }
         .text-box {
           padding: 0 3rem 0 2rem;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
         }
       }
     }
@@ -91,14 +91,15 @@
     &-title {
       display: block;
       text-align: center;
-      font-size: 3rem;
+      font-size: 4rem;
       color: $inship-color;
       margin: 6rem 0 6rem 0;
+      padding: 0 4rem 0 4rem;
 
       &-sub {
         display: block;
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
         color: $inship-color;
       }
     }
@@ -115,7 +116,7 @@
         grid-gap: 1rem;
 
         .text-box {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -126,7 +127,7 @@
     &-title {
       margin-bottom: 4rem;
       margin-top: 4rem;
-      font-size: 3rem;
+      font-size: 4rem;
       color: $inship-color;
     }
 
@@ -145,9 +146,12 @@
         justify-content: space-evenly;
 
         .icon {
-          font-size: 3rem;
+          font-size: 5rem;
+          color: white;
+          margin-bottom: 2rem;
         }
         .text-box {
+          color: white;
           padding: 0 3rem 0 2rem;
           font-size: 1.4rem;
         }
