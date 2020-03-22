@@ -1,40 +1,48 @@
-import React, { Component } from "react"
-import ReactModal from "react-modal"
+import React from "react"
+import Modal from "react-responsive-modal"
 import "../css/main.css"
 
-export default class ExampleApp extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      showModal: false,
-    }
+// An object containing the styles objects to style the modal, c
+//an have properties 'overlay', 'modal', 'closeButton', 'closeIcon'.
+const styles = {
+  closeIcon: {
+    color: "red",
+    borderColor: "none",
+  },
+  modal: {
+    color: "rgba(46, 122, 117)",
+    textAlign: "center",
+    width: "100%",
+    borderRadius: "1rem",
+  },
+  overlay: {
+    background: "rgba(46, 122, 117, 0.7)",
+  },
+}
 
-    this.handleOpenModal = this.handleOpenModal.bind(this)
-    this.handleCloseModal = this.handleCloseModal.bind(this)
+export default class ReactModal extends React.Component {
+  state = {
+    open: false,
   }
 
-  handleOpenModal() {
-    this.setState({ showModal: true })
+  onOpenModal = () => {
+    this.setState({ open: true })
   }
 
-  handleCloseModal() {
-    this.setState({ showModal: false })
+  onCloseModal = () => {
+    this.setState({ open: false })
   }
 
   render() {
+    const { open } = this.state
     return (
       <div>
-        <button onClick={this.handleOpenModal}>Trigger Modal</button>
-        <ReactModal
-          isOpen={this.state.showModal}
-          contentLabel="onRequestClose Example"
-          onRequestClose={this.handleCloseModal}
-          className="Modal"
-          overlayClassName="Overlay"
-        >
-          <p>Modal text!</p>
-          <button onClick={this.handleCloseModal}>Close Modal</button>
-        </ReactModal>
+        <div onClick={this.onOpenModal} className={this.props.buttonStyle}>
+          {this.props.buttonName}
+        </div>
+        <Modal open={open} onClose={this.onCloseModal} center styles={styles}>
+          {this.props.content}
+        </Modal>
       </div>
     )
   }

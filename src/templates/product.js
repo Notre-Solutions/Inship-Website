@@ -5,9 +5,7 @@ import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import { useStaticQuery, graphql } from "gatsby"
 import TimeLine from "../components/timeline"
-
 import Player from "../components/player"
-import Modal from "../components/modal"
 
 function showSectionA(show, title, body, id, className) {
   if (show) {
