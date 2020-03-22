@@ -77,9 +77,9 @@
   .section-c {
     text-align: center;
     display: grid;
-
     &-heading {
       font-size: 5rem;
+      margin-top: 5rem;
       color: white;
       animation-name: moveInFromRight;
       animation-duration: 3s;

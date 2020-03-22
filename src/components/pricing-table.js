@@ -87,6 +87,9 @@ const Table = ({ productFeatures }) => {
       sortable: false,
       center: true,
       cell: row => isFeature(row.apc),
+      style:{
+        backgroundColor: '#ececec'
+      }
     },
     {
       name: "T2P",
@@ -101,6 +104,9 @@ const Table = ({ productFeatures }) => {
       sortable: false,
       center: true,
       cell: row => isFeature(row.product3),
+      style:{
+        backgroundColor: '#ececec'
+      }
     },
   ]
 
