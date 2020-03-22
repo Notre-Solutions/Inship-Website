@@ -1973,8 +1973,7 @@ li {
 }
 
 .pricing-page .header {
-  height: 120vh;
-  z-index: -1;
+  height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(82, 218, 211, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/docks.jpg);
   background-image: linear-gradient(to right bottom, rgba(82, 218, 211, 0.7), rgba(46, 122, 117, 0.7)), url(../img/docks.jpg);
   background-size: cover;
@@ -2064,7 +2063,6 @@ li {
 
 .pricing-page .section-c .cards {
   padding: 0;
-  z-index: 1;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;

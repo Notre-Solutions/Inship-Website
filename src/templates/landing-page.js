@@ -4,6 +4,7 @@ import Nav from "../components/nav"
 import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import ProductCard from "../components/productCard"
+import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
 function showSectionA(show, title, body, id, className) {
