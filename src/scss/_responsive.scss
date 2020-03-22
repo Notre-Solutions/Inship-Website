@@ -58,6 +58,31 @@
       }
     }
   }
+  html {
+    font-size: 6px;
+  }
+  .time-line {
+    font-size: 1.5rem !important;
+  }
+
+  .nav {
+    visibility: hidden;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    opacity: 0.99;
+  }
+  .navigation {
+    visibility: visible !important;
+  }
+  .product-main-section-d {
+    font-size: 2rem;
+    .card {
+      .text-box {
+        font-size: 2rem !important;
+      }
+    }
+  }
 }
 
 @include media-sm {

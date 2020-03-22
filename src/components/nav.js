@@ -74,13 +74,17 @@ export default class Nav extends React.Component {
       case "News":
         news = active
         break
-      case "Pricing":     
+      case "Pricing":
         Pricing = active
-        break 
+        break
     }
 
     return (
       <div>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1"
+        />
         <div className="navigation">
           <div className="navigation__button" onClick={this.toggleClass}>
             <span
