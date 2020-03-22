@@ -28,18 +28,26 @@ landingPage:
       Accounts Payable is a very manual and expensive process.
 
 
+
+
       The normal manual process includes up to ten steps and costs around €4.50
       (based on a pwc report).  However if a business automates this process
       they can remove 80-90% of that cost.
+
+
 
 
       An automated process puts structure on an unstructured process while
       increasing efficiency, fool-proof, streamlined & controlled. 
 
 
+
+
       Removes the need for a business to handle, distribute, process, file &
       store paper invoices but still giving the business the flexibility to
       handle the documents online as their business requires. 
+
+
 
 
       **InShip APS provides a number of different solutions.** 
