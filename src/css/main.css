@@ -294,6 +294,7 @@ li {
 
 .main-page .section-b {
   height: 95vh;
+  margin: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,9 +328,8 @@ li {
   width: 50%;
   border-radius: 1rem;
   background-color: rgba(139, 139, 139, 0.76);
-  padding: 2rem;
+  padding: 5rem;
   margin-top: 2rem;
-  margin-right: 5rem;
   text-align: justify;
   position: absolute;
   display: block;
@@ -852,7 +852,7 @@ li {
     font-size: 3rem;
   }
   .main-page .section-b {
-    height: 180vh;
+    height: 215vh;
   }
   .main-page .section-b-heading {
     padding: 2rem;
