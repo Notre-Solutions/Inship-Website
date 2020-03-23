@@ -26,6 +26,7 @@ const Footer = () => {
   return (
     <div>
       <section className="footer">
+        <div className="line top"></div>
         <div className="inship-logo">
           <div className="main">
             <span className="bold">IN</span>SHIP
@@ -46,8 +47,13 @@ const Footer = () => {
           <div className="address-line">7 Grangegorman Lower</div>
           <div className="address-line">Arran Quay</div>
           <div className="address-line">Dublin,Ireland</div>
-          <div className="phone-number-line">+353 1 556 3499</div>
-          <a href="info@inship.ie" className="email-line">
+          <a href="tel:+353 1 556 3499" className="phone-number-line">
+            +353 1 556 3499
+          </a>
+          <a
+            href="mailto:info@inship.ie?subject=From InShip APS Website"
+            className="email-line"
+          >
             info@inshipaps.ie
           </a>
         </div>

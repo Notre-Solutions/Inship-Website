@@ -629,6 +629,8 @@ li {
 @media screen and (max-width: 550px) {
   body {
     padding: 0; }
+  .contact-page .section-a .cards {
+    margin-left: 10%; }
   .pricing-page .header {
     height: auto !important;
     clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%) !important;
@@ -664,13 +666,13 @@ li {
         padding: 0 6rem 0 6rem !important; }
   .product-main-section-c .cards {
     text-align: center;
-    margin-left: 5%; }
+    margin-left: 10%; }
   .product-main-section-b .card {
     width: 90%;
     margin-left: 10%; }
   .product-main-section-d .card {
     width: 90%;
-    margin-left: 5%; }
+    margin-left: 12.5%; }
   .main-page .section-a .text-box {
     font-size: 3rem; }
   .main-page .section-b {
@@ -687,7 +689,7 @@ li {
       top: 10%; }
   .main-page .section-c .card {
     width: 90%;
-    margin-left: 5%; }
+    margin-left: 2.5%; }
   .main-page .section-d {
     margin: 5rem; }
   html {
@@ -908,7 +910,8 @@ li {
     right: 5%;
     font-size: 1.2rem; }
     .footer .address .phone-number-line {
-      color: #46bbb5; }
+      color: #46bbb5;
+      display: block; }
     .footer .address .email-line {
       color: #46bbb5; }
     .footer .address .email-line:hover {
@@ -1832,3 +1835,7 @@ li {
             transform: translateY(0.2rem);
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.process-img {
+  display: -ms-grid;
+  display: grid; }
