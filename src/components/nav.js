@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import classnames from "classnames"
 import "../css/main.css"
+import ReactModal from "../components/modal"
+import Form from "../components/form"
 
 export default class Nav extends React.Component {
   constructor(props) {
@@ -135,13 +137,27 @@ export default class Nav extends React.Component {
             })}
           >
             {pages.map(page => {
-              return (
-                <li className={page.className}>
-                  <Link to={page.link} className="menu-nav__link">
-                    {page.name}
-                  </Link>
-                </li>
-              )
+              if (page.name === "Pricing") {
+                return (
+                  <li className={page.className}>
+                    <ReactModal
+                      content={
+                        <Form formTitle="Contact Team for Pricing"></Form>
+                      }
+                      buttonStyle="menu-nav__link nav-pricing"
+                      buttonName="Pricing"
+                    ></ReactModal>
+                  </li>
+                )
+              } else {
+                return (
+                  <li className={page.className}>
+                    <Link to={page.link} className="menu-nav__link">
+                      {page.name}
+                    </Link>
+                  </li>
+                )
+              }
             })}
           </ul>
         </nav>

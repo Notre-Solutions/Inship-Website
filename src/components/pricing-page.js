@@ -1,11 +1,11 @@
 import React from "react"
-import Nav from "../components/nav"
-import Footer from "../components/footer"
-import Markdown from "../components/markdown"
+import Nav from "./nav"
+import Footer from "./footer"
+import Markdown from "./markdown"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import PricingTable from "../components/pricing-table"
+import Layout from "./layout"
+import PricingTable from "./pricing-table"
 
 const Pricing = ({ data }) => {
   const edges = data.allMarkdownRemark.edges
