@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-free/css/all.css"
 
 const Form = ({ formTitle }) => {
   return (
-    <div>
+    <>
       <section className="form">
         <h1 className="title">{formTitle}</h1>
         <form className="cf container">
@@ -36,7 +36,7 @@ const Form = ({ formTitle }) => {
           />
         </form>
       </section>
-    </div>
+    </>
   )
 }
 

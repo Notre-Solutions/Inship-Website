@@ -37,7 +37,6 @@ function getTimelineElement(item, style) {
       contentStyle={contentStyle}
       contentArrowStyle={arrowStyle}
       iconStyle={contentStyle}
-      // icon={<WorkIcon />}
     >
       <h3 className="vertical-timeline-element-title">{item.title}</h3>
       <Markdown markdown={item.description} />

@@ -23,7 +23,7 @@ features:
   feature2: true
   feature3: true
   feature4: true
-url: dummy
+url: https://www.youtube.com/watch?v=1el1FR1d1R4
 productpage:
   features:
     - title: Easy to use
@@ -96,4 +96,30 @@ productpage:
         process will reduce a 8-10 stage manual process to an automatic that
         is up to 9 times faster and removed between 80% and 90% of the cost.
         Reduce processing costs significantly
+  custermerReports:
+    - percentage: 100
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+    - percentage: 100
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+    - percentage: 89
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+    - percentage: 34
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+  integrations:
+    - icon: file
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+    - icon: file
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+    - icon: check-circle
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+    - icon: check-circle
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
 ---

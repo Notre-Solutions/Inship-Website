@@ -48,7 +48,6 @@
       border: none;
       border-bottom: 0.1rem solid #ccc;
       &:focus {
-        // background: transparent;
         outline: 0;
       }
       &:valid + label::before {

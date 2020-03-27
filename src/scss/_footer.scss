@@ -1,5 +1,9 @@
+// Footer var's
+$margin-left-footer: 10rem;
+
+// Footer General
 .footer {
-  // display: grid;
+  color: white;
   display: block;
   bottom: 0;
   margin-top: 3rem;
@@ -7,76 +11,65 @@
   height: 21rem;
   position: relative;
   opacity: 0.8;
-  // border-radius: 2rem;
 
   .inship-logo {
-    color: white;
     position: absolute;
     top: 1rem;
-    left: 10rem;
+    left: $margin-left-footer;
     font-size: 3.5rem;
     .main {
       font-weight: 700;
-
-      .bold {
-        font-weight: 50;
+      .thin {
+        font-weight: 100;
         font-family: sans-serif;
       }
     }
-
     .sub {
       margin-top: -1rem;
       font-size: 0.9rem;
       font-weight: 100;
     }
-
     .secondLine {
       display: block;
     }
   }
 
   .address {
-    color: white;
     margin: 2rem;
     position: absolute;
     right: 5%;
     font-size: 1.2rem;
 
     .phone-number-line {
-      color: $inship-color;
+      color: black;
       display: block;
+      @include transition-ease;
+    }
+
+    .phone-number-line:hover {
+      color: white;
     }
 
     .email-line {
-      color: $inship-color;
+      color: black;
+      @include transition-ease;
     }
 
     .email-line:hover {
-      transform: scale(1.1);
+      color: white;
     }
   }
 
-  .line {
-    background-color: white;
-    text-align: center;
-    height: 0.1rem;
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 90%;
-  }
-
   .copy-right {
-    color: white;
     position: absolute;
     top: 17rem;
-    left: 10rem;
+    left: $margin-left-footer;
   }
 
   .social-icons {
     position: absolute;
     top: 13rem;
-    left: 10rem;
+    left: $margin-left-footer;
     color: black;
     font-size: 2.5rem;
     a {
@@ -89,5 +82,9 @@
         color: $inship-color;
       }
     }
+  }
+
+  .line {
+    @include line-posistion-absolute(white, 5%, 90%, 90%, 0.1rem);
   }
 }

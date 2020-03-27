@@ -3,7 +3,7 @@ cardStyle: card card-color-3
 templateKey: product
 title: Account Payable Combined
 alias: APC
-url: dummy
+url: https://www.youtube.com/watch?v=FBxFqmtJ3YA
 featuredimage: /img/apc-logo.jpeg
 featuredpost: true
 style: color-1
@@ -78,4 +78,30 @@ productpage:
         After both the document and data have been received in your system, user
         approve invoice and edit them if required. Certain edits can be
         communicated back to APC to improve future auto processing.
+  custermerReports:
+    - percentage: 70
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+    - percentage: 93
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+    - percentage: 89
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+    - percentage: 100
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+  integrations:
+    - icon: file
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+    - icon: calculator
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+    - icon: check-circle
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+    - icon: check-circle
+      description: >-
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
 ---

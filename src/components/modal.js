@@ -36,14 +36,14 @@ export default class ReactModal extends React.Component {
   render() {
     const { open } = this.state
     return (
-      <div>
-        <div onClick={this.onOpenModal} className={this.props.buttonStyle}>
+      <>
+        <a onClick={this.onOpenModal} className={this.props.buttonStyle}>
           {this.props.buttonName}
-        </div>
+        </a>
         <Modal open={open} onClose={this.onCloseModal} center styles={styles}>
           {this.props.content}
         </Modal>
-      </div>
+      </>
     )
   }
 }

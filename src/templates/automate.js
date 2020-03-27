@@ -1,16 +1,14 @@
 import React from "react"
 import "../css/main.css"
-import Nav from "../components/nav"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 import Markdown from "../components/markdown"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import NewsCard from "../components/news-card"
 
-const Automate = () => {
-  return (
+const content = (
+  <>
     <div className="automate-page">
-      <Nav current={"Automate"} />
       <section className="header">
         <div className="header-text-box">
           <h1 className="heading">
@@ -19,6 +17,7 @@ const Automate = () => {
             </span>
           </h1>
           {/* Uncomment for animation ;)  */}
+<<<<<<< HEAD
           <div class="animation-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -29,6 +28,18 @@ const Automate = () => {
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
+=======
+          {/* <div class="animation-wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div> */}
+>>>>>>> a85a450dcb0adc967c6a86de09e3758e11b87167
         </div>
       </section>
 
@@ -52,8 +63,15 @@ const Automate = () => {
           <NewsCard />
         </div>
       </section>
-      <Footer />
     </div>
+  </>
+)
+
+const Automate = () => {
+  return (
+    <>
+      <Layout current={"Why Automate"} content={content}></Layout>
+    </>
   )
 }
 

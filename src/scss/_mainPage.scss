@@ -6,16 +6,16 @@
     margin: 5rem;
     height: 100%;
     text-align: center;
-    
+
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 
     &-heading {
       margin-top: 1.5rem;
       font-size: 5rem;
-      text-align: center;
     }
 
     .text-box {
+      text-align: left;
       font-size: 2rem;
       padding: 0 5rem 2rem 5rem;
     }
@@ -77,7 +77,7 @@
     }
 
     .text-box {
-      width : 50%;
+      width: 50%;
       border-radius: 1rem;
       background-color: rgba(139, 139, 139, 0.76);
       padding: 5rem;
@@ -138,7 +138,7 @@
         display: block;
       }
 
-      .btn{
+      .btn {
         max-width: 20rem;
         align-self: center;
       }
@@ -149,7 +149,7 @@
           color: $APC-light;
         }
 
-        .title{
+        .title {
           width: 30rem;
         }
 
@@ -180,7 +180,7 @@
           color: $CAPS-dark;
         }
 
-        .title{
+        .title {
           width: 30rem;
         }
 
@@ -210,7 +210,7 @@
           color: $T2P-color;
         }
 
-        .title{
+        .title {
           width: 12rem;
         }
 
@@ -247,13 +247,13 @@
     align-items: center;
     margin-top: 6%;
     border-radius: 2rem;
-      border: 1rem solid white;
+    border: 1rem solid white;
     &-title {
       text-align: center;
       font-size: 4rem;
       font-weight: 600;
     }
-    p{
+    p {
       margin: 1rem 2rem;
       padding: 2rem;
       font-size: 2rem;

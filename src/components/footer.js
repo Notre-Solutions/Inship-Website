@@ -1,35 +1,14 @@
 import React from "react"
 import "../css/main.css"
 import "@fortawesome/fontawesome-free/css/all.css"
-import { useStaticQuery, graphql } from "gatsby"
 
 const Footer = () => {
-  // const map = useStaticQuery(graphql`
-  //   query LocationQuery {
-  //     allLocationData {
-  //       edges {
-  //         node {
-  //           results {
-  //             geometry {
-  //               location_type
-  //               location {
-  //                 lat
-  //                 lng
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
   return (
     <div>
       <section className="footer">
-        <div className="line top"></div>
         <div className="inship-logo">
           <div className="main">
-            <span className="bold">IN</span>SHIP
+            <span className="thin">IN</span>SHIP
           </div>
 
           <div className="sub">
@@ -41,12 +20,12 @@ const Footer = () => {
         </div>
 
         <div className="address">
-          <div className="address-line">Inship</div>
-          <div className="address-line">GW108</div>
-          <div className="address-line">Greenway Hub</div>
-          <div className="address-line">7 Grangegorman Lower</div>
-          <div className="address-line">Arran Quay</div>
-          <div className="address-line">Dublin,Ireland</div>
+          <div>Inship</div>
+          <div>GW108</div>
+          <div>Greenway Hub</div>
+          <div>7 Grangegorman Lower</div>
+          <div>Arran Quay</div>
+          <div>Dublin,Ireland</div>
           <a href="tel:+353 1 556 3499" className="phone-number-line">
             +353 1 556 3499
           </a>
@@ -54,7 +33,7 @@ const Footer = () => {
             href="mailto:info@inship.ie?subject=From InShip APS Website"
             className="email-line"
           >
-            info@inshipaps.ie
+            info@inshipaps.com
           </a>
         </div>
         <div>
