@@ -76,13 +76,13 @@ module.exports = {
         icon: `src/img/icon.jpg`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-googlemaps-static`,
-      options: {
-        key: "AIzaSyCYYuO8lTA6_BlN2kj5iOxmSGBqfsQG5X4",
-        center: "41.8781,-87.6298",
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-googlemaps-static`,
+    //   options: {
+    //     key: "AIzaSyCYYuO8lTA6_BlN2kj5iOxmSGBqfsQG5X4",
+    //     center: "41.8781,-87.6298",
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
