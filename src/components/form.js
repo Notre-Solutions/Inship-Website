@@ -15,22 +15,27 @@ const Form = ({ formTitle }) => {
         >
           <div className="half left cf">
             <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="Name" title="Name" name="name"></label>
+              <input type="text" required autoComplete="off" name="name" />
+              <label htmlFor="Name" title="Name"></label>
             </div>
             <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="email" title="Email" name="email"></label>
+              <input type="text" required autoComplete="off" name="email" />
+              <label htmlFor="email" title="Email"></label>
             </div>
             <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="subject" title="Subject" name="subject"></label>
+              <input type="text" required autoComplete="off" name="subject" />
+              <label htmlFor="subject" title="Subject"></label>
             </div>
           </div>
           <div className="half right cf">
             <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="message" title="Message" name="message"></label>
+              <textarea
+                type="text"
+                required
+                autoComplete="off"
+                name="message"
+              ></textarea>
+              <label htmlFor="message" title="Message"></label>
             </div>
           </div>
           <button
