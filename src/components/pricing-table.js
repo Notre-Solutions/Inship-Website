@@ -1,5 +1,5 @@
 import React from "react"
-import "font-awesome/css/font-awesome.min.css"
+import "@fortawesome/fontawesome-free/css/all.css"
 import DataTable from "react-data-table-component"
 
 function isFeature(isFeature) {
@@ -7,9 +7,9 @@ function isFeature(isFeature) {
     return <p>{isFeature}</p>
   } else {
     if (isFeature) {
-      return <i className="fa fa-check-circle isFeature" />
+      return <i className="fas fa-check-circle isFeature" />
     } else {
-      return <i className="fa fa-times-circle notFeature"></i>
+      return <i className="fas fa-times-circle notFeature"></i>
     }
   }
 }

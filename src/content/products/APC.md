@@ -4,7 +4,7 @@ title: Account Payable Solutions
 alias: APC
 featuredimage: /img/apc-logo.jpeg
 featuredpost: true
-cardStyle: card card-color-3
+style: color-1
 id: 1
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque saepe

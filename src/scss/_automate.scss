@@ -1,0 +1,214 @@
+// @import '../../node_modules/codyhouse-framework/main/assets/css/base/';
+
+.automate-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .section-a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .grid-item{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      box-shadow: 0 0.3px 0.4px rgba(0, 0, 0, 0.025),
+        0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
+      border-radius: var(0.25em);
+      overflow: hidden;
+      margin: 2rem;
+      height: 20rem;
+      width: 80%;
+    }
+
+    .card__img {
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .card__content {
+      padding: 0.5em;
+    }
+
+    // --link
+    .card--is-link {
+      will-change: box-shadow;
+      transition: box-shadow 0.2s;
+
+      &:hover {
+        box-shadow: 0 0.3px 0.4px rgba(0, 0, 0, 0.025),
+          0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
+
+        .card__img::after {
+          opacity: 1;
+        }
+      }
+
+      .card__img {
+        position: relative;
+
+        &::after {
+          // overlay layer
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+      }
+    }
+
+    .card__link {
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+    .card__link-icon {
+      position: absolute;
+      z-index: 1;
+      width: 64px;
+      height: 64px;
+      top: calc(50% - 32px);
+      left: calc(50% - 32px);
+      background-color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      opacity: 0;
+      transition: opacity 0.2s;
+
+      .icon {
+        display: block;
+        width: 32px;
+        height: 32px;
+        color: black; // icon color
+      }
+    }
+
+    .card--is-link:hover .card__link-icon {
+      opacity: 1;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: turquoise;
+    animation: move-the-circle 1s infinite;
+    transform-origin: center center;
+  }
+
+  @for $num from 1 through 8 {
+    .circle:nth-child(#{$num}) {
+      left: ($num - 1) * 30px;
+      animation-delay: $num * 0.1s;
+    }
+  }
+
+  @keyframes move-the-circle {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      background-color: turquoise;
+    }
+    50% {
+      transform: translate(0, 50px) scale(0.4);
+      opacity: 0.5;
+      background-color: blue;
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      background-color: turquoise;
+    }
+  }
+  .header {
+    height: 95vh;
+    // z-index: -1;
+    background-image: linear-gradient(
+        to right bottom,
+        $inship-color-background,
+        $inship-color-background-darker
+      ),
+      url(../img/automate.jpg) !important;
+
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    position: relative;
+
+    &-text-box {
+      position: absolute;
+      text-align: center;
+      top: 35%;
+      left: 55%;
+      width: 35%;
+    }
+
+    .heading {
+      color: white;
+    }
+    .bold {
+      font-weight: 700;
+    }
+    .main-header {
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 5rem;
+      display: block;
+
+      animation-name: moveInFromTop;
+      animation-duration: 3s;
+    }
+
+    .sub-header {
+      // letter-spacing: 0.2rem;
+      display: block;
+      text-align: center;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+      font-weight: 100;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      border-radius: 1rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $inship-color;
+      padding: 1rem 3rem;
+      background-color: white;
+      position: relative;
+      display: inline-block;
+      box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: translateY(0.2rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}

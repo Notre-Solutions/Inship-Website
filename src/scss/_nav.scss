@@ -2,7 +2,7 @@
   padding-right: 4.5rem;
   padding-left: 3rem;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100vw;
@@ -22,6 +22,17 @@
     background: rgba(46, 122, 117, 0.9);
     padding: 1.5rem;
     @include transition-ease;
+  }
+
+  .color-1{
+    background: $APC-dark !important;
+  }
+  .color-2{
+    background: $T2P-bg !important;
+    
+  }
+  .color-3{
+    background: $CAPS-dark !important;
   }
 
   .menu-nav__item {

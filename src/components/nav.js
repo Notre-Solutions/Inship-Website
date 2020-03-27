@@ -119,13 +119,13 @@ export default class Nav extends React.Component {
                 </Link>
               </li>
               <li className="navigation__item">
-                <Link to="/products/CAPS" className="navigation__link">
-                  CAPS
+                <Link to="/products/T2P" className="navigation__link">
+                  T2P
                 </Link>
               </li>
               <li className="navigation__item">
-                <Link to="/products/T2P" className="navigation__link">
-                  T2P
+                <Link to="/products/CAPS" className="navigation__link">
+                  CAPS
                 </Link>
               </li>
               <li className="navigation__item">
@@ -143,7 +143,7 @@ export default class Nav extends React.Component {
         </div>
         <nav className="nav">
           <ul
-            className={classnames("menu-nav", {
+            className={classnames(`menu-nav ${this.props.style}`, {
               "menu-nav-scrolling": !this.state.visible,
             })}
           >
@@ -159,17 +159,16 @@ export default class Nav extends React.Component {
                 APC{" "}
               </Link>
             </li>
-
-            <li className={CAPS}>
-              <Link to="products/CAPS" className="menu-nav__link ">
-                {" "}
-                CAPS{" "}
-              </Link>
-            </li>
             <li className={T2P}>
               <Link to="products/T2P" className="menu-nav__link ">
                 {" "}
                 T2P{" "}
+              </Link>
+            </li>
+            <li className={CAPS}>
+              <Link to="products/CAPS" className="menu-nav__link ">
+                {" "}
+                CAPS{" "}
               </Link>
             </li>
             <li className={Pricing}>
