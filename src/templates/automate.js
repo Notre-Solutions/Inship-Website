@@ -19,7 +19,7 @@ const Automate = () => {
             </span>
           </h1>
           {/* Uncomment for animation ;)  */}
-          {/* <div class="animation-wrapper">
+          <div class="animation-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
@@ -28,7 +28,7 @@ const Automate = () => {
             <div class="circle"></div>
             <div class="circle"></div>
             <div class="circle"></div>
-          </div> */}
+          </div>
         </div>
       </section>
 
