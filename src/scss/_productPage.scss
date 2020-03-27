@@ -1,5 +1,8 @@
+// Product Page Vars
+$product-title-size: 4rem;
+
+// Product page class
 .product-page {
-  
   .header,
   .text-box {
     &-color-1 {
@@ -23,12 +26,28 @@
       color: white;
     }
 
+    &-color-1:hover {
+      @include hover-btn;
+    }
+
+    &-color-1:active {
+      @include active-btn;
+    }
+
     &-color-2 {
       color: $T2P-bg;
       @include btn($T2P-bg, $T2P-bg, "light");
       @include transition-ease;
       margin: 1rem;
       color: white;
+    }
+
+    &-color-2:hover {
+      @include hover-btn;
+    }
+
+    &-color-2:active {
+      @include active-btn;
     }
 
     &-color-3 {
@@ -38,62 +57,33 @@
       margin: 1rem;
       color: white;
     }
+
+    &-color-3:hover {
+      @include hover-btn;
+    }
+
+    &-color-3:active {
+      @include active-btn;
+    }
   }
 
   .product-header {
-    @include header-gb-no-color("../img/medium.jpg");
+    &-color-1 {
+      @include productHeader("../img/small.jpg");
+    }
 
-    position: relative;
+    &-color-2 {
+      @include productHeader("../img/medium.jpg");
+    }
 
-    .header-text-box {
-      color: $inship-color;
-      position: absolute;
-      right: 18%;
-      top: 15%;
-
-      .heading {
-        .main-header {
-          display: block;
-          font-size: 4rem;
-
-          animation-name: moveInFromRight;
-          animation-duration: 2s;
-        }
-
-        .sub-header {
-          display: block;
-          font-size: 1.5rem;
-
-          animation-name: moveInFromLeft;
-          animation-duration: 2s;
-        }
-      }
-
-      .btn {
-        @include btn($inship-color, $inship-color-background, $shadow);
-        margin: 1rem;
-        color: white;
-      }
-
-      .btn:hover {
-        transform: scale(1.05);
-      }
-
-      .btn:active {
-        transform: translateY(0.2rem);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-      }
+    &-color-3 {
+      @include productHeader("../img/large.jpg");
     }
   }
 
   .product-main {
     .line {
-      background-color: $inship-color;
-      text-align: center;
-      height: 0.23rem;
-      left: 10%;
-      width: 80%;
-      position: absolute;
+      @include line-posistion-absolute(white, 10%, null, 80%, 0.23rem);
       margin-top: 6rem;
     }
 
@@ -115,11 +105,11 @@
         background-color: $CAPS-dark !important;
       }
     }
+
     &-section-a {
       &-title {
         margin-bottom: 4rem;
-        color: $inship-color;
-        font-size: 4rem;
+        font-size: $product-title-size;
         text-align: center;
       }
     }
@@ -129,8 +119,7 @@
       &-title {
         margin-bottom: 4rem;
         margin-top: 10rem;
-        font-size: 4rem;
-        color: $inship-color;
+        font-size: $product-title-size;
       }
 
       .cards {
@@ -152,7 +141,6 @@
 
           .icon {
             font-size: 3rem;
-            color: green;
           }
           .text-box {
             padding: 0 3rem 0 2rem;
@@ -166,8 +154,7 @@
       &-title {
         display: block;
         text-align: center;
-        font-size: 4rem;
-        color: $inship-color;
+        font-size: $product-title-size;
         margin: 6rem 0 6rem 0;
         padding: 0 4rem 0 4rem;
 
@@ -175,7 +162,6 @@
           display: block;
           text-align: center;
           font-size: 3rem;
-          color: $inship-color;
         }
       }
 
@@ -202,8 +188,7 @@
       &-title {
         margin-bottom: 4rem;
         margin-top: 4rem;
-        font-size: 4rem;
-        color: $inship-color;
+        font-size: $product-title-size;
       }
 
       .cards {
@@ -214,7 +199,6 @@
         grid-template-columns: 40% 40%;
         grid-template-rows: auto auto;
         .card {
-          background-color: $inship-color;
           padding: 4rem;
           border-radius: 1.5rem;
           align-items: start;

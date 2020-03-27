@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import TimeLine from "../components/timeline"
 import Player from "../components/player"
 import Layout from "../components/layout"
+import "@fortawesome/fontawesome-free/css/all.css"
 
 function featureCard(style, feature) {
   return (
@@ -38,7 +39,7 @@ function CustermerReports(style, custermerReports) {
 function IntergrationOptions(style, intergrationOption) {
   return (
     <div className={`card ${style}-line`}>
-      <i className={`icon fa fa-${intergrationOption.icon} fa-2x`}></i>
+      <i className={`icon fa fa-${intergrationOption.icon} `}></i>
       <div className="text-box">{intergrationOption.description}</div>
     </div>
   )
@@ -59,7 +60,7 @@ const Product = ({ data }) => {
   const content = (
     <>
       <div className="product-page">
-        <header className="product-header">
+        <header className={`product-header-${style}`}>
           <div className="header-text-box">
             <h1 className="heading">
               <span className={`main-header header-${style}`}>{title}</span>

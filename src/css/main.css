@@ -482,6 +482,16 @@ li {
   margin: 1rem;
   color: white; }
 
+.product-page .btn-color-1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+
+.product-page .btn-color-1:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
 .product-page .btn-color-2 {
   color: #252941;
   margin-top: 1rem;
@@ -498,6 +508,16 @@ li {
   transition: all 0.5s ease-in-out;
   margin: 1rem;
   color: white; }
+
+.product-page .btn-color-2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+
+.product-page .btn-color-2:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .product-page .btn-color-3 {
   color: #576aa6;
@@ -516,7 +536,44 @@ li {
   margin: 1rem;
   color: white; }
 
-.product-page .product-header {
+.product-page .btn-color-3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
+
+.product-page .btn-color-3:active {
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.product-page .product-header-color-1 {
+  height: 95vh;
+  background-image: url("../img/small.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .product-page .product-header-color-1 .header-text-box {
+    position: absolute;
+    right: 18%;
+    top: 15%; }
+    .product-page .product-header-color-1 .header-text-box .heading .main-header {
+      display: block;
+      font-size: 4rem;
+      -webkit-animation-name: moveInFromRight;
+              animation-name: moveInFromRight;
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s; }
+    .product-page .product-header-color-1 .header-text-box .heading .sub-header {
+      display: block;
+      font-size: 1.5rem;
+      -webkit-animation-name: moveInFromLeft;
+              animation-name: moveInFromLeft;
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s; }
+
+.product-page .product-header-color-2 {
   height: 95vh;
   background-image: url("../img/medium.jpg");
   background-size: cover;
@@ -524,54 +581,59 @@ li {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  .product-page .product-header .header-text-box {
-    color: #46bbb5;
+  .product-page .product-header-color-2 .header-text-box {
     position: absolute;
     right: 18%;
     top: 15%; }
-    .product-page .product-header .header-text-box .heading .main-header {
+    .product-page .product-header-color-2 .header-text-box .heading .main-header {
       display: block;
       font-size: 4rem;
       -webkit-animation-name: moveInFromRight;
               animation-name: moveInFromRight;
       -webkit-animation-duration: 2s;
               animation-duration: 2s; }
-    .product-page .product-header .header-text-box .heading .sub-header {
+    .product-page .product-header-color-2 .header-text-box .heading .sub-header {
       display: block;
       font-size: 1.5rem;
       -webkit-animation-name: moveInFromLeft;
               animation-name: moveInFromLeft;
       -webkit-animation-duration: 2s;
               animation-duration: 2s; }
-    .product-page .product-header .header-text-box .btn {
-      margin-top: 1rem;
-      border-radius: 1rem;
+
+.product-page .product-header-color-3 {
+  height: 95vh;
+  background-image: url("../img/large.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .product-page .product-header-color-3 .header-text-box {
+    position: absolute;
+    right: 18%;
+    top: 15%; }
+    .product-page .product-header-color-3 .header-text-box .heading .main-header {
+      display: block;
+      font-size: 4rem;
+      -webkit-animation-name: moveInFromRight;
+              animation-name: moveInFromRight;
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s; }
+    .product-page .product-header-color-3 .header-text-box .heading .sub-header {
+      display: block;
       font-size: 1.5rem;
-      text-decoration: none;
-      color: #46bbb5;
-      background-color: rgba(82, 218, 211, 0.7);
-      padding: 1rem 3rem;
-      -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-              box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-      display: inline-block;
-      margin: 1rem;
-      color: white; }
-    .product-page .product-header .header-text-box .btn:hover {
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05); }
-    .product-page .product-header .header-text-box .btn:active {
-      -webkit-transform: translateY(0.2rem);
-              transform: translateY(0.2rem);
-      -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      -webkit-animation-name: moveInFromLeft;
+              animation-name: moveInFromLeft;
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s; }
 
 .product-page .product-main .line {
-  background-color: #46bbb5;
+  background-color: white;
   text-align: center;
   height: 0.23rem;
-  left: 10%;
   width: 80%;
   position: absolute;
+  left: 10%;
   margin-top: 6rem; }
 
 .product-page .product-main .color-1 {
@@ -591,7 +653,6 @@ li {
 
 .product-page .product-main-section-a-title {
   margin-bottom: 4rem;
-  color: #46bbb5;
   font-size: 4rem;
   text-align: center; }
 
@@ -600,8 +661,7 @@ li {
   .product-page .product-main-section-b-title {
     margin-bottom: 4rem;
     margin-top: 10rem;
-    font-size: 4rem;
-    color: #46bbb5; }
+    font-size: 4rem; }
   .product-page .product-main-section-b .cards {
     margin-top: 3rem;
     display: -ms-grid;
@@ -631,8 +691,7 @@ li {
       .product-page .product-main-section-b .cards .card div {
         display: block; }
       .product-page .product-main-section-b .cards .card .icon {
-        font-size: 3rem;
-        color: green; }
+        font-size: 3rem; }
       .product-page .product-main-section-b .cards .card .text-box {
         padding: 0 3rem 0 2rem;
         font-size: 1.6rem; }
@@ -641,14 +700,12 @@ li {
   display: block;
   text-align: center;
   font-size: 4rem;
-  color: #46bbb5;
   margin: 6rem 0 6rem 0;
   padding: 0 4rem 0 4rem; }
   .product-page .product-main-section-c-title-sub {
     display: block;
     text-align: center;
-    font-size: 3rem;
-    color: #46bbb5; }
+    font-size: 3rem; }
 
 .product-page .product-main-section-c .cards {
   margin-left: 12.5%;
@@ -670,8 +727,7 @@ li {
   .product-page .product-main-section-d-title {
     margin-bottom: 4rem;
     margin-top: 4rem;
-    font-size: 4rem;
-    color: #46bbb5; }
+    font-size: 4rem; }
   .product-page .product-main-section-d .cards {
     margin-top: 3rem;
     display: -ms-grid;
@@ -685,7 +741,6 @@ li {
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto; }
     .product-page .product-main-section-d .cards .card {
-      background-color: #46bbb5;
       padding: 4rem;
       border-radius: 1.5rem;
       -webkit-box-align: start;
@@ -1076,129 +1131,33 @@ li {
   .contact-page .section-a .card {
     text-align: center; }
     .contact-page .section-a .card .title {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-bottom: 2rem; }
     .contact-page .section-a .card .icon {
       padding: 1rem;
-      font-size: 10rem; }
-    .contact-page .section-a .card p {
-      padding: 4rem; }
-    .contact-page .section-a .card .btn {
-      margin-top: 1rem;
-      border-radius: 1rem;
-      font-size: 1.5rem;
-      text-decoration: none;
-      color: #46bbb5;
-      background-color: white;
-      padding: 1rem 3rem;
-      -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-              box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-      display: inline-block; }
-    .contact-page .section-a .card .btn:hover {
-      -webkit-transform: scale(1.05);
-              transform: scale(1.05);
-      cursor: pointer; }
-    .contact-page .section-a .card .btn:active {
-      -webkit-transform: translateY(0.2rem);
-              transform: translateY(0.2rem);
-      -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+      font-size: 10rem;
+      margin-bottom: 2rem; }
+    .contact-page .section-a .card .email {
+      margin-top: 6rem;
+      text-decoration: none !important;
+      padding: 0.4rem;
+      color: gray;
+      display: block;
+      font-size: 2rem; }
+    .contact-page .section-a .card .phone-number {
+      margin-top: 6rem;
+      color: gray;
+      text-decoration: none !important;
+      padding: 0.4rem;
+      display: block;
+      font-size: 2rem; }
+    .contact-page .section-a .card .address {
+      padding-left: 10rem;
+      text-align: left;
+      font-size: 2rem; }
 
 .contact-page .section-b {
-  margin-top: 5rem;
-  position: relative;
-  border-radius: 1rem;
-  height: 50rem;
-  /* Clearfix */ }
-  .contact-page .section-b h1 {
-    padding-top: 2%;
-    text-align: center;
-    font-size: 4rem;
-    color: #46bbb5; }
-  .contact-page .section-b .label-before, .contact-page .section-b .field input:valid + label::before, .contact-page .section-b .field input:focus + label::before, .form .field .contact-page .section-b input:valid + label::before, .form .field .contact-page .section-b input:focus + label::before {
-    line-height: 2rem;
-    font-size: 1.2rem;
-    top: -1.5rem;
-    background: #fff;
-    padding: 0 0.6rem;
-    left: 0.9rem; }
-  .contact-page .section-b .container {
-    width: 80%;
-    margin: 3rem 10%; }
-  .contact-page .section-b .field {
-    position: relative;
-    margin-bottom: 1.5rem; }
-    .contact-page .section-b .field label::before {
-      content: attr(title);
-      position: absolute;
-      top: 0;
-      left: 1.5rem;
-      line-height: 4rem;
-      font-size: 1.4rem;
-      color: #777;
-      -webkit-transition: 300ms all;
-      transition: 300ms all; }
-    .contact-page .section-b .field input {
-      background: transparent;
-      width: 100%;
-      line-height: 4rem;
-      padding: 0 1.5rem;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-      font-size: 1.4rem;
-      color: #222;
-      border: none;
-      border-bottom: 0.1rem solid #ccc; }
-      .contact-page .section-b .field input:focus {
-        outline: 0; }
-      .contact-page .section-b .field input:valid + label::before {
-        content: attr(data-title); }
-      .contact-page .section-b .field input:focus + label::before {
-        background: transparent; }
-  .contact-page .section-b .half {
-    float: left;
-    width: 50%;
-    margin-bottom: 1em; }
-  .contact-page .section-b .right {
-    width: 48%; }
-  .contact-page .section-b .left {
-    margin-right: 2%; }
-  @media (max-width: 480px) {
-    .contact-page .section-b .half {
-      width: 100%;
-      float: none;
-      margin-bottom: 0; } }
-  .contact-page .section-b .cf:before,
-  .contact-page .section-b .cf:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */ }
-  .contact-page .section-b .cf:after {
-    clear: both; }
-  .contact-page .section-b .submit-btn {
-    position: absolute;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #46bbb5;
-    padding: 1rem 3rem;
-    background-color: white;
-    top: 75%;
-    left: 45%;
-    display: inline-block;
-    -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
-            box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    border: none; }
-  .contact-page .section-b .submit-btn:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    cursor: pointer; }
-  .contact-page .section-b .submit-btn:active {
-    -webkit-transform: translateY(0.2rem);
-            transform: translateY(0.2rem);
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  margin-top: 5rem; }
 
 .rect-auto, .c100.p51 .slice, .c100.p52 .slice, .c100.p53 .slice, .c100.p54 .slice, .c100.p55 .slice, .c100.p56 .slice, .c100.p57 .slice, .c100.p58 .slice, .c100.p59 .slice, .c100.p60 .slice, .c100.p61 .slice, .c100.p62 .slice, .c100.p63 .slice, .c100.p64 .slice, .c100.p65 .slice, .c100.p66 .slice, .c100.p67 .slice, .c100.p68 .slice, .c100.p69 .slice, .c100.p70 .slice, .c100.p71 .slice, .c100.p72 .slice, .c100.p73 .slice, .c100.p74 .slice, .c100.p75 .slice, .c100.p76 .slice, .c100.p77 .slice, .c100.p78 .slice, .c100.p79 .slice, .c100.p80 .slice, .c100.p81 .slice, .c100.p82 .slice, .c100.p83 .slice, .c100.p84 .slice, .c100.p85 .slice, .c100.p86 .slice, .c100.p87 .slice, .c100.p88 .slice, .c100.p89 .slice, .c100.p90 .slice, .c100.p91 .slice, .c100.p92 .slice, .c100.p93 .slice, .c100.p94 .slice, .c100.p95 .slice, .c100.p96 .slice, .c100.p97 .slice, .c100.p98 .slice, .c100.p99 .slice, .c100.p100 .slice {
   clip: rect(auto, auto, auto, auto); }
@@ -1848,7 +1807,7 @@ li {
     text-align: center;
     font-size: 4rem;
     color: #46bbb5; }
-  .form .label-before, .form .contact-page .section-b .field input:valid + label::before, .contact-page .section-b .field .form input:valid + label::before, .form .contact-page .section-b .field input:focus + label::before, .contact-page .section-b .field .form input:focus + label::before, .form .field input:valid + label::before, .form .field input:focus + label::before {
+  .form .label-before, .form .field input:valid + label::before, .form .field input:focus + label::before {
     line-height: 2rem;
     font-size: 1.2rem;
     top: -1.5rem;

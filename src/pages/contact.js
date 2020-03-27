@@ -3,6 +3,7 @@ import "../css/main.css"
 import ReactModal from "../components/modal"
 import Form from "../components/form"
 import Layout from "../components/layout"
+import "@fortawesome/fontawesome-free/css/all.css"
 
 const content = (
   <div className="contact-page">
@@ -20,91 +21,40 @@ const content = (
       <section className="section-a">
         <div className="cards">
           <div className="card">
-            <h1 className="title">Demo</h1>
-            <i className="fas fa-laptop icon"></i>
-            <p>
-              {" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
-              molestiae perspiciatis cupiditate expedita temporibus neque modi
-              velit nesciunt assumenda.{" "}
-            </p>
-            <ReactModal
-              content={<Form formTitle="Ask For A Demo"></Form>}
-              buttonStyle="btn"
-              buttonName="Ask for a Demo"
-            ></ReactModal>
-            {/* <a href="" className="btn">
-            Ask for a Demo
-          </a> */}
+            <h1 className="title">Location</h1>
+            <i className="fas fa-map-marked icon"></i>
+            <div className="address">
+              <div>GW108,</div>
+              <div>Greenway Hub,</div>
+              <div>7 Grangegorman Lower,</div>
+              <div>Arran Quay,</div>
+              <div>Dublin, Ireland</div>
+            </div>
           </div>
           <div className="card">
             {" "}
-            <h1 className="title">Support</h1>
-            <i className="fas fa-users icon "></i>
-            <p>
-              {" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
-              molestiae perspiciatis cupiditate expedita temporibus neque modi
-              velit nesciunt assumenda.{" "}
-            </p>
-            <ReactModal
-              content={<Form formTitle="Contact Support"></Form>}
-              buttonStyle="btn"
-              buttonName="Contact Support"
-            ></ReactModal>
+            <h1 className="title">Contact Number</h1>
+            <i className="fas fa-phone icon "></i>
+            <a href="tel:+353 1 556 3499" className="phone-number">
+              +353 1 556 3499
+            </a>
           </div>
           <div className="card">
             {" "}
-            <h1 className="title">Sales</h1>
-            <i className="fas fa-phone icon"></i>
-            <p>
-              {" "}
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat
-              molestiae perspiciatis cupiditate expedita temporibus neque modi
-              velit nesciunt assumenda.{" "}
-            </p>
-            <ReactModal
-              content={<Form formTitle="Contact Sales"></Form>}
-              buttonStyle="btn"
-              buttonName="Contact Sales"
-            ></ReactModal>
+            <h1 className="title">Email</h1>
+            <i className="fas fa-envelope-open-text icon"></i>
+            <a
+              href="mailto:info@inship.ie?subject=From InShip APS Website"
+              className="email"
+            >
+              info@inshipaps.com
+            </a>
           </div>
         </div>
       </section>
 
       <section className="section-b">
-        <h1 className="title">General Inquiry</h1>
-        <form className="cf container">
-          <div className="half left cf">
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="Name" title="Name"></label>
-            </div>
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="email" title="Email"></label>
-            </div>
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="subject" title="Subject"></label>
-            </div>
-          </div>
-          <div className="half right cf">
-            <div className="field">
-              <input type="text" required autoComplete="off" />
-              <label htmlFor="message" title="Message"></label>
-            </div>
-          </div>
-          <input
-            type="submit"
-            value="Submit"
-            id="input-submit"
-            className="submit-btn"
-          />
-        </form>
+        <Form formTitle={"General Inquiry"}></Form>
       </section>
     </div>
   </div>

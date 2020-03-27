@@ -23,6 +23,7 @@
     "gatsby-remark-smartypants": "^2.1.21",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-source-googlemaps-geocoding": "^1.0.0",
+    "gatsby-source-googlemaps-static": "^1.0.5",
     "gatsby-transformer-remark": "^2.6.53",
     "gatsby-transformer-sharp": "^2.3.14",
     "marked": "^0.8.0",

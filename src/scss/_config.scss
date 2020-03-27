@@ -55,8 +55,62 @@ li {
   text-decoration: none;
 }
 
-@mixin transition-ease {
-  transition: all 0.5s ease-in-out;
+@keyframes moveInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes moveInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes spin720 {
+  0% {
+    opacity: 0;
+    transform: rotate(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(720deg);
+  }
 }
 
 @mixin btn($text-color, $background-color, $shadow) {
@@ -118,64 +172,6 @@ li {
   }
 }
 
-@keyframes moveInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-5rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes moveInFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-5rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}
-
-@keyframes moveInFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(5rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0rem);
-  }
-}
-
-@keyframes spin720 {
-  0% {
-    opacity: 0;
-    transform: rotate(0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: rotate(720deg);
-  }
-}
-
 @mixin header-bg($img, $color1, $color2) {
   height: 95vh;
   background-image: linear-gradient(to right bottom, $color1, $color2),
@@ -212,12 +208,57 @@ li {
   width: $width;
 }
 
-@mixin line-posistion-absolute($color, $left, $top, $width) {
+@mixin line-posistion-absolute($color, $left, $top, $width, $height) {
   background-color: $color;
   text-align: center;
-  height: 0.1rem;
+  height: $height;
   width: $width;
   position: absolute;
   left: $left;
-  top: $top;
+  @if ($top != null) {
+    top: $top;
+  }
+}
+
+@mixin productHeader($image) {
+  @include header-gb-no-color($image);
+
+  position: relative;
+
+  .header-text-box {
+    position: absolute;
+    right: 18%;
+    top: 15%;
+
+    .heading {
+      .main-header {
+        display: block;
+        font-size: 4rem;
+
+        animation-name: moveInFromRight;
+        animation-duration: 2s;
+      }
+
+      .sub-header {
+        display: block;
+        font-size: 1.5rem;
+
+        animation-name: moveInFromLeft;
+        animation-duration: 2s;
+      }
+    }
+  }
+}
+
+@mixin hover-btn {
+  transform: scale(1.05);
+}
+
+@mixin active-btn {
+  transform: translateY(0.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
 }

@@ -85,6 +85,6 @@ $margin-left-footer: 10rem;
   }
 
   .line {
-    @include line-posistion-absolute(white, 5%, 90%, 90%);
+    @include line-posistion-absolute(white, 5%, 90%, 90%, 0.1rem);
   }
 }
