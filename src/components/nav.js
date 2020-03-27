@@ -123,13 +123,30 @@ export default class Nav extends React.Component {
           >
             <ul className="burger-navigation__list">
               {pages.map(page => {
-                return (
-                  <li className="burger-navigation__item">
-                    <Link to={page.link} className="burger-navigation__link">
-                      {page.name}
-                    </Link>
-                  </li>
-                )
+                if (page.name === "Pricing") {
+                  return (
+                    <li
+                      className="burger-navigation__item"
+                      onClick={this.toggleClass}
+                    >
+                      <ReactModal
+                        content={
+                          <Form formTitle="Contact Team for Pricing"></Form>
+                        }
+                        buttonStyle="burger-navigation__link nav-pricing"
+                        buttonName="Pricing"
+                      ></ReactModal>
+                    </li>
+                  )
+                } else {
+                  return (
+                    <li className="burger-navigation__item">
+                      <Link to={page.link} className="burger-navigation__link">
+                        {page.name}
+                      </Link>
+                    </li>
+                  )
+                }
               })}
             </ul>
           </nav>
