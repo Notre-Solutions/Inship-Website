@@ -5,8 +5,8 @@
   "version": "0.1.0",
   "author": "Notre Studio <support@notre-studio.com>",
   "dependencies": {
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "font-awesome": "^4.7.0",
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "codyhouse-framework": "^2.5.5",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.43",
     "gatsby-plugin-manifest": "^2.2.39",

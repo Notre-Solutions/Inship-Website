@@ -245,4 +245,40 @@ $primary-color-orange-dark: #e08833;
       }
     }
   }
+  &.color-1{
+    .bar,
+    .fill {
+      border-color: $APC-dark !important;
+    }
+    &:hover {
+      > span {
+        color: $APC-dark;
+      }
+    }
+
+  }
+  &.color-2{
+    .bar,
+    .fill {
+      border-color: $T2P-bg!important;
+    }
+    &:hover {
+      > span {
+        color: $T2P-bg;
+      }
+    }
+
+  }
+  &.color-3{
+    .bar,
+    .fill {
+      border-color: $CAPS-dark !important;
+    }
+    &:hover {
+      > span {
+        color: $CAPS-dark;
+      }
+    }
+
+  }
 }

@@ -53,7 +53,8 @@ export default class Nav extends React.Component {
       contact = "menu-nav__item",
       CAPS = "menu-nav__item",
       T2P = "menu-nav__item",
-      Pricing = "menu-nav__item"
+      Pricing = "menu-nav__item",
+      Automate = "menu-nav__item"
 
     switch (this.props.current) {
       case "Home":
@@ -76,6 +77,9 @@ export default class Nav extends React.Component {
         break
       case "Pricing":
         Pricing = active
+        break
+      case "Automate":
+        Automate = active
         break
     }
 
@@ -114,18 +118,23 @@ export default class Nav extends React.Component {
                 </Link>
               </li>
               <li className="navigation__item">
+                <Link to="/automate" className="navigation__link">
+                  Why Automate
+                </Link>
+              </li>
+              <li className="navigation__item">
                 <Link to="/products/APC" className="navigation__link">
                   APC
                 </Link>
               </li>
               <li className="navigation__item">
-                <Link to="/products/CAPS" className="navigation__link">
-                  CAPS
+                <Link to="/products/T2P" className="navigation__link">
+                  T2P
                 </Link>
               </li>
               <li className="navigation__item">
-                <Link to="/products/T2P" className="navigation__link">
-                  T2P
+                <Link to="/products/CAPS" className="navigation__link">
+                  CAPS
                 </Link>
               </li>
               <li className="navigation__item">
@@ -143,7 +152,7 @@ export default class Nav extends React.Component {
         </div>
         <nav className="nav">
           <ul
-            className={classnames("menu-nav", {
+            className={classnames(`menu-nav ${this.props.style}`, {
               "menu-nav-scrolling": !this.state.visible,
             })}
           >
@@ -153,23 +162,28 @@ export default class Nav extends React.Component {
                 Home{" "}
               </Link>
             </li>
+            <li className={Automate}>
+              <Link to="/automate" className="menu-nav__link ">
+                {" "}
+                Why Automate{" "}
+              </Link>
+            </li>
             <li className={APC}>
               <Link to="/products/APC" className="menu-nav__link ">
                 {" "}
                 APC{" "}
               </Link>
             </li>
-
-            <li className={CAPS}>
-              <Link to="products/CAPS" className="menu-nav__link ">
-                {" "}
-                CAPS{" "}
-              </Link>
-            </li>
             <li className={T2P}>
               <Link to="products/T2P" className="menu-nav__link ">
                 {" "}
                 T2P{" "}
+              </Link>
+            </li>
+            <li className={CAPS}>
+              <Link to="products/CAPS" className="menu-nav__link ">
+                {" "}
+                CAPS{" "}
               </Link>
             </li>
             <li className={Pricing}>

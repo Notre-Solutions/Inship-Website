@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="cards">
             <div className="card">
               <h1 className="title">Demo</h1>
-              <i className="fa fa-laptop icon"></i>
+              <i className="fas fa-laptop icon"></i>
               <p>
                 {" "}
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="card">
               {" "}
               <h1 className="title">Support</h1>
-              <i className="fa fa-users icon "></i>
+              <i className="fas fa-users icon "></i>
               <p>
                 {" "}
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -61,7 +61,7 @@ const Contact = () => {
             <div className="card">
               {" "}
               <h1 className="title">Sales</h1>
-              <i className="fa fa-phone icon"></i>
+              <i className="fas fa-phone icon"></i>
               <p>
                 {" "}
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.

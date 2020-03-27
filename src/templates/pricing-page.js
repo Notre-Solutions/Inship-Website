@@ -33,12 +33,12 @@ const Pricing = ({ data }) => {
                   title,
                   features,
                   featuredpost,
-                  cardStyle,
+                  style,
                   featuredimage,
                 } = edge.node.frontmatter
                 if (featuredpost) {
                   return (
-                    <div className={cardStyle}>
+                    <div className={`card card-${style}`}>
                       <Img
                         fluid={featuredimage.childImageSharp.fluid}
                         className="img"
@@ -84,7 +84,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            cardStyle
+            style
             alias
             id
             featuredpost

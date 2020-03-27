@@ -6,6 +6,7 @@ alias: APC
 url: dummy
 featuredimage: /img/apc-logo.jpeg
 featuredpost: true
+style: color-1
 id: 1
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque saepe

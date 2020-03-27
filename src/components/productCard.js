@@ -3,10 +3,10 @@ import Markdown from "./markdown"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
-const ProductCard = ({ title, body, cardStyle, fluidImage, alias }) => {
+const ProductCard = ({ title, body, style, fluidImage, alias }) => {
   return (
     <Link to={"/products/" + alias}>
-      <div className={cardStyle}>
+      <div className={`card card-${style}`}>
         <Img fluid={fluidImage} className="img" />
         <h3 className="card-title title">
           <Markdown markdown={title} />

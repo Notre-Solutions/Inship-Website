@@ -36,43 +36,6 @@ function showSectionB(show, title, body) {
   }
 }
 
-// function showSectionD(show, title) {
-//   if (show) {
-//     return (
-//       <section className="section-d">
-//         <h1 className="title">{title}</h1>
-//         <form className="cf container">
-//           <div className="half left cf">
-//             <div className="field">
-//               <input type="text" required autoComplete="off" />
-//               <label htmlFor="Name" title="Name"></label>
-//             </div>
-//             <div className="field">
-//               <input type="text" required autoComplete="off" />
-//               <label htmlFor="email" title="Email"></label>
-//             </div>
-//             <div className="field">
-//               <input type="text" required autoComplete="off" />
-//               <label htmlFor="subject" title="Subject"></label>
-//             </div>
-//           </div>
-//           <div className="half right cf">
-//             <div className="field">
-//               <input type="text" required autoComplete="off" />
-//               <label htmlFor="message" title="Message"></label>
-//             </div>
-//           </div>
-//           <input
-//             type="submit"
-//             value="Submit"
-//             id="input-submit"
-//             className="submit-btn"
-//           />
-//         </form>
-//       </section>
-//     )
-//   }
-// }
 
 function displayProducts(edges) {
   const products = {}
@@ -82,7 +45,7 @@ function displayProducts(edges) {
       description,
       id,
       featuredpost,
-      cardStyle,
+      style,
       featuredimage,
       alias,
     } = edge.node.frontmatter
@@ -90,7 +53,7 @@ function displayProducts(edges) {
       title: title,
       description: description,
       featuredpost: featuredpost,
-      cardStyle: cardStyle,
+      style: style,
       featuredimage: featuredimage,
       alias: alias,
     }
@@ -101,21 +64,21 @@ function displayProducts(edges) {
       <ProductCard
         title={products["1"].title}
         body={products["1"].description}
-        cardStyle={products["1"].cardStyle}
+        style={products["1"].style}
         fluidImage={products["1"].featuredimage.childImageSharp.fluid}
         alias={products["1"].alias}
       />
       <ProductCard
         title={products["2"].title}
         body={products["2"].description}
-        cardStyle={products["2"].cardStyle}
+        style={products["2"].style}
         fluidImage={products["2"].featuredimage.childImageSharp.fluid}
         alias={products["2"].alias}
       />
       <ProductCard
         title={products["3"].title}
         body={products["3"].description}
-        cardStyle={products["3"].cardStyle}
+        style={products["3"].style}
         fluidImage={products["3"].featuredimage.childImageSharp.fluid}
         alias={products["3"].alias}
       />
@@ -124,7 +87,6 @@ function displayProducts(edges) {
 }
 
 const Landing = ({ data }) => {
-  console.log(data)
   const {
     subtitle,
     sectionA,
@@ -132,6 +94,7 @@ const Landing = ({ data }) => {
     sectionC,
     sectionD,
   } = data.markdownRemark.frontmatter.landingPage
+  console.log(subtitle);
   const edges = data.allMarkdownRemark.edges
 
   return (
@@ -211,7 +174,7 @@ export const pageQuery = graphql`
             id
             title
             description
-            cardStyle
+            style
             featuredpost
             featuredimage {
               childImageSharp {

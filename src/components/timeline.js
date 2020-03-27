@@ -5,34 +5,51 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component"
 import "react-vertical-timeline-component/style.min.css"
-import Markdown from '../components/markdown'
+import Markdown from "../components/markdown"
 
-function getTimelineElement(item){
-  return(
+function getComponentStyle(style) {
+  if (style === "color-1") {
+    return "#a67440"
+  } else if (style === "color-2") {
+    return "#252941"
+  } else if (style === "color-3") {
+    return "#576aa6"
+  } else {
+    return "rgb(33, 150, 243)"
+  }
+}
+
+function getTimelineElement(item, style) {
+  var contentStyle = {
+    color: "#fff",
+    fontSize: "2.5rem",
+  }
+  const background = getComponentStyle(style)
+  contentStyle["background"] = background
+
+  var arrowStyle = {
+    borderRight: `7px solid  ${background}`,
+  }
+
+  return (
     <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentStyle={{
-          background: "rgb(33, 150, 243)",
-          color: "#fff",
-          fontSize: "2.5rem",
-        }}
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        // icon={<WorkIcon />}
-      >
-        <h3 className="vertical-timeline-element-title">{item.title}</h3>
-        <Markdown markdown={item.description}/>
-      </VerticalTimelineElement>
-
+      className="vertical-timeline-element--work"
+      contentStyle={contentStyle}
+      contentArrowStyle={arrowStyle}
+      iconStyle={contentStyle}
+      // icon={<WorkIcon />}
+    >
+      <h3 className="vertical-timeline-element-title">{item.title}</h3>
+      <Markdown markdown={item.description} />
+    </VerticalTimelineElement>
   )
 }
 
-const TimeLine = ({timeline}) => {
-
+const TimeLine = ({ timeline, style }) => {
   return (
     <VerticalTimeline>
-      {timeline.map(item=>{
-        return getTimelineElement(item) 
+      {timeline.map(item => {
+        return getTimelineElement(item, style)
       })}
     </VerticalTimeline>
   )
