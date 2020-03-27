@@ -6,7 +6,6 @@
   "author": "Notre Studio <support@notre-studio.com>",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "codyhouse-framework": "^2.5.5",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.43",
     "gatsby-plugin-manifest": "^2.2.39",
