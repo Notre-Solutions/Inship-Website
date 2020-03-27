@@ -76,7 +76,11 @@ export default class Nav extends React.Component {
         className: "menu-nav__item",
       },
       {
-        link: "/pricing",
+        link: "/resources",
+        name: "Resources",
+        className: "menu-nav__item",
+      },
+      {
         name: "Pricing",
         className: "menu-nav__item",
       },
