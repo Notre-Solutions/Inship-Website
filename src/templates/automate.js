@@ -17,7 +17,6 @@ const content = (
             </span>
           </h1>
           {/* Uncomment for animation ;)  */}
-<<<<<<< HEAD
           <div class="animation-wrapper">
             <div class="circle"></div>
             <div class="circle"></div>
@@ -28,18 +27,6 @@ const content = (
             <div class="circle"></div>
             <div class="circle"></div>
           </div>
-=======
-          {/* <div class="animation-wrapper">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div> */}
->>>>>>> a85a450dcb0adc967c6a86de09e3758e11b87167
         </div>
       </section>
 
