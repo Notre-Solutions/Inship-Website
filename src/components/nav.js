@@ -46,53 +46,57 @@ export default class Nav extends React.Component {
   }
 
   render() {
-    var active = "menu-nav__item active"
-    var home = "menu-nav__item",
-      APC = "menu-nav__item",
-      news = "menu-nav__item",
-      contact = "menu-nav__item",
-      CAPS = "menu-nav__item",
-      T2P = "menu-nav__item",
-      Pricing = "menu-nav__item",
-      Automate = "menu-nav__item"
+    const active = "menu-nav__item active"
+    const pages = [
+      {
+        link: "/",
+        name: "Home",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/automate",
+        name: "Why Automate",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/products/APC",
+        name: "APC",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/products/T2P",
+        name: "T2P",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/products/CAPS",
+        name: "CAPS",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/pricing",
+        name: "Pricing",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/contact",
+        name: "Contact",
+        className: "menu-nav__item",
+      },
+    ]
 
-    switch (this.props.current) {
-      case "Home":
-        home = active
-        break
-      case "APC":
-        APC = active
-        break
-      case "CAPS":
-        CAPS = active
-        break
-      case "T2P":
-        T2P = active
-        break
-      case "Contact":
-        contact = active
-        break
-      case "News":
-        news = active
-        break
-      case "Pricing":
-        Pricing = active
-        break
-      case "Automate":
-        Automate = active
-        break
-    }
+    pages.map(page => {
+      if (page.name === this.props.current) {
+        page.className = active
+      }
+    })
 
     return (
       <div>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1"
-        />
-        <div className="navigation">
-          <div className="navigation__button" onClick={this.toggleClass}>
+        <div className="burger-navigation">
+          <div className="burger-navigation__button" onClick={this.toggleClass}>
             <span
-              className={classnames("navigation__icon", {
+              className={classnames("burger-navigation__icon", {
                 "open-button": !this.state.active,
               })}
             >
@@ -100,53 +104,27 @@ export default class Nav extends React.Component {
             </span>
           </div>
           <div
-            className={classnames("navigation__background", {
+            className={classnames("burger-navigation__background", {
               "open-background": !this.state.active,
             })}
           >
             &nbsp;
           </div>
           <nav
-            className={classnames("navigation__nav", {
+            className={classnames("burger-navigation__nav", {
               "open-nav": !this.state.active,
             })}
           >
-            <ul className="navigation__list">
-              <li className="">
-                <Link to="/" className="navigation__link">
-                  Home
-                </Link>
-              </li>
-              <li className="navigation__item">
-                <Link to="/automate" className="navigation__link">
-                  Why Automate
-                </Link>
-              </li>
-              <li className="navigation__item">
-                <Link to="/products/APC" className="navigation__link">
-                  APC
-                </Link>
-              </li>
-              <li className="navigation__item">
-                <Link to="/products/T2P" className="navigation__link">
-                  T2P
-                </Link>
-              </li>
-              <li className="navigation__item">
-                <Link to="/products/CAPS" className="navigation__link">
-                  CAPS
-                </Link>
-              </li>
-              <li className="navigation__item">
-                <Link to="/pricing" className="navigation__link">
-                  Pricing
-                </Link>
-              </li>
-              <li className="navigation__item">
-                <Link to="/contact" className="navigation__link">
-                  Contact
-                </Link>
-              </li>
+            <ul className="burger-navigation__list">
+              {pages.map(page => {
+                return (
+                  <li className="burger-navigation__item">
+                    <Link to={page.link} className="burger-navigation__link">
+                      {page.name}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </nav>
         </div>
@@ -156,48 +134,15 @@ export default class Nav extends React.Component {
               "menu-nav-scrolling": !this.state.visible,
             })}
           >
-            <li className={home}>
-              <Link to="/" className="menu-nav__link">
-                {" "}
-                Home{" "}
-              </Link>
-            </li>
-            <li className={Automate}>
-              <Link to="/automate" className="menu-nav__link ">
-                {" "}
-                Why Automate{" "}
-              </Link>
-            </li>
-            <li className={APC}>
-              <Link to="/products/APC" className="menu-nav__link ">
-                {" "}
-                APC{" "}
-              </Link>
-            </li>
-            <li className={T2P}>
-              <Link to="products/T2P" className="menu-nav__link ">
-                {" "}
-                T2P{" "}
-              </Link>
-            </li>
-            <li className={CAPS}>
-              <Link to="products/CAPS" className="menu-nav__link ">
-                {" "}
-                CAPS{" "}
-              </Link>
-            </li>
-            <li className={Pricing}>
-              <Link to="/pricing" className="menu-nav__link ">
-                {" "}
-                Pricing{" "}
-              </Link>
-            </li>
-            <li className={contact}>
-              <Link to="/contact" className="menu-nav__link ">
-                {" "}
-                Contact{" "}
-              </Link>
-            </li>
+            {pages.map(page => {
+              return (
+                <li className={page.className}>
+                  <Link to={page.link} className="menu-nav__link">
+                    {page.name}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </nav>
       </div>

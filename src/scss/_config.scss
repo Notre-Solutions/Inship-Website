@@ -1,10 +1,9 @@
-// vars
+// Vars Colors
 $inship-color-background: rgba(82, 218, 211, 0.7);
 $inship-color-background-darker: rgba(46, 122, 117, 0.7);
 $inship-color: rgba(70, 187, 181, 1);
 $inship-color-background-light: rgba(70, 187, 181, 0.2);
 $grey-light: #f3f3f3;
-$shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 $APC-light: #ded4a2;
 $APC-dark: #a67440;
 $APC-bg: #14182f;
@@ -13,6 +12,9 @@ $CAPS-dark: #576aa6;
 $CAPS-bg: #222222;
 $T2P-color: white;
 $T2P-bg: #252941;
+
+// Box Shadows
+$shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 
 // setting init val
 *,
@@ -208,4 +210,14 @@ li {
 @mixin size($width, $height) {
   height: $height;
   width: $width;
+}
+
+@mixin line-posistion-absolute($color, $left, $top, $width) {
+  background-color: $color;
+  text-align: center;
+  height: 0.1rem;
+  width: $width;
+  position: absolute;
+  left: $left;
+  top: $top;
 }
