@@ -16,29 +16,31 @@ const Form = ({ formTitle }) => {
           <div className="half left cf">
             <div className="field">
               <input type="text" required autoComplete="off" />
-              <label htmlFor="Name" title="Name"></label>
+              <label htmlFor="Name" title="Name" name="name"></label>
             </div>
             <div className="field">
               <input type="text" required autoComplete="off" />
-              <label htmlFor="email" title="Email"></label>
+              <label htmlFor="email" title="Email" name="email"></label>
             </div>
             <div className="field">
               <input type="text" required autoComplete="off" />
-              <label htmlFor="subject" title="Subject"></label>
+              <label htmlFor="subject" title="Subject" name="subject"></label>
             </div>
           </div>
           <div className="half right cf">
             <div className="field">
               <input type="text" required autoComplete="off" />
-              <label htmlFor="message" title="Message"></label>
+              <label htmlFor="message" title="Message" name="message"></label>
             </div>
           </div>
-          <input
+          <button
             type="submit"
             value="Submit"
             id="input-submit"
             className="submit-btn"
-          />
+          >
+            Submit
+          </button>
         </form>
       </section>
     </>
