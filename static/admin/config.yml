@@ -40,6 +40,14 @@ collections:
           {label: "Features", name: "features", widget: list, fields:[
             {label: "Title", name: "title", widget: string, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
+          ]},
+          {label: "Custermers reported", name: "custermerReports", widget: list, fields:[
+            {label: "Percentage", name: "percentage", widget: string, required: true},
+            {label: "Description", name: "description", widget: "markdown", required: true}
+          ]},
+          {label: "Integration Options", name: "integration", widget: list, fields:[
+            {label: "Icon", name: "icon", widget: string, required: true},
+            {label: "Description", name: "description", widget: "markdown", required: true}
           ]}
       ]}
             

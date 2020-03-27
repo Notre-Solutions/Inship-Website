@@ -4,13 +4,14 @@ import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
 import PricingTable from "../components/pricing-table"
 
 const Pricing = ({ data }) => {
   const edges = data.allMarkdownRemark.edges
   const productFeatures = {}
   edges.map(edge => {
-    productFeatures[edge.node.frontmatter.id] ={
+    productFeatures[edge.node.frontmatter.id] = {
       alias: edge.node.frontmatter.alias,
       name: edge.node.frontmatter.title,
       feature1: edge.node.frontmatter.features.feature1,
@@ -20,54 +21,55 @@ const Pricing = ({ data }) => {
     }
   })
 
+  const content = (
+    <div className="pricing-page">
+      <section className="header">
+        <section className="section-c">
+          <div className="section-c-heading">Pricing</div>
+          <div className="cards">
+            {edges.map(edge => {
+              const {
+                title,
+                features,
+                featuredpost,
+                style,
+                featuredimage,
+              } = edge.node.frontmatter
+              if (featuredpost) {
+                return (
+                  <div className={`card card-${style}`}>
+                    <Img
+                      fluid={featuredimage.childImageSharp.fluid}
+                      className="img"
+                    />
+                    <h3 className="card-title">
+                      <Markdown markdown={title} />
+                    </h3>
+                    <div className="text-box">
+                      <ul>
+                        {Object.keys(features).map((key, index) => {
+                          return <li> Amazing feature </li>
+                        })}
+                      </ul>
+                    </div>
+                    <a href="" className="btn">
+                      Learn More
+                    </a>
+                  </div>
+                )
+              }
+            })}
+          </div>
+        </section>
+      </section>
+
+      <PricingTable productFeatures={productFeatures} />
+    </div>
+  )
+
   return (
     <>
-      <div className="pricing-page">
-        <Nav current={"Pricing"} />
-        <section className="header">
-          <section className="section-c">
-            <div className="section-c-heading">Pricing</div>
-            <div className="cards">
-              {edges.map(edge => {
-                const {
-                  title,
-                  features,
-                  featuredpost,
-                  style,
-                  featuredimage,
-                } = edge.node.frontmatter
-                if (featuredpost) {
-                  return (
-                    <div className={`card card-${style}`}>
-                      <Img
-                        fluid={featuredimage.childImageSharp.fluid}
-                        className="img"
-                      />
-                      <h3 className="card-title">
-                        <Markdown markdown={title} />
-                      </h3>
-                      <div className="text-box">
-                        <ul>
-                          {Object.keys(features).map((key, index) => {
-                            return <li> Amazing feature </li>
-                          })}
-                        </ul>
-                      </div>
-                      <a href="" className="btn">
-                        Learn More
-                      </a>
-                    </div>
-                  )
-                }
-              })}
-            </div>
-          </section>
-        </section>
-
-        <PricingTable productFeatures={productFeatures} />
-      </div>
-
-      <Footer />
+      <Layout current={"Pricing"} content={content}></Layout>
     </>
   )
 }

@@ -1,7 +1,6 @@
 import React from "react"
 import "../css/main.css"
 import "@fortawesome/fontawesome-free/css/all.css"
-import { useStaticQuery, graphql } from "gatsby"
 
 const Footer = () => {
   return (

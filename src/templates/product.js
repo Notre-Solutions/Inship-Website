@@ -1,20 +1,45 @@
 import React from "react"
 import "../css/main.css"
-import Nav from "../components/nav"
-import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import { useStaticQuery, graphql } from "gatsby"
 import TimeLine from "../components/timeline"
 import Player from "../components/player"
+import Layout from "../components/layout"
 
-function featureCard(feature, style) {
+function featureCard(style, feature) {
   return (
     <div className={`card dark-${style}`}>
-      {/* <i className="icon fa fa-check-circle fa-2x"></i>  */}
       <div>
         <h1 className={`${style}`}>{feature.title}</h1>
         <div className={`text-box ${style}`}>{feature.description}</div>
       </div>
+    </div>
+  )
+}
+
+function CustermerReports(style, custermerReports) {
+  return (
+    <div className="card">
+      <div className={`c100 p${custermerReports.percentage} center ${style}`}>
+        <span>{`${custermerReports.percentage}%`}</span>
+        <div className="slice">
+          <div className="bar"></div>
+          <div className="fill"></div>
+        </div>
+      </div>
+      <div className={`text-box text-box-${style}`}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia
+      </div>
+    </div>
+  )
+}
+
+function IntergrationOptions(style, intergrationOption) {
+  return (
+    <div className={`card ${style}-line`}>
+      <i className={`icon fa fa-${intergrationOption.icon} fa-2x`}></i>
+      <div className="text-box">{intergrationOption.description}</div>
     </div>
   )
 }
@@ -25,161 +50,83 @@ const Product = ({ data }) => {
     description,
     style,
     title,
+    url,
     productpage,
   } = data.markdownRemark.frontmatter
-  const { timeline, features } = productpage
-  console.log(`btn-${style}`)
-  return (
-    <div className="product-page">
-      <Nav current={alias} style={style}></Nav>
-      <header className="product-header">
-        <div className="header-text-box">
-          <h1 className="heading">
-            <span className={`main-header header-${style}`}>{title}</span>
-            <span className={`sub-header header-${style}`}>{description}</span>
-          </h1>
+  console.log(productpage)
+  const { timeline, features, custermerReports, integrations } = productpage
 
-          <a href="#video" className={`btn-${style}`}>
-            Watch a video
-          </a>
-        </div>
-      </header>
-      <div className="product-main container">
-        <div className="product-main-section-a">
-          <div className={`product-main-section-a-title ${style}`}>
-            Process Flow
+  const content = (
+    <>
+      <div className="product-page">
+        <header className="product-header">
+          <div className="header-text-box">
+            <h1 className="heading">
+              <span className={`main-header header-${style}`}>{title}</span>
+              <span className={`sub-header header-${style}`}>
+                {description}
+              </span>
+            </h1>
+
+            <a href="#video" className={`btn-${style}`}>
+              Watch a video
+            </a>
           </div>
-          <TimeLine timeline={timeline} style={style}></TimeLine>
-        </div>
-        <div className={`line ${style}-line`}></div>
-        <div className="product-main-section-b">
-          <div className={`product-main-section-b-title ${style}`}>
-            Features
+        </header>
+        <div className="product-main container">
+          <div className="product-main-section-a">
+            <div className={`product-main-section-a-title ${style}`}>
+              Process Flow
+            </div>
+            <TimeLine timeline={timeline} style={style}></TimeLine>
           </div>
-          <div className="cards">
-            {features.map(feature => {
-              return featureCard(feature, style)
-            })}
-          </div>
-        </div>
-        <div className="product-main-section-c">
-          <div className={`product-main-section-c-title ${style}`}>
-            Switching To Complete Accounts Payable Solutions
-            <div className={`product-main-section-c-title-sub ${style}`}>
-              Custermers reported
+          <div className={`line ${style}-line`}></div>
+          <div className="product-main-section-b">
+            <div className={`product-main-section-b-title ${style}`}>
+              Features
+            </div>
+            <div className="cards">
+              {features.map(feature => {
+                return featureCard(style, feature)
+              })}
             </div>
           </div>
-          <div className="cards">
-            <div className="card">
-              <div className={`c100 p70 center ${style}`}>
-                <span>70%</span>
-                <div className="slice">
-                  <div className="bar"></div>
-                  <div className="fill"></div>
-                </div>
-              </div>
-              <div className={`text-box text-box-${style}`}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia
+          <div className="product-main-section-c">
+            <div className={`product-main-section-c-title ${style}`}>
+              Switching To Complete Accounts Payable Solutions
+              <div className={`product-main-section-c-title-sub ${style}`}>
+                Custermers reported
               </div>
             </div>
-            <div className="card">
-              <div className={`c100 p93 center ${style}`}>
-                <span>93%</span>
-
-                <div className="slice">
-                  <div className="bar"></div>
-
-                  <div className="fill"></div>
-                </div>
-              </div>
-              <div className={`text-box text-box-${style}`}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia
-              </div>
-            </div>
-            <div className="card">
-              <div className={`c100 p89 center ${style}`}>
-                <span>89%</span>
-
-                <div className="slice">
-                  <div className="bar"></div>
-
-                  <div className="fill"></div>
-                </div>
-              </div>
-              <div className={`text-box text-box-${style}`}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia
-              </div>
-            </div>
-            <div className="card">
-              <div className={`c100 p100 center ${style}`}>
-                <span>100%</span>
-
-                <div className="slice">
-                  <div className={`bar`}></div>
-
-                  <div className="fill"></div>
-                </div>
-              </div>
-              <div className={`text-box text-box-${style}`}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia
-              </div>
+            <div className="cards">
+              {custermerReports.map(report => {
+                return CustermerReports(style, report)
+              })}
             </div>
           </div>
-        </div>
-        <div className="product-main-section-d">
-          <div className={`product-main-section-d-title ${style}`}>
-            Integration Options
-          </div>
-          <div className="cards">
-            <div className={`card ${style}-line`}>
-              <i className="icon fa fa-file fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
+          <div className="product-main-section-d">
+            <div className={`product-main-section-d-title ${style}`}>
+              Integration Options
             </div>
-            <div className={`card ${style}-line`}>
-              <i className="icon fa fa-calculator fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
-            </div>
-            <div className={`card ${style}-line`}>
-              <i className="icon fa fa-check-circle fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
-            </div>
-            <div className={`card ${style}-line`}>
-              <i className="icon fa fa-check-circle fa-2x"></i>
-              <div className="text-box">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusantium, eligendi quia, mollitia nobis eaque voluptates
-                fugiat molestiae perspiciatis cupiditate expedita temporibus
-                neque modi velit nesciunt assumenda.
-              </div>
+            <div className="cards">
+              {integrations.map(intergration => {
+                return IntergrationOptions(style, intergration)
+              })}
             </div>
           </div>
-        </div>
-        <div id="video" className="product-main-section-d">
-          <div className="product-main-section-d-title">How it works</div>
-          <Player url="https://www.youtube.com/watch?v=Itm3x-4rgL0"></Player>
+          <div id="video" className="product-main-section-d">
+            <div className="product-main-section-d-title">How it works</div>
+            <Player url={url}></Player>
+          </div>
         </div>
       </div>
-      <Footer></Footer>
-    </div>
+    </>
+  )
+
+  return (
+    <>
+      <Layout current={alias} content={content} style={style}></Layout>
+    </>
   )
 }
 
@@ -193,6 +140,7 @@ export const pageQuery = graphql`
         description
         alias
         style
+        url
         productpage {
           timeline {
             description
@@ -201,6 +149,14 @@ export const pageQuery = graphql`
           features {
             description
             title
+          }
+          custermerReports {
+            description
+            percentage
+          }
+          integrations {
+            icon
+            description
           }
         }
       }

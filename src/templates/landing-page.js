@@ -1,11 +1,10 @@
 import React from "react"
 import "../css/main.css"
-import Nav from "../components/nav"
-import Footer from "../components/footer"
 import Markdown from "../components/markdown"
 import ProductCard from "../components/productCard"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
 
 function showSectionA(show, title, body, id, className) {
   if (show) {
@@ -35,7 +34,6 @@ function showSectionB(show, title, body) {
     )
   }
 }
-
 
 function displayProducts(edges) {
   const products = {}
@@ -94,12 +92,11 @@ const Landing = ({ data }) => {
     sectionC,
     sectionD,
   } = data.markdownRemark.frontmatter.landingPage
-  console.log(subtitle);
+  console.log(subtitle)
   const edges = data.allMarkdownRemark.edges
 
-  return (
-    <div>
-      <Nav current={"Home"}></Nav>
+  const content = (
+    <>
       <header className="header">
         <div className="header-text-box">
           <h1 className="heading">
@@ -151,12 +148,13 @@ const Landing = ({ data }) => {
           </p>
         </div>
       </div>
-      <footer>
-        <Footer></Footer>
-      </footer>
+    </>
+  )
 
-      {/* <footer>This is the footer woo</footer> */}
-    </div>
+  return (
+    <>
+      <Layout current={"Home"} content={content}></Layout>
+    </>
   )
 }
 
