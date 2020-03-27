@@ -7,7 +7,12 @@ const Form = ({ formTitle }) => {
     <>
       <section className="form">
         <h1 className="title">{formTitle}</h1>
-        <form className="cf container">
+        <form
+          className="cf container"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <div className="half left cf">
             <div className="field">
               <input type="text" required autoComplete="off" />
