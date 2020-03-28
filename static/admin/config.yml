@@ -13,6 +13,23 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "src/content/articles"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+     preview: false
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "article" }
+      - { label: "Featured Post", name: "featuredpost", widget: boolean }
+      - { label: "Article", name: "article", widget: object, fields: [
+          { label: "Title", name: "title", widget: "string" },
+          { label: "Date", name: "date", widget: "Date"},
+          { label: "URL", name: "url", widget: "string" },
+          { label: "Thumbnail", name: "thumbnail", widget: "image" },
+          { label: "Description", name: "description", widget: "string" }
+      ] }
   - name: "products"
     label: "Products"
     folder: "src/content/products"

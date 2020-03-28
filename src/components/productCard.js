@@ -7,7 +7,9 @@ const ProductCard = ({ title, body, style, fluidImage, alias }) => {
   return (
     <Link to={"/products/" + alias}>
       <div className={`card card-${style}`}>
+        <div class='img-container'>
         <Img fluid={fluidImage} className="img" />
+        </div>
         <h3 className="card-title title">
           <Markdown markdown={title} />
         </h3>
