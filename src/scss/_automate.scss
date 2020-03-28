@@ -4,17 +4,16 @@
   justify-content: space-between;
 
   .section-a {
-    .title{
+    .title {
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      h2{
+      h2 {
         font-size: 4rem;
       }
-      
     }
-    
+
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -157,6 +156,77 @@
     .btn:active {
       transform: translateY(0.2rem);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .section-b {
+    .title {
+      font-size: 4rem;
+      color: black;
+    }
+    width: 100%;
+    .presentation-mode {
+      background-color: transparent !important;
+    }
+    .carousel .slide {
+      text-align: center;
+      background: transparent !important;
+    }
+
+    .carousel-slider {
+      background: transparent !important;
+    }
+    .carousel.carousel-slider .control-arrow:hover {
+      background: $inship-color;
+      border-radius: 2rem;
+    }
+
+    .carousel .control-next.control-arrow:before {
+      border-left: 8px solid black;
+    }
+    .carousel .control-prev.control-arrow:before {
+      border-right: 8px solid black;
+    }
+
+    .control-dots .dot {
+      background-color: $inship-color;
+    }
+
+    .cards {
+      margin-top: 3rem;
+      display: grid;
+      justify-content: center !important;
+      grid-gap: 4rem;
+      grid-template-columns: 40% 40%;
+      grid-template-rows: auto auto;
+      .card {
+        margin-left: 15%;
+        width: 70%;
+        padding: 4rem;
+        border-radius: 1.5rem;
+        align-items: start;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+
+        .title {
+          font-size: 2rem;
+        }
+
+        .stars {
+          display: block;
+        }
+
+        .icon {
+          font-size: 5rem;
+          color: $inship-color;
+          margin-bottom: 2rem;
+        }
+        .text-box {
+          color: white;
+          padding: 0 3rem 0 2rem;
+          font-size: 1.4rem;
+        }
+      }
     }
   }
 }
