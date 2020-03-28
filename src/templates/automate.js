@@ -1,15 +1,31 @@
 import React from "react"
 import "../css/main.css"
 import Layout from "../components/layout"
-import Markdown from "../components/markdown"
-import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import NewsCard from "../components/news-card"
+import Carousels from "../components/carousel"
+
+function Testimonials(testimonal) {
+  const { stars, title, description } = testimonal
+  let array = []
+  for (let i = 0; i < stars; i++) {
+    array.push(<span className="fa fa-star"></span>)
+  }
+  return (
+    <div className="card">
+      <i className="icon fa fa-quote-right"></i>
+      <i className="stars">{array}</i>
+      <div className="title">{title}</div>
+      <div className="textbox">{description}</div>
+    </div>
+  )
+}
 
 const Automate = ({ data }) => {
-  console.log(data)
-
-  const edges = data.allMarkdownRemark.edges
+  const { edges } = data.allMarkdownRemark
+  const { automatePage } = data.markdownRemark.frontmatter
+  const { sectionB } = automatePage
+  const { testimonials } = sectionB
 
   return (
     <>
@@ -42,13 +58,30 @@ const Automate = ({ data }) => {
             </div>
             <div className="grid">
               {edges.map(edge => {
-                const { featuredpost, article } = edge.node.frontmatter
-                if (featuredpost) {
-                  return <NewsCard article={article} />
-                }
+                const { article } = edge.node.frontmatter
+                return <NewsCard article={article} />
               })}
             </div>
           </section>
+          <div className="section-b">
+            <div className="title-main">
+              <h2>{sectionB.title}</h2>
+            </div>
+            <Carousels>
+              {testimonials.map((testimonal, i) => {
+                if (testimonials[i + 1]) {
+                  return (
+                    <div className="cards">
+                      {Testimonials(testimonal)}
+                      {Testimonials(testimonials[i + 1])}
+                    </div>
+                  )
+                } else {
+                  return <div className="cards">{Testimonials(testimonal)}</div>
+                }
+              })}
+            </Carousels>
+          </div>
         </div>
       </Layout>
     </>
@@ -58,10 +91,10 @@ const Automate = ({ data }) => {
 export default Automate
 
 export const pageQuery = graphql`
-  query AutomateQuery {
+  query AutomateQuery($id: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "article" } } },
-      sort: {fields: frontmatter___article___date, order: DESC}
+      filter: { frontmatter: { templateKey: { eq: "article" } } }
+      sort: { fields: frontmatter___article___date, order: DESC }
     ) {
       edges {
         node {
@@ -79,6 +112,21 @@ export const pageQuery = graphql`
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        automatePage {
+          title
+          sectionB {
+            title
+            testimonials {
+              title
+              stars
+              description
             }
           }
         }

@@ -5,18 +5,22 @@ import ProductCard from "../components/productCard"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import ReactModal from "../components/modal"
+import Player from "../components/player"
 
-function showSectionA(show, title, body, id, className) {
+function showSectionA(show, title, body, id, className, url) {
   if (show) {
     return (
-      <section id={id} className={className}>
+      <section className={className}>
         <h2 className="section-a-heading">{title}</h2>
         <div className="text-box">
           <Markdown markdown={body} />
         </div>
-        <a href="#" className="btn">
-          Play our video
-        </a>
+        <ReactModal
+          content={<Player url={url}></Player>}
+          buttonStyle="btn"
+          buttonName="Play our video"
+        ></ReactModal>
       </section>
     )
   }
@@ -143,13 +147,14 @@ const Landing = ({ data }) => {
             </a>
           </div>
         </header>
-        <div className="main-page container">
+        <div id="what-we-do" className="main-page container">
           {showSectionA(
             sectionA.show,
             sectionA.title,
             sectionA.body,
             "what-we-do",
-            "section-a"
+            "section-a",
+            sectionA.url
           )}
           {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
           <section className="section-c">
@@ -220,6 +225,7 @@ export const pageQuery = graphql`
             line3
           }
           sectionA {
+            url
             body
             title
             show

@@ -1,11 +1,10 @@
 import React from "react"
 import "../css/main.css"
-import Markdown from "../components/markdown"
-import { useStaticQuery, graphql } from "gatsby"
 import TimeLine from "../components/timeline"
 import Player from "../components/player"
 import Layout from "../components/layout"
 import "@fortawesome/fontawesome-free/css/all.css"
+import { useStaticQuery, graphql } from "gatsby"
 
 function featureCard(style, feature) {
   return (

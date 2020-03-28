@@ -1,6 +1,4 @@
 import React from "react"
-import Nav from "./nav"
-import Footer from "./footer"
 import Markdown from "./markdown"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"

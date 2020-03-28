@@ -3,22 +3,22 @@
     padding: 0;
   }
 
-  .automate-page{
-    .grid{
+  .automate-page {
+    .grid {
       grid-template-columns: repeat(1, 1fr) !important;
       padding: 0 10rem !important;
     }
-    .title{
-      h2{
+    .title {
+      h2 {
         font-size: 6rem !important;
       }
     }
 
-    .btn{
+    .btn {
       font-size: 2.5rem !important;
     }
 
-    .card{
+    .card {
       .card__content {
         font-size: 4rem !important;
         p {
@@ -26,28 +26,26 @@
         }
       }
     }
-
   }
 
-  .header{
-    .heading{
+  .header {
+    .heading {
       font-size: 3rem;
     }
-    &-text-box{
-      width:50%;
+    &-text-box {
+      width: 50%;
       left: 40%;
     }
-    .main-header{
+    .main-header {
       font-size: 7rem;
     }
-    .btn{
+    .btn {
       font-size: 2.5rem !important;
     }
   }
 
   .contact-page {
     .section-a {
-      
       .cards {
         margin-left: 10%;
       }
@@ -118,24 +116,22 @@
         font-size: 3rem;
       }
 
-      .btn{
+      .btn {
         font-size: 2.5rem;
         width: 30%;
         margin-bottom: 5rem;
       }
     }
     .section-b {
-      
-      &-2{
+      &-2 {
         display: flex;
         flex-direction: column;
-        .text-box{
+        .text-box {
           margin: 2rem !important;
         }
       }
 
       &-heading {
-        
         margin-top: 10rem;
         font-size: 7rem;
       }
@@ -148,7 +144,6 @@
       }
     }
     .section-c {
-
       .card {
         width: 90%;
         margin-left: 2.5%;
@@ -254,7 +249,20 @@
   }
   .container {
     text-align: center;
-    max-width: 2048px;
-    margin: 0 10%;
+    max-width: 2048px !important;
+    margin: 0 10% !important;
+  }
+
+  .automate-page {
+    .section-b {
+      .title-main {
+        margin-left: 20% !important;
+      }
+      width: 80% !important;
+      max-width: 2048px !important;
+      .carousel-slider {
+        margin: 0 10% !important;
+      }
+    }
   }
 }

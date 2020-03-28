@@ -1,11 +1,12 @@
 ---
 templateKey: landing-page
 landingPage:
-  subtitle: 
-    line1: Providing the Technology 
-    line2: Behind Automated Accounts 
+  subtitle:
+    line1: Providing the Technology
+    line2: Behind Automated Accounts
     line3: Payable Processes
   sectionA:
+    url: https://www.youtube.com/watch?v=FBxFqmtJ3YA
     title: What We Do
     show: true
     body: >-

@@ -37,6 +37,7 @@
     "react-helmet": "^5.2.1",
     "react-modal": "^3.11.2",
     "react-player": "^1.15.2",
+    "react-responsive-carousel": "^3.1.51",
     "react-responsive-modal": "^4.0.1",
     "react-vertical-timeline-component": "^2.5.0",
     "react-visibility-sensor": "^5.1.1",
