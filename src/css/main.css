@@ -1969,8 +1969,8 @@ li {
   .automate-page .section-b {
     width: 100%; }
     .automate-page .section-b .title {
-      font-size: 4rem;
-      color: black; }
+      font-size: 3rem;
+      text-align: center; }
     .automate-page .section-b .presentation-mode {
       background-color: transparent !important; }
     .automate-page .section-b .carousel .slide {

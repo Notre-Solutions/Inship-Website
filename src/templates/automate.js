@@ -64,7 +64,9 @@ const Automate = ({ data }) => {
             </div>
           </section>
           <div className="section-b">
-            <div className="title">{sectionB.title}</div>
+            <div className="title">
+              <h2>{sectionB.title}</h2>
+            </div>
             <Carousels>
               {testimonials.map((testimonal, i) => {
                 if (testimonials[i + 1]) {
