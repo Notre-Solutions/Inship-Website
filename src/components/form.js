@@ -10,7 +10,7 @@ const Form = ({ formTitle }) => {
         <form
           className="cf container"
           name="contact"
-          method="POST"
+          method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
@@ -20,7 +20,7 @@ const Form = ({ formTitle }) => {
               <label htmlFor="Name" title="Name"></label>
             </div>
             <div className="field">
-              <input type="text" required autoComplete="off" name="email" />
+              <input type="email" required autoComplete="off" name="email" />
               <label htmlFor="email" title="Email"></label>
             </div>
             <div className="field">
@@ -39,12 +39,7 @@ const Form = ({ formTitle }) => {
               <label htmlFor="message" title="Message"></label>
             </div>
           </div>
-          <button
-            type="submit"
-            value="Submit"
-            id="input-submit"
-            className="submit-btn"
-          >
+          <button type="submit" className="submit-btn">
             Submit
           </button>
         </form>
