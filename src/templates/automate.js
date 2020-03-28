@@ -10,8 +10,10 @@ const Automate = ({ data }) => {
   console.log(data)
 
   const edges = data.allMarkdownRemark.edges
-  const content = (
+  
+  return (
     <>
+      <Layout current={"Why Automate"}>
       <div className="automate-page">
         <section className="header">
           <div className="header-text-box">
@@ -46,11 +48,7 @@ const Automate = ({ data }) => {
           </div>
         </section>
       </div>
-    </>
-  )
-  return (
-    <>
-      <Layout current={"Why Automate"} content={content}></Layout>
+      </Layout>
     </>
   )
 }

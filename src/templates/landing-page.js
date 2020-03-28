@@ -95,65 +95,61 @@ const Landing = ({ data }) => {
   console.log(subtitle)
   const edges = data.allMarkdownRemark.edges
 
-  const content = (
-    <>
-      <header className="header">
-        <div className="header-text-box">
-          <h1 className="heading">
-            <span className="main-header">
-              IN<span className="bold">SHIP</span> APS
-            </span>
-            <span className="sub-header">{subtitle.line1}</span>
-            <span className="sub-header">{subtitle.line2}</span>
-            <span className="sub-header">{subtitle.line3}</span>
-          </h1>
-          <a href="#what-we-do" className="btn btn-white bottom">
-            What We Do
-          </a>
-        </div>
-      </header>
-      <div className="main-page container">
-        {showSectionA(
-          sectionA.show,
-          sectionA.title,
-          sectionA.body,
-          "what-we-do",
-          "section-a"
-        )}
-        {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
-        <section className="section-c">
-          <h2 className="section-c-heading">Products</h2>
-          {displayProducts(edges)}
-        </section>
-        {/* {showSectionD(sectionD.show, sectionD.title)} */}
-        <div className="section-d">
-          <div className="section-d-title">The Process</div>
-          <Img
-            fluid={data.images.edges[0].node.childImageSharp.fluid}
-            className="prosses-img"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            repudiandae eius quibusdam neque odit deserunt delectus, doloribus
-            maxime recusandae, ad asperiores. Officia temporibus laborum
-            voluptates sequi laudantium doloremque ratione vero nobis omnis
-            corrupti. Nihil laboriosam est, iure excepturi nam omnis maiores
-            velit? Id non molestias ad obcaecati fugiat ut, mollitia quasi
-            distinctio inventore soluta aspernatur quis delectus iusto rem
-            laborum, quidem facilis ipsa reiciendis! Ea quidem, placeat minima
-            iure dolore incidunt nihil, voluptas cum pariatur facere harum
-            obcaecati doloremque velit tempore corrupti eligendi numquam nam
-            vitae! Commodi praesentium neque tempore, odio officia illo culpa in
-            dolores reprehenderit quasi porro totam dolorem dolor magnam
-          </p>
-        </div>
-      </div>
-    </>
-  )
-
   return (
     <>
-      <Layout current={"Home"} content={content}></Layout>
+      <Layout current={"Home"}>
+        <header className="header">
+          <div className="header-text-box">
+            <h1 className="heading">
+              <span className="main-header">
+                IN<span className="bold">SHIP</span> APS
+              </span>
+              <span className="sub-header">{subtitle.line1}</span>
+              <span className="sub-header">{subtitle.line2}</span>
+              <span className="sub-header">{subtitle.line3}</span>
+            </h1>
+            <a href="#what-we-do" className="btn btn-white bottom">
+              What We Do
+            </a>
+          </div>
+        </header>
+        <div className="main-page container">
+          {showSectionA(
+            sectionA.show,
+            sectionA.title,
+            sectionA.body,
+            "what-we-do",
+            "section-a"
+          )}
+          {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
+          <section className="section-c">
+            <h2 className="section-c-heading">Products</h2>
+            {displayProducts(edges)}
+          </section>
+          {/* {showSectionD(sectionD.show, sectionD.title)} */}
+          <div className="section-d">
+            <div className="section-d-title">The Process</div>
+            <Img
+              fluid={data.images.edges[0].node.childImageSharp.fluid}
+              className="prosses-img"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              repudiandae eius quibusdam neque odit deserunt delectus, doloribus
+              maxime recusandae, ad asperiores. Officia temporibus laborum
+              voluptates sequi laudantium doloremque ratione vero nobis omnis
+              corrupti. Nihil laboriosam est, iure excepturi nam omnis maiores
+              velit? Id non molestias ad obcaecati fugiat ut, mollitia quasi
+              distinctio inventore soluta aspernatur quis delectus iusto rem
+              laborum, quidem facilis ipsa reiciendis! Ea quidem, placeat minima
+              iure dolore incidunt nihil, voluptas cum pariatur facere harum
+              obcaecati doloremque velit tempore corrupti eligendi numquam nam
+              vitae! Commodi praesentium neque tempore, odio officia illo culpa
+              in dolores reprehenderit quasi porro totam dolorem dolor magnam
+            </p>
+          </div>
+        </div>
+      </Layout>
     </>
   )
 }

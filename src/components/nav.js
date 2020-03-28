@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import classnames from "classnames"
 import "../css/main.css"
 import ReactModal from "../components/modal"
-import Form from "../components/form"
+import MyForm from "../components/form"
 
 export default class Nav extends React.Component {
   constructor(props) {
@@ -131,7 +131,9 @@ export default class Nav extends React.Component {
                     >
                       <ReactModal
                         content={
-                          <Form formTitle="Contact Team for Pricing"></Form>
+                          <MyForm
+                            formTitle={"Contact Team for Pricing"}
+                          ></MyForm>
                         }
                         buttonStyle="burger-navigation__link nav-pricing"
                         buttonName="Pricing"
@@ -163,7 +165,7 @@ export default class Nav extends React.Component {
                   <li className={page.className}>
                     <ReactModal
                       content={
-                        <Form formTitle="Contact Team for Pricing"></Form>
+                        <MyForm formTitle={"Contact Team for Pricing"}></MyForm>
                       }
                       buttonStyle="menu-nav__link nav-pricing"
                       buttonName="Pricing"

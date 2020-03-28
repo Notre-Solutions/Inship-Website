@@ -2270,7 +2270,9 @@ li {
   color: #46bbb5;
 }
 
-.form .label-before, .form .field input:valid + label::before, .form .field input:focus + label::before {
+.form .label-before, .form .field input:valid + label::before,
+.form .field textarea:valid + label::before, .form .field input:focus + label::before,
+.form .field textarea:focus + label::before {
   line-height: 2rem;
   font-size: 1.2rem;
   top: -1.5rem;
@@ -2301,7 +2303,8 @@ li {
   transition: 300ms all;
 }
 
-.form .field input {
+.form .field input,
+.form .field textarea {
   background: transparent;
   width: 100%;
   line-height: 4rem;
@@ -2314,15 +2317,18 @@ li {
   border-bottom: 0.1rem solid #ccc;
 }
 
-.form .field input:focus {
+.form .field input:focus,
+.form .field textarea:focus {
   outline: 0;
 }
 
-.form .field input:valid + label::before {
+.form .field input:valid + label::before,
+.form .field textarea:valid + label::before {
   content: attr(data-title);
 }
 
-.form .field input:focus + label::before {
+.form .field input:focus + label::before,
+.form .field textarea:focus + label::before {
   background: transparent;
 }
 
