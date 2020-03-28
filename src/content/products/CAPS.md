@@ -4,7 +4,7 @@ title: Complete Accounts Payable Solutions
 alias: CAPS
 featuredimage: /img/caps-logo.jpeg
 featuredpost: true
-style: color-3
+style: color-2
 id: 3
 description: >-
   CAPs is a business's Accounts Payable Department Online.
