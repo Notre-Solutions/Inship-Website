@@ -1,27 +1,22 @@
 import React from "react"
-import Img from 'gatsby-image'
+import Img from "gatsby-image"
 
-const NewsCard = () => {
+const NewsCard = ({article }) => {
+  const { date, title, url, description, thumbnail } = article
+  console.log(title);
   return (
     <div class="card">
-      <figure class="card__img">
-        <img
-          src="../img/boats.jpg"
-          alt="Card preview img"
-        />
-      </figure>
-
+      <div className="img">
+        <Img fluid={thumbnail.childImageSharp.fluid} />
+      </div>
       <div class="card__content">
         <div class="text-component">
-          <h4>Title of the Card</h4>
-          <p class="text-sm color-contrast-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            suscipit.
-          </p>
+          <h4>{title}</h4>
+          <p class="text-sm color-contrast-medium">{description}</p>
         </div>
-
+        <small>{date}</small>
         <div class="margin-top-sm">
-          <a class="btn btn--subtle btn--sm" href="#0">
+          <a class="btn " href={url} target="_blank">
             Read more
           </a>
         </div>
