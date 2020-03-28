@@ -4,7 +4,6 @@ automatePage:
   title: Why Automate
   sectionB:
     title: Testimonials
-    show: true
     testimonials:
       - title: Inship Is the BEST
         stars: 4

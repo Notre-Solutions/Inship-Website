@@ -84,4 +84,3 @@ collections:
               ]}
           ]}
           - {label: "Body", name: "name", widget: "markdown", required: false}
-      

@@ -23,6 +23,9 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
+ol li {
+  margin-left: 2em; }
+
 .isFeature {
   color: #46bbb5; }
 
@@ -228,14 +231,13 @@ li {
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .main-page .section-b {
-  height: 95vh;
-  margin: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 122, 117, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/messy_room.jpg);
   background-image: linear-gradient(rgba(46, 122, 117, 0.7), rgba(46, 122, 117, 0.7)), url(../img/messy_room.jpg);
   background-size: cover;
@@ -244,27 +246,29 @@ li {
   clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 100% 15vh, 100% 100%, 0% 100%);
   position: relative; }
-  .main-page .section-b ol li {
-    margin-left: 2em; }
+  .main-page .section-b-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-page .section-b-2 .text-box {
+      margin: 2rem !important; }
   .main-page .section-b-heading {
-    padding: 5rem;
-    display: block;
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    margin: 4rem 0 0 2rem;
     font-size: 5rem; }
   .main-page .section-b .text-box {
-    width: 50%;
+    width: 100%;
     border-radius: 1rem;
     background-color: rgba(139, 139, 139, 0.76);
-    padding: 5rem;
-    margin-top: 2rem;
+    padding: 2rem;
     text-align: justify;
-    position: absolute;
-    display: block;
-    font-size: 1.5rem;
-    top: 20%;
-    left: 45rem; }
+    font-size: 1.5rem; }
+  .main-page .section-b .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .main-page .section-b .bottom .text-box {
+      margin: 2rem !important;
+      margin-bottom: 4rem !important; }
 
 .main-page .section-c {
   text-align: center;
@@ -296,19 +300,18 @@ li {
             justify-content: space-between;
     border-radius: 1rem;
     padding: 2rem;
+    height: 100%;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
+    .main-page .section-c .card .img-container {
+      width: 50%; }
     .main-page .section-c .card-title {
       font-size: 3rem; }
     .main-page .section-c .card .img {
       border-radius: 1rem;
       border: 0.1rem solid white;
-      margin-top: 1rem;
-      margin-bottom: 3rem;
       -o-object-fit: cover;
-         object-fit: cover;
-      height: 50%;
-      width: 50%; }
+         object-fit: cover; }
     .main-page .section-c .card .text-box {
       font-size: 1.7rem;
       padding: 2rem; }
@@ -384,7 +387,7 @@ li {
       .main-page .section-c .card-color-3 h3 {
         color: white; }
       .main-page .section-c .card-color-3 .title {
-        width: 12rem; }
+        width: 50rem; }
       .main-page .section-c .card-color-3 .text-box {
         color: white; }
       .main-page .section-c .card-color-3 .btn {
@@ -761,6 +764,27 @@ li {
 @media screen and (max-width: 550px) {
   body {
     padding: 0; }
+  .automate-page .grid {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    padding: 0 10rem !important; }
+  .automate-page .title h2 {
+    font-size: 6rem !important; }
+  .automate-page .btn {
+    font-size: 2.5rem !important; }
+  .automate-page .card .card__content {
+    font-size: 4rem !important; }
+    .automate-page .card .card__content p {
+      font-size: 2rem !important; }
+  .header .heading {
+    font-size: 3rem; }
+  .header-text-box {
+    width: 50%;
+    left: 40%; }
+  .header .main-header {
+    font-size: 7rem; }
+  .header .btn {
+    font-size: 2.5rem !important; }
   .contact-page .section-a .cards {
     margin-left: 10%; }
   .pricing-page .header {
@@ -791,9 +815,9 @@ li {
     width: 80%;
     margin-left: 5%; }
     .cards .card {
-      margin: 1rem 10rem 0rem 10rem; }
-      .cards .card .img {
-        width: 50% !important; }
+      margin: 1rem 10rem 0rem 10rem;
+      min-height: 70rem !important;
+      overflow: hidden; }
       .cards .card .text-box {
         padding: 0 6rem 0 6rem !important; }
   .product-main-section-c .cards {
@@ -805,25 +829,46 @@ li {
   .product-main-section-d .card {
     width: 90%;
     margin-left: 12.5%; }
-  .main-page .section-a .text-box {
-    font-size: 3rem; }
-  .main-page .section-b {
-    height: 215vh; }
+  .main-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main-page .section-a .text-box {
+      font-size: 3rem; }
+    .main-page .section-a .btn {
+      font-size: 2.5rem;
+      width: 30%;
+      margin-bottom: 5rem; }
+    .main-page .section-b-2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .main-page .section-b-2 .text-box {
+        margin: 2rem !important; }
     .main-page .section-b-heading {
-      padding: 2rem; }
+      margin-top: 10rem;
+      font-size: 7rem; }
     .main-page .section-b .text-box {
       font-size: 3rem;
       width: 90%;
-      left: 5%;
+      left: 10%;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
       top: 10%; }
-  .main-page .section-c .card {
-    width: 90%;
-    margin-left: 2.5%; }
-  .main-page .section-d {
-    margin: 5rem; }
+    .main-page .section-c .card {
+      width: 90%;
+      margin-left: 2.5%; }
+    .main-page .section-d {
+      margin: 5rem; }
   html {
     font-size: 6px; }
   .time-line {

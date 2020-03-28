@@ -26,9 +26,39 @@ function showSectionB(show, title, body) {
   if (show) {
     return (
       <section className="section-b">
-        <h2 className="section-b-heading">{title}</h2>
-        <div className="text-box">
-          <Markdown markdown={body} />
+        <div className="section-b-1">
+          <h2 className="section-b-heading">{title}</h2>
+        </div>
+        <div className="section-b-2">
+          <div className="text-box">
+            <h3>Lorem Title</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            et natus voluptate. Distinctio quaerat repellendus atque cumque
+            culpa quae, molestiae ad minus, deserunt sunt, fuga enim ipsum rerum
+            illo vel cum soluta dolore perspiciatis debitis! Voluptates illum,
+            est architecto ut doloremque doloribus perferendis, at, aliquid cum
+            quia asperiores veniam libero.
+          </div>
+          <div className="text-box">
+            <h3>Lorem Title</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            et natus voluptate. Distinctio quaerat repellendus atque cumque
+            culpa quae, molestiae ad minus, deserunt sunt, fuga enim ipsum rerum
+            illo vel cum soluta dolore perspiciatis debitis! Voluptates illum,
+            est architecto ut doloremque doloribus perferendis, at, aliquid cum
+            quia asperiores veniam libero.
+          </div>
+        </div>
+        <div className="bottom">
+          <div className="text-box">
+            <h3>Lorem Title</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            et natus voluptate. Distinctio quaerat repellendus atque cumque
+            culpa quae, molestiae ad minus, deserunt sunt, fuga enim ipsum rerum
+            illo vel cum soluta dolore perspiciatis debitis! Voluptates illum,
+            est architecto ut doloremque doloribus perferendis, at, aliquid cum
+            quia asperiores veniam libero.
+          </div>
         </div>
       </section>
     )
