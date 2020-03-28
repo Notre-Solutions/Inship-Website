@@ -1,7 +1,7 @@
 import React from "react"
 import "../css/main.css"
 import ReactModal from "../components/modal"
-import Form from "../components/form"
+import MyForm from "../components/form"
 import Layout from "../components/layout"
 import "@fortawesome/fontawesome-free/css/all.css"
 
@@ -54,7 +54,8 @@ const content = (
       </section>
 
       <section className="section-b">
-        <Form formTitle={"General Inquiry"}></Form>
+        <MyForm formTitle={"General Inquiry"}></MyForm>
+        {/* <Form formTitle={"General Inquiry"}></Form> */}
       </section>
     </div>
   </div>
