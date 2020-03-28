@@ -161,8 +161,10 @@
 
   .section-b {
     .title {
-      font-size: 3rem;
       text-align: center;
+      h2 {
+        font-size: 4rem;
+      }
     }
     width: 100%;
     .presentation-mode {

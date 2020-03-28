@@ -223,7 +223,8 @@ li {
     transition: all 0.5s ease-in-out; }
   .main-page .section-a .btn:hover {
     background-color: #46bbb5;
-    color: white; }
+    color: white;
+    cursor: pointer; }
   .main-page .section-a .btn:active {
     -webkit-transform: translateY(0.2rem);
             transform: translateY(0.2rem);
@@ -1969,8 +1970,9 @@ li {
   .automate-page .section-b {
     width: 100%; }
     .automate-page .section-b .title {
-      font-size: 3rem;
       text-align: center; }
+      .automate-page .section-b .title h2 {
+        font-size: 4rem; }
     .automate-page .section-b .presentation-mode {
       background-color: transparent !important; }
     .automate-page .section-b .carousel .slide {
