@@ -64,7 +64,7 @@ const Automate = ({ data }) => {
             </div>
           </section>
           <div className="section-b">
-            <div className="title">
+            <div className="title-main">
               <h2>{sectionB.title}</h2>
             </div>
             <Carousels>

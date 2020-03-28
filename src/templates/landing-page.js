@@ -154,7 +154,7 @@ const Landing = ({ data }) => {
             sectionA.body,
             "what-we-do",
             "section-a",
-            "https://www.youtube.com/watch?v=FBxFqmtJ3YA"
+            sectionA.url
           )}
           {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
           <section className="section-c">
@@ -225,6 +225,7 @@ export const pageQuery = graphql`
             line3
           }
           sectionA {
+            url
             body
             title
             show
