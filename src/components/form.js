@@ -12,6 +12,7 @@ const Form = ({ formTitle }) => {
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
           <div className="half left cf">
             <div className="field">
