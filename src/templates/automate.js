@@ -97,7 +97,7 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            featuredimage
+            featuredpost
             article {
               title
               url
