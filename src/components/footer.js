@@ -55,7 +55,8 @@ const Footer = () => {
             </a>
           </div>
           <div className="copy-right">
-            &copy; 2020 Inship Accounts Payable Solutions Ltd.
+            &copy; {new Date().getFullYear()} Inship Accounts Payable Solutions
+            Ltd.
           </div>
         </div>
         <div className="line"></div>

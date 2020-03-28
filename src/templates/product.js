@@ -57,76 +57,72 @@ const Product = ({ data }) => {
   console.log(productpage)
   const { timeline, features, custermerReports, integrations } = productpage
 
-  const content = (
-    <>
-      <div className="product-page">
-        <header className={`product-header-${style}`}>
-          <div className="header-text-box">
-            <h1 className="heading">
-              <span className={`main-header header-${style}`}>{title}</span>
-              <span className={`sub-header header-${style}`}>
-                {description}
-              </span>
-            </h1>
-
-            <a href="#video" className={`btn-${style}`}>
-              Watch a video
-            </a>
-          </div>
-        </header>
-        <div className="product-main container">
-          <div className="product-main-section-a">
-            <div className={`product-main-section-a-title ${style}`}>
-              Process Flow
-            </div>
-            <TimeLine timeline={timeline} style={style}></TimeLine>
-          </div>
-          <div className={`line ${style}-line`}></div>
-          <div className="product-main-section-b">
-            <div className={`product-main-section-b-title ${style}`}>
-              Features
-            </div>
-            <div className="cards">
-              {features.map(feature => {
-                return featureCard(style, feature)
-              })}
-            </div>
-          </div>
-          <div className="product-main-section-c">
-            <div className={`product-main-section-c-title ${style}`}>
-              Switching To Complete Accounts Payable Solutions
-              <div className={`product-main-section-c-title-sub ${style}`}>
-                Custermers reported
-              </div>
-            </div>
-            <div className="cards">
-              {custermerReports.map(report => {
-                return CustermerReports(style, report)
-              })}
-            </div>
-          </div>
-          <div className="product-main-section-d">
-            <div className={`product-main-section-d-title ${style}`}>
-              Integration Options
-            </div>
-            <div className="cards">
-              {integrations.map(intergration => {
-                return IntergrationOptions(style, intergration)
-              })}
-            </div>
-          </div>
-          <div id="video" className="product-main-section-d">
-            <div className="product-main-section-d-title">How it works</div>
-            <Player url={url}></Player>
-          </div>
-        </div>
-      </div>
-    </>
-  )
-
   return (
     <>
-      <Layout current={alias} content={content} style={style}></Layout>
+      <Layout current={alias} style={style}>
+        <div className="product-page">
+          <header className={`product-header-${style}`}>
+            <div className="header-text-box">
+              <h1 className="heading">
+                <span className={`main-header header-${style}`}>{title}</span>
+                <span className={`sub-header header-${style}`}>
+                  {description}
+                </span>
+              </h1>
+
+              <a href="#video" className={`btn-${style}`}>
+                Watch a video
+              </a>
+            </div>
+          </header>
+          <div className="product-main container">
+            <div className="product-main-section-a">
+              <div className={`product-main-section-a-title ${style}`}>
+                Process Flow
+              </div>
+              <TimeLine timeline={timeline} style={style}></TimeLine>
+            </div>
+            <div className={`line ${style}-line`}></div>
+            <div className="product-main-section-b">
+              <div className={`product-main-section-b-title ${style}`}>
+                Features
+              </div>
+              <div className="cards">
+                {features.map(feature => {
+                  return featureCard(style, feature)
+                })}
+              </div>
+            </div>
+            <div className="product-main-section-c">
+              <div className={`product-main-section-c-title ${style}`}>
+                Switching To Complete Accounts Payable Solutions
+                <div className={`product-main-section-c-title-sub ${style}`}>
+                  Custermers reported
+                </div>
+              </div>
+              <div className="cards">
+                {custermerReports.map(report => {
+                  return CustermerReports(style, report)
+                })}
+              </div>
+            </div>
+            <div className="product-main-section-d">
+              <div className={`product-main-section-d-title ${style}`}>
+                Integration Options
+              </div>
+              <div className="cards">
+                {integrations.map(intergration => {
+                  return IntergrationOptions(style, intergration)
+                })}
+              </div>
+            </div>
+            <div id="video" className="product-main-section-d">
+              <div className="product-main-section-d-title">How it works</div>
+              <Player url={url}></Player>
+            </div>
+          </div>
+        </div>
+      </Layout>
     </>
   )
 }
