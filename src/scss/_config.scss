@@ -44,6 +44,10 @@ html {
   scroll-behavior: smooth;
 }
 
+ol li {
+  margin-left: 2em;
+}
+
 .isFeature {
   color: $inship-color;
 }

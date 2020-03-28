@@ -27,6 +27,10 @@ html {
   scroll-behavior: smooth;
 }
 
+ol li {
+  margin-left: 2em;
+}
+
 .isFeature {
   color: #46bbb5;
 }
@@ -293,14 +297,13 @@ li {
 }
 
 .main-page .section-b {
-  height: 95vh;
-  margin: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 122, 117, 0.7)), to(rgba(46, 122, 117, 0.7))), url(../img/messy_room.jpg);
   background-image: linear-gradient(rgba(46, 122, 117, 0.7), rgba(46, 122, 117, 0.7)), url(../img/messy_room.jpg);
   background-size: cover;
@@ -311,31 +314,39 @@ li {
   position: relative;
 }
 
-.main-page .section-b ol li {
-  margin-left: 2em;
+.main-page .section-b-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-page .section-b-2 .text-box {
+  margin: 2rem !important;
 }
 
 .main-page .section-b-heading {
-  padding: 5rem;
-  display: block;
-  position: absolute;
-  top: 5%;
-  left: 5%;
+  margin: 4rem 0 0 2rem;
   font-size: 5rem;
 }
 
 .main-page .section-b .text-box {
-  width: 50%;
+  width: 100%;
   border-radius: 1rem;
   background-color: rgba(139, 139, 139, 0.76);
-  padding: 5rem;
-  margin-top: 2rem;
+  padding: 2rem;
   text-align: justify;
-  position: absolute;
-  display: block;
   font-size: 1.5rem;
-  top: 20%;
-  left: 45rem;
+}
+
+.main-page .section-b .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-page .section-b .bottom .text-box {
+  margin: 2rem !important;
+  margin-bottom: 4rem !important;
 }
 
 .main-page .section-c {
@@ -999,6 +1010,19 @@ li {
   .automate-page .card .card__content p {
     font-size: 2rem !important;
   }
+  .header .heading {
+    font-size: 3rem;
+  }
+  .header-text-box {
+    width: 50%;
+    left: 40%;
+  }
+  .header .main-header {
+    font-size: 7rem;
+  }
+  .header .btn {
+    font-size: 2.5rem !important;
+  }
   .contact-page .section-a .cards {
     margin-left: 10%;
   }
@@ -1054,19 +1078,43 @@ li {
     width: 90%;
     margin-left: 12.5%;
   }
+  .main-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .main-page .section-a .text-box {
     font-size: 3rem;
   }
-  .main-page .section-b {
-    height: 215vh;
+  .main-page .section-a .btn {
+    font-size: 2.5rem;
+    width: 30%;
+    margin-bottom: 5rem;
+  }
+  .main-page .section-b-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-page .section-b-2 .text-box {
+    margin: 2rem !important;
   }
   .main-page .section-b-heading {
-    padding: 2rem;
+    margin-top: 10rem;
+    font-size: 7rem;
   }
   .main-page .section-b .text-box {
     font-size: 3rem;
     width: 90%;
-    left: 5%;
+    left: 10%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

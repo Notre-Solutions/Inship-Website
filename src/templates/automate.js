@@ -36,7 +36,7 @@ const Automate = ({ data }) => {
             </div>
           </section>
 
-          <section className="section-a">
+          <section className="section-a container">
             <div className="title">
               <h2>Articles</h2>
             </div>
