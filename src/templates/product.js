@@ -2,6 +2,7 @@ import React from "react"
 import "../css/main.css"
 import TimeLine from "../components/timeline"
 import Player from "../components/player"
+import Markdown from "../components/markdown"
 import Layout from "../components/layout"
 import "@fortawesome/fontawesome-free/css/all.css"
 import { useStaticQuery, graphql } from "gatsby"
@@ -65,7 +66,7 @@ const Product = ({ data }) => {
               <h1 className="heading">
                 <span className={`main-header header-${style}`}>{title}</span>
                 <span className={`sub-header header-${style}`}>
-                  {description}
+                  <Markdown markdown={description}/>
                 </span>
               </h1>
 

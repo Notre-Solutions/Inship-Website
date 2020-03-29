@@ -8,6 +8,7 @@ const styles = {
   closeIcon: {
     color: "red",
     borderColor: "none",
+    marginLeft: "0"
   },
   modal: {
     color: "rgba(46, 122, 117)",

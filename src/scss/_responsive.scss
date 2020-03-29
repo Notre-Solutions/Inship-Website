@@ -1,3 +1,4 @@
+
 @include media-sm-rev {
   html {
     font-size: 8px;
@@ -70,6 +71,37 @@
       grid-template-columns: 1fr !important;
     }
   }
+}
+
+@include media-landscape{
+  .header {
+    &-text-box {
+      top: 5% !important;
+      width: 50% !important;
+    }
+  }
+  .burger-navigation{
+    height: 100% !important;
+    &__link{
+      font-size: 2.5rem !important;
+    }
+  }
+  .product-page{
+    .header-text-box{
+      width: 80% !important;
+      .main-header{
+        font-size: 3rem !important;
+      }
+    }
+  }
+  .form {
+    .submit-btn {
+      top: 55% !important;
+      bottom: 35% !important;
+    }
+  }
+
+
 }
 
 @include media-md {
