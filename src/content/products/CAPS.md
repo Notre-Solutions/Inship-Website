@@ -69,17 +69,25 @@ productpage:
         Documents are forward for approval, this can be a simple or complex
         process based on a businesses needs and it be automatically changed
         based on different factors.
-    - title: Grabbing infomation off your invoices
+    - title: Automatically Matching to PO/GRN
+      description: Invoices are automatically matched to PO/GRNS.
+    - title: One Click to Approve and Process
       description: >-
-        Accounts Payable is a very manual process, business received documents
-        by post and email, they are then matched, sorted, approved by one or
-        many people, entered into an accounting or e.r.p. system, then filed,
-        reconciled and stored for years. This process is costly (based on pwc
-        report) costs up to $4.50 per invoice, as all businesses are always
-        looking for cost and efficiency improvements introducing a InShip
-        process will reduce a 8-10 stage manual process to an automatic that is
-        up to 9 times faster and removed between 80% and 90% of the cost. Reduce
-        processing costs significantly
+        When the final or only approver clicks approve on an invoice all
+        accounting for the invoice is complete and it is ready for upload.
+    - title: Bulk Approval
+      description: >-
+        Both GL and PO invoices (match within agreed limit) can be bulk
+        approved, this leads to ten's or hundreds of invoices being processed
+        with a couple of clicks.
+    - title: Bulk Upload
+      description: >-
+        Invoices are uploaded in bulk, this can be manual, timed or automatic
+        based on your systems needs.
+    - title: Statement Reconciliation
+      description: >-
+        CAP's can stores all processed invoices for 7 years and provides an
+        extensive search facility for users with many options.
   custermerReports:
     - percentage: 90
       description: Time saving
