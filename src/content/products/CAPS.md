@@ -2,7 +2,7 @@
 templateKey: product
 title: Complete Accounts Payable Solutions
 alias: CAPS
-url: "https://www.youtube.com/watch?v=1el1FR1d1R4"
+url: 'https://www.youtube.com/watch?v=1el1FR1d1R4'
 featuredimage: /img/caps-logo.jpeg
 featuredpost: true
 style: color-2
@@ -44,7 +44,7 @@ productpage:
       description: >-
         Workflow can be defined by supplier codes, general ledger codes,
         delivery address, project code etc etc.
-    - title: "Purchase Order/Goods Received Note Matching "
+    - title: 'Purchase Order/Goods Received Note Matching '
       description: >-
         CAPs can match invoices to PO's based or GRN's at a total or a line by
         line level. Delivery, discounts and various surcharges can also be
@@ -55,39 +55,20 @@ productpage:
         project or other codes and invoices line item, These features can be
         combined for complex auto coding.
   timeline:
-    - title: Easy to use
+    - title: Supplier/User Forwards Document
       description: >-
-        Accounts Payable is a very manual process, business received documents
-        by post and email, they are then matched, sorted, approved by one or
-        many people, entered into an accounting or e.r.p. system, then filed,
-        reconciled and stored for years. This process is costly (based on pwc
-        report) costs up to $4.50 per invoice, as all businesses are always
-        looking for cost and efficiency improvements introducing a InShip
-        process will reduce a 8-10 stage manual process to an automatic that is
-        up to 9 times faster and removed between 80% and 90% of the cost. Reduce
-        processing costs significantly
-    - title: Intergrates with your account package
+        Invoice and other documents such as Credit Notes or Statements can be
+        email or DnD into CAPs.
+    - title: Document Processing
       description: >-
-        Accounts Payable is a very manual process, business received documents
-        by post and email, they are then matched, sorted, approved by one or
-        many people, entered into an accounting or e.r.p. system, then filed,
-        reconciled and stored for years. This process is costly (based on pwc
-        report) costs up to $4.50 per invoice, as all businesses are always
-        looking for cost and efficiency improvements introducing a InShip
-        process will reduce a 8-10 stage manual process to an automatic that is
-        up to 9 times faster and removed between 80% and 90% of the cost. Reduce
-        processing costs significantly
-    - title: Statment Reconsiulation
+        Once a new document is received, CAPs identifies the document,
+        automatically captures the required information, sets it coding rules
+        and it's workflow.
+    - title: Approval Workflow
       description: >-
-        Accounts Payable is a very manual process, business received documents
-        by post and email, they are then matched, sorted, approved by one or
-        many people, entered into an accounting or e.r.p. system, then filed,
-        reconciled and stored for years. This process is costly (based on pwc
-        report) costs up to $4.50 per invoice, as all businesses are always
-        looking for cost and efficiency improvements introducing a InShip
-        process will reduce a 8-10 stage manual process to an automatic that is
-        up to 9 times faster and removed between 80% and 90% of the cost. Reduce
-        processing costs significantly
+        Documents are forward for approval, this can be a simple or complex
+        process based on a businesses needs and it be automatically changed
+        based on different factors.
     - title: Grabbing infomation off your invoices
       description: >-
         Accounts Payable is a very manual process, business received documents
