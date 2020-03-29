@@ -26,12 +26,14 @@ const Contact = () => {
                 <div className="card">
                   <h1 className="title">Location</h1>
                   <i className="fas fa-map-marked icon"></i>
-                  <div className="address">
-                    <div>GW108,</div>
-                    <div>Greenway Hub,</div>
-                    <div>7 Grangegorman Lower,</div>
-                    <div>Arran Quay,</div>
-                    <div>Dublin, Ireland</div>
+                  <div className="addressContainer">
+                    <div className="address">
+                      <div>GW108,</div>
+                      <div>Greenway Hub,</div>
+                      <div>7 Grangegorman Lower,</div>
+                      <div>Arran Quay,</div>
+                      <div>Dublin, Ireland</div>
+                    </div>
                   </div>
                 </div>
                 <div className="card">

@@ -34,9 +34,10 @@ const Automate = ({ data }) => {
           <section className="header">
             <div className="header-text-box">
               <h1 className="heading">
-                <span className="main-header">
+
+                <div className="main-header">
                   Why<span className="bold"> Automate</span>
-                </span>
+                </div>
               </h1>
               {/* Uncomment for animation ;)  */}
               <div class="animation-wrapper">

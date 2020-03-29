@@ -7,9 +7,12 @@ $grey-light: #f3f3f3;
 $APC-light: #ded4a2;
 $APC-dark: #a67440;
 $APC-bg: #14182f;
-$CAPS-light: #5fb6d6;
-$CAPS-dark: #576aa6;
-$CAPS-bg: #222222;
+// $CAPS-light: #5fb6d6;
+// $CAPS-dark: #576aa6;
+// $CAPS-bg: #222222;
+$CAPS-light: rgb(255,162,11);
+$CAPS-dark: rgb(250,133,29);
+$CAPS-bg: rgb(47,47,47);
 $T2P-color: white;
 $T2P-bg: #252941;
 
@@ -43,6 +46,9 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+html, body {
+  overflow-x:hidden 
+} 
 
 ol li {
   margin-left: 2em;
@@ -147,29 +153,32 @@ li {
 }
 
 @mixin media-sm {
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 200px) {
     @content;
   }
 }
 
+// 550px or Smaller
 @mixin media-sm-rev {
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 666px) {
     @content;
   }
 }
-
+// 551px or Larger
 @mixin media-md {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }
 
+// 1024px or Larger
 @mixin media-lg {
   @media screen and (min-width: 1024px) {
     @content;
   }
 }
 
+// 1600px or Larger
 @mixin media-xl {
   @media screen and (min-width: 1600px) {
     @content;

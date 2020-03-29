@@ -1,239 +1,110 @@
 @include media-sm-rev {
-  body {
-    padding: 0;
+  html {
+    font-size: 8px;
   }
 
-  .automate-page {
-    .grid {
-      grid-template-columns: repeat(1, 1fr) !important;
-      padding: 0 10rem !important;
-    }
-    .title {
-      h2 {
-        font-size: 6rem !important;
-      }
-    }
+  .form{
 
-    .btn {
-      font-size: 2.5rem !important;
-    }
+  .submit-btn{
+    left:37.5% !important; 
+    width: 25% !important;
+    top: 85% !important;
+    bottom: 5% !important;
+  }
+  
+  }
 
-    .card {
-      .card__content {
-        font-size: 4rem !important;
-        p {
-          font-size: 2rem !important;
+  .product-main{
+    
+    &-section-c{
+      &-title{
+        font-size: 3rem !important;
+        font-weight: 600;
+        &-sub{
+          font-weight: 100 !important;
         }
       }
+      .cards {
+        margin: 0  !important;
+      }
+    }
+    &-section-d{
+      margin: 2rem;
     }
   }
 
   .header {
-    .heading {
-      font-size: 3rem;
-    }
     &-text-box {
-      width: 50%;
-      left: 40%;
-    }
-    .main-header {
-      font-size: 7rem;
-    }
-    .btn {
-      font-size: 2.5rem !important;
+      top: 15%;
+      left: 7.5% !important;
+      width: 70%;
     }
   }
 
-  .contact-page {
+  .main-page{
     .section-a {
-      .cards {
-        margin-left: 10%;
-      }
-    }
-  }
-  .pricing-page {
-    .header {
-      height: auto !important;
-      clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%) !important;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 130vh, 0 100%) !important;
-      background-size: auto;
-    }
-    .section-c {
-      align-items: start;
-      .cards {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .card {
-        margin: 2rem 0rem 2rem 0rem !important;
-        width: 20rem;
-      }
-    }
-  }
-  .cards {
-    justify-self: center;
-    grid-template-columns: 1fr !important;
-
-    width: 80%;
-    // height: 150rem;
-    margin-left: 5%;
-    .card {
-      margin: 1rem 10rem 0rem 10rem;
-      min-height: 70rem !important;
-      overflow: hidden;
+      margin: 2rem !important;
       .text-box {
-        padding: 0 6rem 0 6rem !important;
+        padding: 0 2rem 1rem 2rem !important;
       }
-    }
-  }
-
-  .product-main {
-    &-section-c {
-      .cards {
-        text-align: center;
-        margin-left: 10%;
-      }
-    }
-    &-section-b {
-      .card {
-        width: 90%;
-        margin-left: 10%;
-      }
-    }
-    &-section-d {
-      .card {
-        width: 90%;
-        margin-left: 12.5%;
-      }
-    }
-  }
-  .main-page {
-    display: flex;
-    flex-direction: column;
-    .section-a {
-      .text-box {
-        font-size: 3rem;
-      }
-
       .btn {
-        font-size: 2.5rem;
-        width: 30%;
-        margin-bottom: 5rem;
+        width: 50% !important;
       }
     }
+  
     .section-b {
       &-2 {
-        display: flex;
-        flex-direction: column;
-        .text-box {
-          margin: 2rem !important;
-        }
-      }
-
-      &-heading {
-        margin-top: 10rem;
-        font-size: 7rem;
-      }
-      .text-box {
-        font-size: 3rem;
-        width: 90%;
-        left: 10%;
-        justify-content: center;
-        top: 10%;
+        flex-direction: column !important;
+        width: 90% !important;;
       }
     }
-    .section-c {
-      .card {
-        width: 90%;
-        margin-left: 2.5%;
-      }
-    }
-
-    .section-d {
-      margin: 5rem;
-    }
-  }
-  html {
-    font-size: 6px;
-  }
-  .time-line {
-    font-size: 1.5rem !important;
   }
 
-  .nav {
-    visibility: hidden;
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    opacity: 0.99;
-  }
-  .burger-navigation {
-    visibility: visible !important;
-  }
-  .product-main-section-d {
-    font-size: 2rem;
-    .card {
-      .text-box {
-        font-size: 2rem !important;
+  
+  
+  .automate-page{
+    .section-a{
+      .grid{
+        grid-template-columns: 1fr !important;
       }
     }
   }
-  .footer {
-    .social-icons {
-      left: 4rem !important;
-    }
-    .inship-logo {
-      left: 4rem !important;
-    }
-    .copy-right {
-      left: 4rem !important;
-    }
-  }
-}
 
-@include media-sm {
-  html {
-    font-size: 6px;
-  }
-  .time-line {
-    font-size: 1.5rem !important;
-  }
-
-  .nav {
-    visibility: hidden;
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    opacity: 0.99;
-  }
-  .burger-navigation {
-    visibility: visible !important;
-  }
-  .product-main-section-d {
-    font-size: 2rem;
-    .card {
-      .text-box {
-        font-size: 2rem !important;
-      }
+  .product-page{
+    .cards{
+      grid-template-columns: 1fr !important;
     }
   }
 }
 
 @include media-md {
-  .product-main-section-d {
-    font-size: 2rem;
-    .card {
-      .text-box {
-        font-size: 1.4rem !important;
+  html {
+    font-size: 9px;
+  }
+
+  .main-page {
+    .section-c {
+      .cards {
+        grid-template-columns: 1fr;
+        margin: 0 20rem 0 20rem;
       }
     }
   }
+  body {
+    padding: 0;
+    width: 100%;
+  }
+
   .nav {
-    visibility: visible;
+    visibility: hidden;
   }
   .burger-navigation {
-    visibility: hidden !important;
+    visibility: visible !important;
+  }
+  .header {
+    &-text-box {
+      left: 15%;
+    }
   }
 }
 

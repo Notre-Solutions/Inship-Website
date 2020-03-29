@@ -110,7 +110,7 @@ export default class Nav extends React.Component {
             </span>
           </div>
           <div
-            className={classnames("burger-navigation__background", {
+            className={classnames(`burger-navigation__background`, `${this.props.style}`, {
               "open-background": !this.state.active,
             })}
           >

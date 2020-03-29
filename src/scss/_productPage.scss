@@ -1,6 +1,9 @@
 // Product Page Vars
-$product-title-size: 4rem;
-
+$product-title-size: 5rem;
+@mixin section-title {
+  font-size: $product-title-size;
+  font-weight: 700;
+}
 // Product page class
 .product-page {
   .header,
@@ -9,11 +12,11 @@ $product-title-size: 4rem;
       color: $APC-dark;
     }
 
-    &-color-2 {
+    &-color-3{
       color: $T2P-bg;
     }
 
-    &-color-3 {
+    &-color-2 {
       color: $CAPS-dark;
     }
   }
@@ -34,7 +37,7 @@ $product-title-size: 4rem;
       @include active-btn;
     }
 
-    &-color-2 {
+    &-color-3 {
       color: $T2P-bg;
       @include btn($T2P-bg, $T2P-bg, "light");
       @include transition-ease;
@@ -42,15 +45,15 @@ $product-title-size: 4rem;
       color: white;
     }
 
-    &-color-2:hover {
+    &-color-3:hover {
       @include hover-btn;
     }
 
-    &-color-2:active {
+    &-color-3:active {
       @include active-btn;
     }
 
-    &-color-3 {
+    &-color-2 {
       color: $CAPS-dark;
       @include btn($CAPS-dark, $CAPS-dark, "light");
       @include transition-ease;
@@ -72,11 +75,11 @@ $product-title-size: 4rem;
       @include productHeader("../img/small.jpg");
     }
 
-    &-color-2 {
+    &-color-3 {
       @include productHeader("../img/medium.jpg");
     }
 
-    &-color-3 {
+    &-color-2 {
       @include productHeader("../img/large.jpg");
     }
   }
@@ -93,13 +96,13 @@ $product-title-size: 4rem;
         background-color: $APC-dark !important;
       }
     }
-    .color-2 {
+    .color-3 {
       color: $T2P-bg !important;
       &-line {
         background-color: $T2P-bg !important;
       }
     }
-    .color-3 {
+    .color-2 {
       color: $CAPS-dark !important;
       &-line {
         background-color: $CAPS-dark !important;
@@ -109,8 +112,14 @@ $product-title-size: 4rem;
     &-section-a {
       &-title {
         margin-bottom: 4rem;
-        font-size: $product-title-size;
+        @include section-title;
         text-align: center;
+      }
+      .description {
+        p {
+          font-size: 1.7rem;
+          font-weight: 100;
+        }
       }
     }
 
@@ -119,7 +128,7 @@ $product-title-size: 4rem;
       &-title {
         margin-bottom: 4rem;
         margin-top: 10rem;
-        font-size: $product-title-size;
+        @include section-title;
       }
 
       .cards {
@@ -188,7 +197,7 @@ $product-title-size: 4rem;
       &-title {
         margin-bottom: 4rem;
         margin-top: 4rem;
-        font-size: $product-title-size;
+        @include section-title;
       }
 
       .cards {

@@ -1,4 +1,8 @@
 .main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .section-a {
     display: flex;
     flex-direction: column;
@@ -22,7 +26,7 @@
 
     .btn {
       border-radius: 1rem;
-      font-size: 1.2rem;
+      font-size: 2rem;
       align-self: center;
       width: 20%;
       margin-bottom: 2rem;
@@ -50,8 +54,8 @@
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(
-        $inship-color-background-darker,
-        $inship-color-background-darker
+      rgb(229, 248, 245),
+      rgb(229, 248, 245)
       ),
       url(../img/messy_room.jpg);
     background-size: cover;
@@ -64,6 +68,7 @@
 
     &-2 {
       display: flex;
+      flex-direction: row;
       .text-box {
         margin: 2rem !important;
       }
@@ -72,12 +77,16 @@
     &-heading {
       margin: 4rem 0 0 2rem;
       font-size: 5rem;
+      color: $inship-color
     }
 
     .text-box {
+      h3{
+        font-size: 3rem;
+      }
       width: 100%;
       border-radius: 1rem;
-      background-color: rgba(139, 139, 139, 0.76);
+      background-color: $inship-color;
       padding: 2rem;
       text-align: justify;
       font-size: 1.5rem;
@@ -86,6 +95,7 @@
     .bottom {
       display: flex;
       .text-box {
+        width: 100%;
         margin: 2rem !important;
         margin-bottom: 4rem !important;
       }
@@ -105,22 +115,22 @@
       text-align: center;
       display: grid;
       grid-gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     .card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       border-radius: 1rem;
       padding: 2rem;
       height: 100%;
+      
 
       .img-container {
         width: 50%;
-        // justify-self: center;
-        // align-self: center;
+        margin-bottom: 2rem;
       }
 
       &-title {
@@ -135,16 +145,20 @@
 
       .text-box {
         font-size: 1.7rem;
-        padding: 2rem;
+        margin-top: 2rem;
+        padding: 0 2rem  0 2rem  !important;
+        text-align: left;
       }
 
-      .t2p {
-        display: block;
-      }
 
       .btn {
         max-width: 20rem;
         align-self: center;
+        position: absolute;
+        bottom: 0%;
+        &-container{
+          display: block;
+        }
       }
 
       &-color-1 {
@@ -215,7 +229,12 @@
         }
 
         .title {
-          width: 50rem;
+          width: 30rem;
+          display: flex;
+          justify-content: center;
+          .inner-title{
+            width: 15rem !important;
+          }
         }
 
         .text-box {

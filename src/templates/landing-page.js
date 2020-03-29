@@ -56,12 +56,24 @@ function showSectionB(show, title, body) {
         <div className="bottom">
           <div className="text-box">
             <h3>Lorem Title</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            et natus voluptate. Distinctio quaerat repellendus atque cumque
-            culpa quae, molestiae ad minus, deserunt sunt, fuga enim ipsum rerum
-            illo vel cum soluta dolore perspiciatis debitis! Voluptates illum,
-            est architecto ut doloremque doloribus perferendis, at, aliquid cum
-            quia asperiores veniam libero.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Repellendus velit sunt ipsum, et soluta corrupti! Numquam iusto
+            nihil quasi ipsa magni neque minus nesciunt molestiae debitis?
+            Culpa, ea. Dolores neque, veniam sed ipsum commodi quis et nam ex
+            assumenda iusto tempore dolorem fuga magnam suscipit minima officiis
+            asperiores nihil mollitia, voluptate placeat reprehenderit libero
+            sit harum quos. Blanditiis deserunt iste doloribus assumenda,
+            quisquam voluptate aspernatur soluta facere, quia ducimus quam error
+            recusandae ex quo iure perferendis omnis optio dolorem sint
+            sapiente. Quae voluptate fuga doloribus deserunt quis reiciendis
+            modi, cupiditate odio perferendis velit ipsam non amet earum magnam
+            assumenda aperiam, quos minus possimus reprehenderit ea consectetur
+            sint vero voluptates! Exercitationem corrupti cumque, quod ducimus
+            ipsa consequuntur quia provident totam, laborum, eum ab. Debitis
+            quibusdam voluptatibus hic corrupti neque nesciunt vitae sit et
+            quaerat nostrum ipsam reprehenderit cumque illum saepe, quisquam
+            doloremque mollitia ut amet doloribus reiciendis aliquid quod?
+            Quasi, fugit.
           </div>
         </div>
       </section>

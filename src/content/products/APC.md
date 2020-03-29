@@ -1,5 +1,4 @@
 ---
-cardStyle: card card-color-3
 templateKey: product
 title: Account Payable Combined
 alias: APC

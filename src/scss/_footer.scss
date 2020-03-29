@@ -1,5 +1,5 @@
 // Footer var's
-$margin-left-footer: 10rem;
+$margin-footer: 5%;
 
 // Footer General
 .footer {
@@ -15,7 +15,7 @@ $margin-left-footer: 10rem;
   .inship-logo {
     position: absolute;
     top: 1rem;
-    left: $margin-left-footer;
+    left: $margin-footer;
     font-size: 3.5rem;
     .main {
       font-weight: 700;
@@ -37,8 +37,9 @@ $margin-left-footer: 10rem;
   .address {
     margin: 2rem;
     position: absolute;
-    right: 5%;
+    right: 4%;
     font-size: 1.2rem;
+    text-align: right;
 
     .phone-number-line {
       color: black;
@@ -63,13 +64,13 @@ $margin-left-footer: 10rem;
   .copy-right {
     position: absolute;
     top: 17rem;
-    left: $margin-left-footer;
+    left: $margin-footer;
   }
 
   .social-icons {
     position: absolute;
     top: 13rem;
-    left: $margin-left-footer;
+    left: $margin-footer;
     color: black;
     font-size: 2.5rem;
     a {

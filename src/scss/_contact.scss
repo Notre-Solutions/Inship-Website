@@ -38,45 +38,55 @@
     margin-top: 5rem;
     .cards {
       display: grid;
-      grid-gap: 10rem;
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-gap: 5rem;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     }
 
     .card {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: center;
       .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 2rem;
       }
       .icon {
         padding: 1rem;
-        font-size: 10rem;
+        font-size: 4rem;
         margin-bottom: 2rem;
       }
 
       .email {
-        margin-top: 6rem;
         text-decoration: none !important;
         padding: 0.4rem;
         color: gray;
         display: block;
         font-size: 2rem;
+        font-weight: 100;
       }
 
       .phone-number {
-        margin-top: 6rem;
         color: gray;
         text-decoration: none !important;
         padding: 0.4rem;
         display: block;
         font-size: 2rem;
+        font-weight: 100;
+      }
+
+      .addressContainer{
+        align-self: center;
       }
 
       .address {
-        padding-left: 10rem;
-        text-align: left;
+        text-align: center;
         font-size: 2rem;
+        font-weight: 100;
       }
+
+      
     }
   }
 

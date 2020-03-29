@@ -11,9 +11,9 @@ function getComponentStyle(style) {
   if (style === "color-1") {
     return "#a67440"
   } else if (style === "color-2") {
-    return "#252941"
+    return "rgb(250,133,29)"
   } else if (style === "color-3") {
-    return "#576aa6"
+    return "#252941"
   } else {
     return "rgb(33, 150, 243)"
   }
@@ -39,7 +39,9 @@ function getTimelineElement(item, style) {
       iconStyle={contentStyle}
     >
       <h3 className="vertical-timeline-element-title">{item.title}</h3>
-      <Markdown markdown={item.description} />
+      <div className="description">
+        <Markdown markdown={item.description} />
+      </div>
     </VerticalTimelineElement>
   )
 }
