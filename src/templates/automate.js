@@ -21,6 +21,37 @@ function Testimonials(testimonal) {
   )
 }
 
+function TestimonalsThree(a) {
+  var array = []
+  a.forEach((testimonal, i) => {
+    if (a[i + 2]) {
+      for (let j = 0; j < 3; j++) {
+        a[i + j].marked = true
+      }
+      array.push(
+        <div className="cards">
+          {Testimonials(testimonal)}
+          {Testimonials(a[i + 1])}
+          {Testimonials(a[i + 2])}
+        </div>
+      )
+    } else if (a[i + 1] && a[i + 1].marked !== true) {
+      for (let j = 0; j < 2; j++) {
+        a[i + j].marked = true
+      }
+      array.push(
+        <div className="cards">
+          {Testimonials(testimonal)}
+          {Testimonials(a[i + 1])}
+        </div>
+      )
+    } else if (a[i].marked !== true) {
+      array.push(<div className="cards">{Testimonials(testimonal)}</div>)
+    }
+  })
+  return array
+}
+
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   const { automatePage } = data.markdownRemark.frontmatter
@@ -63,25 +94,22 @@ const Automate = ({ data }) => {
               })}
             </div>
           </section>
-          <div className="section-b">
+          <div className="section-b large">
+            <div className="title-main">
+              <h2>{sectionB.title}</h2>
+            </div>
+            <Carousels>{TestimonalsThree(testimonials)}</Carousels>
+          </div>
+          {/* <div className="section-b small">
             <div className="title-main">
               <h2>{sectionB.title}</h2>
             </div>
             <Carousels>
-              {testimonials.map((testimonal, i) => {
-                if (testimonials[i + 1]) {
-                  return (
-                    <div className="cards">
-                      {Testimonials(testimonal)}
-                      {Testimonials(testimonials[i + 1])}
-                    </div>
-                  )
-                } else {
-                  return <div className="cards">{Testimonials(testimonal)}</div>
-                }
+              {testimonials.map(test => {
+                return <div className="cards">{Testimonials(test)}</div>
               })}
             </Carousels>
-          </div>
+          </div> */}
         </div>
       </Layout>
     </>

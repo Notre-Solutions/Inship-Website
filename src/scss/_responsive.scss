@@ -4,25 +4,48 @@
   }
 
   .automate-page {
-    .grid {
-      grid-template-columns: repeat(1, 1fr) !important;
-      padding: 0 10rem !important;
-    }
-    .title {
-      h2 {
-        font-size: 6rem !important;
+    .section-a {
+      .grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+        padding: 0 10rem !important;
+      }
+      .title {
+        h2 {
+          font-size: 6rem !important;
+        }
+      }
+
+      .btn {
+        font-size: 2.5rem !important;
+      }
+
+      .card {
+        .card__content {
+          font-size: 4rem !important;
+          p {
+            font-size: 2rem !important;
+          }
+        }
       }
     }
 
-    .btn {
-      font-size: 2.5rem !important;
-    }
+    .section-b {
+      .cards {
+        .card {
+          font-size: 2.5rem !important;
+          margin-left: 15% !important;
+          width: 80%;
 
-    .card {
-      .card__content {
-        font-size: 4rem !important;
-        p {
-          font-size: 2rem !important;
+          .title {
+            font-size: 4rem !important;
+            margin-bottom: 4rem;
+          }
+
+          .stars {
+            display: block;
+            color: $inship-color;
+            font-size: 3rem;
+          }
         }
       }
     }
@@ -256,12 +279,12 @@
   .automate-page {
     .section-b {
       .title-main {
-        margin-left: 20% !important;
+        margin-left: 25% !important;
       }
       width: 80% !important;
       max-width: 2048px !important;
       .carousel-slider {
-        margin: 0 10% !important;
+        margin: 0 12.5% !important;
       }
     }
   }
