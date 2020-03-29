@@ -97,7 +97,6 @@ const Automate = ({ data }) => {
             <div className="title-main">
               <h2>{sectionB.title}</h2>
             </div>
-            {/* <Carousels>{TestimonalsThree(testimonials)}</Carousels> */}
             <Carousels testimonials={testimonials}></Carousels>
           </div>
         </div>

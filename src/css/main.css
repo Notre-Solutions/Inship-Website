@@ -1028,9 +1028,13 @@ li {
     transition: all 0.5s ease-in-out;
     opacity: 0;
     width: 0%; }
+    .burger-navigation__nav ul li {
+      display: none; }
   .burger-navigation .open-nav {
     opacity: 1;
     width: 100%; }
+    .burger-navigation .open-nav ul li {
+      display: list-item; }
   .burger-navigation .open-button {
     background-color: transparent; }
     .burger-navigation .open-button::after {
