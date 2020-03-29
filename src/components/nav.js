@@ -4,6 +4,7 @@ import classnames from "classnames"
 import "../css/main.css"
 import ReactModal from "../components/modal"
 import MyForm from "../components/form"
+import DD from "../components/dropedown"
 
 export default class Nav extends React.Component {
   constructor(props) {
@@ -61,19 +62,7 @@ export default class Nav extends React.Component {
         className: "menu-nav__item",
       },
       {
-        link: "/products/APC",
-        name: "APC",
-        className: "menu-nav__item",
-      },
-      {
-        link: "/products/T2P",
-        name: "T2P",
-        className: "menu-nav__item",
-      },
-      {
-        link: "/products/CAPS",
-        name: "CAPS",
-        className: "menu-nav__item",
+        name: "Solutions",
       },
       {
         link: "/resources",
@@ -88,6 +77,11 @@ export default class Nav extends React.Component {
         link: "/contact",
         name: "Contact",
         className: "menu-nav__item",
+      },
+      {
+        link: "/",
+        name: "INSHIP",
+        className: "menu-nav__item nav-logo",
       },
     ]
 
@@ -172,6 +166,16 @@ export default class Nav extends React.Component {
                     ></ReactModal>
                   </li>
                 )
+              } else if (page.name === "INSHIP") {
+                return (
+                  <li className={page.className}>
+                    <Link to={page.link} className="menu-nav__link">
+                      <span className="thin">IN</span>SHIP
+                    </Link>
+                  </li>
+                )
+              } else if (page.name === "Solutions") {
+                return <DD bgStyle={this.props.style}></DD>
               } else {
                 return (
                   <li className={page.className}>

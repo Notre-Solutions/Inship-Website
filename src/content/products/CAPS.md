@@ -3,7 +3,7 @@ templateKey: product
 title: Complete Accounts Payable Solutions
 alias: CAPS
 url: 'https://www.youtube.com/watch?v=1el1FR1d1R4'
-featuredimage: /img/caps-logo.jpeg
+featuredimage: /img/caps-logo-2.jpeg
 featuredpost: true
 style: color-2
 id: 3
