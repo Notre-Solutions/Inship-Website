@@ -29,21 +29,21 @@
     position: absolute;
     background-color: rgba(46, 122, 117, 0.9);
     min-width: 8rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     &-color-1 {
       background-color: $APC-dark !important;
     }
     &-color-2 {
-      background-color: $T2P-bg !important;
+      background-color: $CAPS-dark !important;
     }
     &-color-3 {
-      background-color: $CAPS-dark !important;
+      background-color: $T2P-bg !important;
     }
   }
 
   .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -52,7 +52,7 @@
   }
 
   .dropdown-content a:hover {
-    color: white;
+    color: black;
   }
 
   .dropdown:hover .dropdown-content {
@@ -107,8 +107,6 @@
     background: $CAPS-dark !important;
   }
 
-  
-
   .menu-nav__item {
     display: inline;
     padding-right: 1.5rem;
@@ -137,16 +135,15 @@
 .burger-navigation {
   visibility: hidden;
 
-  .color-1{
+  .color-1 {
     background-color: $APC-dark !important;
     opacity: 0.7;
   }
-  .color-2{
+  .color-2 {
     background-color: $CAPS-dark !important;
     opacity: 0.7;
-
   }
-  .color-3{
+  .color-3 {
     background-color: $T2P-bg !important;
     opacity: 0.7;
   }
@@ -178,13 +175,12 @@
     position: fixed;
     top: 4.5rem;
     right: 4.5rem;
-    
+
     z-index: 1500;
     background-color: $inship-color-background;
-    
+
     @include transition-ease;
   }
-  
 
   &__nav {
     height: 100vh;
