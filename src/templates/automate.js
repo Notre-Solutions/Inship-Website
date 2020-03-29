@@ -143,6 +143,7 @@ export const pageQuery = graphql`
             testimonials {
               title
               stars
+              name
               description
             }
           }

@@ -231,18 +231,40 @@
         justify-content: space-evenly;
         font-size: 1.5rem;
 
-        .title {
+        .line {
+          @include line(gray, 15%, 90%, 100%, 0.1rem);
+        }
+
+        .quote-left {
+          margin-right: 1rem;
+          font-size: 1rem;
+        }
+
+        .quote-right {
+          margin-left: 1rem;
+          font-size: 1rem;
+        }
+
+        .sing-off {
+          justify-content: center;
+          display: flex;
+          margin-top: 1rem;
+          font-style: italic;
           font-size: 2rem;
+        }
+
+        .title {
+          font-size: 2.5rem;
         }
 
         .stars {
           display: block;
-          color: $inship-color;
+          color: gray;
         }
 
         .icon {
           font-size: 5rem;
-          color: $inship-color;
+          color: gray;
           margin-bottom: 2rem;
         }
         .text-box {

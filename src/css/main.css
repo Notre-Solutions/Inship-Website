@@ -23,7 +23,8 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
-html, body {
+html,
+body {
   overflow-x: hidden; }
 
 ol li {
@@ -2052,14 +2053,37 @@ li {
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
         font-size: 1.5rem; }
-        .automate-page .section-b .cards .card .title {
+        .automate-page .section-b .cards .card .line {
+          background-color: gray;
+          text-align: center;
+          height: 0.1rem;
+          width: 100%;
+          left: 15%;
+          top: 90%; }
+        .automate-page .section-b .cards .card .quote-left {
+          margin-right: 1rem;
+          font-size: 1rem; }
+        .automate-page .section-b .cards .card .quote-right {
+          margin-left: 1rem;
+          font-size: 1rem; }
+        .automate-page .section-b .cards .card .sing-off {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 1rem;
+          font-style: italic;
           font-size: 2rem; }
+        .automate-page .section-b .cards .card .title {
+          font-size: 2.5rem; }
         .automate-page .section-b .cards .card .stars {
           display: block;
-          color: #46bbb5; }
+          color: gray; }
         .automate-page .section-b .cards .card .icon {
           font-size: 5rem;
-          color: #46bbb5;
+          color: gray;
           margin-bottom: 2rem; }
         .automate-page .section-b .cards .card .text-box {
           color: white;
