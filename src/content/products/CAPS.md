@@ -54,6 +54,62 @@ productpage:
         CAP's can auto code invoices based on the supplier, delivery address,
         project or other codes and invoices line item, These features can be
         combined for complex auto coding.
+    - title: Line by Line Data Capture
+      description: >-
+        CAPs can auto capture the line items on invoices for coding, reporting
+        and searching.
+    - title: Workflow
+      description: >-
+        Invoices can be automatically and manually routed for approval or send
+        back to suppliers is there any issues. All with a full audit trail.
+    - title: Approval
+      description: >-
+        Standard approval screen, with globally customization views, packed with
+        information but clearly laid out. One click can both approve an invoice
+        and complete all the accounting for it.
+    - title: Bulk Invoices Approvals
+      description: >-
+        Both PO and GL invoices can be review by bulk to reduce the processing
+        time even more.
+    - title: Approval Limits
+      description: >-
+        CAPs comes with approval limits which can be set at a user by user
+        level.
+    - title: Comments
+      description: >-
+        Various types of comments can be added to invoices, including manual,
+        pre-defined, forced and action.
+    - title: Price Watch
+      description: CAPs watches for price increase for one invoice to the next.
+    - title: Original Invoice
+      description: >-
+        The original invoice can be stored for up to 7 years if required and
+        from the approval or search screen it can be viewed.
+    - title: High Security Documents
+      description: >-
+        CAPs includes a process to handle confidential documents such as
+        project, HR, board and other invoices.
+    - title: Statement Reconciliation
+      description: >-
+        Statement are automatically reconciled by CAPs. Any invoice errors are
+        detected and CAPs provides a simple method of notifying suppliers of any
+        issues.
+    - title: ' Search'
+      description: >-
+        Invoices can be search for based on supplier, date, value, line detail,
+        po detail, added comment to name a view.
+    - title: Search Reporting
+      description: >-
+        All search results can be reported on either on a invoice or a invoice
+        line bases.
+    - title: Document Tracking
+      description: >-
+        Invoices within CAPs that require approval are tracked, illustrating
+        whose approval is required and how long approval is outstanding.
+    - title: Issue Handling
+      description: >-
+        CAPs had various was it can handle issues with invoices this can be
+        customised globally.
   timeline:
     - title: Supplier/User Forwards Document
       description: >-
@@ -85,6 +141,10 @@ productpage:
         Invoices are uploaded in bulk, this can be manual, timed or automatic
         based on your systems needs.
     - title: Statement Reconciliation
+      description: >-
+        CAPs reconciles your suppliers statement against processed invoices with
+        one click. A copy of any missing invoices will be immediately requested.
+    - title: Search and Storage
       description: >-
         CAP's can stores all processed invoices for 7 years and provides an
         extensive search facility for users with many options.
