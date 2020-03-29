@@ -111,28 +111,27 @@ productpage:
     - title: Supplier/User Forwards Document
       description: >-
         Invoice and other documents such as Credit Notes or Statements can be
-        email or DnD into CAPs.
+        emailed or DnD into CAPs.
     - title: Document Processing
       description: >-
         Once a new document is received, CAPs identifies the document,
-        automatically captures the required information, sets it coding rules
+        automatically captures the required information, sets it's coding rules
         and it's workflow.
     - title: Approval Workflow
       description: >-
-        Documents are forward for approval, this can be a simple or complex
-        process based on a businesses needs and it be automatically changed
-        based on different factors.
+        Documents are forward for approval, this can be a simple or a complex
+        process, based on a businesses needs and it be automate, based on
+        different factors.
     - title: Automatically Matching to PO/GRN
       description: Invoices are automatically matched to PO/GRNS.
     - title: One Click to Approve and Process
       description: >-
-        When the final or only approver clicks approve on an invoice all
-        accounting for the invoice is complete and it is ready for upload.
+        When the only or final approver clicks approved all accounting for the
+        invoice is complete and it is ready for bulk upload.
     - title: Bulk Approval
       description: >-
-        Both GL and PO invoices (match within agreed limit) can be bulk
-        approved, this leads to ten's or hundreds of invoices being processed
-        with a couple of clicks.
+        Both GL and PO invoices can be bulk approved, this leads to ten's or
+        hundreds of invoices being processed with a couple of clicks.
     - title: Bulk Upload
       description: >-
         Invoices are uploaded in bulk, this can be manual, timed or automatic
