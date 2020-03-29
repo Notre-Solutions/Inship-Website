@@ -42,7 +42,7 @@ collections:
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
           {label: "Custermers reported", name: "custermerReports", widget: list, fields:[
-            {label: "Percentage", name: "percentage", widget: Number, required: true},
+            {label: "Percentage", name: "percentage", widget: number, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
           {label: "Integration Options", name: "integrations", widget: list, fields:[
