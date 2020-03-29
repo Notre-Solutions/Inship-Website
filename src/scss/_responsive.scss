@@ -3,32 +3,29 @@
     font-size: 8px;
   }
 
-  .form{
-
-  .submit-btn{
-    left:37.5% !important; 
-    width: 25% !important;
-    top: 85% !important;
-    bottom: 5% !important;
-  }
-  
+  .form {
+    .submit-btn {
+      left: 37.5% !important;
+      width: 25% !important;
+      top: 85% !important;
+      bottom: 5% !important;
+    }
   }
 
-  .product-main{
-    
-    &-section-c{
-      &-title{
+  .product-main {
+    &-section-c {
+      &-title {
         font-size: 3rem !important;
         font-weight: 600;
-        &-sub{
+        &-sub {
           font-weight: 100 !important;
         }
       }
       .cards {
-        margin: 0  !important;
+        margin: 0 !important;
       }
     }
-    &-section-d{
+    &-section-d {
       margin: 2rem;
     }
   }
@@ -41,7 +38,7 @@
     }
   }
 
-  .main-page{
+  .main-page {
     .section-a {
       margin: 2rem !important;
       .text-box {
@@ -51,27 +48,25 @@
         width: 50% !important;
       }
     }
-  
+
     .section-b {
       &-2 {
         flex-direction: column !important;
-        width: 90% !important;;
+        width: 90% !important;
       }
     }
   }
 
-  
-  
-  .automate-page{
-    .section-a{
-      .grid{
+  .automate-page {
+    .section-a {
+      .grid {
         grid-template-columns: 1fr !important;
       }
     }
   }
 
-  .product-page{
-    .cards{
+  .product-page {
+    .cards {
       grid-template-columns: 1fr !important;
     }
   }
@@ -104,6 +99,19 @@
   .header {
     &-text-box {
       left: 15%;
+    }
+  }
+
+  .automate-page {
+    .section-b {
+      .cards {
+        width: 80% !important;
+        grid-template-columns: 1fr !important;
+        .card {
+          width: 80% !important;
+          margin-left: 22.5% !important;
+        }
+      }
     }
   }
 }

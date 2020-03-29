@@ -65,7 +65,6 @@ const Automate = ({ data }) => {
           <section className="header">
             <div className="header-text-box">
               <h1 className="heading">
-
                 <div className="main-header">
                   Why<span className="bold"> Automate</span>
                 </div>
@@ -98,18 +97,9 @@ const Automate = ({ data }) => {
             <div className="title-main">
               <h2>{sectionB.title}</h2>
             </div>
-            <Carousels>{TestimonalsThree(testimonials)}</Carousels>
+            {/* <Carousels>{TestimonalsThree(testimonials)}</Carousels> */}
+            <Carousels testimonials={testimonials}></Carousels>
           </div>
-          {/* <div className="section-b small">
-            <div className="title-main">
-              <h2>{sectionB.title}</h2>
-            </div>
-            <Carousels>
-              {testimonials.map(test => {
-                return <div className="cards">{Testimonials(test)}</div>
-              })}
-            </Carousels>
-          </div> */}
         </div>
       </Layout>
     </>
