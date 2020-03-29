@@ -28,14 +28,32 @@ productpage:
   features:
     - title: Removal of Paper
       description: >-
-        Invoices are simply email into the system. Direct form the supplier or
+        Invoices are simply emailed into the system. Direct form the supplier or
         the user can also DnD invoices.
     - title: User Defined Data Capure
       description: Data capture is automatic but can be simply modified by users.
     - title: Issue Checking
       description: >-
         CAPs comes with standard issue checks but these can be modified at both
-        a globally and by groups.
+        a globally or/and group level.
+    - title: Routing of Documents
+      description: >-
+        CAPs includes a workflow process mirroring both simple and complex
+        process which meets most businesses needs
+    - title: Auto Routing
+      description: >-
+        Workflow can be defined by supplier codes, general ledger codes,
+        delivery address, project code etc etc.
+    - title: 'Purchase Order/Goods Received Note Matching '
+      description: >-
+        CAPs can match invoices to PO's based or GRN's at a total or a line by
+        line level. Delivery, discounts and various surcharges can also be
+        handled.
+    - title: General Ledger Coding
+      description: >-
+        CAP's can auto code invoices based on the supplier, delivery address,
+        project or other codes and invoices line item, These features can be
+        combined for complex auto coding.
   timeline:
     - title: Easy to use
       description: >-
@@ -82,22 +100,14 @@ productpage:
         up to 9 times faster and removed between 80% and 90% of the cost. Reduce
         processing costs significantly
   custermerReports:
+    - percentage: '90'
+      description: Time saving
     - percentage: 100
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
-    - percentage: 100
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
-    - percentage: 89
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
-    - percentage: 34
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
+      description: Storage Saving
+    - percentage: '99.9'
+      description: Error removal
+    - percentage: '100'
+      description: Additional Data Capture
   integrations:
     - icon: file
       description: >-
