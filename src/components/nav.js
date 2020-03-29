@@ -63,6 +63,22 @@ export default class Nav extends React.Component {
       },
       {
         name: "Solutions",
+        link: "",
+      },
+      {
+        link: "/products/APC",
+        name: "APC",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/products/T2P",
+        name: "T2P",
+        className: "menu-nav__item",
+      },
+      {
+        link: "/products/CAPS",
+        name: "CAPS",
+        className: "menu-nav__item",
       },
       {
         link: "/resources",
@@ -104,9 +120,13 @@ export default class Nav extends React.Component {
             </span>
           </div>
           <div
-            className={classnames(`burger-navigation__background`, `${this.props.style}`, {
-              "open-background": !this.state.active,
-            })}
+            className={classnames(
+              `burger-navigation__background`,
+              `${this.props.style}`,
+              {
+                "open-background": !this.state.active,
+              }
+            )}
           >
             &nbsp;
           </div>
@@ -134,7 +154,10 @@ export default class Nav extends React.Component {
                       ></ReactModal>
                     </li>
                   )
-                } else {
+                } else if (
+                  page.name !== "INSHIP" &&
+                  page.name !== "Solutions"
+                ) {
                   return (
                     <li className="burger-navigation__item">
                       <Link to={page.link} className="burger-navigation__link">
@@ -176,7 +199,7 @@ export default class Nav extends React.Component {
                 )
               } else if (page.name === "Solutions") {
                 return <DD bgStyle={this.props.style}></DD>
-              } else {
+              } else if (!page.link.match(/products/g)) {
                 return (
                   <li className={page.className}>
                     <Link to={page.link} className="menu-nav__link">
