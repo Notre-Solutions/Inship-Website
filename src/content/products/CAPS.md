@@ -2,7 +2,7 @@
 templateKey: product
 title: Complete Accounts Payable Solutions
 alias: CAPS
-url: 'https://www.youtube.com/watch?v=1el1FR1d1R4'
+url: "https://www.youtube.com/watch?v=1el1FR1d1R4"
 featuredimage: /img/caps-logo.jpeg
 featuredpost: true
 style: color-2
@@ -44,7 +44,7 @@ productpage:
       description: >-
         Workflow can be defined by supplier codes, general ledger codes,
         delivery address, project code etc etc.
-    - title: 'Purchase Order/Goods Received Note Matching '
+    - title: "Purchase Order/Goods Received Note Matching "
       description: >-
         CAPs can match invoices to PO's based or GRN's at a total or a line by
         line level. Delivery, discounts and various surcharges can also be
@@ -100,13 +100,13 @@ productpage:
         up to 9 times faster and removed between 80% and 90% of the cost. Reduce
         processing costs significantly
   custermerReports:
-    - percentage: '90'
+    - percentage: 90
       description: Time saving
     - percentage: 100
       description: Storage Saving
-    - percentage: '99.9'
+    - percentage: 99
       description: Error removal
-    - percentage: '100'
+    - percentage: 100
       description: Additional Data Capture
   integrations:
     - icon: file
