@@ -89,6 +89,11 @@ export default class Nav extends React.Component {
         name: "Contact",
         className: "menu-nav__item",
       },
+      {
+        link: "/",
+        name: "INSHIP",
+        className: "menu-nav__item nav-logo",
+      },
     ]
 
     pages.map(page => {
@@ -170,6 +175,14 @@ export default class Nav extends React.Component {
                       buttonStyle="menu-nav__link nav-pricing"
                       buttonName="Pricing"
                     ></ReactModal>
+                  </li>
+                )
+              } else if (page.name === "INSHIP") {
+                return (
+                  <li className={page.className}>
+                    <Link to={page.link} className="menu-nav__link">
+                      <span className="thin">IN</span>SHIP
+                    </Link>
                   </li>
                 )
               } else {

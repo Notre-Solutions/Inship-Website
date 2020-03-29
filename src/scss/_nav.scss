@@ -6,6 +6,17 @@
   width: calc(100% - 6rem);
   opacity: 1;
 
+  &-logo {
+    color: white;
+    position: absolute;
+    left: 2rem;
+    font-weight: 700;
+  }
+  .thin {
+    font-weight: 100 !important;
+    font-size: 1.6rem;
+  }
+
   &-pricing {
     color: rgba(46, 122, 117, 0.9) !important;
     background-color: white;

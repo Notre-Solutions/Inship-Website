@@ -956,6 +956,14 @@ li {
   left: 3rem;
   width: calc(100% - 6rem);
   opacity: 1; }
+  .nav-logo {
+    color: white;
+    position: absolute;
+    left: 2rem;
+    font-weight: 700; }
+  .nav .thin {
+    font-weight: 100 !important;
+    font-size: 1.6rem; }
   .nav-pricing {
     color: rgba(46, 122, 117, 0.9) !important;
     background-color: white;
@@ -1822,9 +1830,6 @@ li {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
       height: 100%;
       overflow: hidden;
       background-color: white;
@@ -1838,22 +1843,31 @@ li {
         border-radius: 1rem;
         -o-object-fit: cover;
            object-fit: cover; }
+      .automate-page .section-a .grid .card p {
+        font-size: 1.6rem; }
+      .automate-page .section-a .grid .card small {
+        font-style: italic; }
       .automate-page .section-a .grid .card .card__content {
         padding: 0 2rem;
         font-size: 2rem; }
-        .automate-page .section-a .grid .card .card__content p {
-          font-size: 1.6rem; }
-      .automate-page .section-a .grid .card .btn {
-        margin-top: 1rem;
-        border-radius: 1rem;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: white;
-        background-color: #46bbb5;
-        padding: 1rem 3rem;
-        -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-                box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
-        display: inline-block; }
+        .automate-page .section-a .grid .card .card__content .btn {
+          text-align: center !important;
+          margin-top: 1rem;
+          border-radius: 1rem;
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: white;
+          background-color: #46bbb5;
+          padding: 1rem 3rem;
+          -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+                  box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
+          display: inline-block;
+          border: 0.1rem solid #46bbb5;
+          -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+        .automate-page .section-a .grid .card .card__content .btn:hover {
+          color: #46bbb5;
+          background-color: white; }
   .automate-page .circle {
     position: absolute;
     width: 20px;

@@ -69,7 +69,6 @@ const Automate = ({ data }) => {
                   Why<span className="bold"> Automate</span>
                 </span>
               </h1>
-              {/* Uncomment for animation ;)  */}
               <div class="animation-wrapper">
                 <div class="circle"></div>
                 <div class="circle"></div>

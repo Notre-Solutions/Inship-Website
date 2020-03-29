@@ -25,7 +25,6 @@
         padding: 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         height: 100%;
         overflow: hidden;
         background-color: white;
@@ -40,15 +39,26 @@
           border-radius: 1rem;
           object-fit: cover;
         }
+        p {
+          font-size: 1.6rem;
+        }
+        small {
+          font-style: italic;
+        }
         .card__content {
           padding: 0 2rem;
           font-size: 2rem;
-          p {
-            font-size: 1.6rem;
+
+          .btn {
+            text-align: center !important;
+            @include btn(white, $inship-color, "light");
+            border: 0.1rem solid $inship-color;
+            @include transition-ease;
           }
-        }
-        .btn {
-          @include btn(white, $inship-color, "light");
+          .btn:hover {
+            color: $inship-color;
+            background-color: white;
+          }
         }
       }
     }
