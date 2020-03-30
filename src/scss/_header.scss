@@ -5,10 +5,10 @@
       rgba(128, 128, 128, 0.541),
       rgba(128, 128, 128, 0.541)
     ),
-    url(../img/large.jpg);
+    url(../img/Main.jpg);
 
   background-size: cover;
-  background-position: top;
+  background-position: right;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -18,14 +18,13 @@
   &-text-box {
     position: absolute;
     text-align: center;
-    top: 35%;
-    left: 55%;
+    top: 20%;
+    left: 10%;
     width: 35%;
   }
 
   .heading {
     color: white;
-    
   }
   .bold {
     font-weight: 700;

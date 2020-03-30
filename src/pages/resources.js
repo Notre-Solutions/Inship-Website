@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 const Resources = () => {
   return (
     <>
-      <Layout current={"Resources"}></Layout>
+      <Layout current={"Resources"}>
+        <div className="resources"></div>
+      </Layout>
     </>
   )
 }

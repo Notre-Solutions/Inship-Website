@@ -12,7 +12,7 @@ $product-title-size: 5rem;
       color: $APC-dark;
     }
 
-    &-color-3{
+    &-color-3 {
       color: $T2P-bg;
     }
 
@@ -72,15 +72,15 @@ $product-title-size: 5rem;
 
   .product-header {
     &-color-1 {
-      @include productHeader("../img/small.jpg");
+      @include productHeader("../img/APC.jpg", top);
     }
 
     &-color-3 {
-      @include productHeader("../img/medium.jpg");
+      @include productHeader("../img/T2P.jpg", center);
     }
 
     &-color-2 {
-      @include productHeader("../img/large.jpg");
+      @include productHeader("../img/CAPS.jpg", center);
     }
   }
 

@@ -133,18 +133,18 @@ li {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(128, 128, 128, 0.541)), to(rgba(128, 128, 128, 0.541))), url(../img/large.jpg);
-  background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.541), rgba(128, 128, 128, 0.541)), url(../img/large.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(128, 128, 128, 0.541)), to(rgba(128, 128, 128, 0.541))), url(../img/Main.jpg);
+  background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.541), rgba(128, 128, 128, 0.541)), url(../img/Main.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: right;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
   .header-text-box {
     position: absolute;
     text-align: center;
-    top: 35%;
-    left: 55%;
+    top: 20%;
+    left: 10%;
     width: 35%; }
   .header .heading {
     color: white; }
@@ -339,7 +339,7 @@ li {
       .main-page .section-c .card .text-box {
         font-size: 1.7rem;
         margin-top: 2rem;
-        padding: 0 2rem  0 2rem  !important;
+        padding: 0 2rem 0 2rem !important;
         text-align: left; }
       .main-page .section-c .card .btn {
         max-width: 20rem;
@@ -585,7 +585,7 @@ li {
 
 .product-page .product-header-color-1 {
   height: 95vh;
-  background-image: url("../img/small.jpg");
+  background-image: url("../img/APC.jpg");
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -612,9 +612,9 @@ li {
 
 .product-page .product-header-color-3 {
   height: 95vh;
-  background-image: url("../img/medium.jpg");
+  background-image: url("../img/T2P.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
@@ -639,9 +639,9 @@ li {
 
 .product-page .product-header-color-2 {
   height: 95vh;
-  background-image: url("../img/large.jpg");
+  background-image: url("../img/CAPS.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
@@ -1153,7 +1153,7 @@ li {
   height: 95vh;
   background-image: url("../img/contact.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: "top";
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }

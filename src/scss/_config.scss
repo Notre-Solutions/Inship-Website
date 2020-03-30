@@ -197,11 +197,11 @@ li {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-@mixin header-gb-no-color($img) {
+@mixin header-gb-no-color($img, $posistion) {
   height: 95vh;
   background-image: url($img);
   background-size: cover;
-  background-position: top;
+  background-position: $posistion;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
@@ -244,8 +244,8 @@ li {
   }
 }
 
-@mixin productHeader($image) {
-  @include header-gb-no-color($image);
+@mixin productHeader($image, $posistion) {
+  @include header-gb-no-color($image, $posistion);
 
   position: relative;
 
