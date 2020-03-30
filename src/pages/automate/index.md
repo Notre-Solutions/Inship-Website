@@ -18,9 +18,7 @@ automatePage:
         name: Stephen
         description: >-
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
+          eligendi 
       - title: Inship Is the BEST
         stars: 4
         name: Will

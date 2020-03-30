@@ -244,15 +244,27 @@ li {
   }
 }
 
-@mixin productHeader($image, $posistion) {
+@mixin productHeader($image, $posistion, $right, $top) {
   @include header-gb-no-color($image, $posistion);
 
   position: relative;
 
   .header-text-box {
     position: absolute;
-    right: 18%;
-    top: 15%;
+    right: $right;
+    top: $top;
+
+    .product-page-img-container {
+      width: 100%;
+
+      &-logo {
+        left: 35%;
+        width: 30%;
+        text-align: center;
+        object-fit: cover;
+        border: 0.1rem solid white;
+      }
+    }
 
     .heading {
       .main-header {

@@ -5,53 +5,6 @@ import { graphql } from "gatsby"
 import NewsCard from "../components/news-card"
 import Carousels from "../components/carousel"
 
-function Testimonials(testimonal) {
-  const { stars, title, description } = testimonal
-  let array = []
-  for (let i = 0; i < stars; i++) {
-    array.push(<span className="fa fa-star"></span>)
-  }
-  return (
-    <div className="card">
-      <i className="icon fa fa-quote-right"></i>
-      <i className="stars">{array}</i>
-      <div className="title">{title}</div>
-      <div className="textbox">{description}</div>
-    </div>
-  )
-}
-
-function TestimonalsThree(a) {
-  var array = []
-  a.forEach((testimonal, i) => {
-    if (a[i + 2]) {
-      for (let j = 0; j < 3; j++) {
-        a[i + j].marked = true
-      }
-      array.push(
-        <div className="cards">
-          {Testimonials(testimonal)}
-          {Testimonials(a[i + 1])}
-          {Testimonials(a[i + 2])}
-        </div>
-      )
-    } else if (a[i + 1] && a[i + 1].marked !== true) {
-      for (let j = 0; j < 2; j++) {
-        a[i + j].marked = true
-      }
-      array.push(
-        <div className="cards">
-          {Testimonials(testimonal)}
-          {Testimonials(a[i + 1])}
-        </div>
-      )
-    } else if (a[i].marked !== true) {
-      array.push(<div className="cards">{Testimonials(testimonal)}</div>)
-    }
-  })
-  return array
-}
-
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   const { automatePage } = data.markdownRemark.frontmatter

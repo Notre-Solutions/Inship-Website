@@ -1,11 +1,6 @@
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(128, 128, 128, 0.541),
-      rgba(128, 128, 128, 0.541)
-    ),
-    url(../img/Main.jpg);
+  background-image: url(../img/Main.jpg);
 
   background-size: cover;
   background-position: right;
@@ -24,7 +19,7 @@
   }
 
   .heading {
-    color: white;
+    color: black;
   }
   .bold {
     font-weight: 700;
@@ -53,9 +48,9 @@
     border-radius: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
-    color: $inship-color;
+    color: white;
     padding: 1rem 3rem;
-    background-color: white;
+    background-color: black;
     position: relative;
     display: inline-block;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);

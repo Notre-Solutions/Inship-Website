@@ -138,7 +138,6 @@ const Landing = ({ data }) => {
     sectionC,
     sectionD,
   } = data.markdownRemark.frontmatter.landingPage
-  console.log(subtitle)
   const edges = data.allMarkdownRemark.edges
 
   return (

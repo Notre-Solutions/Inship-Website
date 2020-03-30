@@ -56,7 +56,7 @@ productpage:
         Users best option is to get their suppliers to send invoices direct to
         the email account. This removes the need to scan documents or forward
         emails.
-    - title: 'Automatic data capture '
+    - title: Automatic data capture 
       description: >-
         After documents are sent into APC, we use 5 methods to read each
         documents and then our AI system extracts relevant data (this can be

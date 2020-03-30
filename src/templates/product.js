@@ -4,7 +4,8 @@ import TimeLine from "../components/timeline"
 import Player from "../components/player"
 import Layout from "../components/layout"
 import "@fortawesome/fontawesome-free/css/all.css"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 function featureCard(style, feature) {
   return (
@@ -44,6 +45,68 @@ function IntergrationOptions(style, intergrationOption) {
   )
 }
 
+function Heading(alias, style, title, description, featuredimage) {
+  if (alias === "CAPS") {
+    return (
+      <div className="header-text-box">
+        <h1 className="heading">
+          <span
+            className={`main-header header-${style}`}
+            style={{ color: "yellow" }}
+          >
+            {title}
+          </span>
+          <span
+            className={`sub-header header-${style}`}
+            style={{ color: "yellow" }}
+          >
+            {description}
+          </span>
+        </h1>
+
+        <a href="#video" className={`btn-${style}`}>
+          Watch a video
+        </a>
+        <div class="product-page-img-container">
+          <Img
+            fluid={featuredimage.childImageSharp.fluid}
+            className="product-page-img-container-logo"
+          />
+        </div>
+      </div>
+    )
+  } else {
+    return (
+      <div className="header-text-box">
+        <h1 className="heading">
+          <div class="product-page-img-container">
+            <Img
+              fluid={featuredimage.childImageSharp.fluid}
+              className="product-page-img-container-logo"
+            />
+          </div>
+          <span
+            className={`main-header header-${style}`}
+            style={{ color: "yellow" }}
+          >
+            {title}
+          </span>
+          <span
+            className={`sub-header header-${style}`}
+            style={{ color: "yellow" }}
+          >
+            {description}
+          </span>
+        </h1>
+
+        <a href="#video" className={`btn-${style}`}>
+          Watch a video
+        </a>
+      </div>
+    )
+  }
+}
+
 const Product = ({ data }) => {
   const {
     alias,
@@ -52,8 +115,8 @@ const Product = ({ data }) => {
     title,
     url,
     productpage,
+    featuredimage,
   } = data.markdownRemark.frontmatter
-  console.log(productpage)
   const { timeline, features, custermerReports, integrations } = productpage
 
   return (
@@ -61,18 +124,7 @@ const Product = ({ data }) => {
       <Layout current={alias} style={style}>
         <div className="product-page">
           <header className={`product-header-${style}`}>
-            <div className="header-text-box">
-              <h1 className="heading">
-                <span className={`main-header header-${style}`}>{title}</span>
-                <span className={`sub-header header-${style}`}>
-                  {description}
-                </span>
-              </h1>
-
-              <a href="#video" className={`btn-${style}`}>
-                Watch a video
-              </a>
-            </div>
+            {Heading(alias, style, title, description, featuredimage)}
           </header>
           <div className="product-main container">
             <div className="product-main-section-a">
@@ -153,6 +205,14 @@ export const pageQuery = graphql`
           integrations {
             icon
             description
+          }
+        }
+
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 1000, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }

@@ -10,33 +10,26 @@ function Testimonials(testimonal) {
     array.push(<span className="fa fa-star"></span>)
   }
   return (
-    <div className="card">
-      <i
-        className="icon fa fa-quote-right"
-        style={{ color: `${colors[getRandomInt(5)]}` }}
-      ></i>
-      <i className="stars">{array}</i>
-      <div className="title" style={{ color: `${colors[getRandomInt(5)]}` }}>
-        {title}
-      </div>
-      <div className="textbox" style={{ color: `${colors[getRandomInt(5)]}` }}>
-        {description}
-      </div>
+    <div className="card" style={{ color: "black" }}>
+      <i className="icon fa fa-quote-right" style={{ color: "#914E75" }}></i>
+      <i className="stars" style={{ color: "#EA845B" }}>
+        {array}
+      </i>
+      <div className="title">{title}</div>
+      <div className="textbox">{description}</div>
       <div className="line"></div>
-      <div
-        className="sing-off "
-        style={{ color: `${colors[getRandomInt(5)]}` }}
-      >
-        <i className="fa fa-quote-left quote-left"></i>Says {name}
+      <div className="sing-off ">
+        <i className="fa fa-quote-left quote-left "></i>
+        <span style={{ color: "#914E75" }}>{name} - Recycle Compnay</span>
         <i className="fa fa-quote-right quote-right"></i>
       </div>
     </div>
   )
 }
 
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max))
-}
+// function getRandomInt(max) {
+//   return Math.floor(Math.random() * Math.floor(max))
+// }
 
 function TestimonalsThree(a) {
   var array = []
@@ -66,16 +59,9 @@ function TestimonalsThree(a) {
       array.push(<div className="cards">{Testimonials(testimonal)}</div>)
     }
   })
+  console.log(array)
   return array
 }
-
-const colors = [
-  "#a67440",
-  "rgb(250,133,29)",
-  "rgb(47,47,47)",
-  "#252941",
-  "#14182f",
-]
 
 export default class Carousels extends Component {
   constructor(props) {
@@ -109,7 +95,6 @@ export default class Carousels extends Component {
   }
 
   render() {
-    console.log(this.state.width)
     if (this.state.width < 937) {
       return (
         <Carousel
