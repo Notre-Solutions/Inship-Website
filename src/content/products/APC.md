@@ -2,17 +2,12 @@
 templateKey: product
 title: Account Payable Combined
 alias: APC
-url: https://www.youtube.com/watch?v=FBxFqmtJ3YA
+url: 'https://youtu.be/RXKh4eDqsgs'
 featuredimage: /img/apc-logo.jpeg
 featuredpost: true
 style: color-1
 id: 1
-description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque saepe
-  possimus incidunt dolores, eligendi error ipsum quod, magni earum sed delectus
-  voluptatibus expedita vitae doloremque perferendis hic minus eaque laudantium
-  voluptates, totam dolore similique necessitatibus. Praesentium similique nulla
-  nesciunt perspiciatis facere, eius esse necessitatibus ipsum recusandae
+description: Where is this
 features:
   feature1: 10 Users
   feature2: true
@@ -22,85 +17,83 @@ productpage:
   features:
     - title: Easy to use
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.
-    - title: Easy to use
+        Users simply email in invoices or have the suppliers send the invoices
+        in by email. There is a dnd option and a portal can be added.
+    - title: Simple Clear Display
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.
-    - title: Easy to use
+        T2P is designed to allow a user to complete all operations on one page.
+        The page is split into 3 section. Invoices to approve, the current
+        invoice and data extracted from the current invoice.
+    - title: Search and Storage
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.
-    - title: Easy to use
+        T2P provides a fast and simple search process allowing users to find
+        invoices fast. Storage period is based on agreement.
+    - title: Localisation
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.                
+        T2P as part of our setup we localise data extraction to meet each
+        markets needs.
+    - title: Customised Screen Design
+      description: >-
+        We will customise the screen design to match with your system. The
+        layout will also be adjusted to meet local needs.
   timeline:
-    - title: Getting Invoices into the System
+    - title: Supplier/User Forwards Document
       description: >-
-        The first step in the APC is for the invoice to be received into the
-        system. InShip currently offer 2 methods for users to send their
-        Invoices/Bills and Credit Note into the system, that is via a dedicated
-        email address or via drag and drop (dnd). 
-
-
-        Users best option is to get their suppliers to send invoices direct to
-        the email account. This removes the need to scan documents or forward
-        emails.
-    - title: Automatic data capture 
+        Invoice and other documents such as Credit Notes or Statements can be
+        emailed or DnD into APC.
+    - title: Document Processing
       description: >-
-        After documents are sent into APC, we use 5 methods to read each
-        documents and then our AI system extracts relevant data (this can be
-        globally to a system).
-
-
-        The data is validated based both on standard rules and rules specific to
-        individual systems and/or locations.
-    - title: Data and document transfer
+        Once a new document is received, APC identifies the document,
+        automatically captures the required information, sets it's coding rules
+        and sends for Approval.
+    - title: Single and Bulk Approval
       description: >-
-        After documents have been read and data captured, both the document and
-        data is transferred to your accounting system based on an agreed method.
-
-
-        This is transferred in a draft state.
-    - title: Approval in your system
+        Users view their invoices and can approve and/or edit them in bulk or
+        one by one.
+    - title: Upload to your system
       description: >-
-        After both the document and data have been received in your system, user
-        approve invoice and edit them if required. Certain edits can be
-        communicated back to APC to improve future auto processing.
+        After approval based in the technology invoice data can be transferred
+        right away or a bulk upload may be completed.
   custermerReports:
     - percentage: 70
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia
     - percentage: 93
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia
     - percentage: 89
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia
     - percentage: 100
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia
   integrations:
     - icon: file
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+        assumenda.
     - icon: calculator
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+        assumenda.
     - icon: check-circle
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+        assumenda.
     - icon: check-circle
       description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eligendi quia, mollitia nobis eaque voluptates fugiat molestiae perspiciatis cupiditate expedita temporibus neque modi velit nesciunt assumenda.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+        assumenda.
 ---
