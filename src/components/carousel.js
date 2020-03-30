@@ -11,12 +11,22 @@ function Testimonials(testimonal) {
   }
   return (
     <div className="card">
-      <i className="icon fa fa-quote-right"></i>
+      <i
+        className="icon fa fa-quote-right"
+        style={{ color: `${colors[getRandomInt(5)]}` }}
+      ></i>
       <i className="stars">{array}</i>
-      <div className="title">{title}</div>
-      <div className="textbox">{description}</div>
+      <div className="title" style={{ color: `${colors[getRandomInt(5)]}` }}>
+        {title}
+      </div>
+      <div className="textbox" style={{ color: `${colors[getRandomInt(5)]}` }}>
+        {description}
+      </div>
       <div className="line"></div>
-      <div className="sing-off">
+      <div
+        className="sing-off "
+        style={{ color: `${colors[getRandomInt(5)]}` }}
+      >
         <i className="fa fa-quote-left quote-left"></i>Says {name}
         <i className="fa fa-quote-right quote-right"></i>
       </div>
@@ -112,14 +122,7 @@ export default class Carousels extends Component {
           useKeyboardArrows
         >
           {this.props.testimonials.map(test => {
-            return (
-              <div
-                className="cards single"
-                style={{ color: `${colors[getRandomInt(5)]}` }}
-              >
-                {Testimonials(test)}
-              </div>
-            )
+            return <div className="cards single">{Testimonials(test)}</div>
           })}
         </Carousel>
       )
