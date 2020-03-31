@@ -183,6 +183,9 @@
   }
 
   &__nav {
+    ul li {
+      display: none;
+    }
     height: 100vh;
     position: fixed;
     top: 0;
@@ -195,6 +198,9 @@
   }
 
   .open-nav {
+    ul li {
+      display: list-item;
+    }
     opacity: 1;
     width: 100%;
   }

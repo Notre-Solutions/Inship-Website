@@ -71,15 +71,15 @@ export default class MyForm extends React.Component {
           <div className="half left cf">
             <div className="field">
               <input type="text" required autoComplete="off" name="name" />
-              <label htmlFor="Name" title="Name"></label>
+              <label htmlFor="Name" title="Name :"></label>
             </div>
             <div className="field">
               <input type="email" required autoComplete="off" name="email" />
-              <label htmlFor="email" title="Email"></label>
+              <label htmlFor="email" title="Email :"></label>
             </div>
             <div className="field">
               <input type="text" required autoComplete="off" name="subject" />
-              <label htmlFor="subject" title="Subject"></label>
+              <label htmlFor="subject" title="Subject :"></label>
             </div>
           </div>
           <div className="half right cf">
@@ -90,7 +90,7 @@ export default class MyForm extends React.Component {
                 autoComplete="off"
                 name="message"
               ></textarea>
-              <label htmlFor="message" title="Message"></label>
+              <label htmlFor="message" title="Message :"></label>
             </div>
           </div>
           <button type="submit" className="submit-btn">

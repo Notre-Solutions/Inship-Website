@@ -1,9 +1,8 @@
 import React from "react"
 import Img from "gatsby-image"
 
-const NewsCard = ({article }) => {
+const NewsCard = ({ article }) => {
   const { date, title, url, description, thumbnail } = article
-  console.log(title);
   return (
     <div class="card">
       <div className="img">

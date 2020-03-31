@@ -1,3 +1,7 @@
+// color-1 : APC
+// color-2 : CAPS
+// color-3 : T2P
+
 // Product Page Vars
 $product-title-size: 5rem;
 @mixin section-title {
@@ -70,15 +74,19 @@ $product-title-size: 5rem;
 
   .product-header {
     &-color-1 {
-      @include productHeader("../img/small.jpg");
+      @include productHeader("../img/APC.jpg", top, 10%, 20%);
     }
 
     &-color-3 {
-      @include productHeader("../img/medium.jpg");
+      @include productHeader("../img/T2P.jpg", center, 0%, 20%);
     }
 
     &-color-2 {
-      @include productHeader("../img/large.jpg");
+      @include productHeader("../img/CAPS.jpg", center, 5%, 10%);
+
+      .header-text-box {
+        left: 2% !important;
+      }
     }
   }
 

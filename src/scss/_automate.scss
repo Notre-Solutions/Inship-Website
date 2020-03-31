@@ -101,12 +101,7 @@
   .header {
     height: 95vh;
     // z-index: -1;
-    background-image: linear-gradient(
-        to right bottom,
-        $inship-color-background,
-        $inship-color-background-darker
-      ),
-      url(../img/automate.jpg) !important;
+    background-image: url(../img/Auto.jpg) !important;
 
     background-size: cover;
     background-position: top;
@@ -119,8 +114,8 @@
     &-text-box {
       position: absolute;
       text-align: center;
-      top: 35%;
-      left: 55%;
+      top: 15%;
+      left: 60%;
       width: 35%;
     }
 
@@ -196,7 +191,7 @@
       background: transparent !important;
     }
     .carousel.carousel-slider .control-arrow:hover {
-      background: $inship-color;
+      background: rgba(219, 15, 117, 1);
       border-radius: 2rem;
     }
 
@@ -219,6 +214,10 @@
       grid-template-columns: 33% 33% 33%;
       grid-template-rows: auto auto auto;
       .card {
+        display: grid;
+        grid-template-rows: 15% 5% 10% 55% 2%;
+        grid-gap: 0.5rem;
+        justify-items: center;
         border: 0.1rem solid white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -226,23 +225,32 @@
         margin-left: 10%;
         width: 80%;
         padding: 4rem;
-        // border-radius: 1.5rem;
-        align-items: start;
-        justify-content: space-evenly;
         font-size: 1.5rem;
 
+        .line {
+          @include line(gray, 15%, 90%, 100%, 0.1rem);
+        }
+
+        .sing-off {
+          display: flex;
+          justify-content: space-evenly;
+          margin-top: 1rem;
+          font-style: italic;
+          font-size: 1.5rem;
+        }
+
         .title {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
 
         .stars {
           display: block;
-          color: $inship-color;
+          color: gray;
         }
 
         .icon {
           font-size: 5rem;
-          color: $inship-color;
+          color: gray;
           margin-bottom: 2rem;
         }
         .text-box {
@@ -250,6 +258,15 @@
           padding: 0 3rem 0 2rem;
           font-size: 1.4rem;
         }
+      }
+      .quote-left {
+        margin-right: 1rem;
+        font-size: 1rem;
+      }
+
+      .quote-right {
+        margin-left: 1rem;
+        font-size: 1rem;
       }
     }
   }

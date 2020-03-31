@@ -2,8 +2,8 @@
 templateKey: product
 title: Complete Accounts Payable Solutions
 alias: CAPS
-url: 'https://www.youtube.com/watch?v=1el1FR1d1R4'
-featuredimage: /img/caps-logo-2.jpeg
+url: https://www.youtube.com/watch?v=1el1FR1d1R4
+featuredimage: /img/caps-logo-3.jpeg
 featuredpost: true
 style: color-2
 id: 3
@@ -41,7 +41,7 @@ productpage:
       description: >-
         Workflow can be defined by supplier codes, general ledger codes,
         delivery address, project code etc etc.
-    - title: 'Purchase Order/Goods Received Note Matching '
+    - title: Purchase Order/Goods Received Note Matching 
       description: >-
         CAPs can match invoices to PO's based or GRN's at a total or a line by
         line level. Delivery, discounts and various surcharges can also be
@@ -91,7 +91,7 @@ productpage:
         Statement are automatically reconciled by CAPs. Any invoice errors are
         detected and CAPs provides a simple method of notifying suppliers of any
         issues.
-    - title: ' Search'
+    - title:  Search
       description: >-
         Invoices can be search for based on supplier, date, value, line detail,
         po detail, added comment to name a view.

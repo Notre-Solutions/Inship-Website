@@ -204,11 +204,11 @@ li {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-@mixin header-gb-no-color($img) {
+@mixin header-gb-no-color($img, $posistion) {
   height: 95vh;
   background-image: url($img);
   background-size: cover;
-  background-position: top;
+  background-position: $posistion;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
@@ -240,16 +240,38 @@ li {
     top: $top;
   }
 }
+@mixin line($color, $left, $top, $width, $height) {
+  background-color: $color;
+  text-align: center;
+  height: $height;
+  width: $width;
+  left: $left;
+  @if ($top != null) {
+    top: $top;
+  }
+}
 
-@mixin productHeader($image) {
-  @include header-gb-no-color($image);
+@mixin productHeader($image, $posistion, $right, $top) {
+  @include header-gb-no-color($image, $posistion);
 
   position: relative;
 
   .header-text-box {
     position: absolute;
-    right: 18%;
-    top: 15%;
+    right: $right;
+    top: $top;
+
+    .product-page-img-container {
+      width: 100%;
+
+      &-logo {
+        left: 35%;
+        width: 30%;
+        text-align: center;
+        object-fit: cover;
+        border: 0.1rem solid white;
+      }
+    }
 
     .heading {
       .main-header {

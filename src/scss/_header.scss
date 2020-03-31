@@ -1,14 +1,9 @@
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(128, 128, 128, 0.541),
-      rgba(128, 128, 128, 0.541)
-    ),
-    url(../img/large.jpg);
+  background-image: url(../img/Main.jpg);
 
   background-size: cover;
-  background-position: top;
+  background-position: right;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -18,14 +13,13 @@
   &-text-box {
     position: absolute;
     text-align: center;
-    top: 35%;
-    left: 55%;
+    top: 20%;
+    left: 10%;
     width: 35%;
   }
 
   .heading {
-    color: white;
-    
+    color: black;
   }
   .bold {
     font-weight: 700;
@@ -54,9 +48,9 @@
     border-radius: 1rem;
     font-size: 1.5rem;
     text-decoration: none;
-    color: $inship-color;
+    color: white;
     padding: 1rem 3rem;
-    background-color: white;
+    background-color: black;
     position: relative;
     display: inline-block;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
