@@ -33,13 +33,21 @@
 
   .header {
     &-text-box {
-      top: 15%;
+      top: 10% !important;
       left: 7.5% !important;
       width: 70%;
+      &-color-2{
+        width: 60%;
+        .sub-header{
+          display:none !important;
+          visibility: hidden !important;
+        }
+      }
     }
   }
 
   .main-page {
+    
     .section-a {
       margin: 2rem !important;
       .text-box {
@@ -70,14 +78,18 @@
     .cards {
       grid-template-columns: 1fr !important;
     }
+    
   }
 }
 
 @include media-landscape{
   .header {
     &-text-box {
-      top: 5% !important;
-      width: 50% !important;
+      top:15% !important;
+      .sub-header{
+        display:none !important;
+        visibility: hidden !important;
+      }
     }
   }
   .burger-navigation{
@@ -86,11 +98,21 @@
       font-size: 2.5rem !important;
     }
   }
+  
   .product-page{
     .header-text-box{
-      width: 80% !important;
+      // width: 80% !important;
       .main-header{
         font-size: 3rem !important;
+        
+      }
+      
+    }
+  }
+  .automate-page {
+    .section-a {
+      .grid {
+        grid-template-columns: 1fr 1fr !important;
       }
     }
   }

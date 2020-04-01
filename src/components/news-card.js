@@ -2,7 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 
 const NewsCard = ({ article }) => {
-  const { date, title, url, description, thumbnail } = article
+  const { date, title, url, thumbnail } = article
   return (
     <div class="card">
       <div className="img">
@@ -11,7 +11,6 @@ const NewsCard = ({ article }) => {
       <div class="card__content">
         <div class="text-component">
           <h4>{title}</h4>
-          <p class="text-sm color-contrast-medium">{description}</p>
         </div>
         <small>{date}</small>
         <div class="margin-top-sm">
