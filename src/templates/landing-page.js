@@ -7,6 +7,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ReactModal from "../components/modal"
 import Player from "../components/player"
+import ProblemSection from "../components/problemSection"
 
 function showSectionA(show, title, body, id, className, url) {
   if (show) {
@@ -168,6 +169,7 @@ const Landing = ({ data }) => {
             sectionA.url
           )}
           {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
+          <ProblemSection></ProblemSection>
           <section className="section-c">
             <h2 className="section-c-heading">Products</h2>
             {displayProducts(edges)}
