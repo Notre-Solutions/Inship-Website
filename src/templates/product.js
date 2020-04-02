@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import "@fortawesome/fontawesome-free/css/all.css"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import SideNav from "../components/sidenav"
 
 function featureCard(style, feature) {
   return (
