@@ -145,6 +145,11 @@ const Landing = ({ data }) => {
     <>
       <Layout current={"Home"}>
         <header className="header">
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
           <div className="header-text-box">
             <h1 className="heading">
               <span className="main-header">

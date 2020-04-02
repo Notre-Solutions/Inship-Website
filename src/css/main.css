@@ -131,18 +131,78 @@ li {
     -webkit-transform: rotate(720deg);
             transform: rotate(720deg); } }
 
+@-webkit-keyframes imageAnimation {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0; }
+  8% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; }
+  17% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes imageAnimation {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0; }
+  8% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1; }
+  17% {
+    opacity: 1; }
+  25% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
 .header {
-  height: 95vh;
-  background-image: url(../img/Main.jpg);
-  background-size: cover;
-  background-position: right;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
+  position: relative;
+  height: 95vh; }
+  .header > figure {
+    height: 95vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: right right;
+    -webkit-animation: imageAnimation 30s linear infinite 0s;
+            animation: imageAnimation 30s linear infinite 0s;
+    background-size: cover;
+    color: transparent;
+    opacity: 0;
+    width: 100%;
+    z-index: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header > figure:nth-child(1) {
+    background-image: url(../img/Main.jpg); }
+  .header > figure:nth-child(2) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+    background-image: url(../img/Books.jpg); }
+  .header > figure:nth-child(3) {
+    -webkit-animation-delay: 30s;
+            animation-delay: 30s;
+    background-image: url(../img/Main.jpg); }
+  .header > figure:nth-child(4) {
+    -webkit-animation-delay: 18s;
+            animation-delay: 18s;
+    background-image: url(../img/Books.jpg); }
+  .header > figure:nth-child(5) {
+    -webkit-animation-delay: 24s;
+            animation-delay: 24s;
+    background-image: url(../img/Main.jpg); }
   .header-text-box {
     position: absolute;
     text-align: center;
-    top: 20%;
+    top: 20rem;
     left: 10%;
     width: 35%; }
   .header .heading {
@@ -202,6 +262,7 @@ li {
       -ms-flex-align: center;
           align-items: center; }
   .main-page .section-a {
+    margin-top: 100rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
