@@ -50,7 +50,7 @@ collections:
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
-        name: "index"
+        name: "landingPage"
         fields:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "landing-page"}
           - {label: "Landing Page", name: landingPage, widget: object, fields:[
@@ -80,7 +80,7 @@ collections:
           - {label: "Body", name: "name", widget: "markdown", required: false}
       - file: "src/content/product-template/index.md"
         label: "Product Page Template"
-        name: "index"
+        name: "productPage"
         fields:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "productPageTemplate"}
           - {label: "Product Page", name: productPageTemplate, widget: object, fields: [
@@ -95,7 +95,7 @@ collections:
           ]}
       - file: "src/pages/contact/index.md"
         label: "Contact Page Template"
-        name: "index"
+        name: "contactPage"
         fields:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "contactPage"}
           - {label: "Contact Page", name: contactPage, widget: object, fields: [
