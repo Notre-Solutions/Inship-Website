@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import NewsCard from "../components/news-card"
 import Carousels from "../components/carousel"
+import Animation from "../components/process-animation"
 
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
@@ -34,7 +35,11 @@ const Automate = ({ data }) => {
               </div>
             </div>
           </section>
-
+          <section className="section-animation">
+            <div className="animation">
+              <Animation />
+            </div>
+          </section>
           <section className="section-a container">
             <div className="title">
               <h2>{newsTitle}</h2>
@@ -74,7 +79,6 @@ export const pageQuery = graphql`
               title
               url
               date(formatString: "MMMM DD, YYYY")
-              description
               thumbnail {
                 childImageSharp {
                   fluid(maxWidth: 1000, quality: 100) {

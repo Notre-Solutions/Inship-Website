@@ -2,6 +2,7 @@ import React from "react"
 import "../css/main.css"
 import TimeLine from "../components/timeline"
 import Player from "../components/player"
+import Markdown from "../components/markdown"
 import Layout from "../components/layout"
 import "@fortawesome/fontawesome-free/css/all.css"
 import { graphql } from "gatsby"
@@ -13,7 +14,7 @@ function featureCard(style, feature) {
     <div className={`card dark-${style}`}>
       <div>
         <h1 className={`${style}`}>{feature.title}</h1>
-        <div className={`text-box ${style}`}>{feature.description}</div>
+        <div className={`text-box`}>{feature.description}</div>
       </div>
     </div>
   )
@@ -40,7 +41,9 @@ function IntergrationOptions(style, intergrationOption) {
   return (
     <div className={`card ${style}-line`}>
       <i className={`icon fa fa-${intergrationOption.icon} `}></i>
-      <div className="text-box">{intergrationOption.description}</div>
+      <div className="text-box">
+        <Markdown markdown={intergrationOption.description} />
+      </div>
     </div>
   )
 }
@@ -48,7 +51,7 @@ function IntergrationOptions(style, intergrationOption) {
 function Heading(alias, style, title, description, featuredimage) {
   if (alias === "CAPS") {
     return (
-      <div className="header-text-box">
+      <div className={`header-text-box header-text-box-${style}`}>
         <h1 className="heading">
           <span
             className={`main-header header-${style}`}
@@ -60,7 +63,7 @@ function Heading(alias, style, title, description, featuredimage) {
             className={`sub-header header-${style}`}
             style={{ color: "yellow" }}
           >
-            {description}
+            <Markdown markdown={description} />
           </span>
         </h1>
 
@@ -178,7 +181,7 @@ const Product = ({ data }) => {
               </div>
             </div>
             <div id="video" className="product-main-section-d">
-              <div className="product-main-section-d-title">
+              <div className={`product-main-section-d-title ${style}`}>
                 {sectionETitle}
               </div>
               <Player url={url}></Player>

@@ -154,7 +154,7 @@ productpage:
     - percentage: 100
       description: Additional Data Capture
   integrations:
-    - icon: Link
+    - icon: link
       description: >-
         ##### API Data Transfer
 

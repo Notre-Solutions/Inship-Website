@@ -1,0 +1,213 @@
+.animation {
+  position: relative;
+}
+
+.process-animation {
+  $first-row: 12%;
+  $second-row: 35%;
+  $third-row: 72.5%;
+  position: relative;
+  justify-content: center;
+  background: $inship-color-background-light;
+  margin: 2rem;
+  height: 70rem;
+  width: 120rem !important;
+  .keys {
+    position: absolute;
+    bottom: 2%;
+    left: 37.5%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    .orange {
+      color: orange;
+    }
+    .green {
+      color: green;
+    }
+    p{
+      visibility: hidden;
+    }
+  }
+
+  .manual {
+    position: absolute;
+    top: 0%;
+    font-size: 3rem;
+    width: 50rem;
+    left: 29.16%;
+    text-align: center;
+  }
+  .automated {
+    position: absolute;
+    top: 60%;
+    font-size: 3rem;
+    width: 50rem;
+    left: 29.16%;
+    text-align: center;
+  }
+  .icon {
+    top: 0rem;
+    width: 10rem;
+    background: $grey-light;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    color: $inship-color;
+    &-0 {
+      top: $first-row;
+      left: 6%;
+    }
+    &-1 {
+      top: $first-row;
+      left: 26%;
+    }
+    &-2 {
+      top: $first-row;
+      left: 46%;
+    }
+    &-3 {
+      top: $first-row;
+      right: 26%;
+    }
+    &-4 {
+      top: $first-row;
+      right: 6%;
+    }
+    &-5 {
+      top: $second-row;
+      right: 6%;
+    }
+    &-6 {
+      top: $second-row;
+      right: 26%;
+    }
+    &-7 {
+      top: $second-row;
+      left: 46%;
+    }
+    &-8 {
+      top: $second-row;
+      left: 26%;
+    }
+    &-9 {
+      top: $second-row;
+      left: 6%;
+    }
+    &-10 {
+      top: $third-row;
+      left: 15%;
+    }
+
+    &-11 {
+      top: $third-row;
+      left: 35%;
+    }
+
+    &-12 {
+      top: $third-row;
+      right: 35%;
+    }
+
+    &-13 {
+      top: $third-row;
+      right: 15%;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+  p {
+    margin: 1rem 2rem;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 1rem solid white;
+    border-radius: 2rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    width: 80%;
+  }
+
+  .container {
+    top: 0%;
+    width: 20rem;
+    height: 10rem;
+    position: absolute;
+    margin: 2rem;
+    padding: 1px;
+    border-radius: 100rem;
+    font-size: 0.5rem !important;
+    .content {
+      font-size: 2rem;
+      color: orange;
+    }
+    &-0 {
+      top: $first-row;
+      left: 0%;
+    }
+    &-1 {
+      top: $first-row;
+      left: 20%;
+    }
+    &-2 {
+      top: $first-row;
+      left: 40%;
+    }
+    &-3 {
+      top: $first-row;
+      left: 60%;
+    }
+    &-4 {
+      top: $first-row;
+      left: 80%;
+    }
+    &-5 {
+      top: $second-row;
+      left: 80%;
+    }
+    &-6 {
+      top: $second-row;
+      left: 60%;
+    }
+    &-7 {
+      .content {
+        color: green;
+      }
+      top: $second-row;
+      left: 40%;
+    }
+    &-8 {
+      top: $second-row;
+      left: 20%;
+    }
+    &-9 {
+      .content {
+        color: green;
+      }
+      top: $third-row;
+      left: 7.5%;
+    }
+    &-10 {
+      top: $third-row;
+      left: 28%;
+    }
+    &-11 {
+      .content {
+        color: green;
+      }
+      top: $third-row;
+      left: 50%;
+    }
+  }
+}

@@ -272,7 +272,8 @@ $primary-color-orange-dark: #e08833;
   &.color-2{
     .bar,
     .fill {
-      border-color: $CAPS-dark !important;
+      border-color: $CAPS-dark  !important;
+      // border-color: rgb(0, 168, 180) !important;
     }
     &:hover {
       > span {

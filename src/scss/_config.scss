@@ -206,13 +206,20 @@ li {
   }
 }
 
-// 550px or Smaller
+// 666px or Smaller
 @mixin media-sm-rev {
   @media screen and (max-width: 666px) {
     @content;
   }
 }
-// 551px or Larger
+
+@mixin media-landscape {
+  @media screen and (orientation: landscape) and (max-height: 720px){
+    @content;
+  }
+}
+
+// 1024px or Smaller
 @mixin media-md {
   @media screen and (max-width: 1024px) {
     @content;
