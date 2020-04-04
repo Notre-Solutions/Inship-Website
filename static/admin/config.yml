@@ -92,4 +92,4 @@ collections:
             ]},
             {label: "Section D Title", name: sectionDTitle, widget: string},
             {label: "Section E Title", name: sectionETitle, widget: string}
-          ]      
+          ]}
