@@ -54,7 +54,7 @@ productpage:
       description: >-
         After approval based in the technology invoice data can be transferred
         right away or a bulk upload may be completed.
-  custermerReports:
+  customerReports:
     - percentage: 70
       description: >-
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
