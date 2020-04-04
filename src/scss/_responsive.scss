@@ -149,6 +149,29 @@
     }
   }
 
+  .process-animation{
+    $first-row: 12%;
+  $second-row: 35%;
+  $third-row: 72.5%;
+    width: 65rem !important;
+    .container-animation{
+      visibility: hidden;
+      display: none;
+    }
+
+    .icon{
+      width: 10% !important;
+      
+    }
+    }
+    .content{
+      font-size: 2rem !important;
+      h3{
+        font-size: 1rem !important;
+      }
+    }
+  }
+
   .automate-page {
     .section-b {
       .cards {
@@ -161,7 +184,7 @@
       }
     }
   }
-}
+
 
 @include media-lg {
   html {
@@ -173,11 +196,18 @@
   html {
     font-size: 11px;
   }
+  
   .container {
     text-align: center;
     max-width: 2048px !important;
     margin: 0 10% !important;
   }
+  .animation, .process-animation{
+    max-width: none !important;
+    margin: 0 0 !important;
+    text-align: left !important;
+  }
+  
 
   .automate-page {
     .section-b {
