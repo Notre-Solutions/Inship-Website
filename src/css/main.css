@@ -1316,6 +1316,9 @@ li {
   html {
     font-size: 9px;
   }
+  .side-nav {
+    visibility: hidden;
+  }
   .main-page .section-c .cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -3550,13 +3553,6 @@ li {
 
 .side-nav .tooltip:hover .tooltiptext {
   visibility: visible;
-}
-
-.side-nav a {
-  visibility: hidden;
-  text-decoration: none;
-  color: black;
-  font-size: 1.7rem;
 }
 
 .problem-section {
