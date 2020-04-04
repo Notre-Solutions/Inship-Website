@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
 import "@fortawesome/fontawesome-free/css/all.css"
 import "../css/main.css"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 export default class SideNav extends React.Component {
   constructor(props) {
@@ -14,12 +14,20 @@ export default class SideNav extends React.Component {
         <div className="side-nav">
           {this.props.list.map(item => {
             return (
-              <div className="icon tooltip ">
+              <AnchorLink
+                href={`#${item.link}`}
+                offset={() => 100}
+                className="icon tooltip "
+              >
                 <span className={`fa fa-${item.icon}`}></span>
-                <a href={`#${item.link}`} className="tooltiptext ">
+                <AnchorLink
+                  href={`#${item.link}`}
+                  offset={() => 100}
+                  className="tooltiptext "
+                >
                   {item.name}
-                </a>
-              </div>
+                </AnchorLink>
+              </AnchorLink>
             )
           })}
         </div>
