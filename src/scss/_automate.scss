@@ -3,10 +3,19 @@
   flex-direction: column;
   justify-content: space-between;
 
+  .section-animation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
   .section-a {
     .title {
       display: grid;
-      grid-template-rows: 1fr 1fr;
+      margin-top: 2rem;
+      grid-template-rows: 1fr;
       text-align: center;
       h2 {
         font-size: 4rem;
@@ -16,6 +25,7 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      
       padding: 2rem;
       grid-gap: 2rem;
       position: relative;
