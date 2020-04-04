@@ -27,54 +27,29 @@ function showSectionA(show, title, body, id, className, url) {
   }
 }
 
-function showSectionB(show, title, body) {
+function showSectionB(sectionB) {
+  const { show, title, cards } = sectionB
   if (show) {
     return (
       <section className="section-b">
         <div className="section-b-1">
           <h2 className="section-b-heading">{title}</h2>
         </div>
+
         <div className="section-b-2">
           <div className="text-box">
-            <h3>Lorem Title</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            et natus voluptate. Distinctio quaerat repellendus atque cumque
-            culpa quae, molestiae ad minus, deserunt sunt, fuga enim ipsum rerum
-            illo vel cum soluta dolore perspiciatis debitis! Voluptates illum,
-            est architecto ut doloremque doloribus perferendis, at, aliquid cum
-            quia asperiores veniam libero.
+            <h3>{cards[0].title}</h3>
+            <Markdown markdown={cards[0].description} />
           </div>
           <div className="text-box">
-            <h3>Lorem Title</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            et natus voluptate. Distinctio quaerat repellendus atque cumque
-            culpa quae, molestiae ad minus, deserunt sunt, fuga enim ipsum rerum
-            illo vel cum soluta dolore perspiciatis debitis! Voluptates illum,
-            est architecto ut doloremque doloribus perferendis, at, aliquid cum
-            quia asperiores veniam libero.
+            <h3>{cards[1].title}</h3>
+            <Markdown markdown={cards[1].description} />
           </div>
         </div>
         <div className="bottom">
           <div className="text-box">
-            <h3>Lorem Title</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus velit sunt ipsum, et soluta corrupti! Numquam iusto
-            nihil quasi ipsa magni neque minus nesciunt molestiae debitis?
-            Culpa, ea. Dolores neque, veniam sed ipsum commodi quis et nam ex
-            assumenda iusto tempore dolorem fuga magnam suscipit minima officiis
-            asperiores nihil mollitia, voluptate placeat reprehenderit libero
-            sit harum quos. Blanditiis deserunt iste doloribus assumenda,
-            quisquam voluptate aspernatur soluta facere, quia ducimus quam error
-            recusandae ex quo iure perferendis omnis optio dolorem sint
-            sapiente. Quae voluptate fuga doloribus deserunt quis reiciendis
-            modi, cupiditate odio perferendis velit ipsam non amet earum magnam
-            assumenda aperiam, quos minus possimus reprehenderit ea consectetur
-            sint vero voluptates! Exercitationem corrupti cumque, quod ducimus
-            ipsa consequuntur quia provident totam, laborum, eum ab. Debitis
-            quibusdam voluptatibus hic corrupti neque nesciunt vitae sit et
-            quaerat nostrum ipsam reprehenderit cumque illum saepe, quisquam
-            doloremque mollitia ut amet doloribus reiciendis aliquid quod?
-            Quasi, fugit.
+            <h3>{cards[2].title}</h3>
+            <Markdown markdown={cards[2].description} />
           </div>
         </div>
       </section>
@@ -141,6 +116,7 @@ const Landing = ({ data }) => {
     sectionD,
   } = data.markdownRemark.frontmatter.landingPage
   const edges = data.allMarkdownRemark.edges
+  console.log(data)
 
   return (
     <>
@@ -174,7 +150,7 @@ const Landing = ({ data }) => {
             "section-a",
             sectionA.url
           )}
-          {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
+          {showSectionB(sectionB)}
 
           <ProblemSection array={sectionB_alt.cards}></ProblemSection>
           <section className="section-c">
@@ -249,7 +225,10 @@ export const pageQuery = graphql`
           sectionB {
             title
             show
-            body
+            cards {
+              title
+              description
+            }
           }
           sectionC {
             title
