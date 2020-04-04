@@ -93,3 +93,33 @@ collections:
             {label: "Section D Title", name: sectionDTitle, widget: string},
             {label: "Section E Title", name: sectionETitle, widget: string}
           ]}
+      - file: "src/pages/contact/index.md"
+        label: "Contact Page Template"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: templateKey, widget: "hidden", default: "contactPage"}
+          - {label: "Contact Page", name: contactPage, widget: object, fields: [
+            {label: "Contact Page Title", name: title, widget: string},
+            {label: "Contact Page Subtitle", name: subtitle, widget: string},
+            {label: "Location", name: location, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Icon", name: icon, widget: string},
+              {label: "Description", name: description, widget: object, feilds: [
+                {label: "Address Line 1", name: line1, widget: string},
+                {label: "Address Line 2", name: line2, widget: string},
+                {label: "Address Line 3", name: line3, widget: string},
+                {label: "Address Line 4", name: line4, widget: string},
+                {label: "Address Line 5", name: line5, widget: string},
+              ]},
+            ]},
+            {label: "Phone", name: phone, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Icon", name: icon, widget: string},
+              {label: "Description", name: description, widget: string},
+            ]},
+            {label: "Email", name: email, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Icon", name: icon, widget: string},
+              {label: "Description", name: description, widget: string},
+            ]},         
+          ]}
