@@ -74,9 +74,51 @@ landingPage:
       process and automate it. The full systems includes po matching both at a
       GRN and line level, auto coding,  auto routeing for approval and statement
       reconciliation to name a few.
+  sectionB_alt:
+    title: The Problem
+    show: true
+    cards:
+      - title: Problem
+        subtitle: sub title
+        photo: photo-1
+        description: >-  
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
+      - title: Solution
+        subtitle: sub title
+        photo: photo-2
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
+      - title: Why Change
+        subtitle: sub title
+        photo: photo-3
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.        
   sectionC:
+    title: Products
     show: true
   sectionD:
-    title: Contact Us
-    show: false
+    title: The Process
+    description: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+      repudiandae eius quibusdam neque odit deserunt delectus, doloribus
+      maxime recusandae, ad asperiores. Officia temporibus laborum
+      voluptates sequi laudantium doloremque ratione vero nobis omnis
+      corrupti. Nihil laboriosam est, iure excepturi nam omnis maiores
+      velit? Id non molestias ad obcaecati fugiat ut, mollitia quasi
+      distinctio inventore soluta aspernatur quis delectus iusto rem
+      laborum, quidem facilis ipsa reiciendis! Ea quidem, placeat minima
+      iure dolore incidunt nihil, voluptas cum pariatur facere harum
+      obcaecati doloremque velit tempore corrupti eligendi numquam nam
+      vitae! Commodi praesentium neque tempore, odio officia illo culpa
+      in dolores reprehenderit quasi porro totam dolorem dolor magnam
+    show: true
 ---

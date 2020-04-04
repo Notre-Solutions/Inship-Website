@@ -19,19 +19,18 @@ function featureCard(style, feature) {
   )
 }
 
-function CustermerReports(style, custermerReports) {
+function CustomerReports(style, customerReports) {
   return (
     <div className="card">
-      <div className={`c100 p${custermerReports.percentage} center ${style}`}>
-        <span>{`${custermerReports.percentage}%`}</span>
+      <div className={`c100 p${customerReports.percentage} center ${style}`}>
+        <span>{`${customerReports.percentage}%`}</span>
         <div className="slice">
           <div className="bar"></div>
           <div className="fill"></div>
         </div>
       </div>
       <div className={`text-box text-box-${style}`}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
+        {customerReports.description}
       </div>
     </div>
   )
@@ -118,7 +117,6 @@ const Product = ({ data }) => {
     productpage,
     featuredimage,
   } = data.markdownRemark.frontmatter
-  const { timeline, features, custermerReports, integrations } = productpage
   const indexList = [
     {
       name: "What We Do",
@@ -146,6 +144,15 @@ const Product = ({ data }) => {
       icon: "play-circle",
     },
   ]
+  const { timeline, features, customerReports, integrations } = productpage
+  const {
+    sectionATitle,
+    sectionBTitle,
+    sectionDTitle,
+    sectionETitle,
+    sectionCTitles,
+  } = data.allMarkdownRemark.edges[0].node.frontmatter.productPageTemplate
+
   return (
     <>
       <Layout current={alias} style={style}>
@@ -158,14 +165,14 @@ const Product = ({ data }) => {
           <div className="product-main container">
             <div className="product-main-section-a">
               <div className={`product-main-section-a-title ${style}`}>
-                Process Flow
+                {sectionATitle}
               </div>
               <TimeLine timeline={timeline} style={style}></TimeLine>
             </div>
             <div className={`line ${style}-line`}></div>
             <div className="product-main-section-b">
               <div className={`product-main-section-b-title ${style}`}>
-                Features
+                {sectionBTitle}
               </div>
               <div className="cards">
                 {features.map(feature => {
@@ -175,20 +182,20 @@ const Product = ({ data }) => {
             </div>
             <div className="product-main-section-c">
               <div className={`product-main-section-c-title ${style}`}>
-                Switching To Complete Accounts Payable Solutions
+                {sectionCTitles.title}
                 <div className={`product-main-section-c-title-sub ${style}`}>
-                  Custermers reported
+                  {sectionCTitles.subtitle}
                 </div>
               </div>
               <div className="cards">
-                {custermerReports.map(report => {
-                  return CustermerReports(style, report)
+                {customerReports.map(report => {
+                  return CustomerReports(style, report)
                 })}
               </div>
             </div>
             <div className="product-main-section-d">
               <div className={`product-main-section-d-title ${style}`}>
-                Integration Options
+                {sectionDTitle}
               </div>
               <div className="cards">
                 {integrations.map(intergration => {
@@ -197,7 +204,9 @@ const Product = ({ data }) => {
               </div>
             </div>
             <div id="video" className="product-main-section-d">
-              <div className="product-main-section-d-title">How it works</div>
+              <div className="product-main-section-d-title">
+                {sectionETitle}
+              </div>
               <Player url={url}></Player>
             </div>
           </div>
@@ -211,6 +220,32 @@ export default Product
 
 export const pageQuery = graphql`
   query ProductQuery($id: String!) {
+    allMarkdownRemark(
+      limit: 1000
+      filter: { frontmatter: { templateKey: { eq: "productPageTemplate" } } }
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            productPageTemplate {
+              sectionATitle
+              sectionBTitle
+              sectionDTitle
+              sectionETitle
+              sectionCTitles {
+                subtitle
+                title
+              }
+            }
+          }
+        }
+      }
+    }
+
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
@@ -227,7 +262,7 @@ export const pageQuery = graphql`
             description
             title
           }
-          custermerReports {
+          customerReports {
             description
             percentage
           }

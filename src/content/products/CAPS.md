@@ -144,7 +144,7 @@ productpage:
       description: >-
         CAP's can stores all processed invoices for 7 years and provides an
         extensive search facility for users with many options.
-  custermerReports:
+  customerReports:
     - percentage: 90
       description: Time saving
     - percentage: 100

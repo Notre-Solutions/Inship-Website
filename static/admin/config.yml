@@ -26,12 +26,6 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: "image"}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Features", name: "features", widget: object, fields: [
-        {label: "Feature 1", name: "feature1", widget: string, required: true},
-        {label: "Feature 2", name: "feature2", widget: boolean, required: true},
-        {label: "Feature 3", name: "feature3", widget: boolean, required: true},
-        {label: "Feature 4", name: "feature4", widget: boolean, required: true}
-      ]}
       - {label: "Product Page", name: "productpage", widget: "object", fields: [
           {label: "Timeline Items", name: "timeline", widget: list, fields:[
             {label: "Title", name: "title", widget: string, required: true},
@@ -41,7 +35,7 @@ collections:
             {label: "Title", name: "title", widget: string, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
-          {label: "Custermers reported", name: "custermerReports", widget: list, fields:[
+          {label: "Custermers Reported", name: "customerReports", widget: list, fields:[
             {label: "Percentage", name: "percentage", widget: number, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
@@ -56,7 +50,7 @@ collections:
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
-        name: "index"
+        name: "landingPage"
         fields:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "landing-page"}
           - {label: "Landing Page", name: landingPage, widget: object, fields:[
@@ -70,10 +64,19 @@ collections:
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
                 {label: "Body", name: body, widget: markdown, required: true}
               ]},
-              {label: "The Problem", name: sectionB, widget: object, fields:[
+              {label: "The Problem", name: sectionB, widget: object, fields: [
                 {label: "Title", name: title, widget: string, required: true},
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
                 {label: "Body", name: body, widget: markdown, required: true}
+              ]},
+              {label: "The Problem *NEW*", name: sectionB_alt, widget: object, fields: [
+                {label: "Title", name: title, widget: string, required: true},
+                {label: "Show?", name: show, widget: boolean, required: true, default: true},
+                {label: "Cards", name: "cards", widget: list, fields:[
+                  {label: "Title", name: "title", widget: string, required: true},
+                  {label: "Subtitle", name: "subtitle", widget: string, required: true},
+                  {label: "Description", name: "description", widget: "markdown", required: true}
+              ]}
               ]},
               {label: "Products", name: sectionC, widget: object, fields:[
                 {label: "Show?", name: show, widget: boolean, required: true, default: true}
@@ -84,3 +87,67 @@ collections:
               ]}
           ]}
           - {label: "Body", name: "name", widget: "markdown", required: false}
+      - file: "src/content/product-template/index.md"
+        label: "Product Page Template"
+        name: "productPage"
+        fields:
+          - {label: "Template Key", name: templateKey, widget: "hidden", default: "productPageTemplate"}
+          - {label: "Product Page", name: productPageTemplate, widget: object, fields: [
+            {label: "Section A Title", name: sectionATitle, widget: string},
+            {label: "Section B Title", name: sectionBTitle, widget: string},
+            {label: "Section C Titles", name: sectionCTitles, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Subtitle", name: subtitle, widget: string},
+            ]},
+            {label: "Section D Title", name: sectionDTitle, widget: string},
+            {label: "Section E Title", name: sectionETitle, widget: string}
+          ]}
+      - file: "src/pages/contact/index.md"
+        label: "Contact Page"
+        name: "contactPage"
+        fields:
+          - {label: "Template Key", name: templateKey, widget: "hidden", default: "contactPage"}
+          - {label: "Contact Page", name: contactPage, widget: object, fields: [
+            {label: "Contact Page Title", name: title, widget: string},
+            {label: "Contact Page Subtitle", name: subtitle, widget: string},
+            {label: "Location", name: location, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Icon", name: icon, widget: string},
+              {label: "Description", name: description, widget: object, feilds: [
+                {label: "Address Line 1", name: line1, widget: string},
+                {label: "Address Line 2", name: line2, widget: string},
+                {label: "Address Line 3", name: line3, widget: string},
+                {label: "Address Line 4", name: line4, widget: string},
+                {label: "Address Line 5", name: line5, widget: string},
+              ]},
+            ]},
+            {label: "Phone", name: phone, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Icon", name: icon, widget: string},
+              {label: "Description", name: description, widget: string},
+            ]},
+            {label: "Email", name: email, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Icon", name: icon, widget: string},
+              {label: "Description", name: description, widget: string},
+            ]},         
+          ]}
+      - file: "src/pages/automate/index.md"
+        label: "Automate Page"
+        name: "automatePage"
+        fields:
+          - {label: "Template Key", name: templateKey, widget: "hidden", default: "automatePage"}
+          - {label: "Automate Page", name: automatePage, widget: object, fields: [
+            {label: "Title", name: title, widget: string},
+            {label: "Animation Title", name: animationTitle, widget: string},
+            {label: "News Title", name: newsTitle, widget: string},
+            {label: "Testimonials", name: sectionB, widget: object, fields: [
+              {label: "Testimonial Title", name: title, widget: string},
+              {label: "Testimonials", name: "testimonials", widget: list, fields:[
+                {label: "Title", name: "title", widget: string, required: true},
+                {label: "Stars", name: "stars", widget: number, required: true},
+                {label: "Name", name: "name", widget: string, required: true},
+                {label: "Description", name: "description", widget: "markdown", required: true}
+              ]}
+            ]}
+          ]}      
