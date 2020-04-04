@@ -119,10 +119,38 @@ const Product = ({ data }) => {
     featuredimage,
   } = data.markdownRemark.frontmatter
   const { timeline, features, custermerReports, integrations } = productpage
-
+  const indexList = [
+    {
+      name: "What We Do",
+      link: "what-we-do",
+      icon: "cogs",
+    },
+    {
+      name: "The Problem",
+      link: "problem",
+      icon: "exclamation-triangle",
+    },
+    {
+      name: "Products",
+      link: "products",
+      icon: "smile-beam",
+    },
+    {
+      name: "Process",
+      link: "process",
+      icon: "project-diagram",
+    },
+    {
+      name: "Video",
+      link: "video",
+      icon: "play-circle",
+    },
+  ]
   return (
     <>
       <Layout current={alias} style={style}>
+        <SideNav list={indexList}></SideNav>
+
         <div className="product-page">
           <header className={`product-header-${style}`}>
             {Heading(alias, style, title, description, featuredimage)}

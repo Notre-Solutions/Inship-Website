@@ -11,11 +11,17 @@ export default class SideNav extends React.Component {
   render() {
     return (
       <>
-        <div class="sidenav">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#clients">Clients</a>
-          <a href="#contact">Contact</a>
+        <div className="side-nav">
+          {this.props.list.map(item => {
+            return (
+              <div className="icon tooltip ">
+                <span className={`fa fa-${item.icon}`}></span>
+                <a href={`#${item.link}`} className="tooltiptext ">
+                  {item.name}
+                </a>
+              </div>
+            )
+          })}
         </div>
       </>
     )

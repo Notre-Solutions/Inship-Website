@@ -1,22 +1,95 @@
-.sidenav {
-  width: 130px;
+.side-nav {
   position: fixed;
-  z-index: 1;
-  top: 9rem;
-  right: 3rem;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
+  top: 45%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196f3;
-  display: block;
-}
+  // background-color: $inship-color;
+  background-color: white;
 
-.sidenav a:hover {
-  color: #064579;
+  .icon {
+    margin: 1.6rem 0 1.6rem 0;
+    font-size: 1.5rem;
+    color: rgba(97, 97, 97, 0.746);
+
+    position: relative;
+    @include transition-ease;
+    z-index: 2;
+
+    &:hover {
+      &::before {
+        transform: scale(2.5);
+      }
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "";
+      z-index: 1;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background-color: rgba(128, 128, 128, 0.356);
+      display: block;
+      transform: scale(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  .fa {
+    position: absolute;
+    top: 0;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 12rem;
+    background-color: rgba(128, 128, 128, 0.356);
+    color: #fff;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    z-index: 1;
+    top: -0.5rem;
+    right: 200%;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -1rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(128, 128, 128, 0.356);
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  // .icon:after {
+  //   content: "";
+  //   background-color: gray;
+  //   width: 1rem;
+  //   height: 1rem;
+  // }
+
+  a {
+    visibility: hidden;
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+  }
 }

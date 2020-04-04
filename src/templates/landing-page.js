@@ -149,7 +149,6 @@ const Landing = ({ data }) => {
           <figure></figure>
           <figure></figure>
           <figure></figure>
-          <figure></figure>
           <div className="header-text-box">
             <h1 className="heading">
               <span className="main-header">
@@ -164,6 +163,7 @@ const Landing = ({ data }) => {
             </a>
           </div>
         </header>
+
         <div id="what-we-do" className="main-page container">
           {showSectionA(
             sectionA.show,
@@ -174,13 +174,13 @@ const Landing = ({ data }) => {
             sectionA.url
           )}
           {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
-          <ProblemSection></ProblemSection>
-          <section className="section-c">
+          <ProblemSection id="problem"></ProblemSection>
+          <section className="section-c" id="products">
             <h2 className="section-c-heading">Products</h2>
             {displayProducts(edges)}
           </section>
           {/* {showSectionD(sectionD.show, sectionD.title)} */}
-          <div className="section-d">
+          <div className="section-d" id="process">
             <div className="section-d-title">The Process</div>
             <Img
               fluid={data.images.edges[0].node.childImageSharp.fluid}

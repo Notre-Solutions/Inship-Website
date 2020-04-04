@@ -15,7 +15,7 @@ function getComponentStyle(style) {
   } else if (style === "color-3") {
     return "#252941"
   } else {
-    return "rgb(33, 150, 243)"
+    return "black"
   }
 }
 
@@ -23,6 +23,7 @@ function getTimelineElement(item, style) {
   var contentStyle = {
     color: "#fff",
     fontSize: "2.5rem",
+    lineHeight: "120%",
   }
   const background = getComponentStyle(style)
   contentStyle["background"] = background
@@ -49,8 +50,12 @@ function getTimelineElement(item, style) {
 const TimeLine = ({ timeline, style }) => {
   return (
     <VerticalTimeline>
-      {timeline.map(item => {
-        return getTimelineElement(item, style)
+      {timeline.map((item, i) => {
+        if (i % 2) {
+          return getTimelineElement(item, "black")
+        } else {
+          return getTimelineElement(item, style)
+        }
       })}
     </VerticalTimeline>
   )

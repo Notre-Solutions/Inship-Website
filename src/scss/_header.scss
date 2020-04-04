@@ -10,7 +10,7 @@
     top: 0;
 
     background-position: right right;
-    animation: imageAnimation 30s linear infinite 0s;
+    animation: imageAnimation 24s linear infinite 0s;
     // backface-visibility: hidden;
     background-size: cover;
     color: transparent;
@@ -42,10 +42,10 @@
     background-image: url(../img/Books.jpg);
   }
 
-  & > figure:nth-child(5) {
-    animation-delay: 24s;
-    background-image: url(../img/Main.jpg);
-  }
+  // & > figure:nth-child(5) {
+  //   animation-delay: 24s;
+  //   background-image: url(../img/Main.jpg);
+  // }
 
   &-text-box {
     position: absolute;
@@ -78,6 +78,7 @@
     animation-name: fadeIn;
     animation-duration: 3s;
     font-weight: 100;
+    animation: mainTitleAnimation 12s linear infinite 0s;
   }
 
   .btn {

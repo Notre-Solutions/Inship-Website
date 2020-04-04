@@ -124,6 +124,33 @@ li {
   }
 }
 
+@keyframes mainTitleAnimation {
+  0% {
+    color: black;
+    opacity: 1;
+  }
+  40% {
+    color: black;
+    opacity: 1;
+  }
+  49% {
+    color: black;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    color: white;
+  }
+  99% {
+    opacity: 1;
+    color: white;
+  }
+  100% {
+    opacity: 0;
+    color: black;
+  }
+}
+
 @keyframes imageAnimation {
   0% {
     animation-timing-function: ease-in;

@@ -131,6 +131,46 @@ li {
     -webkit-transform: rotate(720deg);
             transform: rotate(720deg); } }
 
+@-webkit-keyframes mainTitleAnimation {
+  0% {
+    color: black;
+    opacity: 1; }
+  40% {
+    color: black;
+    opacity: 1; }
+  49% {
+    color: black;
+    opacity: 0; }
+  50% {
+    opacity: 1;
+    color: white; }
+  99% {
+    opacity: 1;
+    color: white; }
+  100% {
+    opacity: 0;
+    color: black; } }
+
+@keyframes mainTitleAnimation {
+  0% {
+    color: black;
+    opacity: 1; }
+  40% {
+    color: black;
+    opacity: 1; }
+  49% {
+    color: black;
+    opacity: 0; }
+  50% {
+    opacity: 1;
+    color: white; }
+  99% {
+    opacity: 1;
+    color: white; }
+  100% {
+    opacity: 0;
+    color: black; } }
+
 @-webkit-keyframes imageAnimation {
   0% {
     -webkit-animation-timing-function: ease-in;
@@ -172,8 +212,8 @@ li {
     left: 0;
     top: 0;
     background-position: right right;
-    -webkit-animation: imageAnimation 30s linear infinite 0s;
-            animation: imageAnimation 30s linear infinite 0s;
+    -webkit-animation: imageAnimation 24s linear infinite 0s;
+            animation: imageAnimation 24s linear infinite 0s;
     background-size: cover;
     color: transparent;
     opacity: 0;
@@ -195,10 +235,6 @@ li {
     -webkit-animation-delay: 18s;
             animation-delay: 18s;
     background-image: url(../img/Books.jpg); }
-  .header > figure:nth-child(5) {
-    -webkit-animation-delay: 24s;
-            animation-delay: 24s;
-    background-image: url(../img/Main.jpg); }
   .header-text-box {
     position: absolute;
     text-align: center;
@@ -225,7 +261,9 @@ li {
             animation-name: fadeIn;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
-    font-weight: 100; }
+    font-weight: 100;
+    -webkit-animation: mainTitleAnimation 12s linear infinite 0s;
+            animation: mainTitleAnimation 12s linear infinite 0s; }
   .header .btn {
     margin-top: 1rem;
     border-radius: 1rem;
@@ -2178,25 +2216,84 @@ li {
         margin-left: 1rem;
         font-size: 1rem; }
 
-.sidenav {
-  width: 130px;
+.side-nav {
   position: fixed;
-  z-index: 1;
-  top: 9rem;
-  right: 3rem;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0; }
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196f3;
-  display: block; }
-
-.sidenav a:hover {
-  color: #064579; }
+  top: 45%;
+  right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: white; }
+  .side-nav .icon {
+    margin: 1.6rem 0 1.6rem 0;
+    font-size: 1.5rem;
+    color: rgba(97, 97, 97, 0.746);
+    position: relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 2; }
+    .side-nav .icon:hover {
+      cursor: pointer; }
+      .side-nav .icon:hover::before {
+        -webkit-transform: scale(2.5);
+                transform: scale(2.5); }
+    .side-nav .icon::before {
+      content: "";
+      z-index: 1;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background-color: rgba(128, 128, 128, 0.356);
+      display: block;
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      transition: -webkit-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  .side-nav .fa {
+    position: absolute;
+    top: 0; }
+  .side-nav .tooltip {
+    position: relative;
+    display: inline-block; }
+  .side-nav .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 12rem;
+    background-color: rgba(128, 128, 128, 0.356);
+    color: #fff;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0;
+    position: absolute;
+    z-index: 1;
+    top: -0.5rem;
+    right: 200%; }
+  .side-nav .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -1rem;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(128, 128, 128, 0.356); }
+  .side-nav .tooltip:hover .tooltiptext {
+    visibility: visible; }
+  .side-nav a {
+    visibility: hidden;
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem; }
 
 .problem-section {
   margin: 0 5rem 0 5rem; }
