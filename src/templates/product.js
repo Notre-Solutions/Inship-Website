@@ -117,33 +117,6 @@ const Product = ({ data }) => {
     productpage,
     featuredimage,
   } = data.markdownRemark.frontmatter
-  const indexList = [
-    {
-      name: "What We Do",
-      link: "what-we-do",
-      icon: "cogs",
-    },
-    {
-      name: "The Problem",
-      link: "problem",
-      icon: "exclamation-triangle",
-    },
-    {
-      name: "Products",
-      link: "products",
-      icon: "smile-beam",
-    },
-    {
-      name: "Process",
-      link: "process",
-      icon: "project-diagram",
-    },
-    {
-      name: "Video",
-      link: "video",
-      icon: "play-circle",
-    },
-  ]
   const { timeline, features, customerReports, integrations } = productpage
   const {
     sectionATitle,
@@ -151,26 +124,27 @@ const Product = ({ data }) => {
     sectionDTitle,
     sectionETitle,
     sectionCTitles,
+    sideNavBar,
   } = data.allMarkdownRemark.edges[0].node.frontmatter.productPageTemplate
 
   return (
     <>
       <Layout current={alias} style={style}>
-        <SideNav list={indexList}></SideNav>
+        <SideNav list={sideNavBar}></SideNav>
 
         <div className="product-page">
           <header className={`product-header-${style}`}>
             {Heading(alias, style, title, description, featuredimage)}
           </header>
           <div className="product-main container">
-            <div className="product-main-section-a">
+            <div id="process" className="product-main-section-a">
               <div className={`product-main-section-a-title ${style}`}>
                 {sectionATitle}
               </div>
               <TimeLine timeline={timeline} style={style}></TimeLine>
             </div>
             <div className={`line ${style}-line`}></div>
-            <div className="product-main-section-b">
+            <div id="features" className="product-main-section-b">
               <div className={`product-main-section-b-title ${style}`}>
                 {sectionBTitle}
               </div>
@@ -180,7 +154,7 @@ const Product = ({ data }) => {
                 })}
               </div>
             </div>
-            <div className="product-main-section-c">
+            <div id="customers-reported" className="product-main-section-c">
               <div className={`product-main-section-c-title ${style}`}>
                 {sectionCTitles.title}
                 <div className={`product-main-section-c-title-sub ${style}`}>
@@ -193,7 +167,7 @@ const Product = ({ data }) => {
                 })}
               </div>
             </div>
-            <div className="product-main-section-d">
+            <div id="integration-options" className="product-main-section-d">
               <div className={`product-main-section-d-title ${style}`}>
                 {sectionDTitle}
               </div>
@@ -239,6 +213,11 @@ export const pageQuery = graphql`
               sectionCTitles {
                 subtitle
                 title
+              }
+              sideNavBar {
+                name
+                link
+                icon
               }
             }
           }

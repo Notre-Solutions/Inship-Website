@@ -103,7 +103,11 @@ collections:
               {label: "Subtitle", name: subtitle, widget: string},
             ]},
             {label: "Section D Title", name: sectionDTitle, widget: string},
-            {label: "Section E Title", name: sectionETitle, widget: string}
+            {label: "Section E Title", name: sectionETitle, widget: string},
+            {label: "Side Nav Bar", name: "sideNavBar", widget: list, fields:[
+              {label: "Name", name: "name", widget: string, required: true},
+              {label: "Icon", name: "icon", widget: "string", required: true}
+          ]}
           ]}
       - file: "src/pages/contact/index.md"
         label: "Contact Page"
