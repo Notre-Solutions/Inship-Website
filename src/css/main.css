@@ -1310,6 +1310,11 @@ li {
     max-width: 2048px !important;
     margin: 0 10% !important;
   }
+  .animation, .process-animation {
+    max-width: none !important;
+    margin: 0 0 !important;
+    text-align: left !important;
+  }
   .automate-page .section-b {
     width: 80% !important;
     max-width: 2048px !important;
@@ -3292,7 +3297,7 @@ li {
   width: 80%;
 }
 
-.process-animation .container {
+.process-animation .container-animation {
   top: 0%;
   width: 20rem;
   height: 10rem;
@@ -3303,80 +3308,80 @@ li {
   font-size: 0.5rem !important;
 }
 
-.process-animation .container .content {
+.process-animation .container-animation .content {
   font-size: 2rem;
   color: orange;
 }
 
-.process-animation .container-0 {
+.process-animation .container-animation-0 {
   top: 12%;
   left: 0%;
 }
 
-.process-animation .container-1 {
+.process-animation .container-animation-1 {
   top: 12%;
   left: 20%;
 }
 
-.process-animation .container-2 {
+.process-animation .container-animation-2 {
   top: 12%;
   left: 40%;
 }
 
-.process-animation .container-3 {
+.process-animation .container-animation-3 {
   top: 12%;
   left: 60%;
 }
 
-.process-animation .container-4 {
+.process-animation .container-animation-4 {
   top: 12%;
   left: 80%;
 }
 
-.process-animation .container-5 {
+.process-animation .container-animation-5 {
   top: 35%;
   left: 80%;
 }
 
-.process-animation .container-6 {
+.process-animation .container-animation-6 {
   top: 35%;
   left: 60%;
 }
 
-.process-animation .container-7 {
+.process-animation .container-animation-7 {
   top: 35%;
   left: 40%;
 }
 
-.process-animation .container-7 .content {
+.process-animation .container-animation-7 .content {
   color: green;
 }
 
-.process-animation .container-8 {
+.process-animation .container-animation-8 {
   top: 35%;
   left: 20%;
 }
 
-.process-animation .container-9 {
+.process-animation .container-animation-9 {
   top: 72.5%;
   left: 7.5%;
 }
 
-.process-animation .container-9 .content {
+.process-animation .container-animation-9 .content {
   color: green;
 }
 
-.process-animation .container-10 {
+.process-animation .container-animation-10 {
   top: 72.5%;
   left: 28%;
 }
 
-.process-animation .container-11 {
+.process-animation .container-animation-11 {
   top: 72.5%;
   left: 50%;
 }
 
-.process-animation .container-11 .content {
+.process-animation .container-animation-11 .content {
   color: green;
 }
 

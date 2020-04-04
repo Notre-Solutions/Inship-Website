@@ -141,7 +141,7 @@ const animation = (style, variant, icon, title) => {
 }
 
 const Example = () => {
-  const container = "container container-"
+  const container = "container-animation container-animation-"
   const icon = "icon icon-"
   const icons = [
     "fas fa-file-invoice",
