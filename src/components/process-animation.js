@@ -2,9 +2,9 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import "@fortawesome/fontawesome-free/css/all.css"
 
-function getLeftright(delay, childrenDelay){
+function getLeftright(delay) {
   const leftRightContainer = {
-    hidden: { x: 0, scale: 1 },
+    hidden: { opacity: 0, x: 0 },
     visible: {
       opacity: 1,
       scale: 1,
@@ -12,68 +12,101 @@ function getLeftright(delay, childrenDelay){
       transition: {
         loop: Infinity,
         delay: delay,
-        repeatDelay: 8,
-        staggerDirection: 1,
+        repeatDelay: 20,
         duration: 2,
       },
     },
   }
-return leftRightContainer
+  return leftRightContainer
+}
+
+function getFadeIn(delay) {
+  const fadeIn = {
+    hidden: { opacity: 1, scale: 0.75 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        loop: Infinity,
+        delay: delay,
+        repeatDelay: 20,
+        duration: 2,
+      },
+    },
+  }
+  return fadeIn
 }
 
 
-const fadeIn = {
-  hidden: { opacity: 0, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delay: 0.5,
-      duration: 2,
+function getUpDownContainer(delay) {
+  const upDownContainer = {
+    hidden: { x: 0, y: 0, opacity: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: "180%",
+      transition: {
+        loop: Infinity,
+        delay: delay,
+        repeatDelay: 20,
+        duration: 2,
+      },
     },
-  },
+  }
+  return upDownContainer
 }
 
-const upDownContainer = {
-  hidden: { x: 0, y: 0, scale: 1 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: "180%",
-    transition: {
-      loop: Infinity,
-      delay: 0.5,
-      duration: 4,
+function getRightLeft(delay) {
+  const rightLeftContainer = {
+    hidden: { x: 0, opacity: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      x: "-120%",
+      transition: {
+        loop: Infinity,
+        delay: delay,
+        repeatDelay: 20,
+        duration: 2,
+      },
     },
-  },
+  }
+  return rightLeftContainer
 }
 
-const rightLeftContainer = {
-  hidden: { x: 0, scale: 1 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    x: "-120%",
-    transition: {
-      loop: Infinity,
-      delay: 0.5,
-      duration: 4,
+function getQuickFadeIn(delay) {
+  const fadeIn = {
+    hidden: { opacity: 1, scale: 0.75 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        loop: Infinity,
+        delay: delay,
+        repeatDelay: 4,
+        duration: 1,
+      },
     },
-  },
+  }
+  return fadeIn
 }
-
-const leftRightQuickContainer = {
-  hidden: { x: 0, scale: 1 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    x: "130%",
-    transition: {
-      loop: Infinity,
-      delay: 0.5,
-      duration: 1.5,
+function leftRightQuick (delay){
+  const leftRightQuickContainer = {
+    hidden: { x: 0, scale: 1 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      x: "130%",
+      transition: {
+        loop: Infinity,
+        delay: delay,
+        repeatDelay: 4,
+        duration: 1,
+      },
     },
-  },
+  }
+  return leftRightQuickContainer
+  
 }
 
 const animation = (style, variant, icon, title) => {
@@ -147,7 +180,8 @@ const Example = () => {
   const rightLeftStages = [5, 6, 7, 8]
   const fastIconStages = [10, 11, 12, 13]
   const fastLeftRightStages = [9, 10, 11]
-  const delays = [0, 4, 6, 8]
+  const delays = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+  const quickDelays = [1,2,3,4]
 
   return (
     <div className="process-animation">
@@ -155,20 +189,25 @@ const Example = () => {
         <h2>Manual Process</h2>
       </div>
       {iconStages.map(stage => {
-        return animation(`${icon}${stage}`, fadeIn, icons[stage], titles[stage])
+        return animation(
+          `${icon}${stage}`,
+          getFadeIn(delays[stage]),
+          icons[stage],
+          titles[stage]
+        )
       })}
       {leftRightStages.map(stage => {
         return animation(
           `${container}${stage}`,
-          getLeftright(delays[stage],8),
+          getLeftright(delays[stage], 8),
           "fas fa-user"
         )
       })}
-      {animation(`${container}4`, upDownContainer, "fas fa-user")}
+      {animation(`${container}4`, getUpDownContainer(delays[4]), "fas fa-user")}
       {rightLeftStages.map(stage => {
         return animation(
           `${container}${stage}`,
-          rightLeftContainer,
+          getRightLeft(delays[stage]),
           "fas fa-user"
         )
       })}
@@ -176,20 +215,23 @@ const Example = () => {
         <h2>Automated Process</h2>
       </div>
       {fastIconStages.map(stage => {
-        return animation(`${icon}${stage}`, fadeIn, icons[stage], titles[stage])
+        return animation(
+          `${icon}${stage}`,
+          getQuickFadeIn(quickDelays[stage-10]),
+          icons[stage],
+          titles[stage]
+        )
       })}
       {fastLeftRightStages.map(stage => {
         return animation(
           `${container}${stage}`,
-          leftRightQuickContainer,
+          leftRightQuick(quickDelays[stage-9]),
           "fas fa-user"
         )
       })}
       <div className="keys">
         <i class={"fas fa-user green"}></i>
-        <small>
-          {"Automated"}
-        </small>
+        <small>{"Automated"}</small>
         <p> </p>
         <i class={"fas fa-user orange"}></i>
         <small>{"Manual"}</small>
