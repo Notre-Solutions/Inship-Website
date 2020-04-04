@@ -136,6 +136,7 @@ const Landing = ({ data }) => {
     subtitle,
     sectionA,
     sectionB,
+    sectionB_alt,
     sectionC,
     sectionD,
   } = data.markdownRemark.frontmatter.landingPage
@@ -174,7 +175,8 @@ const Landing = ({ data }) => {
             sectionA.url
           )}
           {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
-          <ProblemSection></ProblemSection>
+          
+          <ProblemSection array={sectionB_alt.cards}></ProblemSection>
           <section className="section-c">
             <h2 className="section-c-heading">{sectionC.title}</h2>
             {displayProducts(edges)}
@@ -235,6 +237,16 @@ export const pageQuery = graphql`
             body
             title
             show
+          }
+          sectionB_alt {
+            title
+            show
+            cards{
+              title
+              subtitle
+              photo
+              description
+            }
           }
           sectionB {
             title

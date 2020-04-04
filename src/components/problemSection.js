@@ -2,20 +2,21 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import "@fortawesome/fontawesome-free/css/all.css"
 import "../css/main.css"
+import Markdown from "./markdown"
 
 export default class ProblemSection extends React.Component {
   constructor(props) {
     super(props)
   }
 
-  name(params) {
+  section(params) {
     let array = []
     params.forEach((element, i) => {
       if (i % 2) {
         array.push(
           <div class="problem-card">
             <div class="meta">
-              <div class="photo-1"></div>
+              <div class={element.photo}></div>
               <div class="details">
                 <div className="img-writing">{element.title}</div>
               </div>
@@ -23,7 +24,7 @@ export default class ProblemSection extends React.Component {
             <div class="description">
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
-              <p>{element.paragraph}</p>
+              <Markdown markdown={element.description}/>
               <p class="read-more">
                 <a href="#">Read More</a>
               </p>
@@ -34,7 +35,7 @@ export default class ProblemSection extends React.Component {
         array.push(
           <div class="problem-card alt">
             <div class="meta">
-              <div class="photo-1"></div>
+              <div class={element.photo}></div>
               <div class="details">
                 <div className="img-writing">{element.title}</div>
               </div>
@@ -42,7 +43,7 @@ export default class ProblemSection extends React.Component {
             <div class="description">
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
-              <p>{element.paragraph}</p>
+              <Markdown markdown={element.description}/>
               <p class="read-more">
                 <a href="#">Read More</a>
               </p>
@@ -55,9 +56,12 @@ export default class ProblemSection extends React.Component {
   }
 
   render() {
-    return (
-      <>
-        <div className="problem-section">
+    return <>{this.section(this.props.array)}</>
+  }
+}
+
+{
+  /* <div className="problem-section">
           <div class="problem-card">
             <div class="meta">
               <div class="photo-1"></div>
@@ -141,8 +145,5 @@ export default class ProblemSection extends React.Component {
               </p>
             </div>
           </div>
-        </div>
-      </>
-    )
-  }
+        </div> */
 }

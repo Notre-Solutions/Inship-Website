@@ -74,6 +74,34 @@ landingPage:
       process and automate it. The full systems includes po matching both at a
       GRN and line level, auto coding,  auto routeing for approval and statement
       reconciliation to name a few.
+  sectionB_alt:
+    title: The Problem
+    show: true
+    cards:
+      - title: Problem
+        subtitle: sub title
+        photo: photo-1
+        description: >-  
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
+      - title: Solution
+        subtitle: sub title
+        photo: photo-2
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
+      - title: Why Change
+        subtitle: sub title
+        photo: photo-3
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.        
   sectionC:
     title: Products
     show: true
