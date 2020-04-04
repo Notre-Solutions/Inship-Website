@@ -3167,6 +3167,9 @@ li {
 
 .animation {
   position: relative;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
 }
 
 .process-animation {
