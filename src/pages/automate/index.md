@@ -1,7 +1,9 @@
 ---
-templateKey: automate
+templateKey: automatePage
 automatePage:
   title: Why Automate
+  animationTitle: Process Flow
+  newsTitle: News
   sectionB:
     title: Testimonials
     testimonials:

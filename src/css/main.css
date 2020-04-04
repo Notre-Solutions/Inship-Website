@@ -170,20 +170,104 @@ li {
   }
 }
 
+@-webkit-keyframes imageAnimation {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  8% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .header {
+  position: relative;
   height: 95vh;
-  background-image: url(../img/Main.jpg);
+}
+
+.header > figure {
+  height: 95vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: right right;
+  -webkit-animation: imageAnimation 30s linear infinite 0s;
+          animation: imageAnimation 30s linear infinite 0s;
   background-size: cover;
-  background-position: right;
+  color: transparent;
+  opacity: 0;
+  width: 100%;
+  z-index: 0;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative;
+}
+
+.header > figure:nth-child(1) {
+  background-image: url(../img/Main.jpg);
+}
+
+.header > figure:nth-child(2) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  background-image: url(../img/Books.jpg);
+}
+
+.header > figure:nth-child(3) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+  background-image: url(../img/Main.jpg);
+}
+
+.header > figure:nth-child(4) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+  background-image: url(../img/Books.jpg);
+}
+
+.header > figure:nth-child(5) {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+  background-image: url(../img/Main.jpg);
 }
 
 .header-text-box {
   position: absolute;
   text-align: center;
-  top: 20%;
+  top: 30%;
   left: 10%;
   width: 35%;
 }
@@ -260,6 +344,7 @@ li {
 }
 
 .main-page .section-a {
+  margin-top: 100rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3293,4 +3378,267 @@ li {
 
 .process-animation .container-11 .content {
   color: green;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 9rem;
+  right: 3rem;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196f3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.problem-section {
+  margin: 0 5rem 0 5rem;
+}
+
+.problem-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem auto;
+  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.problem-card a {
+  color: inherit;
+}
+
+.problem-card a:hover {
+  color: #46bbb5;
+}
+
+.problem-card:hover .photo-1,
+.problem-card:hover .photo-2,
+.problem-card:hover .photo-3 {
+  -webkit-transform: scale(1.3) rotate(3deg);
+          transform: scale(1.3) rotate(3deg);
+}
+
+.problem-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 32rem;
+}
+
+.problem-card .photo-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  background-image: url(../img/Books.jpg);
+}
+
+.problem-card .photo-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  background-image: url(../img/Main.jpg);
+}
+
+.problem-card .photo-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  background-image: url(../img/Auto.jpg);
+}
+
+.problem-card .details,
+.problem-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.problem-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  -webkit-transition: left 0.2s;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.problem-card .details .img-writing {
+  font-size: 3rem;
+}
+
+.problem-card .description {
+  padding: 2rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.problem-card .description h1,
+.problem-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+
+.problem-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.problem-card .description h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+
+.problem-card .description .read-more {
+  text-align: right;
+}
+
+.problem-card .description .read-more a {
+  color: #46bbb5;
+  display: inline-block;
+  position: relative;
+}
+
+.problem-card .description .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -1rem;
+  opacity: 0;
+  vertical-align: middle;
+  -webkit-transition: margin 0.3s, opacity 0.3s;
+  transition: margin 0.3s, opacity 0.3s;
+}
+
+.problem-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+
+.problem-card .description p {
+  font-size: 1.5rem;
+}
+
+.problem-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+
+.problem-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.problem-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 0.5rem;
+  background: #46bbb5;
+  width: 3.5rem;
+  top: -0.75rem;
+  border-radius: 0.3rem;
+}
+
+.problem-card:hover .details {
+  left: 0%;
+}
+
+@media (min-width: 640px) {
+  .problem-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-width: 100%;
+  }
+  .problem-card .meta {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    min-height: 15%;
+  }
+  .problem-card .description {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .problem-card .description:before {
+    -webkit-transform: skewX(-3deg);
+            transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .problem-card.alt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .problem-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    -webkit-transform: skew(3deg);
+            transform: skew(3deg);
+  }
+  .problem-card.alt .details {
+    padding-left: 25px;
+  }
 }

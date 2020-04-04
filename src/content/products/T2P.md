@@ -57,7 +57,7 @@ productpage:
       description: >-
         After approval based in the technology invoice data can be transferred
         right away or a bulk upload may be completed.
-  custermerReports:
+  customerReports:
     - percentage: 90
       description: T2P reduces the time involved handling suppliers invoices by 90%.
     - percentage: 15

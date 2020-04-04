@@ -9,7 +9,7 @@ import Animation from "../components/process-animation"
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   const { automatePage } = data.markdownRemark.frontmatter
-  const { sectionB } = automatePage
+  const { animationTitle, newsTitle, sectionB } = automatePage
   const { testimonials } = sectionB
 
   return (
@@ -42,7 +42,7 @@ const Automate = ({ data }) => {
           </section>
           <section className="section-a container">
             <div className="title">
-              <h2>Articles</h2>
+              <h2>{newsTitle}</h2>
             </div>
             <div className="grid">
               {edges.map(edge => {
@@ -95,6 +95,8 @@ export const pageQuery = graphql`
       frontmatter {
         automatePage {
           title
+          animationTitle
+          newsTitle
           sectionB {
             title
             testimonials {

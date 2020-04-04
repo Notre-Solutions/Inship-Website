@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 import ReactModal from "../components/modal"
 import Player from "../components/player"
 import Animation from '../components/process-animation'
+import ProblemSection from "../components/problemSection"
 
 function showSectionA(show, title, body, id, className, url) {
   if (show) {
@@ -136,6 +137,7 @@ const Landing = ({ data }) => {
     subtitle,
     sectionA,
     sectionB,
+    sectionB_alt,
     sectionC,
     sectionD,
   } = data.markdownRemark.frontmatter.landingPage
@@ -145,6 +147,11 @@ const Landing = ({ data }) => {
     <>
       <Layout current={"Home"}>
         <header className="header">
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
+          <figure></figure>
           <div className="header-text-box">
             <h1 className="heading">
               <span className="main-header">
@@ -155,7 +162,7 @@ const Landing = ({ data }) => {
               <span className="sub-header">{subtitle.line3}</span>
             </h1>
             <a href="#what-we-do" className="btn btn-white bottom">
-              What We Do
+              {sectionA.title}
             </a>
           </div>
         </header>
@@ -169,14 +176,15 @@ const Landing = ({ data }) => {
             sectionA.url
           )}
           {showSectionB(sectionB.show, sectionB.title, sectionB.body)}
+          
+          <ProblemSection array={sectionB_alt.cards}></ProblemSection>
           <section className="section-c">
-            <h2 className="section-c-heading">Products</h2>
+            <h2 className="section-c-heading">{sectionC.title}</h2>
             {displayProducts(edges)}
           </section>
-          {/* {showSectionD(sectionD.show, sectionD.title)} */}
           <div className="section-d">
-            <div className="section-d-title">The Process</div>
-            {/* <Img
+            <div className="section-d-title">{sectionD.title}</div>
+            <Img
               fluid={data.images.edges[0].node.childImageSharp.fluid}
               className="prosses-img"
             /> */}
@@ -184,18 +192,7 @@ const Landing = ({ data }) => {
                 <Animation />
               </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              repudiandae eius quibusdam neque odit deserunt delectus, doloribus
-              maxime recusandae, ad asperiores. Officia temporibus laborum
-              voluptates sequi laudantium doloremque ratione vero nobis omnis
-              corrupti. Nihil laboriosam est, iure excepturi nam omnis maiores
-              velit? Id non molestias ad obcaecati fugiat ut, mollitia quasi
-              distinctio inventore soluta aspernatur quis delectus iusto rem
-              laborum, quidem facilis ipsa reiciendis! Ea quidem, placeat minima
-              iure dolore incidunt nihil, voluptas cum pariatur facere harum
-              obcaecati doloremque velit tempore corrupti eligendi numquam nam
-              vitae! Commodi praesentium neque tempore, odio officia illo culpa
-              in dolores reprehenderit quasi porro totam dolorem dolor magnam
+              {sectionD.description}
             </p>
           </div>
         </div>
@@ -245,16 +242,28 @@ export const pageQuery = graphql`
             title
             show
           }
+          sectionB_alt {
+            title
+            show
+            cards{
+              title
+              subtitle
+              photo
+              description
+            }
+          }
           sectionB {
             title
             show
             body
           }
           sectionC {
+            title
             show
           }
           sectionD {
             title
+            description
             show
           }
         }

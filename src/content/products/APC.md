@@ -8,11 +8,6 @@ featuredpost: true
 style: color-1
 id: 1
 description: Where is this
-features:
-  feature1: 10 Users
-  feature2: true
-  feature3: false
-  feature4: true
 productpage:
   features:
     - title: Easy to use
@@ -54,7 +49,7 @@ productpage:
       description: >-
         After approval based in the technology invoice data can be transferred
         right away or a bulk upload may be completed.
-  custermerReports:
+  customerReports:
     - percentage: 70
       description: >-
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
