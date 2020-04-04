@@ -1284,15 +1284,33 @@ li {
   .header-text-box {
     left: 15%;
   }
-  .automate-page .section-b .cards {
-    width: 80% !important;
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+  .process-animation {
+    width: 65rem !important;
   }
-  .automate-page .section-b .cards .card {
-    width: 80% !important;
-    margin-left: 22.5% !important;
+  .process-animation .container-animation {
+    visibility: hidden;
+    display: none;
   }
+  .process-animation .icon {
+    width: 10% !important;
+  }
+  .content {
+    font-size: 2rem !important;
+  }
+  .content h3 {
+    font-size: 1rem !important;
+  }
+}
+
+.automate-page .section-b .cards {
+  width: 80% !important;
+  -ms-grid-columns: 1fr !important;
+      grid-template-columns: 1fr !important;
+}
+
+.automate-page .section-b .cards .card {
+  width: 80% !important;
+  margin-left: 22.5% !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -3126,13 +3144,16 @@ li {
 
 .process-animation {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background: rgba(70, 187, 181, 0.2);
   margin: 2rem;
   height: 70rem;
-  width: 120rem !important;
+  width: 120rem;
 }
 
 .process-animation .keys {
