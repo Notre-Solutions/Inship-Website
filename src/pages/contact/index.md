@@ -1,5 +1,5 @@
 ---
-templateKey: contact
+templateKey: contactPage
 contactPage:
   title: Contact
   subtitle: Us
