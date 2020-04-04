@@ -67,7 +67,10 @@ collections:
               {label: "The Problem", name: sectionB, widget: object, fields: [
                 {label: "Title", name: title, widget: string, required: true},
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
-                {label: "Body", name: body, widget: markdown, required: true}
+                {label: "Cards", name: "cards", widget: list, fields:[
+                  {label: "Title", name: "title", widget: string, required: true},
+                  {label: "Description", name: "description", widget: "markdown", required: true}
+              ]}
               ]},
               {label: "The Problem *NEW*", name: sectionB_alt, widget: object, fields: [
                 {label: "Title", name: title, widget: string, required: true},

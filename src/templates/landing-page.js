@@ -152,7 +152,10 @@ const Landing = ({ data }) => {
           )}
           {showSectionB(sectionB)}
 
-          <ProblemSection array={sectionB_alt.cards}></ProblemSection>
+          <ProblemSection
+            array={sectionB_alt.cards}
+            show={sectionB_alt.show}
+          ></ProblemSection>
           <section className="section-c">
             <h2 className="section-c-heading">{sectionC.title}</h2>
             {displayProducts(edges)}

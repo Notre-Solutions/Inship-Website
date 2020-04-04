@@ -24,7 +24,7 @@ export default class ProblemSection extends React.Component {
             <div class="description">
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
-              <Markdown markdown={element.description}/>
+              <Markdown markdown={element.description} />
               <p class="read-more">
                 <a href="#">Read More</a>
               </p>
@@ -43,7 +43,7 @@ export default class ProblemSection extends React.Component {
             <div class="description">
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
-              <Markdown markdown={element.description}/>
+              <Markdown markdown={element.description} />
               <p class="read-more">
                 <a href="#">Read More</a>
               </p>
@@ -56,7 +56,11 @@ export default class ProblemSection extends React.Component {
   }
 
   render() {
-    return <>{this.section(this.props.array)}</>
+    if (this.props.show) {
+      return <>{this.section(this.props.array)}</>
+    } else {
+      return <></>
+    }
   }
 }
 
