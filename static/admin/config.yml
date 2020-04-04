@@ -134,7 +134,7 @@ collections:
             {label: "News Title", name: newsTitle, widget: string},
             {label: "Testimonials", name: sectionB, widget: object, fields: [
               {label: "Testimonial Title", name: title, widget: string},
-              {label: "Features", name: "features", widget: list, fields:[
+              {label: "Testimonials", name: "testimonials", widget: list, fields:[
                 {label: "Title", name: "title", widget: string, required: true},
                 {label: "Stars", name: "stars", widget: number, required: true},
                 {label: "Name", name: "name", widget: string, required: true},
