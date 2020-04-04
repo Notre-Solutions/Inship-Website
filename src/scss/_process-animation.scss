@@ -7,11 +7,12 @@
   $second-row: 35%;
   $third-row: 72.5%;
   position: relative;
+  display: flex;
   justify-content: center;
   background: $inship-color-background-light;
   margin: 2rem;
   height: 70rem;
-  width: 120rem !important;
+  width: 120rem;
   .keys {
     position: absolute;
     bottom: 2%;
@@ -139,7 +140,7 @@
     width: 80%;
   }
 
-  .container {
+  .container-animation {
     top: 0%;
     width: 20rem;
     height: 10rem;

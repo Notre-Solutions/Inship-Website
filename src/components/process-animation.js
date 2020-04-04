@@ -1,4 +1,5 @@
 import * as React from "react"
+import {Component} from 'react'
 import { motion } from "framer-motion"
 import "@fortawesome/fontawesome-free/css/all.css"
 
@@ -36,7 +37,6 @@ function getFadeIn(delay) {
   }
   return fadeIn
 }
-
 
 function getUpDownContainer(delay) {
   const upDownContainer = {
@@ -90,7 +90,7 @@ function getQuickFadeIn(delay) {
   }
   return fadeIn
 }
-function leftRightQuick (delay){
+function leftRightQuick(delay) {
   const leftRightQuickContainer = {
     hidden: { x: 0, scale: 1 },
     visible: {
@@ -106,7 +106,6 @@ function leftRightQuick (delay){
     },
   }
   return leftRightQuickContainer
-  
 }
 
 const animation = (style, variant, icon, title) => {
@@ -140,104 +139,139 @@ const animation = (style, variant, icon, title) => {
   }
 }
 
-const Example = () => {
-  const container = "container container-"
-  const icon = "icon icon-"
-  const icons = [
-    "fas fa-file-invoice",
-    "fas fa-print",
-    "fas fa-envelope-open-text",
-    "fas fa-sort-amount-down",
-    "fas fa-compress-arrows-alt",
-    "fas fa-thumbs-up",
-    "fas fa-laptop",
-    "fas fa-thumbs-up",
-    "fas fa-file-alt",
-    "fas fa-balance-scale",
-    "fas fa-file-invoice",
-    "fas fa-thumbs-up",
-    "fas fa-thumbs-up",
-    "fas fa-cloud-upload-alt",
-  ]
-  const titles = [
-    "Generate Invoice",
-    "Print",
-    "Open Post",
-    "Sort",
-    "Match",
-    "Approval",
-    "Data Entry",
-    "System Approval",
-    "File",
-    "Reconcile",
-    "General Invoice",
-    "Approval",
-    "System Approval",
-    "Upload",
-  ]
-  const iconStages = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  const leftRightStages = [0, 1, 2, 3]
-  const rightLeftStages = [5, 6, 7, 8]
-  const fastIconStages = [10, 11, 12, 13]
-  const fastLeftRightStages = [9, 10, 11]
-  const delays = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-  const quickDelays = [1,2,3,4]
+class Example extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      width: null,
+    }
+  }
 
-  return (
-    <div className="process-animation">
-      <div className="manual">
-        <h2>Manual Process</h2>
-      </div>
-      {iconStages.map(stage => {
-        return animation(
-          `${icon}${stage}`,
-          getFadeIn(delays[stage]),
-          icons[stage],
-          titles[stage]
-        )
-      })}
-      {leftRightStages.map(stage => {
-        return animation(
-          `${container}${stage}`,
-          getLeftright(delays[stage], 8),
+  /**
+   * Calculate & Update state of new dimensions
+   */
+  updateDimensions() {
+    let update_width = window.innerWidth - 100
+    this.setState({ width: update_width })
+  }
+
+  /**
+   * Add event listener
+   */
+  componentDidMount() {
+    this.updateDimensions()
+    window.addEventListener("resize", this.updateDimensions.bind(this))
+  }
+
+  /**
+   * Remove event listener
+   */
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this))
+  }
+  render() {
+    const container = "container-animation container-animation-"
+    const icon = "icon icon-"
+    const icons = [
+      "fas fa-file-invoice",
+      "fas fa-print",
+      "fas fa-envelope-open-text",
+      "fas fa-sort-amount-down",
+      "fas fa-compress-arrows-alt",
+      "fas fa-thumbs-up",
+      "fas fa-laptop",
+      "fas fa-thumbs-up",
+      "fas fa-file-alt",
+      "fas fa-balance-scale",
+      "fas fa-file-invoice",
+      "fas fa-thumbs-up",
+      "fas fa-thumbs-up",
+      "fas fa-cloud-upload-alt",
+    ]
+    const titles = [
+      "Generate Invoice",
+      "Print",
+      "Open Post",
+      "Sort",
+      "Match",
+      "Approval",
+      "Data Entry",
+      "System Approval",
+      "File",
+      "Reconcile",
+      "General Invoice",
+      "Approval",
+      "System Approval",
+      "Upload",
+    ]
+    const iconStages = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const leftRightStages = [0, 1, 2, 3]
+    const rightLeftStages = [5, 6, 7, 8]
+    const fastIconStages = [10, 11, 12, 13]
+    const fastLeftRightStages = [9, 10, 11]
+    const delays = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+    const quickDelays = [1, 2, 3, 4]
+
+    return (
+      <div className="process-animation">
+        <div className="manual">
+          <h2>Manual Process</h2>
+        </div>
+        {iconStages.map(stage => {
+          return animation(
+            `${icon}${stage}`,
+            getFadeIn(delays[stage]),
+            icons[stage],
+            titles[stage]
+          )
+        })}
+        {leftRightStages.map(stage => {
+          return animation(
+            `${container}${stage}`,
+            getLeftright(delays[stage], 8),
+            "fas fa-user"
+          )
+        })}
+        {animation(
+          `${container}4`,
+          getUpDownContainer(delays[4]),
           "fas fa-user"
-        )
-      })}
-      {animation(`${container}4`, getUpDownContainer(delays[4]), "fas fa-user")}
-      {rightLeftStages.map(stage => {
-        return animation(
-          `${container}${stage}`,
-          getRightLeft(delays[stage]),
-          "fas fa-user"
-        )
-      })}
-      <div className="automated">
-        <h2>Automated Process</h2>
+        )}
+        {rightLeftStages.map(stage => {
+          return animation(
+            `${container}${stage}`,
+            getRightLeft(delays[stage]),
+            "fas fa-user"
+          )
+        })}
+        <div className="automated">
+          <h2>Automated Process</h2>
+        </div>
+        {fastIconStages.map(stage => {
+          return animation(
+            `${icon}${stage}`,
+            getQuickFadeIn(quickDelays[stage - 10]),
+            icons[stage],
+            titles[stage]
+          )
+        })}
+        {fastLeftRightStages.map(stage => {
+          return animation(
+            `${container}${stage}`,
+            leftRightQuick(quickDelays[stage - 9]),
+            "fas fa-user"
+          )
+        })}
+        <div className="keys">
+          <i class={"fas fa-user green"}></i>
+          <small>{"Automated"}</small>
+          <p> </p>
+          <i class={"fas fa-user orange"}></i>
+          <small>{"Manual"}</small>
+        </div>
       </div>
-      {fastIconStages.map(stage => {
-        return animation(
-          `${icon}${stage}`,
-          getQuickFadeIn(quickDelays[stage-10]),
-          icons[stage],
-          titles[stage]
-        )
-      })}
-      {fastLeftRightStages.map(stage => {
-        return animation(
-          `${container}${stage}`,
-          leftRightQuick(quickDelays[stage-9]),
-          "fas fa-user"
-        )
-      })}
-      <div className="keys">
-        <i class={"fas fa-user green"}></i>
-        <small>{"Automated"}</small>
-        <p> </p>
-        <i class={"fas fa-user orange"}></i>
-        <small>{"Manual"}</small>
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Example
