@@ -9,16 +9,18 @@ automatePage:
     testimonials:
       - title: best in 25 years
         stars: 4
-        name: Damian - Reclcye Company
+        name: Damian - Recycle Company
         description: >-
           InShip is the best software solution I have ever used in my 25 years
           plus experience in Finance/Accountancy.
-      - title: Inship Is the BEST
+      - title: we find Inship an intuitive
         stars: 4
-        name: Stephen
+        name: Gemma - Hotel Group
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi 
+          We find Inship an intuitive and user friendly system, it has removed
+          the need to manually enter hundreds of invoices per month. Our month
+          end process has become much more efficient as a result. Highly
+          Recommended!
       - title: Inship Is the BEST
         stars: 4
         name: Will
