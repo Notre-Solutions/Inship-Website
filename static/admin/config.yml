@@ -98,10 +98,10 @@ collections:
               {label: "Products", name: sectionC, widget: object, fields:[
                 {label: "Show?", name: show, widget: boolean, required: true, default: true}
               ]},
-              {label: "Contact Us", name: sectionD, widget: object, fields:[
+              {label: "Process Flow", name: sectionD, widget: object, fields:[
                 {label: "Title", name: title, widget: string, required: true},
-                {label: "Show?", name: show, widget: boolean, required: true, default: true}
-              ]}
+                {label: "Description", name: "description", widget: "markdown", required: true}
+                ]}
           ]}
           - {label: "Body", name: "name", widget: "markdown", required: false}
       - file: "src/content/product-template/index.md"
@@ -169,19 +169,19 @@ collections:
                 {label: "Stars", name: "stars", widget: number, required: true},
                 {label: "Name", name: "name", widget: string, required: true},
                 {label: "Description", name: "description", widget: "markdown", required: true}
+                ]}
+              ]},
+              {label: "Process Blurb", name: sectionC, widget: object, fields: [
+                {label: "Description", name: description, widget: markdown, required: true}
               ]}
-            ]}
-            {label: "Process Blurb", name: sectionB, widget: object, fields: [
-              {label: "Description", name: description, widget: markdown, required: true},
-            ]}
-          ]}      
-        - file: "src/pages/resources/index.md"
-          label: "Resources Page"
-          name: "resourcesPage"
-          fields:
-            - {label: "Template Key", name: templateKey, widget: "hidden", default: "resourcesPage"}
-            - {label: "Resources Page", name: resourcesPage, widget: object, fields: [
-              {label: "Sub Title", name: titleBlurb, widget: string},
-              {label: "Description", name: "description", widget: "markdown", required: true}
-            ]}
+            ]}      
+      - file: "src/pages/resources/index.md"
+        label: "Resources Page"
+        name: "resourcesPage"
+        fields:
+          - {label: "Template Key", name: templateKey, widget: "hidden", default: "resourcesPage"}
+          - {label: "Resources Page", name: resourcesPage, widget: object, fields: [
+            {label: "Sub Title", name: titleBlurb, widget: string},
+            {label: "Description", name: "description", widget: "markdown", required: true}
+          ]}
 
