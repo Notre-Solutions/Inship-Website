@@ -175,3 +175,13 @@ collections:
               {label: "Description", name: description, widget: markdown, required: true},
             ]}
           ]}      
+        - file: "src/pages/resources/index.md"
+          label: "Resources Page"
+          name: "resourcesPage"
+          fields:
+            - {label: "Template Key", name: templateKey, widget: "hidden", default: "resourcesPage"}
+            - {label: "Resources Page", name: resourcesPage, widget: object, fields: [
+              {label: "Sub Title", name: titleBlurb, widget: string},
+              {label: "Description", name: "description", widget: "markdown", required: true}
+            ]}
+

@@ -13,19 +13,19 @@ const Resources = ({ data }) => {
     <>
       <Layout current={"Resources"}>
         <div className="resources">
-          <header className="header">
-            <div className="header-text-box">
+          <header className="resources-header">
+            <div className="resources-header-text-box">
               <h1 className="main-header">
                 <span className="">
                   Re<span className="bold">sources</span>
                 </span>
-                <span className=""></span>
+                <span className="sub-header">{titleBlurb}</span>
               </h1>
             </div>
           </header>
-          <div className="">{title}</div>
-          <div className="">{titleBlurb}</div>
-          <Markdown markdown={description} />
+          <section className="resources-body">
+            <Markdown markdown={description} />
+          </section>
         </div>
       </Layout>
     </>

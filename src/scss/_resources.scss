@@ -1,2 +1,62 @@
 .resources {
+  &-header {
+    @include header-gb-no-color("../img/inship-mac.jpg", "top");
+    position: relative;
+
+    &-text-box {
+      position: absolute;
+      text-align: center;
+      top: 20%;
+      left: 2%;
+      width: 35%;
+    }
+
+    .heading {
+      color: white;
+    }
+    .bold {
+      font-weight: 700;
+    }
+    .main-header {
+      text-transform: uppercase;
+      font-weight: 100;
+      font-size: 5rem;
+      display: block;
+
+      animation-name: moveInFromTop;
+      animation-duration: 3s;
+    }
+
+    .sub-header {
+      // letter-spacing: 0.2rem;
+      font-size: 2rem;
+      display: block;
+      text-align: center;
+      animation-name: fadeIn;
+      animation-duration: 3s;
+      font-weight: 100;
+    }
+  }
+
+  &-body {
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
 }
