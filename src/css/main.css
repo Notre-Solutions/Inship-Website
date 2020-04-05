@@ -3366,7 +3366,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 5rem;
+  border-radius: 1rem;
   background: black;
   margin: 2rem;
   height: 70rem;
@@ -3566,42 +3566,42 @@ li {
 }
 
 .process-animation .container-animation-0 {
-  top: 32.5rem;
+  top: 33.5rem;
   left: 0%;
 }
 
 .process-animation .container-animation-1 {
-  top: 32.5rem;
+  top: 33.5rem;
   left: 20%;
 }
 
 .process-animation .container-animation-2 {
-  top: 32.5rem;
+  top: 33.5rem;
   left: 40%;
 }
 
 .process-animation .container-animation-3 {
-  top: 32.5rem;
+  top: 33.5rem;
   left: 60%;
 }
 
 .process-animation .container-animation-4 {
-  top: 32.5rem;
+  top: 33.5rem;
   left: 80%;
 }
 
 .process-animation .container-animation-5 {
-  top: 50rem;
+  top: 51rem;
   left: 80%;
 }
 
 .process-animation .container-animation-6 {
-  top: 50rem;
+  top: 51rem;
   left: 60%;
 }
 
 .process-animation .container-animation-7 {
-  top: 50rem;
+  top: 51rem;
   left: 40%;
 }
 
@@ -3610,12 +3610,12 @@ li {
 }
 
 .process-animation .container-animation-8 {
-  top: 50rem;
+  top: 51rem;
   left: 20%;
 }
 
 .process-animation .container-animation-9 {
-  top: 7.5rem;
+  top: 8.5rem;
   left: 7.5%;
 }
 
@@ -3624,12 +3624,12 @@ li {
 }
 
 .process-animation .container-animation-10 {
-  top: 7.5rem;
+  top: 8.5rem;
   left: 28%;
 }
 
 .process-animation .container-animation-11 {
-  top: 7.5rem;
+  top: 8.5rem;
   left: 50%;
 }
 

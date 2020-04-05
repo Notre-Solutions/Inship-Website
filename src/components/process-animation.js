@@ -2,6 +2,7 @@ import * as React from "react"
 import { Component } from "react"
 import { motion } from "framer-motion"
 import "@fortawesome/fontawesome-free/css/all.css"
+import CountUp from 'react-countup';
 
 function animate(x, y, opacity, scale, delay, repeatDelay, duration) {
   const motion = {
@@ -90,14 +91,15 @@ function main(lr, rl, ud, lrq) {
   ]
   const iconStages = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   const leftRightStages = [0, 1, 2, 3]
-  const rightLeftStages = [5, 6, 7, 8]
+  const rightLeftStages = [5, 6, 8]
   const fastIconStages = [10, 11, 12, 13]
-  const fastLeftRightStages = [9, 10, 11]
+  const fastLeftRightStages = [9, 11]
   const delays = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-  const quickDelays = [1, 2, 3, 4]
+  const quickDelays = [1, 2, 4, 5]
 
   return (
     <div className="process-animation">
+      <CountUp className='autoCount' duration={60} end={12} delay={5} suffix=" Invoices" />
       <div className="manual">
         <h2>Manual Process</h2>
       </div>
@@ -113,19 +115,24 @@ function main(lr, rl, ud, lrq) {
         return animation(
           `${container}${stage}`,
           animate([0, lr], [0, 0], [0, 1], [1, 1], delays[stage], 20, 2),
-          "fas fa-user"
+          "fas fa-file-invoice"
         )
       })}
       {animation(
+        `${container}7`,
+        animate([0, rl], [0, 0], [0, 1], [1, 1], delays[7], 21, 1),
+        "fas fa-file-invoice"
+      )}
+      {animation(
         `${container}4`,
         animate([0, 0], [0, ud], [0, 1], [1, 1], delays[4], 20, 2),
-        "fas fa-user"
+        "fas fa-file-invoice"
       )}
       {rightLeftStages.map(stage => {
         return animation(
           `${container}${stage}`,
           animate([0, rl], [0, 0], [1, 1], [1, 1], delays[stage], 20, 2),
-          "fas fa-user"
+          "fas fa-file-invoice"
         )
       })}
       <div className="automated">
@@ -140,33 +147,33 @@ function main(lr, rl, ud, lrq) {
             [1, 1],
             [0.75, 1],
             quickDelays[stage - 10],
-            4,
+            5,
             1
           ),
           icons[stage],
           titles[stage]
         )
       })}
-      {fastLeftRightStages.map(stage => {
-        return animation(
-          `${container}${stage}`,
-          animate(
-            [0, lrq],
-            [0, 0],
-            [1, 1],
-            [1, 1],
-            quickDelays[stage - 9],
-            4,
-            1
-          ),
-          "fas fa-user"
-        )
-      })}
+      {animation(
+        `${container}9`,
+        animate([0, lrq], [0, 0], [1, 1], [1, 1], quickDelays[0], 5, 1),
+        "fas fa-file-invoice"
+      )}
+      {animation(
+        `${container}10`,
+        animate([0, lrq], [0, 0], [1, 1], [1, 1], quickDelays[1], 4, 2),
+        "fas fa-file-invoice"
+      )}
+      {animation(
+        `${container}11`,
+        animate([0, lrq], [0, 0], [1, 1], [1, 1], quickDelays[2], 5, 1),
+        "fas fa-file-invoice"
+      )}
       <div className="keys">
-        <i class={"fas fa-user green"}></i>
+        <i class={"fas fa-file-invoice green"}></i>
         <small>{"Automated"}</small>
         <p> </p>
-        <i class={"fas fa-user orange"}></i>
+        <i class={"fas fa-file-invoice orange"}></i>
         <small>{"Manual"}</small>
       </div>
     </div>
@@ -231,10 +238,10 @@ function main2() {
         return <div className={`pipe pipe-${stage}`} />
       })}
       <div className="keys">
-        <i class={"fas fa-user green"}></i>
+        <i class={"fas fa-file-invoice green"}></i>
         <small>{"Automated"}</small>
         <p> </p>
-        <i class={"fas fa-user orange"}></i>
+        <i class={"fas fa-file-invoice orange"}></i>
         <small>{"Manual"}</small>
       </div>
     </div>
@@ -271,29 +278,21 @@ class Example extends Component {
     window.removeEventListener("resize", this.updateDimensions.bind(this))
   }
   render() {
-    const leftRightDistance = ["25rem", 0]
-    const upDownDistance = ["18rem", 0]
-    const rightLeftDistance = ["-25rem", 0]
-    const leftRightQuickDistance = ["28rem", 0]
+    const leftRightDistance = "25rem"
+    const upDownDistance = "18rem"
+    const rightLeftDistance = "-25rem"
+    const leftRightQuickDistance = "28rem"
 
     if (this.state.width + 100 > 1270) {
       return main(
-        leftRightDistance[0],
-        rightLeftDistance[0],
-        upDownDistance[0],
-        leftRightQuickDistance[0]
+        leftRightDistance,
+        rightLeftDistance,
+        upDownDistance,
+        leftRightQuickDistance
       )
     } else {
       return main2()
     }
-    //  else {
-    //   return main(
-    //     leftRightDistance[1],
-    //     rightLeftDistance[1],
-    //     upDownDistance[1],
-    //     leftRightQuickDistance[1]
-    //   )
-    // }
   }
 }
 

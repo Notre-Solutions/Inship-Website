@@ -14,7 +14,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  border-radius: 5rem;
+  border-radius: 1rem;
   background: black;
   margin: 2rem;
   height: 70rem;
@@ -39,6 +39,7 @@
       visibility: hidden;
     }
   }
+
 
   .manual {
     position: absolute;
@@ -167,60 +168,60 @@
       color: orange;
     }
     &-0 {
-      top: $first-row;
+      top: $first-row + 1rem;
       left: 0%;
     }
     &-1 {
-      top: $first-row;
+      top: $first-row + 1rem;
       left: 20%;
     }
     &-2 {
-      top: $first-row;
+      top: $first-row + 1rem;
       left: 40%;
     }
     &-3 {
-      top: $first-row;
+      top: $first-row + 1rem;
       left: 60%;
     }
     &-4 {
-      top: $first-row;
+      top: $first-row + 1rem;
       left: 80%;
     }
     &-5 {
-      top: $second-row;
+      top: $second-row + 1rem;
       left: 80%;
     }
     &-6 {
-      top: $second-row;
+      top: $second-row  + 1rem;
       left: 60%;
     }
     &-7 {
       .content {
         color: green;
       }
-      top: $second-row;
+      top: $second-row  + 1rem;
       left: 40%;
     }
     &-8 {
-      top: $second-row;
+      top: $second-row  + 1rem;
       left: 20%;
     }
     &-9 {
       .content {
         color: green;
       }
-      top: $third-row;
+      top: $third-row  + 1rem;
       left: 7.5%;
     }
     &-10 {
-      top: $third-row;
+      top: $third-row  + 1rem;
       left: 28%;
     }
     &-11 {
       .content {
         color: green;
       }
-      top: $third-row;
+      top: $third-row  + 1rem;
       left: 50%;
     }
   }
