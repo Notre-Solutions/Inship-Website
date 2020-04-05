@@ -19,7 +19,6 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-     preview: false
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article"}
       - {label: "Features Post", name: "featuredpost", widget: "boolean", default: true}

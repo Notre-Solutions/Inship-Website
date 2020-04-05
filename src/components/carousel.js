@@ -20,7 +20,7 @@ function Testimonials(testimonal) {
       <div className="line"></div>
       <div className="sing-off ">
         <i className="fa fa-quote-left quote-left "></i>
-        <span style={{ color: "#914E75" }}>{name} - Recycle Compnay</span>
+        <span style={{ color: "#914E75" }}>{name}</span>
         <i className="fa fa-quote-right quote-right"></i>
       </div>
     </div>
