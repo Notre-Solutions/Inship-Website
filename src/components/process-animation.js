@@ -2,7 +2,6 @@ import * as React from "react"
 import { Component } from "react"
 import { motion } from "framer-motion"
 import "@fortawesome/fontawesome-free/css/all.css"
-import CountUp from 'react-countup';
 
 function animate(x, y, opacity, scale, delay, repeatDelay, duration) {
   const motion = {
@@ -99,7 +98,6 @@ function main(lr, rl, ud, lrq) {
 
   return (
     <div className="process-animation">
-      <CountUp className='autoCount' duration={60} end={12} delay={5} suffix=" Invoices" />
       <div className="manual">
         <h2>Manual Process</h2>
       </div>
