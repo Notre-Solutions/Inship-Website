@@ -80,30 +80,59 @@ landingPage:
     title: The Problem
     show: true
     cards:
-      - title: Problem
-        subtitle: sub title
+      - title: What we do
+        subtitle: Provide an AP bolt on White Label Solution
         photo: photo-1
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
-      - title: Solution
-        subtitle: sub title
+          InShip specializes in offering Accounts Payable plug in solutions for
+          accounting and e.r.p. software.
+
+
+          We can add a new fully functional module and revenue stream to your
+          software in approximately 8 weeks, allowing you to deliver a feature
+          set that would normally take over 2 years to develop.
+
+
+          We have 3 different versions, from a simple A.I. data extraction
+          hidden module to add to an accounts package to a full Accounts Payable
+          Solution that can be tailored to meet the needs of most medium and
+          large business.
+      - title: The Problem
+        subtitle: moving for paper based to digital
         photo: photo-2
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
-      - title: Why Change
-        subtitle: sub title
+          Accounts Payable is a very manual and expensive process. Processing
+          each invoice or bill can include up to ten steps and costs around
+          €4.50 (based on a pwc report).  However if a business automates this
+          process they can remove 80-90% of that cost.
+
+
+          Being paper based the process is slow, normally unstructured, full of
+          flaws and not suitable for remote working.
+      - title: Solutions
+        subtitle: we offer 3 solutions
         photo: photo-3
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
+          InShip offers 3 solutions that automate the process direct for email
+          or DND.
+
+
+          APC is a bolt on solution the retrieves invoices form emails or DND,
+          automatically reads and pushes the invoice and data in a editable
+          draft form to your system.
+
+
+          T2P if your system is unable to receive images, T2P is a platform
+          where users can review, confirm, edit, store and search for invoices.
+          After invoices are approved they data is pushed to the accounting
+          system. 
+
+
+          CAPs is a fully online accounts payable department. Allowing
+          businesses to replicate the complex process and automate it. The full
+          systems includes po matching both at a GRN and line level, auto
+          coding, auto routeing for approval and statement reconciliation to
+          name a few.
   sectionC:
     title: Products
     show: true
