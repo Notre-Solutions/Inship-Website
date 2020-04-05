@@ -21,22 +21,21 @@ automatePage:
           the need to manually enter hundreds of invoices per month. Our month
           end process has become much more efficient as a result. Highly
           Recommended!
-      - title: Inship Is the BEST
+      - title: 'we love InShip '
         stars: 4
-        name: Will
+        name: Helen - Hire Group
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
-      - title: Inship Is the BEST
+          We love InShip its design is so simple to use and now I have full
+          control of our spend and recharges. Their statements reconciliation
+          aid speeds up our month end. I have no problem recommending InShip to
+          anyone.
+      - title: our operators love using the system
         stars: 4
-        name: Jack
+        name: Walter - High Volume Service Company
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
+          In the first few weeks after we started to use InShip, I was really
+          surprised to hear that we were processing over 400 documents in a week
+          - Our operators love using the system!
       - title: Inship Is the BEST
         stars: 4
         name: Sarah
