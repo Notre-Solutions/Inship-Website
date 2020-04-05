@@ -29,7 +29,7 @@ automatePage:
           control of our spend and recharges. Their statements reconciliation
           aid speeds up our month end. I have no problem recommending InShip to
           anyone.
-      - title: our operators love using the system
+      - title: our operators love using InShip
         stars: 4
         name: Walter - High Volume Service Company
         description: >-
