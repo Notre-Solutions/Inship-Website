@@ -170,10 +170,10 @@ collections:
                 {label: "Name", name: "name", widget: string, required: true},
                 {label: "Description", name: "description", widget: "markdown", required: true}
               ]}
-            ]}
+            ]},
             {label: "Process Blurb", name: sectionC, widget: object, fields: [
               {label: "Description", name: description, widget: markdown, required: true}
-            ]}
+            ]},
           ]}      
       - file: "src/pages/resources/index.md"
         label: "Resources Page"
