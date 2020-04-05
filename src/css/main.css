@@ -1337,16 +1337,6 @@ li {
   .header-text-box {
     left: 15%;
   }
-  .process-animation {
-    width: 65rem !important;
-  }
-  .process-animation .container-animation {
-    visibility: hidden;
-    display: none;
-  }
-  .process-animation .icon {
-    width: 10% !important;
-  }
   .content {
     font-size: 2rem !important;
   }
@@ -1378,6 +1368,166 @@ li {
   .automate-page .section-b .cards .card {
     width: 80% !important;
     margin-left: 10% !important;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .process-animation {
+    height: 65rem !important;
+    width: 40rem !important;
+  }
+  .process-animation .content {
+    font-size: 2rem !important;
+  }
+  .process-animation .content h3 {
+    font-size: 1rem !important;
+  }
+  .process-animation .keys {
+    width: 30rem !important;
+    left: 5rem !important;
+  }
+  .process-animation .pipe {
+    background-color: orange;
+    width: 10rem;
+    height: 2rem;
+    position: absolute;
+    margin: 2rem;
+    padding: 1px;
+    border-radius: 100rem;
+  }
+  .process-animation .pipe-0 {
+    top: 21rem;
+    left: 7.575rem;
+  }
+  .process-animation .pipe-1 {
+    top: 21rem;
+    left: 19.45rem;
+  }
+  .process-animation .pipe-2 {
+    top: 21rem;
+    left: 28.925rem;
+    height: 10rem;
+    width: 2rem;
+  }
+  .process-animation .pipe-3 {
+    top: 31rem;
+    left: 19.45rem;
+  }
+  .process-animation .pipe-4 {
+    top: 31rem;
+    left: 7.575rem;
+  }
+  .process-animation .pipe-5 {
+    top: 31rem;
+    left: 5.175rem;
+    height: 10rem;
+    width: 2rem;
+  }
+  .process-animation .pipe-6 {
+    top: 41rem;
+    left: 7.575rem;
+  }
+  .process-animation .pipe-7 {
+    top: 41rem;
+    left: 19.45rem;
+    background-color: green;
+  }
+  .process-animation .pipe-8 {
+    top: 41rem;
+    left: 28.925rem;
+    height: 10rem;
+    width: 2rem;
+  }
+  .process-animation .pipe-9 {
+    top: 8rem;
+    left: 2rem;
+    background-color: green;
+  }
+  .process-animation .pipe-10 {
+    top: 8rem;
+    left: 11.5rem;
+  }
+  .process-animation .pipe-11 {
+    top: 8rem;
+    left: 21rem;
+    background-color: green;
+  }
+  .process-animation .manual,
+  .process-animation .automated {
+    width: 40rem !important;
+    left: 0 !important;
+    font-size: 2rem !important;
+  }
+  .process-animation .manual {
+    top: 15rem !important;
+  }
+  .process-animation .automated {
+    top: 2rem !important;
+  }
+  .process-animation .container-animation {
+    visibility: hidden;
+    display: none;
+  }
+  .process-animation .icon {
+    width: 7.5rem !important;
+    height: 7.5rem !important;
+    padding: 0 !important;
+  }
+  .process-animation .icon-0 {
+    top: 20rem !important;
+    left: 4.375rem !important;
+  }
+  .process-animation .icon-1 {
+    top: 20rem !important;
+    left: 16.25rem !important;
+  }
+  .process-animation .icon-2 {
+    top: 20rem !important;
+    left: 28.125rem !important;
+  }
+  .process-animation .icon-3 {
+    top: 30rem !important;
+    left: 28.125rem !important;
+  }
+  .process-animation .icon-4 {
+    top: 30rem !important;
+    left: 16.25rem !important;
+  }
+  .process-animation .icon-5 {
+    top: 30rem !important;
+    left: 4.375rem !important;
+  }
+  .process-animation .icon-6 {
+    top: 40rem !important;
+    left: 4.375rem !important;
+  }
+  .process-animation .icon-7 {
+    top: 40rem !important;
+    left: 16.25rem !important;
+  }
+  .process-animation .icon-8 {
+    top: 40rem !important;
+    left: 28.125rem !important;
+  }
+  .process-animation .icon-9 {
+    top: 50rem !important;
+    left: 28.125rem !important;
+  }
+  .process-animation .icon-10 {
+    top: 7rem !important;
+    left: 2rem !important;
+  }
+  .process-animation .icon-11 {
+    top: 7rem !important;
+    left: 11.5rem !important;
+  }
+  .process-animation .icon-12 {
+    top: 7rem !important;
+    left: 21rem !important;
+  }
+  .process-animation .icon-13 {
+    top: 7rem !important;
+    left: 30.5rem !important;
   }
 }
 
@@ -3216,15 +3366,17 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(70, 187, 181, 0.2);
+  border-radius: 5rem;
+  background: black;
   margin: 2rem;
   height: 70rem;
-  width: 120rem;
+  width: 125rem;
 }
 
 .process-animation .keys {
   position: absolute;
   bottom: 2%;
+  color: white;
   left: 37.5%;
   height: 2rem;
   display: -webkit-box;
@@ -3254,7 +3406,8 @@ li {
 
 .process-animation .manual {
   position: absolute;
-  top: 0%;
+  color: white;
+  top: 24.5rem;
   font-size: 3rem;
   width: 50rem;
   left: 29.16%;
@@ -3263,7 +3416,8 @@ li {
 
 .process-animation .automated {
   position: absolute;
-  top: 60%;
+  top: -0.5rem;
+  color: white;
   font-size: 3rem;
   width: 50rem;
   left: 29.16%;
@@ -3271,84 +3425,96 @@ li {
 }
 
 .process-animation .icon {
-  top: 0rem;
-  width: 10rem;
+  width: 15rem;
+  height: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   background: #f3f3f3;
-  border-radius: 1rem;
-  padding: 0.5rem;
+  border-radius: 10rem;
+  padding: 0.5rem !important;
   position: absolute;
   z-index: 1;
   color: #46bbb5;
 }
 
 .process-animation .icon-0 {
-  top: 12%;
-  left: 6%;
+  top: 32.5rem;
+  left: 5rem;
 }
 
 .process-animation .icon-1 {
-  top: 12%;
-  left: 26%;
+  top: 32.5rem;
+  left: 30rem;
 }
 
 .process-animation .icon-2 {
-  top: 12%;
-  left: 46%;
+  top: 32.5rem;
+  left: 55rem;
 }
 
 .process-animation .icon-3 {
-  top: 12%;
-  right: 26%;
+  top: 32.5rem;
+  right: 30rem;
 }
 
 .process-animation .icon-4 {
-  top: 12%;
-  right: 6%;
-}
-
-.process-animation .icon-5 {
-  top: 35%;
-  right: 6%;
-}
-
-.process-animation .icon-6 {
-  top: 35%;
-  right: 26%;
-}
-
-.process-animation .icon-7 {
-  top: 35%;
-  left: 46%;
-}
-
-.process-animation .icon-8 {
-  top: 35%;
-  left: 26%;
+  top: 32.5rem;
+  right: 5rem;
 }
 
 .process-animation .icon-9 {
-  top: 35%;
-  left: 6%;
+  top: 50rem;
+  left: 5rem;
+}
+
+.process-animation .icon-8 {
+  top: 50rem;
+  left: 30rem;
+}
+
+.process-animation .icon-7 {
+  top: 50rem;
+  left: 55rem;
+}
+
+.process-animation .icon-6 {
+  top: 50rem;
+  right: 30rem;
+}
+
+.process-animation .icon-5 {
+  top: 50rem;
+  right: 5rem;
 }
 
 .process-animation .icon-10 {
-  top: 72.5%;
-  left: 15%;
+  top: 7.5rem;
+  left: 12rem;
 }
 
 .process-animation .icon-11 {
-  top: 72.5%;
-  left: 35%;
+  top: 7.5rem;
+  left: 41rem;
 }
 
 .process-animation .icon-12 {
-  top: 72.5%;
-  right: 35%;
+  top: 7.5rem;
+  right: 41rem;
 }
 
 .process-animation .icon-13 {
-  top: 72.5%;
-  right: 15%;
+  top: 7.5rem;
+  right: 12rem;
 }
 
 .process-animation .content {
@@ -3385,7 +3551,6 @@ li {
 }
 
 .process-animation .container-animation {
-  top: 0%;
   width: 20rem;
   height: 10rem;
   position: absolute;
@@ -3396,47 +3561,47 @@ li {
 }
 
 .process-animation .container-animation .content {
-  font-size: 2rem;
+  font-size: 5rem;
   color: orange;
 }
 
 .process-animation .container-animation-0 {
-  top: 12%;
+  top: 32.5rem;
   left: 0%;
 }
 
 .process-animation .container-animation-1 {
-  top: 12%;
+  top: 32.5rem;
   left: 20%;
 }
 
 .process-animation .container-animation-2 {
-  top: 12%;
+  top: 32.5rem;
   left: 40%;
 }
 
 .process-animation .container-animation-3 {
-  top: 12%;
+  top: 32.5rem;
   left: 60%;
 }
 
 .process-animation .container-animation-4 {
-  top: 12%;
+  top: 32.5rem;
   left: 80%;
 }
 
 .process-animation .container-animation-5 {
-  top: 35%;
+  top: 50rem;
   left: 80%;
 }
 
 .process-animation .container-animation-6 {
-  top: 35%;
+  top: 50rem;
   left: 60%;
 }
 
 .process-animation .container-animation-7 {
-  top: 35%;
+  top: 50rem;
   left: 40%;
 }
 
@@ -3445,12 +3610,12 @@ li {
 }
 
 .process-animation .container-animation-8 {
-  top: 35%;
+  top: 50rem;
   left: 20%;
 }
 
 .process-animation .container-animation-9 {
-  top: 72.5%;
+  top: 7.5rem;
   left: 7.5%;
 }
 
@@ -3459,12 +3624,12 @@ li {
 }
 
 .process-animation .container-animation-10 {
-  top: 72.5%;
+  top: 7.5rem;
   left: 28%;
 }
 
 .process-animation .container-animation-11 {
-  top: 72.5%;
+  top: 7.5rem;
   left: 50%;
 }
 

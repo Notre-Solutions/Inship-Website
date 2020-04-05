@@ -1,23 +1,28 @@
 .animation {
   position: relative;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .process-animation {
-  $first-row: 12%;
-  $second-row: 35%;
-  $third-row: 72.5%;
+  $first-row: 32.5rem;
+  $second-row: 50rem;
+  $third-row: 7.5rem;
+  $col-1: 5rem;
+  $col-2: 30rem;
+  $col-3: 55rem;
   position: relative;
   display: flex;
   justify-content: center;
-  background: $inship-color-background-light;
+  border-radius: 5rem;
+  background: black;
   margin: 2rem;
   height: 70rem;
-  width: 120rem;
+  width: 125rem;
   .keys {
     position: absolute;
     bottom: 2%;
+    color: white;
     left: 37.5%;
     height: 2rem;
     display: flex;
@@ -30,14 +35,15 @@
     .green {
       color: green;
     }
-    p{
+    p {
       visibility: hidden;
     }
   }
 
   .manual {
     position: absolute;
-    top: 0%;
+    color: white;
+    top: $first-row - 8rem;
     font-size: 3rem;
     width: 50rem;
     left: 29.16%;
@@ -45,79 +51,84 @@
   }
   .automated {
     position: absolute;
-    top: 60%;
+    top: $third-row - 8rem;
+    color: white;
     font-size: 3rem;
     width: 50rem;
     left: 29.16%;
     text-align: center;
   }
   .icon {
-    top: 0rem;
-    width: 10rem;
+    width: 15rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     background: $grey-light;
-    border-radius: 1rem;
-    padding: 0.5rem;
+    border-radius: 10rem;
+    padding: 0.5rem !important;
     position: absolute;
     z-index: 1;
     color: $inship-color;
     &-0 {
       top: $first-row;
-      left: 6%;
+      left: $col-1;
     }
     &-1 {
       top: $first-row;
-      left: 26%;
+      left: $col-2;
     }
     &-2 {
       top: $first-row;
-      left: 46%;
+      left: $col-3;
     }
     &-3 {
       top: $first-row;
-      right: 26%;
+      right: $col-2;
     }
     &-4 {
       top: $first-row;
-      right: 6%;
-    }
-    &-5 {
-      top: $second-row;
-      right: 6%;
-    }
-    &-6 {
-      top: $second-row;
-      right: 26%;
-    }
-    &-7 {
-      top: $second-row;
-      left: 46%;
-    }
-    &-8 {
-      top: $second-row;
-      left: 26%;
+      right: $col-1;
     }
     &-9 {
       top: $second-row;
-      left: 6%;
+      left: $col-1;
+    }
+    &-8 {
+      top: $second-row;
+      left: $col-2;
+    }
+    &-7 {
+      top: $second-row;
+      left: $col-3;
+    }
+    &-6 {
+      top: $second-row;
+      right: $col-2;
+    }
+    &-5 {
+      top: $second-row;
+      right: $col-1;
     }
     &-10 {
       top: $third-row;
-      left: 15%;
+      left: 12rem;
     }
 
     &-11 {
       top: $third-row;
-      left: 35%;
+      left: 41rem;
     }
 
     &-12 {
       top: $third-row;
-      right: 35%;
+      right: 41rem;
     }
 
     &-13 {
       top: $third-row;
-      right: 15%;
+      right: 12rem;
     }
   }
 
@@ -143,7 +154,6 @@
   }
 
   .container-animation {
-    top: 0%;
     width: 20rem;
     height: 10rem;
     position: absolute;
@@ -151,8 +161,9 @@
     padding: 1px;
     border-radius: 100rem;
     font-size: 0.5rem !important;
+
     .content {
-      font-size: 2rem;
+      font-size: 5rem;
       color: orange;
     }
     &-0 {

@@ -233,6 +233,12 @@ li {
   }
 }
 
+@mixin media-animation-lg {
+  @media screen and (max-width: 1270px) {
+    @content;
+  }
+}
+
 // 1600px or Larger
 @mixin media-xl {
   @media screen and (min-width: 1600px) {
