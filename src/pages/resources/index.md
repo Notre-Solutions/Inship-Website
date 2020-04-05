@@ -1,0 +1,25 @@
+---
+templateKey: resourcesPage
+resourcesPage:
+  title: Resources
+  titleBlurb: Providing the Technology Behind Automated Accounts Payable Processes
+  description: >-
+    # Modest
+
+    [Modest](https://github.com/markdowncss/modest) is the fourth of many stylesheets to make HTML generated from
+    markdown look beautiful. A list of all available stylesheets can be found [here](https://github.com/markdowncss).
+
+    #### A markdown theme that is rather modest.
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula pharetra ultricies. Cras magna turpis,
+    vestibulum ut arcu et, rutrum porta velit. Curabitur luctus erat a velit tincidunt, vel malesuada nibh tempor.
+    Mauris condimentum quam lorem, in finibus eros faucibus id. Nunc erat metus, fringilla dignissim faucibus id,
+    malesuada quis justo.
+
+    > Vestibulum erat augue, feugiat vitae porttitor vel, condimentum quis ipsum. Etiam sagittis eros et dolor
+    semper congue.
+
+    Curabitur ac euismod turpis. Maecenas gravida viverra augue quis scelerisque. Vivamus quis massa elementum odio
+    pharetra efficitur at eget nibh. Donec varius purus quis nisi gravida tristique. Quisque dictum justo nec nulla
+    hendrerit aliquet.
+---

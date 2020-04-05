@@ -5,11 +5,12 @@ import { graphql } from "gatsby"
 import NewsCard from "../components/news-card"
 import Carousels from "../components/carousel"
 import Animation from "../components/process-animation"
+import Markdown from "../components/markdown"
 
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   const { automatePage } = data.markdownRemark.frontmatter
-  const { animationTitle, newsTitle, sectionB } = automatePage
+  const { animationTitle, newsTitle, sectionB, sectionC } = automatePage
   const { testimonials } = sectionB
 
   return (
@@ -40,7 +41,14 @@ const Automate = ({ data }) => {
               <Animation />
             </div>
           </section>
-          <section className="section-a container">
+          <secionn className="section-b container">
+            <div class="process-card">
+              <div class="description">
+                <Markdown markdown={sectionC.description} />
+              </div>
+            </div>
+          </secionn>
+          <section className="section-a">
             <div className="title">
               <h2>{newsTitle}</h2>
             </div>
@@ -105,6 +113,9 @@ export const pageQuery = graphql`
               name
               description
             }
+          }
+          sectionC {
+            description
           }
         }
       }

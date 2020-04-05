@@ -15,7 +15,7 @@ body {
   font-family: "Asap", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: black;
   padding: 3rem;
   background: rgba(70, 187, 181, 0.2);
   -webkit-box-sizing: border-box;
@@ -172,55 +172,47 @@ li {
 
 @-webkit-keyframes mainTitleAnimation {
   0% {
-    color: black;
-    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   40% {
-    color: black;
-    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   49% {
-    color: black;
-    opacity: 0;
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
   }
-  50% {
-    opacity: 1;
-    color: white;
-  }
-  99% {
-    opacity: 1;
-    color: white;
+  90% {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
   }
   100% {
-    opacity: 0;
-    color: black;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes mainTitleAnimation {
   0% {
-    color: black;
-    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   40% {
-    color: black;
-    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   49% {
-    color: black;
-    opacity: 0;
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
   }
-  50% {
-    opacity: 1;
-    color: white;
-  }
-  99% {
-    opacity: 1;
-    color: white;
+  90% {
+    -webkit-transform: translateY(6rem);
+            transform: translateY(6rem);
   }
   100% {
-    opacity: 0;
-    color: black;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -278,7 +270,6 @@ li {
   position: absolute;
   left: 0;
   top: 0;
-  background-position: right right;
   -webkit-animation: imageAnimation 24s linear infinite 0s;
           animation: imageAnimation 24s linear infinite 0s;
   background-size: cover;
@@ -292,24 +283,28 @@ li {
 
 .header > figure:nth-child(1) {
   background-image: url(../img/Main.jpg);
+  background-position: center;
 }
 
 .header > figure:nth-child(2) {
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
   background-image: url(../img/Books.jpg);
+  background-position: left;
 }
 
 .header > figure:nth-child(3) {
   -webkit-animation-delay: 12s;
           animation-delay: 12s;
   background-image: url(../img/Main.jpg);
+  background-position: center;
 }
 
 .header > figure:nth-child(4) {
   -webkit-animation-delay: 18s;
           animation-delay: 18s;
   background-image: url(../img/Books.jpg);
+  background-position: left;
 }
 
 .header-text-box {
@@ -363,6 +358,8 @@ li {
   display: inline-block;
   -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-animation: mainTitleAnimation 12s linear infinite 0s;
+          animation: mainTitleAnimation 12s linear infinite 0s;
 }
 
 .header .btn:hover {
@@ -737,6 +734,26 @@ li {
           transform: scale(1.05);
 }
 
+.main-page .line {
+  margin-top: 10%;
+  background-color: #46bbb5;
+  text-align: center;
+  height: 0.2rem;
+  width: 95%;
+  left: 0;
+  top: 0;
+}
+
+.main-page .line-1 {
+  margin-top: 5%;
+  background-color: #46bbb5;
+  text-align: center;
+  height: 0.2rem;
+  width: 95%;
+  left: 0;
+  top: 0;
+}
+
 .main-page .section-d {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,12 +767,11 @@ li {
           align-items: center;
   margin-top: 6%;
   border-radius: 2rem;
-  border: 1rem solid white;
 }
 
 .main-page .section-d-title {
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 600;
 }
 
@@ -763,8 +779,7 @@ li {
   margin: 1rem 2rem;
   padding: 2rem;
   font-size: 2rem;
-  border: 1rem solid white;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   width: 80%;
@@ -2946,6 +2961,54 @@ li {
           align-items: center;
 }
 
+.automate-page .section-b {
+  margin-top: 6rem !important;
+}
+
+.automate-page .section-b .process-card {
+  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  height: auto;
+  text-align: left;
+}
+
+.automate-page .section-b .process-card .description {
+  padding: 4rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.automate-page .section-b .process-card .description h1,
+.automate-page .section-b .process-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+
+.automate-page .section-b .process-card .description h1 {
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.automate-page .section-b .process-card .description h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+  margin-top: 5px;
+}
+
+.automate-page .section-b .process-card .description p {
+  font-size: 1.5rem;
+}
+
 .automate-page .section-a .title {
   display: -ms-grid;
   display: grid;
@@ -3349,6 +3412,75 @@ li {
 .automate-page .section-b .cards .quote-right {
   margin-left: 1rem;
   font-size: 1rem;
+}
+
+.resources-header {
+  height: 95vh;
+  background-image: url("../img/inship-mac.jpg");
+  background-size: cover;
+  background-position: "top";
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.resources-header-text-box {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 2%;
+  width: 35%;
+}
+
+.resources-header .heading {
+  color: white;
+}
+
+.resources-header .bold {
+  font-weight: 700;
+}
+
+.resources-header .main-header {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 5rem;
+  display: block;
+  -webkit-animation-name: moveInFromTop;
+          animation-name: moveInFromTop;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.resources-header .sub-header {
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  font-weight: 100;
+}
+
+.resources-body h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.resources-body h2 {
+  font-size: 4rem;
+}
+
+.resources-body h3 {
+  font-size: 3rem;
+}
+
+.resources-body h4 {
+  font-size: 2rem;
+}
+
+.resources-body p {
+  font-size: 1.5rem;
 }
 
 .animation {
@@ -3772,7 +3904,7 @@ li {
 .problem-card .meta {
   position: relative;
   z-index: 0;
-  height: 32rem;
+  height: 36rem;
 }
 
 .problem-card .photo-1 {
@@ -3787,7 +3919,7 @@ li {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
-  background-image: url(../img/Books.jpg);
+  background-image: url(../img/inshipBuilding.jpg);
 }
 
 .problem-card .photo-2 {
@@ -3802,7 +3934,7 @@ li {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
-  background-image: url(../img/Main.jpg);
+  background-image: url(../img/Books.jpg);
 }
 
 .problem-card .photo-3 {
@@ -3817,7 +3949,7 @@ li {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
-  background-image: url(../img/Auto.jpg);
+  background-image: url(../img/Main.jpg);
 }
 
 .problem-card .details,
@@ -3851,6 +3983,7 @@ li {
   background: #fff;
   position: relative;
   z-index: 1;
+  color: black;
 }
 
 .problem-card .description h1,
@@ -3867,8 +4000,7 @@ li {
 .problem-card .description h2 {
   font-size: 2rem;
   font-weight: 300;
-  text-transform: uppercase;
-  color: #a2a2a2;
+  color: black;
   margin-top: 5px;
 }
 
@@ -3904,6 +4036,7 @@ li {
 .problem-card p {
   position: relative;
   margin: 1rem 0 0;
+  text-align: left;
 }
 
 .problem-card p:first-of-type {
@@ -3911,7 +4044,6 @@ li {
 }
 
 .problem-card p:first-of-type:before {
-  content: "";
   position: absolute;
   height: 0.5rem;
   background: #46bbb5;
@@ -3940,6 +4072,16 @@ li {
   .problem-card .description {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .problem-card .description:before {
     -webkit-transform: skewX(-3deg);

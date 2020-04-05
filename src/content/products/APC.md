@@ -7,7 +7,11 @@ featuredimage: /img/apc-logo.jpeg
 featuredpost: true
 style: color-1
 id: 1
-description: Where is this
+description: >-
+  APC is a bolt on AP solution, that retrieves invoices from emails or DND,
+  automatically reads them and then pushes the invoice plus extracted data in an
+  editable draft form to your system. This normally requires little or no UX or
+  UI changes.
 productpage:
   features:
     - title: Easy to use
