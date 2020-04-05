@@ -8,9 +8,9 @@ featuredpost: true
 style: color-3
 id: 2
 description: >-
-  Tick to Post is a simply designed online process for processing supplier
-  invoices. The system can be customised and localised to match your design
-  requirements and localised to deal with local tax rules and language.
+  T2P if your system is unable to receive images, T2P is a platform where users
+  can review, confirm, edit, store and search for invoices. After invoices are
+  approved they data is pushed to the accounting system.
 features:
   feature1: 12 Users
   feature2: true
