@@ -1370,6 +1370,15 @@ li {
   html {
     font-size: 10px;
   }
+  .automate-page .section-b .cards {
+    width: 100% !important;
+    -ms-grid-columns: 33% 33% 33% !important;
+        grid-template-columns: 33% 33% 33% !important;
+  }
+  .automate-page .section-b .cards .card {
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -1381,7 +1390,8 @@ li {
     max-width: 2048px !important;
     margin: 0 10% !important;
   }
-  .animation, .process-animation {
+  .animation,
+  .process-animation {
     max-width: none !important;
     margin: 0 0 !important;
     text-align: left !important;
@@ -3135,7 +3145,7 @@ li {
   background-color: #fdfdfd;
   margin-left: 10%;
   width: 80%;
-  padding: 4rem;
+  padding: 4rem 2rem;
   font-size: 1.5rem;
 }
 
