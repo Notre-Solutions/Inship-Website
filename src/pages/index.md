@@ -113,7 +113,7 @@ landingPage:
         subtitle: we offer 3 solutions
         photo: photo-3
         description: >-
-          InShip offers 3 solutions that automate the process direct for email
+          InShip offers 3 solutions that automate the process direct from email
           or DND.
 
 
@@ -124,15 +124,14 @@ landingPage:
 
           T2P if your system is unable to receive images, T2P is a platform
           where users can review, confirm, edit, store and search for invoices.
-          After invoices are approved they data is pushed to the accounting
+          After invoices are approved the data is pushed to the accounting
           system. 
 
 
-          CAPs is a fully online accounts payable department. Allowing
-          businesses to replicate the complex process and automate it. The full
-          systems includes po matching both at a GRN and line level, auto
-          coding, auto routeing for approval and statement reconciliation to
-          name a few.
+          CAPs is a full online accounts payable department. Allowing businesses
+          to replicate the complex process and automate it. The full systems
+          includes po matching both at a GRN and line level, auto coding, auto
+          routeing for approval and statement reconciliation to name a few.
   sectionC:
     title: Products
     show: true
