@@ -7,7 +7,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ReactModal from "../components/modal"
 import Player from "../components/player"
-import Animation from '../components/process-animation'
+import Animation from "../components/process-animation"
 import ProblemSection from "../components/problemSection"
 
 function showSectionA(show, title, body, id, className, url) {
@@ -157,22 +157,22 @@ const Landing = ({ data }) => {
             array={sectionB_alt.cards}
             show={sectionB_alt.show}
           ></ProblemSection>
+          <div className="line-1"></div>
           <section className="section-c">
             <h2 className="section-c-heading">{sectionC.title}</h2>
             {displayProducts(edges)}
           </section>
+          <div className="line"></div>
           <div className="section-d">
             <div className="section-d-title">{sectionD.title}</div>
-            <Img
+            {/* <Img
               fluid={data.images.edges[0].node.childImageSharp.fluid}
               className="prosses-img"
-            /> */}
+            />  */}
             <div className="animation">
-                <Animation />
-              </div>
-            <p>
-              {sectionD.description}
-            </p>
+              <Animation />
+            </div>
+            <p>{sectionD.description}</p>
           </div>
         </div>
       </Layout>
