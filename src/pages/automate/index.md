@@ -38,18 +38,16 @@ automatePage:
           - Our operators love using the system!
       - title: ' InShip made it so simple'
         stars: 4
-        name: 'We have a complex process, InShip made it so simple'
-        description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
-      - title: Inship Is the BEST
+        name: Nicola - Maintenance
+        description: 'We have a complex process, InShip made it so simple'
+      - title: easy to use
         stars: 4
-        name: Boss Man
+        name: Sophia - Transport Company
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
+          My staff find the system easy to use we really love the statement
+          reconciliation.
+      - title: it’s that simple
+        stars: 4
+        name: Trish - Restaurant
+        description: Our suppliers just email our invoices to InShip it’s that simple.
 ---
