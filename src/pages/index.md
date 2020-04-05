@@ -97,15 +97,19 @@ landingPage:
           hidden module to add to an accounts package to a full Accounts Payable
           Solution that can be tailored to meet the needs of most medium and
           large business.
-      - title: Solution
-        subtitle: sub title
+      - title: The Problem
+        subtitle: moving for paper based to digital
         photo: photo-2
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
-      - title: Why Change
+          Accounts Payable is a very manual and expensive process. Processing
+          each invoice or bill can include up to ten steps and costs around
+          €4.50 (based on a pwc report).  However if a business automates this
+          process they can remove 80-90% of that cost.
+
+
+          Being paper based the process is slow, normally unstructured, full of
+          flaws and not suitable for remote working.
+      - title: Solution
         subtitle: sub title
         photo: photo-3
         description: >-
