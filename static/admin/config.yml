@@ -171,4 +171,7 @@ collections:
                 {label: "Description", name: "description", widget: "markdown", required: true}
               ]}
             ]}
+            {label: "Process Blurb", name: sectionB, widget: object, fields: [
+              {label: "Description", name: description, widget: markdown, required: true},
+            ]}
           ]}      

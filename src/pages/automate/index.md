@@ -4,6 +4,18 @@ automatePage:
   title: Why Automate
   animationTitle: Process Flow
   newsTitle: News
+  sectionC:
+    description: >-
+      # Header
+
+      ## Sub header
+
+
+      We love InShip its design is so simple to use and now I have full
+      control of our spend and recharges. Their statements reconciliation
+      aid speeds up our month end. I have no problem recommending InShip to
+      anyone.
+
   sectionB:
     title: Testimonials
     testimonials:
@@ -21,7 +33,7 @@ automatePage:
           the need to manually enter hundreds of invoices per month. Our month
           end process has become much more efficient as a result. Highly
           Recommended!
-      - title: 'we love InShip '
+      - title: "we love InShip "
         stars: 4
         name: Helen - Hire Group
         description: >-
@@ -36,10 +48,10 @@ automatePage:
           In the first few weeks after we started to use InShip, I was really
           surprised to hear that we were processing over 400 documents in a week
           - Our operators love using the system!
-      - title: ' InShip made it so simple'
+      - title: " InShip made it so simple"
         stars: 4
         name: Nicola - Maintenance
-        description: 'We have a complex process, InShip made it so simple'
+        description: "We have a complex process, InShip made it so simple"
       - title: easy to use
         stars: 4
         name: Sophia - Transport Company
