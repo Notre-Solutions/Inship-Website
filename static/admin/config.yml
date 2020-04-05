@@ -98,10 +98,10 @@ collections:
               {label: "Products", name: sectionC, widget: object, fields:[
                 {label: "Show?", name: show, widget: boolean, required: true, default: true}
               ]},
-              {label: "Contact Us", name: sectionD, widget: object, fields:[
+              {label: "Process Flow", name: sectionD, widget: object, fields:[
                 {label: "Title", name: title, widget: string, required: true},
-                {label: "Show?", name: show, widget: boolean, required: true, default: true}
-              ]}
+                {label: "Description", name: "description", widget: "markdown", required: true}
+                ]}
           ]}
           - {label: "Body", name: "name", widget: "markdown", required: false}
       - file: "src/content/product-template/index.md"

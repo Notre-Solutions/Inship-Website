@@ -172,7 +172,7 @@ const Landing = ({ data }) => {
             <div className="animation">
               <Animation />
             </div>
-            <p>{sectionD.description}</p>
+            <Markdown markdown={sectionD.description} />
           </div>
         </div>
       </Layout>
