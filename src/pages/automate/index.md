@@ -7,14 +7,12 @@ automatePage:
   sectionB:
     title: Testimonials
     testimonials:
-      - title: Inship Is the BEST
+      - title: best in 25 years
         stars: 4
-        name: Nyasha
+        name: Damian - Reclcye Company
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
+          InShip is the best software solution I have ever used in my 25 years
+          plus experience in Finance/Accountancy.
       - title: Inship Is the BEST
         stars: 4
         name: Stephen
