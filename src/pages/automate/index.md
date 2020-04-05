@@ -36,9 +36,9 @@ automatePage:
           In the first few weeks after we started to use InShip, I was really
           surprised to hear that we were processing over 400 documents in a week
           - Our operators love using the system!
-      - title: Inship Is the BEST
+      - title: ' InShip made it so simple'
         stars: 4
-        name: Sarah
+        name: 'We have a complex process, InShip made it so simple'
         description: >-
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
           eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
