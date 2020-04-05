@@ -80,8 +80,8 @@ landingPage:
     title: The Problem
     show: true
     cards:
-      - title: Problem
-        subtitle: sub title
+      - title: What we do
+        subtitle: Provide an AP bolt on White Label Solution
         photo: photo-1
         description: >-
           InShip specializes in offering Accounts Payable plug in solutions for
