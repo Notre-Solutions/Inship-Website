@@ -8,9 +8,10 @@ featuredpost: true
 style: color-3
 id: 2
 description: >-
-  T2P if your system is unable to receive images, T2P is a platform where users
-  can review, confirm, edit, store and search for invoices. After invoices are
-  approved they data is pushed to the accounting system.
+  T2P. With T2P we provide a simple online portal allowing users to review,
+  approve and edit invoices before they push the invoice and/or the extract data
+  to your system. T2P will be customised and re-branded  to match with your
+  accounts system.
 features:
   feature1: 12 Users
   feature2: true
