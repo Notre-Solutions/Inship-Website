@@ -8,10 +8,10 @@ featuredpost: true
 style: color-2
 id: 3
 description: >-
-  CAPs is a fully online accounts payable department. Allowing businesses to
-  replicate the complex process and automate it. The full systems includes po
-  matching both at a GRN and line level, auto coding, auto routeing for approval
-  and statement reconciliation to name a few.
+  CAPs is a fully functional accounts payable department online. Allowing
+  businesses to customise many aspects of the process including approval,
+  routing and coding rules. The full systems includes po matching at line
+  level,statement reconciliation and many other features.
 features:
   feature1: 15 Users
   feature2: true
