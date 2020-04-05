@@ -84,10 +84,19 @@ landingPage:
         subtitle: sub title
         photo: photo-1
         description: >-
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-          assumenda.
+          InShip specializes in offering Accounts Payable plug in solutions for
+          accounting and e.r.p. software.
+
+
+          We can add a new fully functional module and revenue stream to your
+          software in approximately 8 weeks, allowing you to deliver a feature
+          set that would normally take over 2 years to develop.
+
+
+          We have 3 different versions, from a simple A.I. data extraction
+          hidden module to add to an accounts package to a full Accounts Payable
+          Solution that can be tailored to meet the needs of most medium and
+          large business.
       - title: Solution
         subtitle: sub title
         photo: photo-2
