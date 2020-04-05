@@ -2341,6 +2341,59 @@ li {
         margin-left: 1rem;
         font-size: 1rem; }
 
+.resources-header {
+  height: 95vh;
+  background-image: url("../img/inship-mac.jpg");
+  background-size: cover;
+  background-position: "top";
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative; }
+  .resources-header-text-box {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 2%;
+    width: 35%; }
+  .resources-header .heading {
+    color: white; }
+  .resources-header .bold {
+    font-weight: 700; }
+  .resources-header .main-header {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 5rem;
+    display: block;
+    -webkit-animation-name: moveInFromTop;
+            animation-name: moveInFromTop;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; }
+  .resources-header .sub-header {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    font-weight: 100; }
+
+.resources-body h1 {
+  font-size: 5rem;
+  text-align: center; }
+
+.resources-body h2 {
+  font-size: 4rem; }
+
+.resources-body h3 {
+  font-size: 3rem; }
+
+.resources-body h4 {
+  font-size: 2rem; }
+
+.resources-body p {
+  font-size: 1.5rem; }
+
 .animation {
   position: relative;
   -webkit-backface-visibility: hidden;
