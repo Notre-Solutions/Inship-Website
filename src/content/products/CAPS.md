@@ -2,20 +2,16 @@
 templateKey: product
 title: Complete Accounts Payable Solutions
 alias: CAPS
-url: https://www.youtube.com/watch?v=1el1FR1d1R4
+url: 'https://www.youtube.com/watch?v=1el1FR1d1R4'
 featuredimage: /img/caps-logo-3.jpeg
 featuredpost: true
 style: color-2
 id: 3
 description: >-
-  * CAPs is a business's Accounts Payable Department  - Online.
-
-  * CAPs is suitable for medium to large business businesses. 
-
-  * The system is designed to reflect how an accounts payable operates. 
-
-  * CAPs is bursting with feature, from price watch, to auto document routing,
-  to statement reconciliations.
+  CAPs is a fully online accounts payable department. Allowing businesses to
+  replicate the complex process and automate it. The full systems includes po
+  matching both at a GRN and line level, auto coding, auto routeing for approval
+  and statement reconciliation to name a few.
 features:
   feature1: 15 Users
   feature2: true
@@ -41,7 +37,7 @@ productpage:
       description: >-
         Workflow can be defined by supplier codes, general ledger codes,
         delivery address, project code etc etc.
-    - title: Purchase Order/Goods Received Note Matching 
+    - title: Purchase Order/Goods Received Note Matching
       description: >-
         CAPs can match invoices to PO's based or GRN's at a total or a line by
         line level. Delivery, discounts and various surcharges can also be
@@ -91,7 +87,7 @@ productpage:
         Statement are automatically reconciled by CAPs. Any invoice errors are
         detected and CAPs provides a simple method of notifying suppliers of any
         issues.
-    - title:  Search
+    - title: Search
       description: >-
         Invoices can be search for based on supplier, date, value, line detail,
         po detail, added comment to name a view.
