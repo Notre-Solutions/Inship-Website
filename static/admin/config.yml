@@ -182,6 +182,12 @@ collections:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "resourcesPage"}
           - {label: "Resources Page", name: resourcesPage, widget: object, fields: [
             {label: "Sub Title", name: titleBlurb, widget: string},
-            {label: "Description", name: "description", widget: "markdown", required: true}
+            {label: "Cards", name: "cards", widget: list, fields:[
+              {label: "Title", name: "title", widget: string, required: true},
+              {label: "Subtitle", name: "subtitle", widget: string, required: true},
+              {label: "Icon", name: "icon", widget: string, required: true},
+              {label: "Tile Over Icon", name: "titleOverlayIcon", widget: string, required: true},
+              {label: "Description", name: "description", widget: "markdown", required: true}
+              ]}
           ]}
 
