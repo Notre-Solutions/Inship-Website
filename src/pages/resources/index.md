@@ -2,7 +2,7 @@
 templateKey: resourcesPage
 resourcesPage:
   title: Resources
-  titleBlurb: Providing the Technology Behind Automated Accounts Payable Processes
+  titleBlurb: A flexible solution with the required backup.
   description: >-
     Inship has integrated with over 35 erp's and accounting software systems.
     These range from household names to complex erp systems that are market
