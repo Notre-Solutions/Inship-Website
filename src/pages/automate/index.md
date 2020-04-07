@@ -20,7 +20,13 @@ automatePage:
 
 
       A very common concern we hear is "our process is unique", in reality there
-      is a certain element 
+      is normally a certain element of truth in that statement but with InShip
+      we focused on providing a flexible system that can be simply tailored to
+      meet most businesses needs.
+
+
+
+
 
 
       As you can see for the articles below
