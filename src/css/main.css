@@ -3462,27 +3462,6 @@ li {
   font-weight: 100;
 }
 
-.resources-body h1 {
-  font-size: 5rem;
-  text-align: center;
-}
-
-.resources-body h2 {
-  font-size: 4rem;
-}
-
-.resources-body h3 {
-  font-size: 3rem;
-}
-
-.resources-body h4 {
-  font-size: 2rem;
-}
-
-.resources-body p {
-  font-size: 1.5rem;
-}
-
 .animation {
   position: relative;
   -webkit-backface-visibility: hidden;
@@ -4132,6 +4111,221 @@ li {
             transform: skew(3deg);
   }
   .problem-card.alt .details {
+    padding-left: 25px;
+  }
+}
+
+.problem-card-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem auto;
+  -webkit-box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.problem-card-2 a {
+  color: inherit;
+}
+
+.problem-card-2 a:hover {
+  color: #46bbb5;
+}
+
+.problem-card-2 .icon {
+  color: black;
+  font-size: 10rem;
+  z-index: 100;
+  position: absolute;
+  top: calc(50% - 5rem);
+  right: calc(50% - 5rem);
+  bottom: 0;
+  left: calc(50% - 5rem);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.problem-card-2:hover .icon {
+  -webkit-transform: scale(1.3) rotate(5deg);
+          transform: scale(1.3) rotate(5deg);
+}
+
+.problem-card-2 .meta {
+  position: relative;
+  z-index: 0;
+}
+
+.problem-card-2 .details,
+.problem-card-2 .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.problem-card-2 .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  -webkit-transition: left 0.2s;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.problem-card-2 .details .img-writing {
+  font-size: 3rem;
+}
+
+.problem-card-2 .description {
+  padding: 2rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+
+.problem-card-2 .description h1,
+.problem-card-2 .description h2 {
+  font-family: Poppins, sans-serif;
+}
+
+.problem-card-2 .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.problem-card-2 .description h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+  margin-top: 5px;
+}
+
+.problem-card-2 .description .read-more {
+  text-align: right;
+}
+
+.problem-card-2 .description .read-more a {
+  color: #46bbb5;
+  display: inline-block;
+  position: relative;
+}
+
+.problem-card-2 .description .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -1rem;
+  opacity: 0;
+  vertical-align: middle;
+  -webkit-transition: margin 0.3s, opacity 0.3s;
+  transition: margin 0.3s, opacity 0.3s;
+}
+
+.problem-card-2 .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+
+.problem-card-2 .description p {
+  font-size: 1.5rem;
+}
+
+.problem-card-2 p {
+  position: relative;
+  margin: 1rem 0 0;
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.problem-card-2 p:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.problem-card-2 p:first-of-type:before {
+  position: absolute;
+  height: 0.5rem;
+  background: #46bbb5;
+  width: 3.5rem;
+  top: -0.75rem;
+  border-radius: 0.3rem;
+}
+
+.problem-card-2:hover .details {
+  left: 0%;
+}
+
+@media (min-width: 640px) {
+  .problem-card-2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 80%;
+  }
+  .problem-card-2 .meta {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    min-height: 15%;
+  }
+  .problem-card-2 .description {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .problem-card-2 .description:before {
+    -webkit-transform: skewX(-3deg);
+            transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .problem-card-2.alt {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .problem-card-2.alt .description:before {
+    left: inherit;
+    right: -10px;
+    -webkit-transform: skew(3deg);
+            transform: skew(3deg);
+  }
+  .problem-card-2.alt .details {
     padding-left: 25px;
   }
 }

@@ -2,12 +2,13 @@ import React from "react"
 import "../css/main.css"
 import Layout from "../components/layout"
 import Markdown from "../components/markdown"
+import ProblemSection from "../components/problemSection"
 
 const Resources = ({ data }) => {
   const {
     title,
     titleBlurb,
-    description,
+    cards,
   } = data.markdownRemark.frontmatter.resourcesPage
   return (
     <>
@@ -23,8 +24,9 @@ const Resources = ({ data }) => {
               </h1>
             </div>
           </header>
-          <section className="resources-body">
-            <Markdown markdown={description} />
+          <section className="resources-body container">
+            {/* <Markdown markdown={description} /> */}
+            <ProblemSection array={cards}></ProblemSection>
           </section>
         </div>
       </Layout>
@@ -41,7 +43,14 @@ export const pageQuery = graphql`
         resourcesPage {
           title
           titleBlurb
-          description
+          cards {
+            description
+            icon
+            title
+            subtitle
+            titleOverlayIcon
+            description
+          }
         }
       }
     }
