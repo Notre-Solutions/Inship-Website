@@ -272,34 +272,25 @@
   }
 
   .section-d {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 6%;
-    border-radius: 2rem;
-    // border: 1rem solid white;
-    // box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    // border: 5px inset white;
     &-title {
       text-align: center;
       font-size: 6rem;
       font-weight: 600;
     }
-    p {
-      margin: 1rem 2rem;
-      padding: 2rem;
-      font-size: 2rem;
-      // border: 5px outset white;
-      border-radius: 0.5rem;
-      box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-      width: 80%;
+
+    .btn {
+      @include btn(white, black, "light");
+      @include transition-ease;
     }
 
-    .prosses-img {
-      margin-top: 3%;
-      border-radius: 2rem;
-      object-fit: cover;
-      width: 80%;
+    .btn:hover {
+      border: 0.1rem solid white;
+      color: black;
+      background-color: white;
+    }
+
+    .btn:active {
+      @include click-affect("light");
     }
   }
 

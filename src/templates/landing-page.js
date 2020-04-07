@@ -2,13 +2,13 @@ import React from "react"
 import "../css/main.css"
 import Markdown from "../components/markdown"
 import ProductCard from "../components/productCard"
-import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ReactModal from "../components/modal"
 import Player from "../components/player"
 import Animation from "../components/process-animation"
 import ProblemSection from "../components/problemSection"
+import { Link } from "gatsby"
 
 function showSectionE(show, title, cards, slogan) {
   if (show) {
@@ -205,7 +205,11 @@ const Landing = ({ data }) => {
             <div className="animation">
               <Animation />
             </div>
-            <Markdown markdown={sectionD.description} />
+
+            <Link to="/automate">
+              {" "}
+              <div className="btn">Learn More</div>{" "}
+            </Link>
           </div>
         </div>
       </Layout>
