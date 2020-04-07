@@ -37,6 +37,11 @@ automatePage:
 
       * Do nothing;  risking the loss of current customers and potential new
       customers.
+
+      * **Install an InShip module at a fraction of the time and cost of
+      building your own system, giving you total control of both the process and
+      the revenue and ensuring retention of current customers and enhancing the
+      attraction of your system for potential new clients.**
   sectionB:
     title: Testimonials
     testimonials:
