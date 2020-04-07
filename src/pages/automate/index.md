@@ -6,14 +6,24 @@ automatePage:
   newsTitle: News
   sectionC:
     description: >-
-      # Header
-
-      ## Sub header
+      # Moving from Manual To Automatic
 
 
-      We love InShip its design is so simple to use and now I have full control
-      of our spend and recharges. Their statements reconciliation aid speeds up
-      our month end. I have no problem recommending InShip to anyone.
+      ## "Our Process is unique"
+
+
+      Processing invoices manually is a costly process that normally involves 8
+      to 10 stages that are nearly all manual. It has been estimated that
+      automating this process saves between 80 and 90% of the processing time.
+      This is why business are looking a to automate this process and remove the
+      paper.
+
+
+      A very common concern we hear is "our process is unique", in reality there
+      is a certain element 
+
+
+      As you can see for the articles below
   sectionB:
     title: Testimonials
     testimonials:
