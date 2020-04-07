@@ -3,11 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-  .line {
-    margin-top: 10%;
-    @include line($inship-color, 0, 0, 95%, 0.2rem);
-  }
-
   .section-animation {
     display: flex;
     flex-direction: column;
@@ -26,6 +21,10 @@
   }
 
   .section-a {
+    .line {
+      margin-top: 10%;
+      @include line($inship-color, 0, 0, 95%, 0.2rem);
+    }
     .title {
       display: grid;
       margin: 4rem 0 4rem 0;

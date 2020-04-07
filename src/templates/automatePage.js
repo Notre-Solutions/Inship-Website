@@ -67,8 +67,9 @@ const Automate = ({ data }) => {
             <div className="masonry">
               <MY articles={edges}></MY>
             </div>
+            <div className="line"></div>
           </section>
-          <div className="line"></div>
+
           <div className="section-b large">
             <div className="title-main">
               <h2>{sectionB.title}</h2>

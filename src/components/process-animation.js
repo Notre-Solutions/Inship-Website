@@ -139,12 +139,12 @@ class Main extends Component {
     return (
       <div className="process-animation">
         <div className="content counter counter-manual">
-        <h2>{this.state.manualCounter}</h2>
-        <h3>Manual Invoices</h3>
+          <h2>{this.state.manualCounter}</h2>
+          <h3>Manual Invoices</h3>
         </div>
         <div className="content counter counter-auto">
-        <h2>{this.state.autoCounter}</h2>
-        <h3>Auto Invoices</h3>
+          <h2>{this.state.autoCounter}</h2>
+          <h3>Auto Invoices</h3>
         </div>
         <h2 className="manual-counter">{this.state.manualCounter}</h2>
         <div className="manual">
@@ -411,7 +411,7 @@ class Example extends Component {
     const rightLeftDistance = "-25rem"
     const leftRightQuickDistance = "28rem"
 
-    if (this.state.width + 100 > 1270) {
+    if (this.state.width + 100 > 1100) {
       return (
         <Main
           lr={leftRightDistance}
