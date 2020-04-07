@@ -48,6 +48,27 @@
     width: 50rem;
     left: 29.16%;
     text-align: center;
+    
+  }
+  .counter {
+    position: absolute;
+    top: 20rem;
+    z-index: 2;
+    line-height: 5rem;
+
+    color: white;
+    h2 {
+      font-size: 5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    &-manual{
+      left: 1%;
+    }
+    &-auto{
+      right: 1%;
+    }
   }
   .automated {
     position: absolute;
@@ -191,36 +212,36 @@
       left: 80%;
     }
     &-6 {
-      top: $second-row  + 1rem;
+      top: $second-row + 1rem;
       left: 60%;
     }
     &-7 {
       .content {
         color: green;
       }
-      top: $second-row  + 1rem;
+      top: $second-row + 1rem;
       left: 40%;
     }
     &-8 {
-      top: $second-row  + 1rem;
+      top: $second-row + 1rem;
       left: 20%;
     }
     &-9 {
       .content {
         color: green;
       }
-      top: $third-row  + 1rem;
+      top: $third-row + 1rem;
       left: 7.5%;
     }
     &-10 {
-      top: $third-row  + 1rem;
+      top: $third-row + 1rem;
       left: 28%;
     }
     &-11 {
       .content {
         color: green;
       }
-      top: $third-row  + 1rem;
+      top: $third-row + 1rem;
       left: 50%;
     }
   }

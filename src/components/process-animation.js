@@ -22,8 +22,26 @@ function animate(x, y, opacity, scale, delay, repeatDelay, duration) {
   return motion
 }
 
-const animation = (style, variant, icon, title) => {
-  if (title) {
+var autoCounter = 0
+var manualCounter = 0
+
+const animation = (style, variant, icon, title, callback) => {
+  if (callback && title) {
+    return (
+      <motion.ul
+        className={`${style}`}
+        variants={variant}
+        initial="hidden"
+        animate="visible"
+        onUpdate={callback}
+      >
+        <div className="content">
+          <i class={`${icon}`}></i>
+          <h3>{title}</h3>
+        </div>
+      </motion.ul>
+    )
+  } else if (title) {
     return (
       <motion.ul
         className={`${style}`}
@@ -53,129 +71,241 @@ const animation = (style, variant, icon, title) => {
   }
 }
 
-function main(lr, rl, ud, lrq) {
-  const container = "container-animation container-animation-"
-  const icon = "icon icon-"
-  const icons = [
-    "fas fa-file-invoice",
-    "fas fa-print",
-    "fas fa-envelope-open-text",
-    "fas fa-sort-amount-down",
-    "fas fa-compress-arrows-alt",
-    "fas fa-thumbs-up",
-    "fas fa-laptop",
-    "fas fa-thumbs-up",
-    "fas fa-file-alt",
-    "fas fa-balance-scale",
-    "fas fa-file-invoice",
-    "fas fa-thumbs-up",
-    "fas fa-thumbs-up",
-    "fas fa-cloud-upload-alt",
-  ]
-  const titles = [
-    "Generate Invoice",
-    "Print",
-    "Open Post",
-    "Sort",
-    "Match",
-    "Approval",
-    "Data Entry",
-    "System Approval",
-    "File",
-    "Reconcile",
-    "General Invoice",
-    "Approval",
-    "System Approval",
-    "Upload",
-  ]
-  const iconStages = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  const leftRightStages = [0, 1, 2, 3]
-  const rightLeftStages = [5, 6, 8]
-  const fastIconStages = [10, 11, 12, 13]
-  const fastLeftRightStages = [9, 11]
-  const delays = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
-  const quickDelays = [1, 2, 4, 5]
+class Main extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      autoCounter: 0,
+      manualCounter: 0,
+    }
+  }
 
-  return (
-    <div className="process-animation">
-      <div className="manual">
-        <h2>Manual Process</h2>
-      </div>
-      {iconStages.map(stage => {
-        return animation(
-          `${icon}${stage}`,
-          animate([1, 1], [1, 1], [1, 1], [0.75, 1], delays[stage], 20, 2),
-          icons[stage],
-          titles[stage]
-        )
-      })}
-      {leftRightStages.map(stage => {
-        return animation(
-          `${container}${stage}`,
-          animate([0, lr], [0, 0], [0, 1], [1, 1], delays[stage], 20, 2),
+  addAutoCount(latest) {
+    if (latest.scale == 1) {
+      var increment = this.state.autoCounter + 1
+      this.setState({ autoCounter: increment })
+    }
+  }
+  addManualCount(latest) {
+    if (latest.scale == 1) {
+      var increment = this.state.manualCounter + 1
+      this.setState({ manualCounter: increment })
+      console.log(this.state.manualCounter)
+    }
+  }
+
+  render() {
+    const container = "container-animation container-animation-"
+    const icon = "icon icon-"
+    const icons = [
+      "fas fa-file-invoice",
+      "fas fa-print",
+      "fas fa-envelope-open-text",
+      "fas fa-sort-amount-down",
+      "fas fa-compress-arrows-alt",
+      "fas fa-thumbs-up",
+      "fas fa-laptop",
+      "fas fa-thumbs-up",
+      "fas fa-file-alt",
+      "fas fa-balance-scale",
+      "fas fa-file-invoice",
+      "fas fa-thumbs-up",
+      "fas fa-thumbs-up",
+      "fas fa-cloud-upload-alt",
+    ]
+    const titles = [
+      "Generate Invoice",
+      "Print",
+      "Open Post",
+      "Sort",
+      "Match",
+      "Approval",
+      "Data Entry",
+      "System Approval",
+      "File",
+      "Reconcile",
+      "General Invoice",
+      "Approval",
+      "System Approval",
+      "Upload",
+    ]
+    const iconStages = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    const leftRightStages = [0, 1, 2, 3]
+    const rightLeftStages = [5, 6, 8]
+    const fastIconStages = [10, 11, 12]
+    const delays = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+    const quickDelays = [1, 2, 4, 5]
+
+    return (
+      <div className="process-animation">
+        <div className="content counter counter-manual">
+        <h2>{this.state.manualCounter}</h2>
+        <h3>Manual Invoices</h3>
+        </div>
+        <div className="content counter counter-auto">
+        <h2>{this.state.autoCounter}</h2>
+        <h3>Auto Invoices</h3>
+        </div>
+        <h2 className="manual-counter">{this.state.manualCounter}</h2>
+        <div className="manual">
+          <h2>Manual Process</h2>
+        </div>
+        {iconStages.map(stage => {
+          return animation(
+            `${icon}${stage}`,
+            animate([1, 1], [1, 1], [1, 1], [0.75, 1], delays[stage], 20, 2),
+            icons[stage],
+            titles[stage]
+          )
+        })}
+        <motion.ul
+          className={`${icon}9`}
+          variants={animate(
+            [1, 1],
+            [1, 1],
+            [1, 1],
+            [0.75, 1],
+            delays[9],
+            20,
+            2
+          )}
+          initial="hidden"
+          animate="visible"
+          onUpdate={this.addManualCount.bind(this)}
+        >
+          <div className="content">
+            <i class={`${icons[9]}`}></i>
+            <h3>{titles[9]}</h3>
+          </div>
+        </motion.ul>
+        {leftRightStages.map(stage => {
+          return animation(
+            `${container}${stage}`,
+            animate(
+              [0, this.props.lr],
+              [0, 0],
+              [0, 1],
+              [1, 1],
+              delays[stage],
+              20,
+              2
+            ),
+            "fas fa-file-invoice"
+          )
+        })}
+        {animation(
+          `${container}7`,
+          animate([0, this.props.rl], [0, 0], [0, 1], [1, 1], delays[7], 21, 1),
           "fas fa-file-invoice"
-        )
-      })}
-      {animation(
-        `${container}7`,
-        animate([0, rl], [0, 0], [0, 1], [1, 1], delays[7], 21, 1),
-        "fas fa-file-invoice"
-      )}
-      {animation(
-        `${container}4`,
-        animate([0, 0], [0, ud], [0, 1], [1, 1], delays[4], 20, 2),
-        "fas fa-file-invoice"
-      )}
-      {rightLeftStages.map(stage => {
-        return animation(
-          `${container}${stage}`,
-          animate([0, rl], [0, 0], [1, 1], [1, 1], delays[stage], 20, 2),
+        )}
+        {animation(
+          `${container}4`,
+          animate([0, 0], [0, this.props.ud], [0, 1], [1, 1], delays[4], 20, 2),
           "fas fa-file-invoice"
-        )
-      })}
-      <div className="automated">
-        <h2>Automated Process</h2>
-      </div>
-      {fastIconStages.map(stage => {
-        return animation(
-          `${icon}${stage}`,
-          animate(
+        )}
+        {rightLeftStages.map(stage => {
+          return animation(
+            `${container}${stage}`,
+            animate(
+              [0, this.props.rl],
+              [0, 0],
+              [1, 1],
+              [1, 1],
+              delays[stage],
+              20,
+              2
+            ),
+            "fas fa-file-invoice"
+          )
+        })}
+        <div className="automated">
+          <h2>Automated Process</h2>
+        </div>
+        {fastIconStages.map(stage => {
+          return animation(
+            `${icon}${stage}`,
+            animate(
+              [0, 0],
+              [0, 0],
+              [1, 1],
+              [0.75, 1],
+              quickDelays[stage - 10],
+              5,
+              1
+            ),
+            icons[stage],
+            titles[stage]
+          )
+        })}
+        <motion.ul
+          className={`${icon}13`}
+          variants={animate(
             [0, 0],
             [0, 0],
             [1, 1],
             [0.75, 1],
-            quickDelays[stage - 10],
+            quickDelays[3],
+            5,
+            1
+          )}
+          initial="hidden"
+          animate="visible"
+          onUpdate={this.addAutoCount.bind(this)}
+        >
+          <div className="content">
+            <i class={`${icons[13]}`}></i>
+            <h3>{titles[13]}</h3>
+          </div>
+        </motion.ul>
+        {animation(
+          `${container}9`,
+          animate(
+            [0, this.props.lrq],
+            [0, 0],
+            [1, 1],
+            [1, 1],
+            quickDelays[0],
             5,
             1
           ),
-          icons[stage],
-          titles[stage]
-        )
-      })}
-      {animation(
-        `${container}9`,
-        animate([0, lrq], [0, 0], [1, 1], [1, 1], quickDelays[0], 5, 1),
-        "fas fa-file-invoice"
-      )}
-      {animation(
-        `${container}10`,
-        animate([0, lrq], [0, 0], [1, 1], [1, 1], quickDelays[1], 4, 2),
-        "fas fa-file-invoice"
-      )}
-      {animation(
-        `${container}11`,
-        animate([0, lrq], [0, 0], [1, 1], [1, 1], quickDelays[2], 5, 1),
-        "fas fa-file-invoice"
-      )}
-      <div className="keys">
-        <i class={"fas fa-file-invoice green"}></i>
-        <small>{"Automated"}</small>
-        <p> </p>
-        <i class={"fas fa-file-invoice orange"}></i>
-        <small>{"Manual"}</small>
+          "fas fa-file-invoice"
+        )}
+        {animation(
+          `${container}10`,
+          animate(
+            [0, this.props.lrq],
+            [0, 0],
+            [1, 1],
+            [1, 1],
+            quickDelays[1],
+            4,
+            2
+          ),
+          "fas fa-file-invoice"
+        )}
+        {animation(
+          `${container}11`,
+          animate(
+            [0, this.props.lrq],
+            [0, 0],
+            [1, 1],
+            [1, 1],
+            quickDelays[2],
+            5,
+            1
+          ),
+          "fas fa-file-invoice"
+        )}
+        <div className="keys">
+          <i class={"fas fa-file-invoice green"}></i>
+          <small>{"Automated"}</small>
+          <p> </p>
+          <i class={"fas fa-file-invoice orange"}></i>
+          <small>{"Manual"}</small>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 function main2() {
   const container = "container-animation container-animation-"
@@ -282,11 +412,13 @@ class Example extends Component {
     const leftRightQuickDistance = "28rem"
 
     if (this.state.width + 100 > 1270) {
-      return main(
-        leftRightDistance,
-        rightLeftDistance,
-        upDownDistance,
-        leftRightQuickDistance
+      return (
+        <Main
+          lr={leftRightDistance}
+          rl={rightLeftDistance}
+          ud={upDownDistance}
+          lrq={leftRightQuickDistance}
+        />
       )
     } else {
       return main2()
