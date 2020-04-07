@@ -152,7 +152,7 @@ landingPage:
           statement reconciliation among many others.
   sectionC:
     title: Products
-    show: true
+    show: false
   sectionD:
     title: The Process
     description: >-
