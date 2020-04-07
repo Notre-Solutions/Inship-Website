@@ -134,22 +134,23 @@ landingPage:
           automates the AP process direct from e-mail or Drag and Drop (DND).
 
 
-          Accounts Payable Combined (APC) is a bolt-on solution that retrieves
-          invoices from e-mails or DND, automatically reading and pushing the
-          invoice and it's data in an editable draft form to your system.
+          **Accounts Payable Combined (APC)** is a bolt-on solution that
+          retrieves invoices from e-mails or DND, automatically reading and
+          pushing the invoice and it's data in an editable draft form to your
+          system.
 
 
-          Tick to Post (T2P) provides a platform where users can review,
+          **Tick to Post (T2P)** provides a platform where users can review,
           confirm, edit, store and search for invoices. After invoices are
           approved, the data is pushed to the accounting system, removing the
           need to store invoices images in your system. 
 
 
-          Combined Accounts Payable solution (CAPs) is a full online accounts
-          payable department, allowing businesses to replicate the complex AP
-          process and automate it. This full systems includes PO matching, both
-          at a GRN and line level, auto-coding, auto-routing for approval,
-          statement reconciliation among many others.
+          **Combined Accounts Payable solution (CAPs)** is a full online
+          accounts payable department, allowing businesses to replicate the
+          complex AP process and automate it. This full systems includes PO
+          matching, both at a GRN and line level, auto-coding, auto-routing for
+          approval, statement reconciliation among many others.
   sectionC:
     title: Products
     show: false
