@@ -84,7 +84,7 @@ landingPage:
     show: true
     cards:
       - title: What we do
-        subtitle: Provide an AP bolt on White Label Solution
+        subtitle: Providing the Technology behind Automated Accounts Payable Processes
         photo: photo-1
         description: >-
           InShip specializes in Accounts Payable plug-in solutions for
@@ -105,7 +105,7 @@ landingPage:
           package to a full Accounts Payable solution system that can be
           tailored to meet the needs of most medium and large business.
       - title: The Problem
-        subtitle: moving for paper based to digital
+        subtitle: Moving from Paper to Digital
         photo: photo-2
         description: >-
           Accounts Payable is a very manual and expensive process. Processing
