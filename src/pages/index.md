@@ -27,20 +27,23 @@ landingPage:
     title: What We Do
     show: false
     body: >-
-      InShip specializes in offering Accounts Payable plug in solutions for
-      accounting and e.r.p. software, we can add a new functional module and
-      revenue stream in approximately eight weeks. 
+      InShip specializes in Accounts Payable plug-in solutions for accounting
+      and enterprise resource planning (ERP) software. These modules can be
+      added to any software in approximately eight weeks, providing a new source
+      of revenue and additional functionality.
 
 
-      Our commercial offering allows total freedom in your customer pricing
-      model and our offering gives you the possibility of retaining up to 80% of
-      the revenue while still going to the market with a competitively priced
-      product. 
+      Our commercial package is designed to give you total freedom in your
+      customer pricing model and our offering gives you the possibility of
+      retaining up to 80% of the revenue you generate while still going to the
+      market with a competitively priced product. 
 
 
-      We have 3 different versions, from a simple A.I. data extraction hidden
-      module to add to an accounts package to a full Accounts Payable Solution
-      that can be tailored to meet the needs of most medium and large business.
+      With three versions, your company is guaranteed to finding something to
+      meet your customers needs. These range from a simple A.I. data extraction
+      that can be added as a hidden module to any accounts package to a full
+      Accounts Payable solution system that can be tailored to meet the needs of
+      most medium and large business.
   sectionB:
     title: The Problem
     show: false
@@ -98,60 +101,76 @@ landingPage:
     show: true
     cards:
       - title: What we do
-        subtitle: Provide an AP bolt on White Label Solution
+        subtitle: Providing the Technology behind Automated Accounts Payable Processes
         photo: photo-1
         description: >-
-          InShip specializes in offering Accounts Payable plug in solutions for
-          accounting and e.r.p. software.
+          InShip specializes in Accounts Payable plug-in solutions for
+          accounting and enterprise resource planning (ERP) software. These
+          modules can be added to any software in approximately eight weeks,
+          providing a new source of revenue and additional functionality.
 
 
-          We can add a new fully functional module and revenue stream to your
-          software in approximately 8 weeks, allowing you to deliver a feature
-          set that would normally take over 2 years to develop.
+          Our commercial package is designed to give you total freedom in your
+          customer pricing model and our offering gives you the possibility of
+          retaining up to 80% of the revenue you generate while still going to
+          the market with a competitively priced product. 
 
 
-          We have 3 different versions, from a simple A.I. data extraction
-          hidden module to add to an accounts package to a full Accounts Payable
-          Solution that can be tailored to meet the needs of most medium and
-          large business.
+          With three versions, your company is guaranteed to finding something
+          to meet your customers needs. These range from a simple A.I. data
+          extraction that can be added as a hidden module to any accounts
+          package to a full Accounts Payable solution system that can be
+          tailored to meet the needs of most medium and large business.
       - title: The Problem
-        subtitle: moving for paper based to digital
+        subtitle: Moving from Paper to Digital
         photo: photo-2
         description: >-
-          Accounts Payable is a very manual and expensive process. Processing
-          each invoice or bill can include up to ten steps and costs around
-          €4.50 (based on a pwc report).  However if a business automates this
-          process they can remove 80-90% of that cost.
 
 
-          Being paper based the process is slow, normally unstructured, full of
-          flaws and not suitable for remote working.
+          Accounts Payable is timely and expensive; processing one invoice or
+          bill can include as many as ten steps, costing approximately €4.50
+          (source: pwc).  If a business automates this process, 80-90% of that
+          cost can be removed.
+
+
+          The current paper based system of handling documents comes with an
+          array of issues. Documents must be stored, managed and matched. Over
+          time, this can lead to lost and degraded documents, taking up
+          substantial space or racking up storage costs. This taxing process
+          often results in focus being placed on completing the task rather than
+          verification of the invoice. 
+
+
+          In the majority of large organisations, their AP structure is
+          unstructured with simple workarounds.
       - title: Solutions
-        subtitle: we offer 3 solutions
+        subtitle: Three Solutions Tailored for All Needs
         photo: photo-3
         description: >-
-          InShip offers 3 solutions that automate the process direct from email
-          or DND.
+          InShip has designed three solutions tailored for all needs which
+          automates the AP process direct from e-mail or Drag and Drop (DND).
 
 
-          APC is a bolt on solution the retrieves invoices form emails or DND,
-          automatically reads and pushes the invoice and data in a editable
-          draft form to your system.
+          **Accounts Payable Combined (APC)** is a bolt-on solution that
+          retrieves invoices from e-mails or DND, automatically reading and
+          pushing the invoice and it's data in an editable draft form to your
+          system.
 
 
-          T2P if your system is unable to receive images, T2P is a platform
-          where users can review, confirm, edit, store and search for invoices.
-          After invoices are approved the data is pushed to the accounting
-          system. 
+          **Tick to Post (T2P)** provides a platform where users can review,
+          confirm, edit, store and search for invoices. After invoices are
+          approved, the data is pushed to the accounting system, removing the
+          need to store invoices images in your system. 
 
 
-          CAPs is a full online accounts payable department. Allowing businesses
-          to replicate the complex process and automate it. The full systems
-          includes po matching both at a GRN and line level, auto coding, auto
-          routeing for approval and statement reconciliation to name a few.
+          **Combined Accounts Payable solution (CAPs)** is a full online
+          accounts payable department, allowing businesses to replicate the
+          complex AP process and automate it. This full systems includes PO
+          matching, both at a GRN and line level, auto-coding, auto-routing for
+          approval, statement reconciliation among many others.
   sectionC:
     title: Products
-    show: true
+    show: false
   sectionD:
     title: The Process
     description: >-

@@ -2658,6 +2658,20 @@ li {
     width: 50rem;
     left: 29.16%;
     text-align: center; }
+  .process-animation .counter {
+    position: absolute;
+    top: 20rem;
+    z-index: 2;
+    line-height: 5rem;
+    color: white; }
+    .process-animation .counter h2 {
+      font-size: 5rem; }
+    .process-animation .counter h3 {
+      font-size: 2rem; }
+    .process-animation .counter-manual {
+      left: 1%; }
+    .process-animation .counter-auto {
+      right: 1%; }
   .process-animation .automated {
     position: absolute;
     top: -0.5rem;
