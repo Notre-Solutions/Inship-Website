@@ -108,14 +108,24 @@ landingPage:
         subtitle: Moving from Paper to Digital
         photo: photo-2
         description: >-
-          Accounts Payable is a very manual and expensive process. Processing
-          each invoice or bill can include up to ten steps and costs around
-          €4.50 (based on a pwc report).  However if a business automates this
-          process they can remove 80-90% of that cost.
 
 
-          Being paper based the process is slow, normally unstructured, full of
-          flaws and not suitable for remote working.
+          Accounts Payable is timely and expensive; processing one invoice or
+          bill can include as many as ten steps, costing approximately €4.50
+          (source: pwc).  If a business automates this process, 80-90% of that
+          cost can be removed.
+
+
+          The current paper based system of handling documents comes with an
+          array of issues. Documents must be stored, managed and matched. Over
+          time, this can lead to lost and degraded documents, taking up
+          substantial space or racking up storage costs. This taxing process
+          often results in focus being placed on completing the task rather than
+          verification of the invoice. 
+
+
+          In the majority of large organisations, their AP structure is
+          unstructured with simple workarounds.
       - title: Solutions
         subtitle: we offer 3 solutions
         photo: photo-3
