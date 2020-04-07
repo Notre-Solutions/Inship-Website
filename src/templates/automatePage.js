@@ -6,6 +6,7 @@ import NewsCard from "../components/news-card"
 import Carousels from "../components/carousel"
 import Animation from "../components/process-animation"
 import Markdown from "../components/markdown"
+import MY from "../components/masonry"
 
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
@@ -48,7 +49,7 @@ const Automate = ({ data }) => {
               </div>
             </div>
           </secionn>
-          <section className="section-a">
+          {/* <section className="section-a">
             <div className="title">
               <h2>{newsTitle}</h2>
             </div>
@@ -58,7 +59,16 @@ const Automate = ({ data }) => {
                 return <NewsCard article={article} />
               })}
             </div>
+          </section> */}
+          <section className="section-a">
+            <div className="title">
+              <h2>{newsTitle}</h2>
+            </div>
+            <div className="masonry">
+              <MY articles={edges}></MY>
+            </div>
           </section>
+          <div className="line"></div>
           <div className="section-b large">
             <div className="title-main">
               <h2>{sectionB.title}</h2>

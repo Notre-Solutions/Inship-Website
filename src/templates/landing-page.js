@@ -10,6 +10,32 @@ import Player from "../components/player"
 import Animation from "../components/process-animation"
 import ProblemSection from "../components/problemSection"
 
+function showSectionE(show, title, cards, slogan) {
+  if (show) {
+    return (
+      <>
+        <div className="section-e">
+          <div className="title">{title}</div>
+          <div className="cards">
+            {cards.map(element => {
+              return (
+                <>
+                  <div className="card">
+                    <i className={`fa fa-${element.icon} card-icon`}></i>
+                    <div className="card-title">{element.title}</div>
+                    <div className="card-text">{element.text}</div>
+                  </div>
+                </>
+              )
+            })}
+          </div>
+          <div className="slogan">{slogan}</div>
+        </div>
+      </>
+    )
+  }
+}
+
 function showSectionA(show, title, body, id, className, url) {
   if (show) {
     return (
@@ -115,6 +141,7 @@ const Landing = ({ data }) => {
     sectionB_alt,
     sectionC,
     sectionD,
+    sectionE,
   } = data.markdownRemark.frontmatter.landingPage
   const edges = data.allMarkdownRemark.edges
   console.log(data)
@@ -143,6 +170,12 @@ const Landing = ({ data }) => {
         </header>
 
         <div id="what-we-do" className="main-page container">
+          {showSectionE(
+            sectionE.show,
+            sectionE.title,
+            sectionE.cards,
+            sectionE.slogon
+          )}
           {showSectionA(
             sectionA.show,
             sectionA.title,
@@ -214,6 +247,16 @@ export const pageQuery = graphql`
             line1
             line2
             line3
+          }
+          sectionE {
+            title
+            show
+            slogon
+            cards {
+              icon
+              title
+              text
+            }
           }
           sectionA {
             url

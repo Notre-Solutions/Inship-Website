@@ -3,6 +3,11 @@
   flex-direction: column;
   justify-content: space-between;
 
+  .line {
+    margin-top: 10%;
+    @include line($inship-color, 0, 0, 95%, 0.2rem);
+  }
+
   .section-animation {
     display: flex;
     flex-direction: column;
@@ -57,7 +62,7 @@
   .section-a {
     .title {
       display: grid;
-      margin-top: 2rem;
+      margin: 4rem 0 4rem 0;
       grid-template-rows: 1fr;
       text-align: center;
       h2 {
@@ -108,6 +113,71 @@
 
           .btn {
             position: relative;
+            text-align: center !important;
+            @include btn(white, $inship-color, "light");
+            border: 0.1rem solid $inship-color;
+            @include transition-ease;
+          }
+          .btn:hover {
+            color: $inship-color;
+            background-color: white;
+          }
+        }
+      }
+    }
+    .masonry {
+      .my-masonry-grid {
+        display: -webkit-box; /* Not needed if autoprefixing */
+        display: -ms-flexbox; /* Not needed if autoprefixing */
+        display: flex;
+        margin-left: -30px; /* gutter size offset */
+        width: auto;
+      }
+      .my-masonry-grid_column {
+        padding-left: 30px; /* gutter size */
+        background-clip: padding-box;
+      }
+
+      /* Style your items */
+      .my-masonry-grid_column > div {
+        /* change div to reference your elements you put in <Masonry> */
+        // background: grey;
+        margin-bottom: 30px;
+      }
+      .card {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        overflow: hidden;
+        background-color: white;
+        border: 0.1rem solid white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        .img {
+          height: 100%;
+          width: 100%;
+        }
+        img {
+          border-radius: 1rem;
+          object-fit: cover;
+        }
+        p {
+          font-size: 1.6rem;
+        }
+        small {
+          font-style: italic;
+        }
+        .card__content {
+          padding: 0 2rem;
+          font-size: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+
+          .btn {
             text-align: center !important;
             @include btn(white, $inship-color, "light");
             border: 0.1rem solid $inship-color;

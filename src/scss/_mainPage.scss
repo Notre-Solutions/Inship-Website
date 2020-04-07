@@ -304,12 +304,40 @@
   }
 
   .section-e {
-    margin-top: 6%;
-    &-title {
-      text-align: center;
-
+    margin-top: 10%;
+    .title {
       font-size: 4rem;
-      font-weight: 600;
+      text-align: left;
+    }
+
+    .cards {
+      margin: 5% 0 5% 0;
+      display: flex;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        margin: 2rem;
+        width: 30%;
+        &-icon {
+          color: $inship-color;
+          font-size: 12rem;
+        }
+
+        &-title {
+          font-size: 3rem;
+        }
+
+        &-text {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .slogan {
+      margin-bottom: 10%;
+      font-size: 5rem;
     }
   }
 }
