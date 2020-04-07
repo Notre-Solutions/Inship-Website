@@ -12,24 +12,31 @@ automatePage:
       ## "Our Process is unique"
 
 
-      Processing invoices manually is a costly process that normally involves 8
-      to 10 stages that are nearly all manual. It has been estimated that
-      automating this process saves between 80 and 90% of the processing time.
-      This is why business are looking a to automate this process and remove the
-      paper.
+      Processing invoices manually is a costly and timely process that typically
+      involves 8 to 10 steps. It has been proven that automating this process
+      can reduce processing time by 80-90%, making it obvious as to why business
+      are looking at an automated solution for this problem.
 
 
-      A very common concern we hear is "our process is unique", in reality there
-      is normally a certain element of truth in that statement but with InShip
-      we focused on providing a flexible system that can be simply tailored to
-      meet most businesses needs.
+      Our customers can be concerned about automating a process that may seem
+      complex or "unique" but with InShip we focus on providing a flexible
+      system that can be simply tailored to meet different businesses different
+      needs.
 
 
+      As you are probably aware, AP is a hot topic and more and more customers
+      are beginning to investigate automation options. This leaves ERP and
+      Accountancy Software providers with a number of options: 
 
 
+      * Build their own solution; a timely and costly exercise, generally taking
+      up to two years to deliver and two million dollars to execute.
 
+      * Allow users to integrate with various independent AP solutions; leaving
+      you with little to no control and a poor revenue model.
 
-      As you can see for the articles below
+      * Do nothing;  risking the loss of current customers and potential new
+      customers.
   sectionB:
     title: Testimonials
     testimonials:
