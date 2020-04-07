@@ -127,28 +127,29 @@ landingPage:
           In the majority of large organisations, their AP structure is
           unstructured with simple workarounds.
       - title: Solutions
-        subtitle: we offer 3 solutions
+        subtitle: Three Solutions Tailored for All Needs
         photo: photo-3
         description: >-
-          InShip offers 3 solutions that automate the process direct from email
-          or DND.
+          InShip has designed three solutions tailored for all needs which
+          automates the AP process direct from e-mail or Drag and Drop (DND).
 
 
-          APC is a bolt on solution the retrieves invoices form emails or DND,
-          automatically reads and pushes the invoice and data in a editable
-          draft form to your system.
+          Accounts Payable Combined (APC) is a bolt-on solution that retrieves
+          invoices from e-mails or DND, automatically reading and pushing the
+          invoice and it's data in an editable draft form to your system.
 
 
-          T2P if your system is unable to receive images, T2P is a platform
-          where users can review, confirm, edit, store and search for invoices.
-          After invoices are approved the data is pushed to the accounting
-          system. 
+          Tick to Post (T2P) provides a platform where users can review,
+          confirm, edit, store and search for invoices. After invoices are
+          approved, the data is pushed to the accounting system, removing the
+          need to store invoices images in your system. 
 
 
-          CAPs is a full online accounts payable department. Allowing businesses
-          to replicate the complex process and automate it. The full systems
-          includes po matching both at a GRN and line level, auto coding, auto
-          routeing for approval and statement reconciliation to name a few.
+          Combined Accounts Payable solution (CAPs) is a full online accounts
+          payable department, allowing businesses to replicate the complex AP
+          process and automate it. This full systems includes PO matching, both
+          at a GRN and line level, auto-coding, auto-routing for approval,
+          statement reconciliation among many others.
   sectionC:
     title: Products
     show: true
