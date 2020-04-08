@@ -54,6 +54,13 @@ const Footer = () => {
               <i className="fab fa-linkedin "></i>
             </a>
           </div>
+          <a
+            className="brochure"
+            href="https://www.inship.ie/other/inship_brochure.pdf"
+            target="_blank"
+          >
+            DOWNLOAD BROCHURE
+          </a>
           <div className="copy-right">
             &copy; {new Date().getFullYear()} Inship Accounts Payable Solutions
             Ltd.
