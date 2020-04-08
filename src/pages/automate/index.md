@@ -89,23 +89,22 @@ automatePage:
         name: Trish - Restaurant
         description: Our suppliers just email our invoices to InShip it’s that simple.
   sectionD:
-    caseStudies:
-      - title: UK Maintenance Company
-        theIssue: >-
-          From its maintenance hub, this UK company supports over 5000 assets using a network of 250 suppliers located throughout the country, and handles 60 daily breakdowns, 100 services and 20 annual checks.
-        theBrief: >-
-          A system was required that could correctly deal with all the company’s supplier invoices and proforma invoices. The system also needed to automatically compare these invoices to purchase orders. The company also wanted the system to automatically recognise and store backup service documentation to meet regulatory requirements.
-        theSolution: >-
-          The INSHIP model can be tailored to meet any customer need. For this customer, INSHIP added additional document types to the system, while providing additional routing for these non-standard documents. Now the company’s suppliers email their own standard documents to an INSHIP email account. INSHIP extracts the documents and forwards the backup documents to a searchable file. Matching invoices are automatically approved while unmatched invoices and proforma invoices are forwarded for approval or rejection - all while keeping the supplier informed as to how each invoice is progressing.
-        clientFeedback: >-
-          “In the first few weeks after we started to use INSHIP, I was really surprised to hear that we were processing over 400 documents in a week - the system worked so well it really felt like 100 or less! Operators love using the system. It allows them to work in a structured way and to communicate with their colleagues and suppliers painlessly. We were surprised and delighted that INSHIP could integrate with our bespoke accounts system.”
-      - title: Irish Hire Company
-        theIssue: >-
-          The company is a medium size hire company which receives approximately 400 invoices a month.
-        theBrief: >-
-          The Managing Director (MD) required the ability to approve invoices from a number of suppliers once they had been actioned by her staff. This was to ensure all tasks had been completed correctly.
-        theSolution: >-
-          Using the standard INSHIP system, we advised this client to activate the ‘last approver’ option. This will ensure that any document (even those with a number of approvers, including the MD herself) may be reviewed lastly by the MD who is now able to confirm that the correct actions have been taken.
-        clientFeedback: >-
-          “Now I know the process is being followed, I can see who is doing what. My staff find the system really easy to use and the automatic statement reconciliation has improved our month end accounts. INSHIP is saving the company money each week by ensuring all charges are dealt with correctly.”
+    - title: UK Maintenance Company
+      theIssue: >-
+        From its maintenance hub, this UK company supports over 5000 assets using a network of 250 suppliers located throughout the country, and handles 60 daily breakdowns, 100 services and 20 annual checks.
+      theBrief: >-
+        A system was required that could correctly deal with all the company’s supplier invoices and proforma invoices. The system also needed to automatically compare these invoices to purchase orders. The company also wanted the system to automatically recognise and store backup service documentation to meet regulatory requirements.
+      theSolution: >-
+        The INSHIP model can be tailored to meet any customer need. For this customer, INSHIP added additional document types to the system, while providing additional routing for these non-standard documents. Now the company’s suppliers email their own standard documents to an INSHIP email account. INSHIP extracts the documents and forwards the backup documents to a searchable file. Matching invoices are automatically approved while unmatched invoices and proforma invoices are forwarded for approval or rejection - all while keeping the supplier informed as to how each invoice is progressing.
+      clientFeedback: >-
+        “In the first few weeks after we started to use INSHIP, I was really surprised to hear that we were processing over 400 documents in a week - the system worked so well it really felt like 100 or less! Operators love using the system. It allows them to work in a structured way and to communicate with their colleagues and suppliers painlessly. We were surprised and delighted that INSHIP could integrate with our bespoke accounts system.”
+    - title: Irish Hire Company
+      theIssue: >-
+        The company is a medium size hire company which receives approximately 400 invoices a month.
+      theBrief: >-
+        The Managing Director (MD) required the ability to approve invoices from a number of suppliers once they had been actioned by her staff. This was to ensure all tasks had been completed correctly.
+      theSolution: >-
+        Using the standard INSHIP system, we advised this client to activate the ‘last approver’ option. This will ensure that any document (even those with a number of approvers, including the MD herself) may be reviewed lastly by the MD who is now able to confirm that the correct actions have been taken.
+      clientFeedback: >-
+        “Now I know the process is being followed, I can see who is doing what. My staff find the system really easy to use and the automatic statement reconciliation has improved our month end accounts. INSHIP is saving the company money each week by ensuring all charges are dealt with correctly.”
 ---

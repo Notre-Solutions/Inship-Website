@@ -111,9 +111,7 @@ const Automate = ({ data }) => {
               <MY articles={edges}></MY>
             </div>
           </section>
-          <section className="section-d">
-            {sectionDfunction(sectionD.caseStudies)}
-          </section>
+          <section className="section-d">{sectionDfunction(sectionD)}</section>
           <div className="line"></div>
           <div className="section-b large">
             <div className="title-main">
@@ -174,13 +172,11 @@ export const pageQuery = graphql`
             description
           }
           sectionD {
-            caseStudies {
-              title
-              theIssue
-              theBrief
-              theSolution
-              clientFeedback
-            }
+            title
+            theIssue
+            theBrief
+            theSolution
+            clientFeedback
           }
         }
       }

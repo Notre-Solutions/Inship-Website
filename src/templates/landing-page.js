@@ -274,6 +274,8 @@ export const pageQuery = graphql`
             cards {
               title
               subtitle
+              readMore
+              showReadMore
               photo
               description
             }

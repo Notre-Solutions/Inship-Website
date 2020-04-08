@@ -2955,7 +2955,7 @@ li {
   .problem-card .meta {
     position: relative;
     z-index: 0;
-    height: 36rem; }
+    height: auto; }
   .problem-card .photo-1 {
     position: absolute;
     top: 0;
@@ -3050,6 +3050,9 @@ li {
         .problem-card .description .read-more a:hover:after {
           margin-left: 5px;
           opacity: 1; }
+    .problem-card .description .hidden {
+      visibility: hidden;
+      display: none; }
     .problem-card .description p {
       font-size: 1.5rem; }
   .problem-card p {
@@ -3212,6 +3215,9 @@ li {
         .problem-card-2 .description .read-more a:hover:after {
           margin-left: 5px;
           opacity: 1; }
+    .problem-card-2 .description .hidden {
+      visibility: hidden;
+      display: none; }
     .problem-card-2 .description p {
       font-size: 1.5rem; }
   .problem-card-2 p {
