@@ -279,6 +279,7 @@
     }
 
     .btn {
+      text-align: center !important;
       @include btn(white, black, "light");
       @include transition-ease;
     }

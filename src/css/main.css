@@ -569,6 +569,7 @@ li {
     font-size: 6rem;
     font-weight: 600; }
   .main-page .section-d .btn {
+    text-align: center !important;
     margin-top: 1rem;
     border-radius: 1rem;
     font-size: 1.5rem;
@@ -991,6 +992,19 @@ li {
       .header-text-box-color-2 .sub-header {
         display: none !important;
         visibility: hidden !important; }
+  .main-page .section-e {
+    text-align: center; }
+    .main-page .section-e .title {
+      text-align: center; }
+    .main-page .section-e .cards {
+      margin: 0;
+      left: 5%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .main-page .section-e .cards .card {
+        width: 100%; }
   .main-page .section-a {
     margin: 2rem !important; }
     .main-page .section-a .text-box {

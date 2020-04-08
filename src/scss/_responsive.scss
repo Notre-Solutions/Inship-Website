@@ -46,6 +46,20 @@
   }
 
   .main-page {
+    .section-e {
+      text-align: center;
+      .title {
+        text-align: center;
+      }
+      .cards {
+        margin: 0;
+        left: 5%;
+        flex-direction: column;
+        .card {
+          width: 100%;
+        }
+      }
+    }
     .section-a {
       margin: 2rem !important;
       .text-box {
