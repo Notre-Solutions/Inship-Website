@@ -1198,6 +1198,7 @@ li {
   html {
     font-size: 11px; }
   .container {
+    text-align: center;
     max-width: 2048px !important;
     margin: 0 10% !important; }
   .animation,

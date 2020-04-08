@@ -16,8 +16,10 @@ function sectionDfunction(caseStudy) {
       {caseStudy.map(element => {
         return (
           <div className="container">
-            <div className="title-main">{element.title}</div>
-            <div className="grid">
+            <div className="title-main" style={{ textAlign: "left" }}>
+              {element.title}
+            </div>
+            <div className="grid" style={{ textAlign: "left" }}>
               <div className="card">
                 <div className="title">The Issue</div>
                 <div className="text-box">{element.theIssue}</div>
