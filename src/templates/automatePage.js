@@ -8,10 +8,51 @@ import Animation from "../components/process-animation"
 import Markdown from "../components/markdown"
 import MY from "../components/masonry"
 
+function sectionDfunction(caseStudy) {
+  console.log(caseStudy)
+  return (
+    <section className="section-d">
+      <div className="bg-img"></div>
+      {caseStudy.map(element => {
+        return (
+          <div className="container">
+            <div className="title-main">{element.title}</div>
+            <div className="grid">
+              <div className="card">
+                <div className="title">The Issue</div>
+                <div className="text-box">{element.theIssue}</div>
+              </div>
+
+              <div className="card">
+                <div className="title">The Solution</div>
+                <div className="text-box">{element.theSolution}</div>
+              </div>
+              <div className="card">
+                <div className="title">The Brief</div>
+                <div className="text-box">{element.theBrief}</div>
+              </div>
+              <div className="card">
+                <div className="title">Client Feedback</div>
+                <div className="text-box">{element.clientFeedback}</div>
+              </div>
+            </div>
+          </div>
+        )
+      })}
+    </section>
+  )
+}
+
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   const { automatePage } = data.markdownRemark.frontmatter
-  const { animationTitle, newsTitle, sectionB, sectionC } = automatePage
+  const {
+    animationTitle,
+    newsTitle,
+    sectionB,
+    sectionC,
+    sectionD,
+  } = automatePage
   const { testimonials } = sectionB
 
   return (
@@ -67,9 +108,11 @@ const Automate = ({ data }) => {
             <div className="masonry">
               <MY articles={edges}></MY>
             </div>
-            <div className="line"></div>
           </section>
-
+          <section className="section-d">
+            {sectionDfunction(sectionD.caseStudies)}
+          </section>
+          <div className="line"></div>
           <div className="section-b large">
             <div className="title-main">
               <h2>{sectionB.title}</h2>
@@ -127,6 +170,15 @@ export const pageQuery = graphql`
           }
           sectionC {
             description
+          }
+          sectionD {
+            caseStudies {
+              title
+              theIssue
+              theBrief
+              theSolution
+              clientFeedback
+            }
           }
         }
       }
