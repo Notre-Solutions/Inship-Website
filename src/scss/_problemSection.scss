@@ -36,8 +36,7 @@ $color_grey_dark: #a2a2a2;
   .meta {
     position: relative;
     z-index: 0;
-    height: 36rem;
-    // height: auto;
+    height: auto;
   }
   .photo-1 {
     position: absolute;
@@ -140,6 +139,10 @@ $color_grey_dark: #a2a2a2;
           opacity: 1;
         }
       }
+    }
+    .hidden {
+      visibility: hidden;
+      display: none;
     }
     p {
       font-size: 1.5rem;
@@ -320,6 +323,10 @@ $color_grey_dark: #a2a2a2;
           opacity: 1;
         }
       }
+    }
+    .hidden {
+      visibility: hidden;
+      display: none;
     }
     p {
       font-size: 1.5rem;

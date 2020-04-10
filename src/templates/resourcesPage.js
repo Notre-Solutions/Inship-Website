@@ -48,7 +48,9 @@ export const pageQuery = graphql`
           cards {
             description
             icon
+            showReadMore
             title
+            readMore
             subtitle
             titleOverlayIcon
             description

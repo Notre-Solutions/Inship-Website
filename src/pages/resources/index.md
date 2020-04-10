@@ -7,6 +7,8 @@ resourcesPage:
   cards:
     - title: Intergration
       icon: chart-line
+      readMore: "#"
+      showReadMore: true
       subtitle: We do bespokeintergations
       titleOverlayIcon: Intergration
       description: >-
@@ -15,6 +17,8 @@ resourcesPage:
         market leaders in their field.
     - title: Experienced
       icon: laptop
+      showReadMore: true
+      readMore: "#"
       subtitle: IT Professionals
       titleOverlayIcon: Experienced
       description: >-
@@ -22,6 +26,8 @@ resourcesPage:
         delivery complex IT solutions to many industries.
     - title: Customer Focused
       icon: puzzle-piece
+      readMore: "#"
+      showReadMore: true
       subtitle: Peace of mind
       titleOverlayIcon: Customer Focused
       description: >-
@@ -29,7 +35,9 @@ resourcesPage:
         one solution suits all. We can and do trailer our solution to meet your
         users needs.
     - title: Adaptable
+      readMore: "#"
       icon: comments
+      showReadMore: true
       subtitle: Worked anywhere
       titleOverlayIcon: Adaptable
       description: >-
@@ -38,6 +46,8 @@ resourcesPage:
         users needs.
     - title: Comprehensive Training
       icon: paper-plane
+      readMore: "#"
+      showReadMore: true
       subtitle: users
       titleOverlayIcon: Training
       description: >-

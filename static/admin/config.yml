@@ -73,6 +73,16 @@ collections:
                 {label: "Line 2", name: line2, widget: string, required: true},
                 {label: "Line 3", name: line3, widget: string, required: true}
               ]},
+              {label: "How does Inship Work", name: sectionE, widget: object, fields: [
+                {label: "Title", name: title, widget: string, required: true},
+                {label: "Show?", name: show, widget: boolean, required: true, default: true},
+                {label: "Slogon", name: slogon, widget: markdown, required: true},
+                {label: "Cards", name: "cards", widget: list, fields:[
+                  {label: "Title", name: "title", widget: string, required: true},
+                  {label: "Icon", name: "icon", widget: string, required: true},
+                  {label: "Description", name: "text", widget: "string", required: true}
+              ]}
+              ]},
               {label: "What We Do", name: sectionA, widget: object, fields: [
                 {label: "Title", name: title, widget: string, required: true},
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
@@ -91,6 +101,8 @@ collections:
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
                 {label: "Cards", name: "cards", widget: list, fields:[
                   {label: "Title", name: "title", widget: string, required: true},
+                  {label: "Show Read More?", name: "showReadMore", widget: boolean, required: true},
+                  {label: "Read More Link", name: "readMore", widget: string, required: true},
                   {label: "Subtitle", name: "subtitle", widget: string, required: true},
                   {label: "Description", name: "description", widget: "markdown", required: true}
               ]}
@@ -172,9 +184,17 @@ collections:
                 {label: "Description", name: "description", widget: "markdown", required: true}
                 ]}
               ]},
-              {label: "Process Blurb", name: sectionC, widget: object, fields: [
-                {label: "Description", name: description, widget: markdown, required: true}
+            {label: "Process Blurb", name: sectionC, widget: object, fields: [
+              {label: "Description", name: description, widget: markdown, required: true}
+            ]},
+            {label: "Case Studies", name: "sectionD", widget: list, fields:[
+              {label: "Title", name: "title", widget: string, required: true},
+              {label: "The Issue", name: "theIssue", widget: string, required: true},
+              {label: "The Brief", name: "theBrief", widget: string, required: true},
+              {label: "The Solution", name: "theSolution", widget: string, required: true},
+              {label: "The Feedback", name: "clientFeedback", widget: string, required: true}
               ]}
+
             ]}      
       - file: "src/pages/resources/index.md"
         label: "Resources Page"
@@ -187,6 +207,8 @@ collections:
               {label: "Title", name: "title", widget: string, required: true},
               {label: "Subtitle", name: "subtitle", widget: string, required: true},
               {label: "Icon", name: "icon", widget: string, required: true},
+              {label: "Show Read More?", name: "showReadMore", widget: boolean, required: true},
+              {label: "Read More Link", name: "readMore", widget: string, required: true},
               {label: "Tile Over Icon", name: "titleOverlayIcon", widget: string, required: true},
               {label: "Description", name: "description", widget: "markdown", required: true}
               ]}

@@ -225,7 +225,7 @@ li {
 }
 
 @mixin media-animation-lg {
-  @media screen and (max-width: 1270px) {
+  @media screen and (max-width: 1100px) {
     @content;
   }
 }
@@ -354,4 +354,45 @@ li {
 
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;
+}
+
+@mixin text-box-card {
+  box-shadow: 0 3px 7px -1px rgba(#000, 0.1);
+  margin-bottom: 1.6%;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  height: auto;
+  text-align: left;
+}
+
+@mixin text-box-card-description {
+  padding: 4rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  color: black;
+  h1,
+  h2 {
+    font-family: Poppins, sans-serif;
+  }
+  h1 {
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    // text-transform: uppercase;
+    // color: $color_grey_dark;
+    color: black;
+    margin-top: 5px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
 }

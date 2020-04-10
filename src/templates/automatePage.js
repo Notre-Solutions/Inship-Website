@@ -7,11 +7,56 @@ import Carousels from "../components/carousel"
 import Animation from "../components/process-animation"
 import Markdown from "../components/markdown"
 import Background from "../components/header"
+import MY from "../components/masonry"
+
+function sectionDfunction(caseStudy) {
+  console.log(caseStudy)
+  return (
+    <section className="section-d">
+      <div className="bg-img"></div>
+      {caseStudy.map(element => {
+        return (
+          <div className="container">
+            <div className="title-main" style={{ textAlign: "left" }}>
+              {element.title}
+            </div>
+            <div className="grid" style={{ textAlign: "left" }}>
+              <div className="card">
+                <div className="title">The Issue</div>
+                <div className="text-box">{element.theIssue}</div>
+              </div>
+
+              <div className="card">
+                <div className="title">The Solution</div>
+                <div className="text-box">{element.theSolution}</div>
+              </div>
+              <div className="card">
+                <div className="title">The Brief</div>
+                <div className="text-box">{element.theBrief}</div>
+              </div>
+              <div className="card">
+                <div className="title">Client Feedback</div>
+                <div className="text-box">{element.clientFeedback}</div>
+              </div>
+            </div>
+          </div>
+        )
+      })}
+    </section>
+  )
+}
 
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   const { automatePage } = data.markdownRemark.frontmatter
-  const { animationTitle, backgroundimage, newsTitle, sectionB, sectionC } = automatePage
+  const {
+    animationTitle,
+    newsTitle,
+    backgroundimage,
+    sectionB,
+    sectionC,
+    sectionD,
+  } = automatePage
   const { testimonials } = sectionB
 
   return (
@@ -51,7 +96,7 @@ const Automate = ({ data }) => {
               </div>
             </div>
           </secionn>
-          <section className="section-a">
+          {/* <section className="section-a">
             <div className="title">
               <h2>{newsTitle}</h2>
             </div>
@@ -61,7 +106,17 @@ const Automate = ({ data }) => {
                 return <NewsCard article={article} />
               })}
             </div>
+          </section> */}
+          <section className="section-a">
+            <div className="title">
+              <h2>{newsTitle}</h2>
+            </div>
+            <div className="masonry">
+              <MY articles={edges}></MY>
+            </div>
           </section>
+          <section className="section-d">{sectionDfunction(sectionD)}</section>
+          <div className="line"></div>
           <div className="section-b large">
             <div className="title-main">
               <h2>{sectionB.title}</h2>
@@ -120,6 +175,13 @@ export const pageQuery = graphql`
           }
           sectionC {
             description
+          }
+          sectionD {
+            title
+            theIssue
+            theBrief
+            theSolution
+            clientFeedback
           }
         }
       }

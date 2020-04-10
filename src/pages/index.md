@@ -5,8 +5,25 @@ landingPage:
     line1: Providing the Technology
     line2: Behind Automated Accounts
     line3: Payable Processes
+  sectionE:
+    title: How Dose INSHIP work?
+    show: true
+    slogon: It really is that simple....and it works.
+    cards:
+      - icon: envelope
+        title: Step 1
+        text: >-
+          Your suppliers email their invoices to your INSHIP email account.
+      - icon: copy
+        title: Step 2
+        text: >-
+          INSHIP takes over. The system simply extracts the invoices and then codes, processes, distributes and stores it.
+      - icon: balance-scale
+        title: Step 3
+        text: >-
+          INSHIP updates your accounts, reconciles them with your statements and automatically searches for any missing invoices, while never losing any of your documents.
   sectionA:
-    url: 'https://www.youtube.com/watch?v=FBxFqmtJ3YA'
+    url: "https://www.youtube.com/watch?v=FBxFqmtJ3YA"
     title: What We Do
     show: false
     body: >-
@@ -86,7 +103,8 @@ landingPage:
       - title: What we do
         subtitle: Providing the Technology behind Automated Accounts Payable Processes
         photo: photo-1
-        link: "#"
+        readMore: "#"
+        showReadMore: true
         description: >-
           InShip specializes in Accounts Payable plug-in solutions for
           accounting and enterprise resource planning (ERP) software. These
@@ -108,7 +126,8 @@ landingPage:
       - title: The Problem
         subtitle: Moving from Paper to Digital
         photo: photo-2
-        link: "#"
+        readMore: "#"
+        showReadMore: true
         description: >-
 
 
@@ -131,7 +150,8 @@ landingPage:
       - title: Solutions
         subtitle: Three Solutions Tailored for All Needs
         photo: photo-3
-        link: https://www.inshipaps.com/products/caps
+        readMore: "#"
+        showReadMore: true
         description: >-
           InShip has designed three solutions tailored for all needs which
           automates the AP process direct from e-mail or Drag and Drop (DND).

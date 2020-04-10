@@ -2,7 +2,6 @@ import React from "react"
 import "../css/main.css"
 import Markdown from "../components/markdown"
 import ProductCard from "../components/productCard"
-import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ReactModal from "../components/modal"
@@ -10,6 +9,34 @@ import Player from "../components/player"
 import Animation from "../components/process-animation"
 import ProblemSection from "../components/problemSection"
 import SlidingBackground from "../components/header"
+import { Link } from "gatsby"
+
+function showSectionE(show, title, cards, slogan) {
+  if (show) {
+    return (
+      <>
+        <div className="section-e">
+          <div className="title">{title}</div>
+          <div className="cards">
+            {cards.map(element => {
+              return (
+                <>
+                  <div className="card">
+                    <i className={`fa fa-${element.icon} card-icon`}></i>
+                    <div className="card-title">{element.title}</div>
+                    <div className="card-text">{element.text}</div>
+                  </div>
+                </>
+              )
+            })}
+          </div>
+          <div className="slogan">{slogan}</div>
+        </div>
+      </>
+    )
+  }
+}
+
 function showSectionA(show, title, body, id, className, url) {
   if (show) {
     return (
@@ -115,6 +142,7 @@ const Landing = ({ data }) => {
     sectionB_alt,
     sectionC,
     sectionD,
+    sectionE,
   } = data.markdownRemark.frontmatter.landingPage
   const edges = data.allMarkdownRemark.edges
   console.log(data)
@@ -148,6 +176,12 @@ const Landing = ({ data }) => {
           </header>
 
         <div id="what-we-do" className="main-page container">
+          {showSectionE(
+            sectionE.show,
+            sectionE.title,
+            sectionE.cards,
+            sectionE.slogon
+          )}
           {showSectionA(
             sectionA.show,
             sectionA.title,
@@ -177,7 +211,11 @@ const Landing = ({ data }) => {
             <div className="animation">
               <Animation />
             </div>
-            <Markdown markdown={sectionD.description} />
+
+            <Link to="/automate">
+              {" "}
+              <div className="btn">Learn More</div>{" "}
+            </Link>
           </div>
         </div>
       </Layout>
@@ -220,6 +258,16 @@ export const pageQuery = graphql`
             line2
             line3
           }
+          sectionE {
+            title
+            show
+            slogon
+            cards {
+              icon
+              title
+              text
+            }
+          }
           sectionA {
             url
             body
@@ -232,6 +280,8 @@ export const pageQuery = graphql`
             cards {
               title
               subtitle
+              readMore
+              showReadMore
               photo
               description
             }
