@@ -272,6 +272,7 @@
   }
 
   .section-d {
+    text-align: center;
     &-title {
       text-align: center;
       font-size: 6rem;
@@ -279,7 +280,6 @@
     }
 
     .btn {
-      text-align: center !important;
       @include btn(white, black, "light");
       @include transition-ease;
     }
@@ -297,6 +297,7 @@
 
   .section-e {
     margin-top: 10%;
+    text-align: center;
     .title {
       font-size: 4rem;
       text-align: left;
