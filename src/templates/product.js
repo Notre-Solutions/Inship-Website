@@ -103,7 +103,7 @@ const Product = ({ data }) => {
     featuredimage,
     backgroundimage,
   } = data.markdownRemark.frontmatter
-  const { timeline, features, customerReports, integrations } = productpage
+  const { timeline, features, customerReports, integration } = productpage
   const {
     sectionATitle,
     sectionBTitle,
@@ -159,8 +159,11 @@ const Product = ({ data }) => {
               <div className={`product-main-section-d-title ${style}`}>
                 {sectionDTitle}
               </div>
+              <div className={`product-main-section-d-paragraph `}>
+                {integration.paragraph}
+              </div>
               <div className="cards">
-                {integrations.map(intergration => {
+                {integration.integrations.map(intergration => {
                   return IntergrationOptions(style, intergration)
                 })}
               </div>
@@ -233,9 +236,12 @@ export const pageQuery = graphql`
             description
             percentage
           }
-          integrations {
-            icon
-            description
+          integration {
+            paragraph
+            integrations {
+              icon
+              description
+            }
           }
         }
         backgroundimage

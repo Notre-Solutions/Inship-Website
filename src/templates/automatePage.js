@@ -65,23 +65,23 @@ const Automate = ({ data }) => {
         <div className="automate-page">
           <section className="header">
             <Background images={[backgroundimage]}>
-            <div className="header-text-box">
-              <h1 className="heading">
-                <div className="main-header">
-                  Why<span className="bold"> Automate</span>
+              <div className="header-text-box">
+                <h1 className="heading">
+                  <div className="main-header">
+                    Why<span className="bold"> Automate</span>
+                  </div>
+                </h1>
+                <div class="animation-wrapper">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
                 </div>
-              </h1>
-              <div class="animation-wrapper">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
               </div>
-            </div>
             </Background>
           </section>
           <section className="section-animation">
@@ -90,23 +90,18 @@ const Automate = ({ data }) => {
             </div>
           </section>
           <secionn className="section-b container">
-            <div class="process-card">
+            <div class="process-card alt">
+              <div className="meta">
+                <div className="photo-4"></div>
+                <div className="details">
+                  <div className="img-writing">Man V Auto</div>
+                </div>
+              </div>
               <div class="description">
                 <Markdown markdown={sectionC.description} />
               </div>
             </div>
           </secionn>
-          {/* <section className="section-a">
-            <div className="title">
-              <h2>{newsTitle}</h2>
-            </div>
-            <div className="grid">
-              {edges.map(edge => {
-                const { article } = edge.node.frontmatter
-                return <NewsCard article={article} />
-              })}
-            </div>
-          </section> */}
           <section className="section-a">
             <div className="title">
               <h2>{newsTitle}</h2>

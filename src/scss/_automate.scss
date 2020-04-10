@@ -13,7 +13,7 @@
   .section-b {
     margin-top: 6rem !important;
     .process-card {
-      @include text-box-card;
+      @include textWithImgCard;
       .description {
         @include text-box-card-description;
       }

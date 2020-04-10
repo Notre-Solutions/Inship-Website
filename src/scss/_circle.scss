@@ -259,11 +259,11 @@ $primary-color-orange-dark: #e08833;
   &.color-3 {
     .bar,
     .fill {
-      border-color: $T2P-bg !important;
+      color: #a096ca !important;
     }
     &:hover {
       > span {
-        color: $T2P-bg;
+        color: #a096ca !important;
       }
     }
   }
@@ -271,7 +271,6 @@ $primary-color-orange-dark: #e08833;
     .bar,
     .fill {
       border-color: #feae01 !important;
-      // border-color: rgb(0, 168, 180) !important;
     }
     &:hover {
       > span {

@@ -53,6 +53,8 @@ collections:
             {label: "Percentage", name: "percentage", widget: number, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
+        - {label: "Integration Section", name: "integration", widget: "object", fields: [
+          {label: "Paragraph", name: "paragraph", widget: string, required: true},
           {label: "Integration Options", name: "integrations", widget: list, fields:[
             {label: "Icon", name: "icon", widget: string, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}

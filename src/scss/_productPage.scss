@@ -114,8 +114,8 @@ $product-title-size: 5rem;
       }
     }
     .color-3 {
-      // color: $T2P-bg !important;
-      color: #a096ca !important;
+      color: $T2P-bg !important;
+
       &-line {
         // background-color: $T2P-bg !important;
         background-color: #777777;
@@ -219,6 +219,13 @@ $product-title-size: 5rem;
         margin-bottom: 4rem;
         margin-top: 4rem;
         @include section-title;
+      }
+
+      &-paragraph {
+        width: 60%;
+        margin-left: 20%;
+        padding: 0 3rem 0 2rem;
+        font-size: 1.6rem;
       }
 
       .cards {

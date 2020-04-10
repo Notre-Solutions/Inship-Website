@@ -11,7 +11,7 @@ export default class ProblemSection extends React.Component {
   }
 
   renderLink(link) {
-    if (link !=="#") {
+    if (link !== "#") {
       return (
         <p class="read-more">
           <a href={link}>Read More</a>
@@ -130,7 +130,6 @@ export default class ProblemSection extends React.Component {
   }
 
   render() {
-    console.log(this.props)
     if (this.props.show) {
       return <>{this.section(this.props.array)}</>
     } else {
