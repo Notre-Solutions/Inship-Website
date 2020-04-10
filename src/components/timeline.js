@@ -7,13 +7,15 @@ import {
 import "react-vertical-timeline-component/style.min.css"
 import Markdown from "../components/markdown"
 
-function getComponentStyle(style) {
-  if (style === "color-1") {
-    return "#D5CB9A"
-  } else if (style === "color-2") {
-    return "rgb(250,133,29)"
-  } else if (style === "color-3") {
-    return "#252941"
+function getComponentStyle(style, it) {
+  if (it === 1) {
+    if (style === "color-1") {
+      return "#D5CB9A"
+    } else if (style === "color-2") {
+      return "#FEAE01"
+    } else if (style === "color-3") {
+      return "#574A85"
+    }
   } else {
     if (style === "color-1") {
       return "#131730"
