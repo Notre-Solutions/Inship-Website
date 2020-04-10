@@ -8,7 +8,7 @@ $margin-footer: 5%;
   bottom: 0;
   margin-top: 3rem;
   background-color: gray;
-  height: 21rem;
+  height: 23rem;
   position: relative;
   opacity: 0.8;
 
@@ -51,12 +51,13 @@ $margin-footer: 5%;
       color: white;
     }
 
-    .email-line {
+    .email-line, .website-line {
       color: black;
+      display: block;
       @include transition-ease;
     }
 
-    .email-line:hover {
+    .email-line:hover, .website-line:hover {
       color: white;
     }
   }

@@ -2,6 +2,7 @@
 templateKey: resourcesPage
 resourcesPage:
   title: Resources
+  backgroundimage: inship-mac.jpg
   titleBlurb: A flexible solution with backup.
   cards:
     - title: Intergration

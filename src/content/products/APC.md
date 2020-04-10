@@ -5,6 +5,7 @@ alias: APC
 url: 'https://youtu.be/RXKh4eDqsgs'
 featuredimage: /img/apc-logo.jpeg
 featuredpost: true
+backgroundimage: APC.jpg
 style: color-1
 id: 1
 description: >-

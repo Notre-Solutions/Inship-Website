@@ -2,6 +2,7 @@
 templateKey: automatePage
 automatePage:
   title: Why Automate
+  backgroundimage: automate-auto.jpg
   animationTitle: Process Flow
   newsTitle: News
   sectionC:

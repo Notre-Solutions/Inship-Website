@@ -1,55 +1,7 @@
+
 .header {
-  position: relative;
-  height: 95vh;
-
-  & > figure {
-    height: 95vh;
-    // background-image: url(../img/Main.jpg);
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    animation: imageAnimation 24s linear infinite 0s;
-    // backface-visibility: hidden;
-    background-size: cover;
-    color: transparent;
-    opacity: 0;
-
-    width: 100%;
-    z-index: 0;
-
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  }
-
-  & > figure:nth-child(1) {
-    background-image: url(../img/Main.jpg);
-    background-position: center;
-  }
-
-  & > figure:nth-child(2) {
-    animation-delay: 6s;
-    background-image: url(../img/Books.jpg);
-    background-position: left;
-  }
-
-  & > figure:nth-child(3) {
-    animation-delay: 12s;
-    background-image: url(../img/Main.jpg);
-    background-position: center;
-  }
-
-  & > figure:nth-child(4) {
-    animation-delay: 18s;
-    background-image: url(../img/Books.jpg);
-    background-position: left;
-  }
-
-  // & > figure:nth-child(5) {
-  //   animation-delay: 24s;
-  //   background-image: url(../img/Main.jpg);
-  // }
-
+  position: relative !important;
+  @include header-dimensions;
   &-text-box {
     position: absolute;
     text-align: center;

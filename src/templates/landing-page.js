@@ -9,7 +9,7 @@ import ReactModal from "../components/modal"
 import Player from "../components/player"
 import Animation from "../components/process-animation"
 import ProblemSection from "../components/problemSection"
-
+import SlidingBackground from "../components/header"
 function showSectionA(show, title, body, id, className, url) {
   if (show) {
     return (
@@ -122,25 +122,30 @@ const Landing = ({ data }) => {
   return (
     <>
       <Layout current={"Home"}>
-        <header className="header">
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-          <figure></figure>
-          <div className="header-text-box">
-            <h1 className="heading">
-              <span className="main-header">
-                IN<span className="bold">SHIP</span> APS
-              </span>
-              <span className="sub-header">{subtitle.line1}</span>
-              <span className="sub-header">{subtitle.line2}</span>
-              <span className="sub-header">{subtitle.line3}</span>
-            </h1>
-            <a href="#what-we-do" className="btn btn-white bottom">
-              {sectionA.title}
-            </a>
-          </div>
-        </header>
+        
+          <header className="header">
+          <SlidingBackground
+          images={[ "landing-optimised.jpg","landing-books.jpg"]}
+        >
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <figure></figure>
+            <div className="header-text-box">
+              <h1 className="heading">
+                <span className="main-header">
+                  IN<span className="bold">SHIP</span> APS
+                </span>
+                <span className="sub-header">{subtitle.line1}</span>
+                <span className="sub-header">{subtitle.line2}</span>
+                <span className="sub-header">{subtitle.line3}</span>
+              </h1>
+              <a href="#what-we-do" className="btn btn-white bottom">
+                {sectionA.title}
+              </a>
+            </div>
+        </SlidingBackground>
+          </header>
 
         <div id="what-we-do" className="main-page container">
           {showSectionA(

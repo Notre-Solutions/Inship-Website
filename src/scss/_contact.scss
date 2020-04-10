@@ -1,6 +1,6 @@
 .contact-page {
   .contact {
-    @include header-gb-no-color("../img/contact.jpg", "top");
+    @include header-dimensions;
 
     position: relative;
 

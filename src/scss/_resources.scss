@@ -1,13 +1,13 @@
 .resources {
   &-header {
-    @include header-gb-no-color("../img/inship-mac.jpg", "top");
+    @include header-dimensions;
     position: relative;
 
     &-text-box {
       position: absolute;
       text-align: center;
       top: 20%;
-      left: 2%;
+      left: -1%;
       width: 35%;
     }
 
@@ -36,8 +36,5 @@
       animation-duration: 3s;
       font-weight: 100;
     }
-  }
-
-  &-body {
   }
 }

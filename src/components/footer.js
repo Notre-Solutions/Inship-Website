@@ -35,6 +35,13 @@ const Footer = () => {
           >
             info@inshipaps.com
           </a>
+          <a
+            href="https://www.inship.ie"
+            className="website-line"
+            target="_blank"
+          >
+            www.inship.ie
+          </a>
         </div>
         <div>
           <div className="social-icons">

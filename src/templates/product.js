@@ -8,7 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.css"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SideNav from "../components/sidenav"
-
+import Background from "../components/header"
 function featureCard(style, feature) {
   return (
     <div className={`card dark-${style}`}>
@@ -119,6 +119,8 @@ const Product = ({ data }) => {
     url,
     productpage,
     featuredimage,
+    backgroundimage
+    
   } = data.markdownRemark.frontmatter
   const { timeline, features, customerReports, integrations } = productpage
   const {
@@ -129,7 +131,7 @@ const Product = ({ data }) => {
     sectionCTitles,
     sideNavBar,
   } = data.allMarkdownRemark.edges[0].node.frontmatter.productPageTemplate
-
+  
   return (
     <>
       <Layout current={alias} style={style}>
@@ -137,7 +139,9 @@ const Product = ({ data }) => {
 
         <div className="product-page">
           <header className={`product-header-${style}`}>
+            <Background images={[backgroundimage]}>
             {Heading(alias, style, title, description, featuredimage)}
+            </Background>
           </header>
           <div className="product-main container">
             <div id="process" className="product-main-section-a">
@@ -252,8 +256,8 @@ export const pageQuery = graphql`
             icon
             description
           }
-        }
-
+        } 
+        backgroundimage
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 100) {

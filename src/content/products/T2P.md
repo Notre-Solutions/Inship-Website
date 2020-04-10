@@ -4,6 +4,7 @@ title: Tick To Post
 alias: T2P
 url: 'https://youtu.be/RXKh4eDqsgs'
 featuredimage: /img/t2p-logo.jpeg
+backgroundimage: T2P.jpg
 featuredpost: true
 style: color-3
 id: 2

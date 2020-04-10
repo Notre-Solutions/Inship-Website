@@ -295,8 +295,14 @@ li {
   }
 }
 
+@mixin header-dimensions{
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
 @mixin productHeader($image, $posistion, $right, $top) {
-  @include header-gb-no-color($image, $posistion);
+  @include header-dimensions;
 
   position: relative;
 

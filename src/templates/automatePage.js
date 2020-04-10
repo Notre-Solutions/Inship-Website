@@ -6,11 +6,12 @@ import NewsCard from "../components/news-card"
 import Carousels from "../components/carousel"
 import Animation from "../components/process-animation"
 import Markdown from "../components/markdown"
+import Background from "../components/header"
 
 const Automate = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   const { automatePage } = data.markdownRemark.frontmatter
-  const { animationTitle, newsTitle, sectionB, sectionC } = automatePage
+  const { animationTitle, backgroundimage, newsTitle, sectionB, sectionC } = automatePage
   const { testimonials } = sectionB
 
   return (
@@ -18,6 +19,7 @@ const Automate = ({ data }) => {
       <Layout current={"Why Automate"}>
         <div className="automate-page">
           <section className="header">
+            <Background images={[backgroundimage]}>
             <div className="header-text-box">
               <h1 className="heading">
                 <div className="main-header">
@@ -35,6 +37,7 @@ const Automate = ({ data }) => {
                 <div class="circle"></div>
               </div>
             </div>
+            </Background>
           </section>
           <section className="section-animation">
             <div className="animation">
@@ -105,6 +108,7 @@ export const pageQuery = graphql`
           title
           animationTitle
           newsTitle
+          backgroundimage
           sectionB {
             title
             testimonials {

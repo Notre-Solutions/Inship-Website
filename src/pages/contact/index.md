@@ -2,6 +2,7 @@
 templateKey: contactPage
 contactPage:
   title: Contact
+  backgroundimage: contact.jpg
   subtitle: Us
   location:
     title: Location

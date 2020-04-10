@@ -7,6 +7,7 @@ productPageTemplate:
     title: Switching To Complete Accounts Payable Solutions
     subtitle: Customers Reported
   sectionDTitle: Integration Options
+  sectionDSubtitle: Our Way of Simplifying Your Life
   sectionETitle: How it Works
   sideNavBar:
     - name: Process

@@ -3,23 +3,28 @@ import "../css/main.css"
 import MyForm from "../components/form"
 import Layout from "../components/layout"
 import "@fortawesome/fontawesome-free/css/all.css"
-
-const Contact = ({data}) => {
+import Background from "../components/header"
+const Contact = ({ data }) => {
   const { contactPage } = data.markdownRemark.frontmatter
-  const {location, phone, email} = contactPage
+  const { location, phone, email, backgroundimage } = contactPage
   return (
     <>
       <Layout current={"Contact"}>
         <div className="contact-page">
           <header className="contact">
-            <div className="contact-text-box">
-              <h1 className="contact-header">
-                <div className="contact-main-header right">{contactPage.title}</div>
-                <div className="contact-main-header left">
-                {contactPage.subtitle} <i className="icon fa fa-phone 4x spin"></i>
-                </div>
-              </h1>
-            </div>
+            <Background images={[backgroundimage]}>
+              <div className="contact-text-box">
+                <h1 className="contact-header">
+                  <div className="contact-main-header right">
+                    {contactPage.title}
+                  </div>
+                  <div className="contact-main-header left">
+                    {contactPage.subtitle}{" "}
+                    <i className="icon fa fa-phone 4x spin"></i>
+                  </div>
+                </h1>
+              </div>
+            </Background>
           </header>
           <div className="container">
             <section className="section-a">
@@ -29,11 +34,11 @@ const Contact = ({data}) => {
                   <i className={`fas fa-${location.icon} icon`}></i>
                   <div className="addressContainer">
                     <div className="address">
-                    <div>{location.description.line1}</div>
-                    <div>{location.description.line2}</div>
-                    <div>{location.description.line3}</div>
-                    <div>{location.description.line4}</div>
-                    <div>{location.description.line5}</div>
+                      <div>{location.description.line1}</div>
+                      <div>{location.description.line2}</div>
+                      <div>{location.description.line3}</div>
+                      <div>{location.description.line4}</div>
+                      <div>{location.description.line5}</div>
                     </div>
                   </div>
                 </div>
@@ -42,7 +47,7 @@ const Contact = ({data}) => {
                   <h1 className="title">{phone.title}</h1>
                   <i className={`fas fa-${phone.icon} icon`}></i>
                   <a href="tel:+353 1 556 3499" className="phone-number">
-                  {phone.description}
+                    {phone.description}
                   </a>
                 </div>
                 <div className="card">
@@ -72,14 +77,14 @@ const Contact = ({data}) => {
 
 export default Contact
 
-
 export const contactQuery = graphql`
-  query ContactQuery($id: String!) { 
+  query ContactQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         contactPage {
           title
           subtitle
+          backgroundimage
           location {
             title
             icon
@@ -91,12 +96,12 @@ export const contactQuery = graphql`
               line5
             }
           }
-          phone{
+          phone {
             title
             icon
             description
           }
-          email{
+          email {
             title
             icon
             description

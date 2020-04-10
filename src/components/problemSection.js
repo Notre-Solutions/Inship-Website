@@ -9,6 +9,16 @@ export default class ProblemSection extends React.Component {
     super(props)
   }
 
+  renderLink(link) {
+    if (link !=="#") {
+      return (
+        <p class="read-more">
+          <a href={link}>Read More</a>
+        </p>
+      )
+    }
+  }
+
   section2(params) {
     let array = []
     params.forEach((element, i) => {
@@ -25,9 +35,7 @@ export default class ProblemSection extends React.Component {
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
               <Markdown markdown={element.description} />
-              <p class="read-more">
-                <a href="#">Read More</a>
-              </p>
+              {this.renderLink(element.link)}
             </div>
           </div>
         )
@@ -44,9 +52,7 @@ export default class ProblemSection extends React.Component {
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
               <Markdown markdown={element.description} />
-              <p class="read-more">
-                <a href="#">Read More</a>
-              </p>
+              {this.renderLink(element.link)}
             </div>
           </div>
         )
@@ -71,9 +77,7 @@ export default class ProblemSection extends React.Component {
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
               <Markdown markdown={element.description} />
-              <p class="read-more">
-                <a href="#">Read More</a>
-              </p>
+              {this.renderLink(element.link)}
             </div>
           </div>
         )
@@ -90,9 +94,7 @@ export default class ProblemSection extends React.Component {
               <h1>{element.title}</h1>
               <h2>{element.subtitle}</h2>
               <Markdown markdown={element.description} />
-              <p class="read-more">
-                <a href="#">Read More</a>
-              </p>
+              {this.renderLink(element.link)}
             </div>
           </div>
         )

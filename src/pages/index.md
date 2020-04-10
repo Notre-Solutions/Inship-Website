@@ -86,6 +86,7 @@ landingPage:
       - title: What we do
         subtitle: Providing the Technology behind Automated Accounts Payable Processes
         photo: photo-1
+        link: "#"
         description: >-
           InShip specializes in Accounts Payable plug-in solutions for
           accounting and enterprise resource planning (ERP) software. These
@@ -107,6 +108,7 @@ landingPage:
       - title: The Problem
         subtitle: Moving from Paper to Digital
         photo: photo-2
+        link: "#"
         description: >-
 
 
@@ -129,6 +131,7 @@ landingPage:
       - title: Solutions
         subtitle: Three Solutions Tailored for All Needs
         photo: photo-3
+        link: https://www.inshipaps.com/products/caps
         description: >-
           InShip has designed three solutions tailored for all needs which
           automates the AP process direct from e-mail or Drag and Drop (DND).
