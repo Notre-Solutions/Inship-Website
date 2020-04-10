@@ -596,8 +596,9 @@ li {
       font-size: 5rem; }
 
 .product-page .heading .header-color-3 {
+  margin-top: 1rem;
   padding: 1rem;
-  background-color: #202538df; }
+  background-color: #20253870; }
 
 .product-page .header-color-1,
 .product-page .text-box-color-1 {
@@ -1985,9 +1986,9 @@ li {
     color: #252941; }
   .c100.color-2 .bar,
   .c100.color-2 .fill {
-    border-color: #fa851d !important; }
+    border-color: #feae01 !important; }
   .c100.color-2:hover > span {
-    color: #fa851d; }
+    color: #feae01; }
 
 .player-wrapper {
   position: relative;

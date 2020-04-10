@@ -245,7 +245,7 @@ $primary-color-orange-dark: #e08833;
       }
     }
   }
-  &.color-1{
+  &.color-1 {
     .bar,
     .fill {
       border-color: $APC-dark !important;
@@ -255,31 +255,28 @@ $primary-color-orange-dark: #e08833;
         color: $APC-dark;
       }
     }
-
   }
-  &.color-3{
+  &.color-3 {
     .bar,
     .fill {
-      border-color: $T2P-bg!important;
+      border-color: $T2P-bg !important;
     }
     &:hover {
       > span {
         color: $T2P-bg;
       }
     }
-
   }
-  &.color-2{
+  &.color-2 {
     .bar,
     .fill {
-      border-color: $CAPS-dark  !important;
+      border-color: #feae01 !important;
       // border-color: rgb(0, 168, 180) !important;
     }
     &:hover {
       > span {
-        color: $CAPS-dark;
+        color: #feae01;
       }
     }
-
   }
 }
