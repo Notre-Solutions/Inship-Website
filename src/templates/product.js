@@ -53,16 +53,8 @@ function Heading(alias, style, title, description, featuredimage) {
     return (
       <div className={`header-text-box header-text-box-${style}`}>
         <h1 className="heading">
-          <span
-            className={`main-header header-${style}`}
-            style={{ color: "yellow" }}
-          >
-            {title}
-          </span>
-          <span
-            className={`sub-header header-${style}`}
-            style={{ color: "yellow" }}
-          >
+          <span className={`main-header header-${style}`}>{title}</span>
+          <span className={`sub-header header-${style}`}>
             <Markdown markdown={description} />
           </span>
         </h1>
@@ -88,18 +80,8 @@ function Heading(alias, style, title, description, featuredimage) {
               className="product-page-img-container-logo"
             />
           </div>
-          <span
-            className={`main-header header-${style}`}
-            style={{ color: "yellow" }}
-          >
-            {title}
-          </span>
-          <span
-            className={`sub-header header-${style}`}
-            style={{ color: "yellow" }}
-          >
-            {description}
-          </span>
+          <span className={`main-header header-${style}`}>{title}</span>
+          <span className={`sub-header header-${style}`}>{description}</span>
         </h1>
 
         <a href="#video" className={`btn-${style}`}>
@@ -119,8 +101,7 @@ const Product = ({ data }) => {
     url,
     productpage,
     featuredimage,
-    backgroundimage
-    
+    backgroundimage,
   } = data.markdownRemark.frontmatter
   const { timeline, features, customerReports, integrations } = productpage
   const {
@@ -131,7 +112,7 @@ const Product = ({ data }) => {
     sectionCTitles,
     sideNavBar,
   } = data.allMarkdownRemark.edges[0].node.frontmatter.productPageTemplate
-  
+
   return (
     <>
       <Layout current={alias} style={style}>
@@ -140,7 +121,7 @@ const Product = ({ data }) => {
         <div className="product-page">
           <header className={`product-header-${style}`}>
             <Background images={[backgroundimage]}>
-            {Heading(alias, style, title, description, featuredimage)}
+              {Heading(alias, style, title, description, featuredimage)}
             </Background>
           </header>
           <div className="product-main container">
@@ -256,7 +237,7 @@ export const pageQuery = graphql`
             icon
             description
           }
-        } 
+        }
         backgroundimage
         featuredimage {
           childImageSharp {
