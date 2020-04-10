@@ -25,6 +25,7 @@ const Layout = ({ children, images }) => (
       duration={6} // how long an image is shown
       // specify images to include (and their order) according to `relativePath`
       images={images} 
+      className='slide'
       // pass down standard element props
       
     > 

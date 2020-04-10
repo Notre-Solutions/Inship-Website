@@ -55,13 +55,13 @@ function Heading(alias, style, title, description, featuredimage) {
         <h1 className="heading">
           <span
             className={`main-header header-${style}`}
-            style={{ color: "yellow" }}
+            // style={{ color: "yellow" }}
           >
             {title}
           </span>
           <span
             className={`sub-header header-${style}`}
-            style={{ color: "yellow" }}
+            // style={{ color: "yellow" }}
           >
             <Markdown markdown={description} />
           </span>
@@ -90,13 +90,13 @@ function Heading(alias, style, title, description, featuredimage) {
           </div>
           <span
             className={`main-header header-${style}`}
-            style={{ color: "yellow" }}
+            // style={{ color: "yellow" }}
           >
             {title}
           </span>
           <span
             className={`sub-header header-${style}`}
-            style={{ color: "yellow" }}
+            // style={{ color: "yellow" }}
           >
             {description}
           </span>

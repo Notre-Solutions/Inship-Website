@@ -9,7 +9,7 @@ import Markdown from "../components/markdown"
 
 function getComponentStyle(style) {
   if (style === "color-1") {
-    return "#a67440"
+    return "#585759"
   } else if (style === "color-2") {
     return "rgb(250,133,29)"
   } else if (style === "color-3") {

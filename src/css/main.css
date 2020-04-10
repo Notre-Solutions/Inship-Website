@@ -798,7 +798,7 @@ li {
 
 .product-page .header-color-1,
 .product-page .text-box-color-1 {
-  color: #a67440;
+  color: #ded4a2;
 }
 
 .product-page .header-color-3,
@@ -817,7 +817,7 @@ li {
   font-size: 1.5rem;
   text-decoration: none;
   color: #14182f;
-  background-color: #a67440;
+  background-color: #ded4a2;
   padding: 1rem 3rem;
   -webkit-box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
           box-shadow: 1rem 1rem 2rem rgba(255, 255, 255, 0.2);
@@ -825,7 +825,8 @@ li {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   margin: 1rem;
-  color: white;
+  margin-top: 2rem;
+  color: black;
 }
 
 .product-page .btn-color-1:hover {
@@ -1047,7 +1048,7 @@ li {
 }
 
 .product-page .product-main .color-1 {
-  color: #a67440 !important;
+  color: #14182f !important;
 }
 
 .product-page .product-main .color-1-line {
@@ -1105,6 +1106,14 @@ li {
       grid-template-columns: 40% 40%;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
+}
+
+.product-page .product-main-section-b .cards .dark-color-1 h1 {
+  color: Black !important;
+}
+
+.product-page .product-main-section-b .cards .dark-color-1 .text-box {
+  color: #585759 !important;
 }
 
 .product-page .product-main-section-b .cards .card {
@@ -1227,6 +1236,13 @@ li {
   html {
     font-size: 8px;
   }
+  .resources .slide img {
+    -o-object-position: left !important;
+       object-position: left !important;
+  }
+  .resources-header-text-box {
+    left: 2% !important;
+  }
   .form .submit-btn {
     left: 37.5% !important;
     width: 25% !important;
@@ -1331,6 +1347,13 @@ li {
 @media screen and (max-width: 1024px) {
   html {
     font-size: 9px;
+  }
+  .resources .slide img {
+    -o-object-position: left !important;
+       object-position: left !important;
+  }
+  .resources-header-text-box {
+    left: 2% !important;
   }
   .side-nav {
     visibility: hidden;
@@ -1611,7 +1634,7 @@ li {
 }
 
 .nav .dropdown-content-color-1 {
-  background-color: #a67440 !important;
+  background-color: #585759 !important;
 }
 
 .nav .dropdown-content-color-2 {
@@ -1681,7 +1704,7 @@ li {
 }
 
 .nav .color-1 {
-  background: #a67440 !important;
+  background: #585759 !important;
 }
 
 .nav .color-3 {
@@ -2054,14 +2077,14 @@ li {
 .contact-page .section-a .card .email {
   text-decoration: none !important;
   padding: 0.4rem;
-  color: gray;
+  color: black;
   display: block;
   font-size: 2rem;
   font-weight: 100;
 }
 
 .contact-page .section-a .card .phone-number {
-  color: gray;
+  color: black;
   text-decoration: none !important;
   padding: 0.4rem;
   display: block;
@@ -2761,7 +2784,7 @@ li {
 }
 
 .c100.color-1:hover > span {
-  color: #a67440;
+  color: black;
 }
 
 .c100.color-3 .bar,

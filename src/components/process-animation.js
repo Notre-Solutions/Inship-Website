@@ -148,7 +148,7 @@ class Main extends Component {
         </div>
         <h2 className="manual-counter">{this.state.manualCounter}</h2>
         <div className="manual">
-          <h2>Manual Process</h2>
+          <h2>Manual</h2>
         </div>
         {iconStages.map(stage => {
           return animation(
@@ -219,7 +219,7 @@ class Main extends Component {
           )
         })}
         <div className="automated">
-          <h2>Automated Process</h2>
+          <h2>Automated</h2>
         </div>
         {fastIconStages.map(stage => {
           return animation(
@@ -347,7 +347,7 @@ function main2() {
   return (
     <div className="process-animation">
       <div className="manual">
-        <h2>Manual Process</h2>
+        <h2>Manual</h2>
       </div>
       {iconStages.map(stage => {
         return (
@@ -360,7 +360,7 @@ function main2() {
         )
       })}
       <div className="automated">
-        <h2>Automated Process</h2>
+        <h2>Automated</h2>
       </div>
       {transitionStages.map(stage => {
         return <div className={`pipe pipe-${stage}`} />
