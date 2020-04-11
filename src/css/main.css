@@ -1523,6 +1523,9 @@ li {
     visibility: hidden;
     display: none;
   }
+  .process-animation .content h3 {
+    width: 6rem !important;
+  }
   .process-animation .icon {
     width: 7.5rem !important;
     height: 7.5rem !important;
