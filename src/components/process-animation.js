@@ -234,12 +234,12 @@ class Main extends Component {
         })}
         {animation(
           `${container}7`,
-          animate([0, this.props.rl], [0, 0], [0, 1], [1, 1], delays[7], 19, 1),
+          animate([0, this.props.rl], [0, 0], [1, 1], [1, 1], delays[7], 19, 1),
           "fas fa-file-invoice"
         )}
         {animation(
           `${container}4`,
-          animate([0, 0], [0, this.props.ud], [0, 1], [1, 1], delays[4], 18, 2),
+          animate([0, 0], [0, this.props.ud], [1, 1], [1, 1], delays[4], 18, 2),
           "fas fa-file-invoice"
         )}
         {rightLeftStages.map(stage => {
