@@ -223,7 +223,7 @@ class Main extends Component {
             animate(
               [0, this.props.lr],
               [0, 0],
-              [0, 1],
+              [1, 1],
               [1, 1],
               delays[stage],
               18,
