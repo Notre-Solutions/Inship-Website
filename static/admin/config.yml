@@ -53,10 +53,13 @@ collections:
             {label: "Percentage", name: "percentage", widget: number, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
+         {label: "Integration Section", name: "integration", widget: "object", fields: [
+          {label: "Paragraph", name: "paragraph", widget: string, required: true},
           {label: "Integration Options", name: "integrations", widget: list, fields:[
             {label: "Icon", name: "icon", widget: string, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]}
+        ]}
       ]}
             
   - name: "pages"
@@ -111,9 +114,9 @@ collections:
                 {label: "Show?", name: show, widget: boolean, required: true, default: true}
               ]},
               {label: "Process Flow", name: sectionD, widget: object, fields:[
-                {label: "Title", name: title, widget: string, required: true},
-                {label: "Description", name: "description", widget: "markdown", required: true}
-                ]}
+              {label: "Title", name: title, widget: string, required: true},
+              {label: "Show?", name: "show", widget: boolean, required: true}
+              ]}
           ]}
           - {label: "Body", name: "name", widget: "markdown", required: false}
       - file: "src/content/product-template/index.md"

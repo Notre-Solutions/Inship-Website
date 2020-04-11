@@ -71,29 +71,33 @@ productpage:
       description: >-
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
         eligendi quia
-  integrations:
-    - icon: file
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.
-    - icon: calculator
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.
-    - icon: check-circle
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.
-    - icon: check-circle
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
-        perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
-        assumenda.
+  integration:
+    paragraph: >-
+      If you are able to provide API end points CAP's can update your system using these API end points.       If you are able to provide API end points CAP's can update your system using these API end points.
+       If you are able to provide API end points CAP's can update your system using these API end points.
+    integrations:
+      - icon: file
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
+      - icon: calculator
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
+      - icon: check-circle
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
+      - icon: check-circle
+        description: >-
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
+          eligendi quia, mollitia nobis eaque voluptates fugiat molestiae
+          perspiciatis cupiditate expedita temporibus neque modi velit nesciunt
+          assumenda.
 ---

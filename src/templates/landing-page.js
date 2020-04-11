@@ -37,6 +37,23 @@ function showSectionE(show, title, cards, slogan) {
   }
 }
 
+function showSectionF(show) {
+  if (show) {
+    return (
+      <>
+        <div className="animation">
+          <Animation />
+        </div>
+
+        <Link to="/automate">
+          {" "}
+          <div className="btn">Learn More</div>{" "}
+        </Link>
+      </>
+    )
+  }
+}
+
 function showSectionA(show, title, body, id, className, url) {
   if (show) {
     return (
@@ -145,16 +162,14 @@ const Landing = ({ data }) => {
     sectionE,
   } = data.markdownRemark.frontmatter.landingPage
   const edges = data.allMarkdownRemark.edges
-  console.log(data)
 
   return (
     <>
       <Layout current={"Home"}>
-        
-          <header className="header">
+        <header className="header">
           <SlidingBackground
-          images={[ "landing-optimised.jpg","landing-books.jpg"]}
-        >
+            images={["landing-optimised.jpg", "landing-books.jpg"]}
+          >
             <figure></figure>
             <figure></figure>
             <figure></figure>
@@ -172,8 +187,8 @@ const Landing = ({ data }) => {
                 {sectionA.title}
               </a>
             </div>
-        </SlidingBackground>
-          </header>
+          </SlidingBackground>
+        </header>
 
         <div id="what-we-do" className="main-page container">
           {showSectionE(
@@ -208,14 +223,7 @@ const Landing = ({ data }) => {
               fluid={data.images.edges[0].node.childImageSharp.fluid}
               className="prosses-img"
             />  */}
-            <div className="animation">
-              <Animation />
-            </div>
-
-            <Link to="/automate">
-              {" "}
-              <div className="btn">Learn More</div>{" "}
-            </Link>
+            {showSectionF(sectionD.show)}
           </div>
         </div>
       </Layout>
@@ -299,9 +307,8 @@ export const pageQuery = graphql`
             show
           }
           sectionD {
-            title
-            description
             show
+            title
           }
         }
       }

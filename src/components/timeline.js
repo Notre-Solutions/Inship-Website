@@ -7,25 +7,33 @@ import {
 import "react-vertical-timeline-component/style.min.css"
 import Markdown from "../components/markdown"
 
-function getComponentStyle(style) {
-  if (style === "color-1") {
-    return "#585759"
-  } else if (style === "color-2") {
-    return "rgb(250,133,29)"
-  } else if (style === "color-3") {
-    return "#252941"
+function getComponentStyle(style, it) {
+  if (it === 1) {
+    if (style === "color-1") {
+      return "#D5CB9A"
+    } else if (style === "color-2") {
+      return "#FEAE01"
+    } else if (style === "color-3") {
+      return "#574A85"
+    }
   } else {
-    return "black"
+    if (style === "color-1") {
+      return "#131730"
+    } else if (style === "color-2") {
+      return "#343536"
+    } else if (style === "color-3") {
+      return "#252941"
+    }
   }
 }
 
-function getTimelineElement(item, style) {
+function getTimelineElement(item, style, it) {
   var contentStyle = {
     color: "#fff",
     fontSize: "2.5rem",
     lineHeight: "120%",
   }
-  const background = getComponentStyle(style)
+  const background = getComponentStyle(style, it)
   contentStyle["background"] = background
 
   var arrowStyle = {
@@ -52,9 +60,9 @@ const TimeLine = ({ timeline, style }) => {
     <VerticalTimeline>
       {timeline.map((item, i) => {
         if (i % 2) {
-          return getTimelineElement(item, "black")
+          return getTimelineElement(item, style, 1)
         } else {
-          return getTimelineElement(item, style)
+          return getTimelineElement(item, style, 2)
         }
       })}
     </VerticalTimeline>

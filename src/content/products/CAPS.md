@@ -150,31 +150,34 @@ productpage:
       description: Error removal
     - percentage: 100
       description: Additional Data Capture
-  integrations:
-    - icon: link
-      description: >-
-        ##### API Data Transfer
+  integration:
+    paragraph: >-
+      If you are able to provide API end points CAP's can update your system using these API end points.
+    integrations:
+      - icon: link
+        description: >-
+          ##### API Data Transfer
 
 
-        If you are able to provide API end points CAP's can update your system
-        using these API end points.
-    - icon: file
-      description: >-
-        ##### CSV or other file format 
+          If you are able to provide API end points CAP's can update your system
+          using these API end points.
+      - icon: file
+        description: >-
+          ##### CSV or other file format 
 
 
-        We can provide a simple csv or file format output for a direct file
-        import.
-    - icon: check-circle
-      description: |-
-        ##### Desk Top App 
+          We can provide a simple csv or file format output for a direct file
+          import.
+      - icon: check-circle
+        description: |-
+          ##### Desk Top App 
 
-        A simple desk top app can be designed to link to two systems.
-    - icon: check-circle
-      description: >-
-        ##### ftp file transfer
+          A simple desk top app can be designed to link to two systems.
+      - icon: check-circle
+        description: >-
+          ##### ftp file transfer
 
 
-        A ftp file transfer can be put in place between the two system for
-        periodic file transfer.
+          A ftp file transfer can be put in place between the two system for
+          periodic file transfer.
 ---
