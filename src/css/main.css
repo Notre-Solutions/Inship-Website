@@ -3646,6 +3646,7 @@ li {
 }
 
 .process-animation {
+  z-index: -3;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3654,9 +3655,9 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 1rem;
-  background: black;
+  background: #14182f;
   margin: 2rem;
-  height: 70rem;
+  height: 80rem;
   width: 125rem;
 }
 
@@ -3694,7 +3695,7 @@ li {
 .process-animation .manual {
   position: absolute;
   color: white;
-  top: 24.5rem;
+  top: 34.5rem;
   font-size: 3rem;
   width: 50rem;
   left: 29.16%;
@@ -3703,26 +3704,33 @@ li {
 
 .process-animation .counter {
   position: absolute;
-  top: 20rem;
+  top: 23rem;
   z-index: 2;
+  width: 20rem;
+  padding: 1.5rem;
   line-height: 5rem;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: white;
+  line-height: 4rem;
   color: white;
 }
 
 .process-animation .counter h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .process-animation .counter h3 {
-  font-size: 2rem;
+  font-size: 2rem !important;
+  width: 100% !important;
 }
 
 .process-animation .counter-manual {
-  left: 1%;
+  left: 20rem;
 }
 
 .process-animation .counter-auto {
-  right: 1%;
+  right: 20rem;
 }
 
 .process-animation .automated {
@@ -3733,6 +3741,83 @@ li {
   width: 50rem;
   left: 29.16%;
   text-align: center;
+}
+
+.process-animation .arrow {
+  position: absolute;
+  z-index: -2;
+  font-size: 8rem;
+  color: #f7dba9;
+}
+
+.process-animation .arrow-0 {
+  top: 42.25rem;
+  left: 17.25%;
+  color: #85b385;
+}
+
+.process-animation .arrow-1 {
+  top: 42.25rem;
+  left: 37.25%;
+}
+
+.process-animation .arrow-2 {
+  top: 42.25rem;
+  left: 57.25%;
+  color: #85b385;
+}
+
+.process-animation .arrow-3 {
+  top: 42.25rem;
+  left: 77.25%;
+}
+
+.process-animation .arrow-4 {
+  font-size: 4rem;
+  top: 54rem;
+  left: 89.2%;
+}
+
+.process-animation .arrow-5 {
+  top: 59.75rem;
+  left: 17.25%;
+  color: #85b385;
+}
+
+.process-animation .arrow-6 {
+  top: 59.75rem;
+  left: 37.25%;
+}
+
+.process-animation .arrow-7 {
+  top: 59.75rem;
+  left: 57.25%;
+  color: #85b385;
+}
+
+.process-animation .arrow-8 {
+  top: 59.75rem;
+  left: 77.25%;
+}
+
+.process-animation .arrow-9 {
+  font-size: 10rem;
+  top: 5.5rem;
+  left: 24%;
+  color: #85b385;
+}
+
+.process-animation .arrow-10 {
+  font-size: 10rem;
+  top: 5.5rem;
+  left: 46.5%;
+}
+
+.process-animation .arrow-11 {
+  font-size: 10rem;
+  top: 5.5rem;
+  left: 69.5%;
+  color: #85b385;
 }
 
 .process-animation .icon {
@@ -3750,6 +3835,9 @@ li {
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
+  border-color: orange;
+  border-width: 0.5rem;
+  border-style: solid;
   background: #f3f3f3;
   border-radius: 10rem;
   padding: 0.5rem !important;
@@ -3759,73 +3847,78 @@ li {
 }
 
 .process-animation .icon-0 {
-  top: 32.5rem;
+  top: 42.5rem;
   left: 5rem;
 }
 
 .process-animation .icon-1 {
-  top: 32.5rem;
+  top: 42.5rem;
   left: 30rem;
 }
 
 .process-animation .icon-2 {
-  top: 32.5rem;
+  top: 42.5rem;
   left: 55rem;
 }
 
 .process-animation .icon-3 {
-  top: 32.5rem;
+  top: 42.5rem;
   right: 30rem;
 }
 
 .process-animation .icon-4 {
-  top: 32.5rem;
+  top: 42.5rem;
   right: 5rem;
 }
 
 .process-animation .icon-9 {
-  top: 50rem;
+  top: 60rem;
   left: 5rem;
 }
 
 .process-animation .icon-8 {
-  top: 50rem;
+  top: 60rem;
   left: 30rem;
 }
 
 .process-animation .icon-7 {
-  top: 50rem;
+  top: 60rem;
   left: 55rem;
+  border-color: green;
 }
 
 .process-animation .icon-6 {
-  top: 50rem;
+  top: 60rem;
   right: 30rem;
 }
 
 .process-animation .icon-5 {
-  top: 50rem;
+  top: 60rem;
   right: 5rem;
 }
 
 .process-animation .icon-10 {
   top: 7.5rem;
   left: 12rem;
+  border-color: green;
 }
 
 .process-animation .icon-11 {
   top: 7.5rem;
   left: 41rem;
+  border-color: orange;
 }
 
 .process-animation .icon-12 {
   top: 7.5rem;
   right: 41rem;
+  border-color: green;
 }
 
 .process-animation .icon-13 {
   top: 7.5rem;
   right: 12rem;
+  border-color: green;
 }
 
 .process-animation .content {
@@ -3843,11 +3936,12 @@ li {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .process-animation .content h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  width: 10rem;
 }
 
 .process-animation p {
@@ -3867,6 +3961,7 @@ li {
   position: absolute;
   margin: 2rem;
   padding: 1px;
+  z-index: -1;
   border-radius: 100rem;
   font-size: 0.5rem !important;
 }
@@ -3877,42 +3972,42 @@ li {
 }
 
 .process-animation .container-animation-0 {
-  top: 33.5rem;
+  top: 43.5rem;
   left: 0%;
 }
 
 .process-animation .container-animation-1 {
-  top: 33.5rem;
+  top: 43.5rem;
   left: 20%;
 }
 
 .process-animation .container-animation-2 {
-  top: 33.5rem;
+  top: 43.5rem;
   left: 40%;
 }
 
 .process-animation .container-animation-3 {
-  top: 33.5rem;
+  top: 43.5rem;
   left: 60%;
 }
 
 .process-animation .container-animation-4 {
-  top: 33.5rem;
+  top: 43.5rem;
   left: 80%;
 }
 
 .process-animation .container-animation-5 {
-  top: 51rem;
+  top: 61rem;
   left: 80%;
 }
 
 .process-animation .container-animation-6 {
-  top: 51rem;
+  top: 61rem;
   left: 60%;
 }
 
 .process-animation .container-animation-7 {
-  top: 51rem;
+  top: 61rem;
   left: 40%;
 }
 
@@ -3921,7 +4016,7 @@ li {
 }
 
 .process-animation .container-animation-8 {
-  top: 51rem;
+  top: 61rem;
   left: 20%;
 }
 

@@ -100,17 +100,17 @@ class Main extends Component {
     const icons = [
       "fas fa-file-invoice",
       "fas fa-print",
-      "fas fa-envelope-open-text",
+      "far fa-envelope",
       "fas fa-sort-amount-down",
       "fas fa-compress-arrows-alt",
-      "fas fa-thumbs-up",
+      "far fa-thumbs-up",
       "fas fa-laptop",
-      "fas fa-thumbs-up",
-      "fas fa-file-alt",
+      "far fa-thumbs-up",
+      "far fa-folder-open",
       "fas fa-balance-scale",
       "fas fa-file-invoice",
-      "fas fa-thumbs-up",
-      "fas fa-thumbs-up",
+      "far fa-thumbs-up",
+      "far fa-thumbs-up",
       "fas fa-cloud-upload-alt",
     ]
     const titles = [
@@ -138,22 +138,61 @@ class Main extends Component {
 
     return (
       <div className="process-animation">
+        <div className="arrow arrow-0">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <div className="arrow arrow-1">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <div className="arrow arrow-2">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <div className="arrow arrow-3">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <div className="arrow arrow-4">
+          <i class="fas fa-long-arrow-alt-down"></i>
+        </div>
+        <div className="arrow arrow-5">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div className="arrow arrow-6">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div className="arrow arrow-7">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div className="arrow arrow-8">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </div>
+        <div className="arrow arrow-9">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <div className="arrow arrow-10">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        <div className="arrow arrow-11">
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+        
+        <div className="line line-1">
+          
+        </div>
         <div className="content counter counter-manual">
           <h2>{this.state.manualCounter}</h2>
-          <h3>Manual Invoices</h3>
+          <h3>Processed Manually</h3>
         </div>
         <div className="content counter counter-auto">
           <h2>{this.state.autoCounter}</h2>
-          <h3>Auto Invoices</h3>
+          <h3>Processed Automatically</h3>
         </div>
-        <h2 className="manual-counter">{this.state.manualCounter}</h2>
         <div className="manual">
           <h2>Manual</h2>
         </div>
         {iconStages.map(stage => {
           return animation(
             `${icon}${stage}`,
-            animate([1, 1], [1, 1], [1, 1], [0.75, 1], delays[stage], 20, 2),
+            animate([1, 1], [1, 1], [1, 1], [0.75, 1], delays[stage], 18, 2),
             icons[stage],
             titles[stage]
           )
@@ -166,7 +205,7 @@ class Main extends Component {
             [1, 1],
             [0.75, 1],
             delays[9],
-            20,
+            18,
             2
           )}
           initial="hidden"
@@ -187,7 +226,7 @@ class Main extends Component {
               [0, 1],
               [1, 1],
               delays[stage],
-              20,
+              18,
               2
             ),
             "fas fa-file-invoice"
@@ -195,12 +234,12 @@ class Main extends Component {
         })}
         {animation(
           `${container}7`,
-          animate([0, this.props.rl], [0, 0], [0, 1], [1, 1], delays[7], 21, 1),
+          animate([0, this.props.rl], [0, 0], [0, 1], [1, 1], delays[7], 19, 1),
           "fas fa-file-invoice"
         )}
         {animation(
           `${container}4`,
-          animate([0, 0], [0, this.props.ud], [0, 1], [1, 1], delays[4], 20, 2),
+          animate([0, 0], [0, this.props.ud], [0, 1], [1, 1], delays[4], 18, 2),
           "fas fa-file-invoice"
         )}
         {rightLeftStages.map(stage => {
@@ -212,7 +251,7 @@ class Main extends Component {
               [1, 1],
               [1, 1],
               delays[stage],
-              20,
+              18,
               2
             ),
             "fas fa-file-invoice"
@@ -230,7 +269,7 @@ class Main extends Component {
               [1, 1],
               [0.75, 1],
               quickDelays[stage - 10],
-              5,
+              4,
               1
             ),
             icons[stage],
@@ -245,7 +284,7 @@ class Main extends Component {
             [1, 1],
             [0.75, 1],
             quickDelays[3],
-            5,
+            4,
             1
           )}
           initial="hidden"
@@ -265,7 +304,7 @@ class Main extends Component {
             [1, 1],
             [1, 1],
             quickDelays[0],
-            5,
+            4,
             1
           ),
           "fas fa-file-invoice"
@@ -278,7 +317,7 @@ class Main extends Component {
             [1, 1],
             [1, 1],
             quickDelays[1],
-            4,
+            3,
             2
           ),
           "fas fa-file-invoice"
@@ -291,7 +330,7 @@ class Main extends Component {
             [1, 1],
             [1, 1],
             quickDelays[2],
-            5,
+            4,
             1
           ),
           "fas fa-file-invoice"
@@ -306,24 +345,25 @@ class Main extends Component {
       </div>
     )
   }
+  Î
 }
 function main2() {
   const container = "container-animation container-animation-"
   const icon = "icon icon-"
   const icons = [
-    "fas fa-file-invoice",
+    "far fa-file-alt",
     "fas fa-print",
-    "fas fa-envelope-open-text",
+    "far fa-envelope",
     "fas fa-sort-amount-down",
     "fas fa-compress-arrows-alt",
-    "fas fa-thumbs-up",
+    "far fa-thumbs-up",
     "fas fa-laptop",
-    "fas fa-thumbs-up",
-    "fas fa-file-alt",
+    "far fa-thumbs-up",
+    "far fa-folder-open",
     "fas fa-balance-scale",
     "fas fa-file-invoice",
-    "fas fa-thumbs-up",
-    "fas fa-thumbs-up",
+    "far fa-thumbs-up",
+    "far fa-thumbs-up",
     "fas fa-cloud-upload-alt",
   ]
   const titles = [

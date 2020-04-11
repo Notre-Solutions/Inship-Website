@@ -5,19 +5,20 @@
 }
 
 .process-animation {
-  $first-row: 32.5rem;
-  $second-row: 50rem;
+  $first-row: 42.5rem;
+  $second-row: 60rem;
   $third-row: 7.5rem;
   $col-1: 5rem;
   $col-2: 30rem;
   $col-3: 55rem;
+  z-index: -3;
   position: relative;
   display: flex;
   justify-content: center;
   border-radius: 1rem;
-  background: black;
+  background: $APC-bg;
   margin: 2rem;
-  height: 70rem;
+  height: 80rem;
   width: 125rem;
   .keys {
     position: absolute;
@@ -48,26 +49,31 @@
     width: 50rem;
     left: 29.16%;
     text-align: center;
-    
   }
   .counter {
     position: absolute;
-    top: 20rem;
+    top: 23rem;
     z-index: 2;
+    width: 20rem;
+    padding: 1.5rem;
     line-height: 5rem;
-
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: white;
+    line-height: 4rem;
     color: white;
     h2 {
-      font-size: 5rem;
+      font-size: 4rem;
     }
     h3 {
-      font-size: 2rem;
+      font-size: 2rem !important;
+      width: 100% !important;
     }
-    &-manual{
-      left: 1%;
+    &-manual {
+      left: 20rem;
     }
-    &-auto{
-      right: 1%;
+    &-auto {
+      right: 20rem;
     }
   }
   .automated {
@@ -79,6 +85,70 @@
     left: 29.16%;
     text-align: center;
   }
+  .arrow {
+    position: absolute;
+    z-index: -2;
+    font-size: 8rem;
+    color: rgb(247, 219, 169);
+    &-0 {
+      top: $first-row - 0.25rem;
+      left: 17.25%;
+      color: rgb(133, 179, 133);
+    }
+    &-1 {
+      top: $first-row - 0.25rem;
+      left: 37.25%;
+    }
+    &-2 {
+      top: $first-row - 0.25rem;
+      left: 57.25%;
+      color: rgb(133, 179, 133);
+    }
+    &-3 {
+      top: $first-row - 0.25rem;
+      left: 77.25%;
+    }
+    &-4 {
+      font-size: 4rem;
+      top: $first-row + 11.5rem;
+      left: 89.2%;
+    }
+    &-5 {
+      top: $second-row - 0.25rem;
+      left: 17.25%;
+      color: rgb(133, 179, 133);
+    }
+    &-6 {
+      top: $second-row - 0.25rem;
+      left: 37.25%;
+    }
+    &-7 {
+      top: $second-row - 0.25rem;
+      left: 57.25%;
+      color: rgb(133, 179, 133);
+    }
+    &-8 {
+      top: $second-row - 0.25rem;
+      left: 77.25%;
+    }
+    &-9 {
+      font-size: 10rem;
+      top: $third-row - 2rem;
+      left: 24%;
+      color: rgb(133, 179, 133);
+    }
+    &-10 {
+      font-size: 10rem;
+      top: $third-row - 2rem;
+      left: 46.5%;
+    }
+    &-11 {
+      font-size: 10rem;
+      top: $third-row - 2rem;
+      left: 69.5%;
+      color: rgb(133, 179, 133);
+    }
+  }
   .icon {
     width: 15rem;
     height: 12rem;
@@ -86,6 +156,9 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    border-color: orange;
+    border-width: 0.5rem;
+    border-style: solid;
     background: $grey-light;
     border-radius: 10rem;
     padding: 0.5rem !important;
@@ -123,6 +196,7 @@
     &-7 {
       top: $second-row;
       left: $col-3;
+      border-color: green;
     }
     &-6 {
       top: $second-row;
@@ -135,21 +209,25 @@
     &-10 {
       top: $third-row;
       left: 12rem;
+      border-color: green;
     }
 
     &-11 {
       top: $third-row;
       left: 41rem;
+      border-color: orange;
     }
 
     &-12 {
       top: $third-row;
       right: 41rem;
+      border-color: green;
     }
 
     &-13 {
       top: $third-row;
       right: 12rem;
+      border-color: green;
     }
   }
 
@@ -159,9 +237,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     h3 {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      width: 10rem;
     }
   }
   p {
@@ -180,6 +259,7 @@
     position: absolute;
     margin: 2rem;
     padding: 1px;
+    z-index: -1;
     border-radius: 100rem;
     font-size: 0.5rem !important;
 
