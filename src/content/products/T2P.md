@@ -55,15 +55,13 @@ productpage:
       description: Data can be transferred immediately or by batch.
   customerReports:
     - percentage: 90
-      description: T2P reduces the time involved handling suppliers invoices by 90%.
-    - percentage: 15
-      description: >-
-        Finding old invoices, is reduced to 15% of the time it takes to find
-        from paper files
-    - percentage: 99
-      description: Errors can be reduced by 99%.
+      description: T2P reduces the invoice handling time by 90%
+    - percentage: 85
+      description: Time spent searching for old invoices is reduced by 85%
+    - percentage: 89
+      description: Errors are reduced by 89%
     - percentage: 80
-      description: You can save 80% of the paper invoices in a business.
+      description: An 80% reduction in paper used and stored
   integration:
     paragraph: >-
       If you are able to provide API end points CAP's can update your system
