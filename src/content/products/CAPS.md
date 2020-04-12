@@ -1,18 +1,18 @@
 ---
 templateKey: product
+backgroundimage: CAPS.jpg
 title: Complete Accounts Payable Solutions
 alias: CAPS
 url: 'https://www.youtube.com/watch?v=1el1FR1d1R4'
 featuredimage: /img/caps-logo-3.jpeg
-backgroundimage: CAPS.jpg
 featuredpost: true
 style: color-2
 id: 3
 description: >-
-  CAPs is a fully functional accounts payable department online. Allowing
-  businesses to customise many aspects of the process including approval,
-  routing and coding rules. The full systems includes po matching at line
-  level,statement reconciliation and many other features.
+  CAPs is a fully functional accounts payable department, online. CAPs allows
+  businesses to customise many aspects of the process from approval to automatic
+  invoice coding. CAPs boasts impressive features such as PO matching at line
+  level, statement reconciliation and many more.
 features:
   feature1: 15 Users
   feature2: true
@@ -105,42 +105,23 @@ productpage:
         CAPs had various was it can handle issues with invoices this can be
         customised globally.
   timeline:
-    - title: Supplier/User Forwards Document
+    - title: Receiving Documents
       description: >-
-        Invoice and other documents such as Credit Notes or Statements can be
-        emailed or DnD into CAPs.
-    - title: Document Processing
+        Invoices and credit notes are e-mailed by the user or it's suppliers to
+        a dedicated e-mail address, alternatively any user can DnD documents
+        into CAPs.
+    - title: Processing Documents
       description: >-
         Once a new document is received, CAPs identifies the document,
-        automatically captures the required information, sets it's coding rules
-        and it's workflow.
-    - title: Approval Workflow
+        automatically capturing the required information and setting it's coding
+        rules.
+    - title: Matching and Approval
       description: >-
-        Documents are forward for approval, this can be a simple or a complex
-        process, based on a businesses needs and it be automate, based on
-        different factors.
-    - title: Automatically Matching to PO/GRN
-      description: Invoices are automatically matched to PO/GRNS.
-    - title: One Click to Approve and Process
-      description: >-
-        When the only or final approver clicks approved all accounting for the
-        invoice is complete and it is ready for bulk upload.
-    - title: Bulk Approval
-      description: >-
-        Both GL and PO invoices can be bulk approved, this leads to ten's or
-        hundreds of invoices being processed with a couple of clicks.
+        Based on a company's needs, document approval can be simple or complex.
+        The system allows for single or bulk document approval, PO matching,
+        mobile approval and authorisation levels.
     - title: Bulk Upload
-      description: >-
-        Invoices are uploaded in bulk, this can be manual, timed or automatic
-        based on your systems needs.
-    - title: Statement Reconciliation
-      description: >-
-        CAPs reconciles your suppliers statement against processed invoices with
-        one click. A copy of any missing invoices will be immediately requested.
-    - title: Search and Storage
-      description: >-
-        CAP's can stores all processed invoices for 7 years and provides an
-        extensive search facility for users with many options.
+      description: Files are transferred to your accounts/ERP system.
   customerReports:
     - percentage: 90
       description: Time saving
@@ -152,7 +133,8 @@ productpage:
       description: Additional Data Capture
   integration:
     paragraph: >-
-      If you are able to provide API end points CAP's can update your system using these API end points.
+      If you are able to provide API end points CAP's can update your system
+      using these API end points.
     integrations:
       - icon: link
         description: >-
