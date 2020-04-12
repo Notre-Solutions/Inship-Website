@@ -1,18 +1,18 @@
 ---
 templateKey: product
+backgroundimage: T2P.jpg
 title: Tick To Post
 alias: T2P
 url: 'https://youtu.be/RXKh4eDqsgs'
 featuredimage: /img/t2p-logo.jpeg
-backgroundimage: T2P.jpg
 featuredpost: true
 style: color-3
 id: 2
 description: >-
-  T2P. With T2P we provide a simple online portal allowing users to review,
-  approve and edit invoices before they push the invoice and/or the extract data
-  to your system. T2P will be customised and re-branded  to match with your
-  accounts system.
+  T2P provides a simple online portal allowing users to review, approve and edit
+  invoices before they push the invoice and/or the extract data to your accounts
+  system. T2P is customizable and will be re-branded to match with your accounts
+  system.
 features:
   feature1: 12 Users
   feature2: true
@@ -20,45 +20,39 @@ features:
   feature4: true
 productpage:
   features:
-    - title: Easy to use
+    - title: Easy of Use
       description: >-
-        Users simply email in invoices or have the suppliers send the invoices
-        in by email. There is a dnd option and a portal can be added.
-    - title: Simple Clear Display
+        Users or suppliers simply e-mail invoices into the system. Alternatively
+        they can use the DnD option.
+    - title: Clear Display
       description: >-
-        T2P is designed to allow a user to complete all operations on one page.
-        The page is split into 3 section. Invoices to approve, the current
-        invoice and data extracted from the current invoice.
-    - title: Search and Storage
+        All actions can be completed on the one page which displays invoices for
+        approval, the selected invoice and data extracted from said invoice.
+    - title: Search & Storage
       description: >-
-        T2P provides a fast and simple search process allowing users to find
-        invoices fast. Storage period is based on agreement.
+        All documents are saved for an agreed storage period meaning users can
+        easily search for past documents.
     - title: Localisation
       description: >-
-        T2P as part of our setup we localise data extraction to meet each
-        markets needs.
+        T2P can be localised to deal with different languages, tax regimes and
+        data capture requirements.
     - title: Customised Screen Design
-      description: >-
-        We will customise the screen design to match with your system. The
-        layout will also be adjusted to meet local needs.
+      description: T2P is customised to fit effortlessly into your current system.
   timeline:
-    - title: Supplier/User Forwards Document
+    - title: Receiving Documents
       description: >-
-        Invoice and other documents such as Credit Notes or Statements can be
-        emailed or DnD into Tick to Post.
-    - title: Document Processing
+        Invoices and credit notes are e-mailed by the user or it's suppliers to
+        a dedicated e-mail address, alternatively any user can DnD documents
+        into APC.
+    - title: Processing Documents
       description: >-
-        Once a new document is received, APC identifies the document,
-        automatically captures the required information, sets it's coding rules
-        and sends for Approval.
-    - title: Single and Bulk Approval
-      description: >-
-        Users view their invoices and can approve and/or edit them in bulk or
-        one by one.
-    - title: Upload to your system
-      description: >-
-        After approval based in the technology invoice data can be transferred
-        right away or a bulk upload may be completed.
+        After receiving a new document, T2P identifies the document,
+        automatically capturing the required information and setting it's coding
+        rules.
+    - title: Approving Documents
+      description: Users approve and edit documents one by one or in bulk.
+    - title: Uploading Documents
+      description: Data can be transferred immediately or by batch.
   customerReports:
     - percentage: 90
       description: T2P reduces the time involved handling suppliers invoices by 90%.
@@ -72,10 +66,11 @@ productpage:
       description: You can save 80% of the paper invoices in a business.
   integration:
     paragraph: >-
-      If you are able to provide API end points CAP's can update your system using these API end points.
-    integrations: 
+      If you are able to provide API end points CAP's can update your system
+      using these API end points.
+    integrations:
       - icon: file
-        paragraph: 
+        paragraph: null
         description: >-
           ##### API Data Transfer 
 
