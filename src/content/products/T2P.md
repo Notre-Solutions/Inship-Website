@@ -43,7 +43,7 @@ productpage:
       description: >-
         Invoices and credit notes are e-mailed by the user or it's suppliers to
         a dedicated e-mail address, alternatively any user can DnD documents
-        into APC.
+        into T2P.
     - title: Processing Documents
       description: >-
         After receiving a new document, T2P identifies the document,
