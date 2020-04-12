@@ -41,22 +41,14 @@ productpage:
         Using agreed methods, the invoice image and the relevant extracted data
         is forwarded to your system.
   customerReports:
-    - percentage: 70
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
+    - percentage: 81
+      description: Reduces paper handling by 81%
     - percentage: 93
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
+      description: Reduces document processing time by 93%
     - percentage: 89
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
+      description: Error reduction of 89%
     - percentage: 100
-      description: >-
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium,
-        eligendi quia
+      description: Reduces document storage by 100%
   integration:
     paragraph: >-
       If you are able to provide API end points CAP's can update your system
