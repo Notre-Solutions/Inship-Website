@@ -20,55 +20,48 @@ features:
   feature4: true
 productpage:
   features:
-    - title: Removal of Paper
+    - title: Paper Elimination
       description: >-
-        Invoices are simply emailed into the system. Direct form the supplier or
-        the user can also DnD invoices.
-    - title: User Defined Data Capure
-      description: Data capture is automatic but can be simply modified by users.
+        Documents are e-mailed or uploaded to the system via DnD, removing all
+        previous paper handling requirements.
+    - title: User Defined Data Capture
+      description: >-
+        Data is captured automatically and the data capture requirements can
+        easily be modified by the user. Capture fields can be added, edited and
+        deleted.
     - title: Issue Checking
       description: >-
-        CAPs comes with standard issue checks but these can be modified at both
-        a globally or/and group level.
-    - title: Routing of Documents
+        CAPs comes with standard issue checks that can be modified at both a
+        global or/and group level.
+    - title: Document Routing
       description: >-
-        CAPs includes a workflow process mirroring both simple and complex
-        process which meets most businesses needs
-    - title: Auto Routing
+        CAPs includes a workflow process that can mirror and automate both
+        simple and complex process flows to meet any businesses needs.
+    - title: Auto-Routing
       description: >-
-        Workflow can be defined by supplier codes, general ledger codes,
-        delivery address, project code etc etc.
-    - title: Purchase Order/Goods Received Note Matching
+        Workflow can be automated by supplier codes, general ledger codes,
+        delivery address, project code etc.
+    - title: PO and GRN Matching
       description: >-
-        CAPs can match invoices to PO's based or GRN's at a total or a line by
-        line level. Delivery, discounts and various surcharges can also be
-        handled.
+        CAPs can match invoices to purchase orders (POs) or goods received notes
+        (GRNs) at a total or a line by line level. Delivery, discounts and
+        various surcharges can also be handled.
     - title: General Ledger Coding
-      description: >-
-        CAP's can auto code invoices based on the supplier, delivery address,
-        project or other codes and invoices line item, These features can be
-        combined for complex auto coding.
+      description: CAPs can auto code invoices based on multiple factors.
     - title: Line by Line Data Capture
       description: >-
-        CAPs can auto capture the line items on invoices for coding, reporting
-        and searching.
-    - title: Workflow
-      description: >-
-        Invoices can be automatically and manually routed for approval or send
-        back to suppliers is there any issues. All with a full audit trail.
+        CAPs can auto capture line items on invoices for coding, reporting and
+        searching purposes.
     - title: Approval
       description: >-
-        Standard approval screen, with globally customization views, packed with
-        information but clearly laid out. One click can both approve an invoice
-        and complete all the accounting for it.
-    - title: Bulk Invoices Approvals
+        Documents can be easily approved with one click with all relevant
+        information displayed on screen.
+    - title: Bulk Approvals
       description: >-
-        Both PO and GL invoices can be review by bulk to reduce the processing
-        time even more.
+        All documents from one supplier or all PO matched documents can be
+        approved at once.
     - title: Approval Limits
-      description: >-
-        CAPs comes with approval limits which can be set at a user by user
-        level.
+      description: A user limit may be set o
     - title: Comments
       description: >-
         Various types of comments can be added to invoices, including manual,
@@ -104,6 +97,8 @@ productpage:
       description: >-
         CAPs had various was it can handle issues with invoices this can be
         customised globally.
+    - title: Mobile Approval
+      description: ewerwet
   timeline:
     - title: Receiving Documents
       description: >-
