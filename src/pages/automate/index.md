@@ -46,13 +46,13 @@ automatePage:
   sectionB:
     title: Testimonials
     testimonials:
-      - title: best in 25 years
+      - title: '"..best in 25 years"'
         stars: 4
         name: Damian - Recycle Company
         description: >-
-          InShip is the best software solution I have ever used in my 25 years
-          plus experience in Finance/Accountancy.
-      - title: we find Inship an intuitive
+          INSHIP is the best software solution I have used in my 25 years plus
+          experience in Finance/Accountancy.
+      - title: '"We find INSHIP intuitive"'
         stars: 4
         name: Gemma - Hotel Group
         description: >-
@@ -60,52 +60,82 @@ automatePage:
           the need to manually enter hundreds of invoices per month. Our month
           end process has become much more efficient as a result. Highly
           Recommended!
-      - title: "we love InShip "
+      - title: '"We love INSHIP" '
         stars: 4
         name: Helen - Hire Group
         description: >-
-          We love InShip its design is so simple to use and now I have full
+          We love INSHIP, its design is so simple to use and now I have full
           control of our spend and recharges. Their statements reconciliation
-          aid speeds up our month end. I have no problem recommending InShip to
-          anyone.
-      - title: love using InShip
+          aid speeds up our month end. I would recommend INSHIP to everyone.
+      - title: '"Our operators love using the system"'
         stars: 4
         name: Walter - High Volume Service Company
         description: >-
-          In the first few weeks after we started to use InShip, I was really
+          In the first few weeks after we started to use INSHIP, I was really
           surprised to hear that we were processing over 400 documents in a week
-          - Our operators love using the system!
-      - title: " InShip made it so simple"
+          - our operators love using the system!
+      - title: ' "INSHIP made it so simple!"'
         stars: 4
         name: Nicola - Maintenance
-        description: "We have a complex process, InShip made it so simple"
-      - title: easy to use
+        description: We have a complex process and INSHIP made it so simple!
+      - title: '"...easy to us"'
         stars: 4
         name: Sophia - Transport Company
         description: >-
-          My staff find the system easy to use we really love the statement
+          My staff find the system easy to use; we really love the statement
           reconciliation.
-      - title: it’s that simple
+      - title: '"It’s that simple!"'
         stars: 4
         name: Trish - Restaurant
-        description: Our suppliers just email our invoices to InShip it’s that simple.
+        description: Our suppliers just email our invoices to INSHIP - it’s that simple!
   sectionD:
     - title: UK Maintenance Company
       theIssue: >-
-        From its maintenance hub, this UK company supports over 5000 assets using a network of 250 suppliers located throughout the country, and handles 60 daily breakdowns, 100 services and 20 annual checks.
+        From its maintenance hub, this UK company supports over 5000 assets
+        using a network of 250 suppliers located throughout the country, and
+        handles 60 daily breakdowns, 100 services and 20 annual checks.
       theBrief: >-
-        A system was required that could correctly deal with all the company’s supplier invoices and proforma invoices. The system also needed to automatically compare these invoices to purchase orders. The company also wanted the system to automatically recognise and store backup service documentation to meet regulatory requirements.
+        A system was required that could correctly deal with all the company’s
+        supplier invoices and proforma invoices. The system also needed to
+        automatically compare these invoices to purchase orders. Additionally,
+        they required us to automatically recognise and store backup service
+        documentation to meet regulatory requirements.
       theSolution: >-
-        The INSHIP model can be tailored to meet any customer need. For this customer, INSHIP added additional document types to the system, while providing additional routing for these non-standard documents. Now the company’s suppliers email their own standard documents to an INSHIP email account. INSHIP extracts the documents and forwards the backup documents to a searchable file. Matching invoices are automatically approved while unmatched invoices and proforma invoices are forwarded for approval or rejection - all while keeping the supplier informed as to how each invoice is progressing.
+        The INSHIP model can be tailored to meet any customer need. For this
+        customer, INSHIP added additional document types to the system, while
+        providing new routing for these non-standard documents. Now the
+        company’s suppliers e-mail their own standard documents to an INSHIP
+        e-mail account. INSHIP extracts the documents and forwards the backup
+        documents to a searchable file. Matching invoices are automatically
+        approved while unmatched invoices and proforma invoices are forwarded
+        for approval or rejection - all while keeping the supplier informed as
+        to how each invoice is progressing.
       clientFeedback: >-
-        “In the first few weeks after we started to use INSHIP, I was really surprised to hear that we were processing over 400 documents in a week - the system worked so well it really felt like 100 or less! Operators love using the system. It allows them to work in a structured way and to communicate with their colleagues and suppliers painlessly. We were surprised and delighted that INSHIP could integrate with our bespoke accounts system.”
+        “In the first few weeks after we started to use INSHIP, I was really
+        surprised to hear that we were processing over 400 documents in a week -
+        the system worked so well it really felt like 100 or less! Operators
+        love using the system. It allows them to work in a structured way and to
+        communicate with their colleagues and suppliers painlessly. We were
+        surprised and delighted that INSHIP could integrate with our bespoke
+        accounts system.”
     - title: Irish Hire Company
       theIssue: >-
-        The company is a medium size hire company which receives approximately 400 invoices a month.
+        The company is a medium size hire company which receives approximately
+        400 invoices a month.
       theBrief: >-
-        The Managing Director (MD) required the ability to approve invoices from a number of suppliers once they had been actioned by her staff. This was to ensure all tasks had been completed correctly.
+        The Managing Director (MD) required the ability to approve invoices from
+        a number of suppliers once they had been actioned by her staff. This was
+        to ensure all tasks had been completed correctly.
       theSolution: >-
-        Using the standard INSHIP system, we advised this client to activate the ‘last approver’ option. This will ensure that any document (even those with a number of approvers, including the MD herself) may be reviewed lastly by the MD who is now able to confirm that the correct actions have been taken.
+        Using the standard INSHIP system, we advised this client to activate the
+        ‘last approver’ option. This will ensure that any document (even those
+        with a number of approvers, including the MD herself) may be reviewed
+        lastly by the MD who is now able to confirm that the correct actions
+        have been taken.
       clientFeedback: >-
-        “Now I know the process is being followed, I can see who is doing what. My staff find the system really easy to use and the automatic statement reconciliation has improved our month end accounts. INSHIP is saving the company money each week by ensuring all charges are dealt with correctly.”
+        “Now I know the process is being followed, I can see who is doing what.
+        My staff find the system really easy to use and the automatic statement
+        reconciliation has improved our month end accounts. INSHIP is saving the
+        company money each week by ensuring all charges are dealt with
+        correctly.”
 ---
