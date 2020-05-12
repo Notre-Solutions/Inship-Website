@@ -8,7 +8,7 @@ landingPage:
   sectionE:
     title: 'How INSHIP works:'
     show: true
-    slogon: It really is that simple....and it works.
+    slogon: It really is that simple...and it works.
     cards:
       - icon: envelope
         title: Step 1
@@ -16,7 +16,7 @@ landingPage:
       - icon: copy
         title: Step 2
         text: >-
-          INSHIP takes over. The system simply extracts the invoices and then
+          INSHIP takes over: the system simply extracts the invoices and then
           codes, processes, distributes and stores it.
       - icon: balance-scale
         title: Step 3
@@ -45,7 +45,7 @@ landingPage:
       meet your customers needs. These range from a simple A.I. data extraction
       that can be added as a hidden module to any accounts package to a full
       Accounts Payable solution system that can be tailored to meet the needs of
-      most medium and large business.
+      most medium and large businesses.
   sectionB:
     title: The Problem
     show: false
@@ -131,8 +131,6 @@ landingPage:
         readMore: '#'
         showReadMore: true
         description: >-
-
-
           Accounts Payable is timely and expensive; processing one invoice or
           bill can include as many as ten steps, costing approximately €4.50
           (source: pwc).  If a business automates this process, 80-90% of that
@@ -140,7 +138,7 @@ landingPage:
 
 
           The current paper based system of handling documents comes with an
-          array of issues. Documents must be stored, managed and matched. Over
+          array of issues; documents must be stored, managed and matched. Over
           time, this can lead to lost and degraded documents, taking up
           substantial space or racking up storage costs. This taxing process
           often results in focus being placed on completing the task rather than
