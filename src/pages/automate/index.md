@@ -16,7 +16,7 @@ automatePage:
       Processing invoices manually is a costly and timely process that typically
       involves 8 to 10 steps. It has been proven that automating this process
       can reduce processing time by 80-90%, making it obvious as to why business
-      are looking at an automated solution for this problem.
+      are looking at an automated solution.
 
 
       Our customers can be concerned about automating a process that may seem
@@ -41,7 +41,7 @@ automatePage:
 
       * **Install an InShip module at a fraction of the time and cost of
       building your own system, giving you total control of both the process and
-      the revenue and ensuring retention of current customers and enhancing the
+      the revenue,  ensuring retention of current customers and enhancing the
       attraction of your system for potential new clients.**
   sectionB:
     title: Testimonials
