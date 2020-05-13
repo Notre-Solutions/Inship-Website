@@ -32,7 +32,7 @@ productpage:
     - title: Issue Checking
       description: >-
         CAPs comes with standard issue checks that can be modified at both a
-        global or/and group level.
+        global and/or group level.
     - title: Document Routing
       description: >-
         CAPs includes a workflow process that mirrors and automates both simple
@@ -54,8 +54,8 @@ productpage:
         searching purposes.
     - title: Approval
       description: >-
-        Documents can be easily approved with one click with all relevant
-        information displayed on screen.
+        With all relevant information displayed on screen, documents can be
+        easily approved with one click .
     - title: Bulk Approvals
       description: >-
         All documents from one supplier or all PO matched documents can be
@@ -83,8 +83,8 @@ productpage:
         and CAPs provides a simple method of notifying suppliers of any issues.
     - title: Search
       description: >-
-        Documents can be search for using multiple fields such as the supplier,
-        invoice number, date, PO detail, value, to name a few.
+        Documents can be searched for using multiple fields such as the
+        supplier, invoice number, date, PO detail, value, to name a few.
     - title: Search Reporting
       description: >-
         All search results can be reported on either an invoice or an invoice
@@ -121,12 +121,12 @@ productpage:
   customerReports:
     - percentage: 90
       description: Document processing time is reduced by 90%
-    - percentage: 100
-      description: Reduces document storage by 100%
-    - percentage: 97
-      description: Error reduction of 97% using CAPs
     - percentage: 93
       description: Reduces paper handling by 93%
+    - percentage: 97
+      description: Error reduction of 97% using CAPs
+    - percentage: 100
+      description: Reduces document storage by 100%
   integration:
     paragraph: 'Providing API end-points allows CAPs to update your system:'
     integrations:
@@ -136,9 +136,7 @@ productpage:
 
           Providing API end-points allows CAPs to update your system
 
-
-
-          %saying the same thing twice?
+          % **saying the same thing twice?**
       - icon: file
         description: >-
           ##### CSV or other file format 
