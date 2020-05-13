@@ -3,7 +3,7 @@ templateKey: resourcesPage
 resourcesPage:
   title: Resources
   backgroundimage: inship-mac.jpg
-  titleBlurb: A flexible solution with backup.
+  titleBlurb: A flexible solution with backup
   cards:
     - title: Intergration
       icon: chart-line
@@ -12,8 +12,8 @@ resourcesPage:
       subtitle: We do bespoke intergations
       titleOverlayIcon: Intergration
       description: >-
-        InShip has integrated with over 35 erp's and accounting software
-        systems; ranging from household names to market leading erp systems.
+        InShip has integrated with over 35 ERPs and accounting software systems;
+        ranging from household names to market leading ERP systems.
     - title: Experienced
       icon: laptop
       showReadMore: true
