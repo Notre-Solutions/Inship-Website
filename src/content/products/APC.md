@@ -51,10 +51,8 @@ productpage:
       description: Reduces document storage by 100%
   integration:
     paragraph: >-
-      If you are able to provide API end points CAP's can update your system
-      using these API end points.       If you are able to provide API end
-      points CAP's can update your system using these API end points.
-       If you are able to provide API end points CAP's can update your system using these API end points.
+      If you're able to provide API end points CAP's can update your system
+      using these API end points.
     integrations:
       - icon: file
         description: >-
