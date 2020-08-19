@@ -13,7 +13,7 @@ const Layout = ({ children, images }) => (
               relativePath
               childImageSharp {
                 fluid (maxWidth: 4000, quality: 100){
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }

@@ -36,7 +36,7 @@ const animation = (style, variant, icon, title, callback) => {
         onUpdate={callback}
       >
         <div className="content">
-          <i class={`${icon}`}></i>
+          <i className={`${icon}`}></i>
           <h3>{title}</h3>
         </div>
       </motion.ul>
@@ -50,7 +50,7 @@ const animation = (style, variant, icon, title, callback) => {
         animate="visible"
       >
         <div className="content">
-          <i class={`${icon}`}></i>
+          <i className={`${icon}`}></i>
           <h3>{title}</h3>
         </div>
       </motion.ul>
@@ -64,7 +64,7 @@ const animation = (style, variant, icon, title, callback) => {
         animate="visible"
       >
         <div className="content">
-          <i class={`${icon}`}></i>
+          <i className={`${icon}`}></i>
         </div>
       </motion.ul>
     )
@@ -139,40 +139,40 @@ class Main extends Component {
     return (
       <div className="process-animation">
         <div className="arrow arrow-0">
-          <i class="fas fa-long-arrow-alt-right"></i>
+          <i className="fas fa-long-arrow-alt-right"></i>
         </div>
         <div className="arrow arrow-1">
-          <i class="fas fa-long-arrow-alt-right"></i>
+          <i className="fas fa-long-arrow-alt-right"></i>
         </div>
         <div className="arrow arrow-2">
-          <i class="fas fa-long-arrow-alt-right"></i>
+          <i className="fas fa-long-arrow-alt-right"></i>
         </div>
         <div className="arrow arrow-3">
-          <i class="fas fa-long-arrow-alt-right"></i>
+          <i className="fas fa-long-arrow-alt-right"></i>
         </div>
         <div className="arrow arrow-4">
-          <i class="fas fa-long-arrow-alt-down"></i>
+          <i className="fas fa-long-arrow-alt-down"></i>
         </div>
         <div className="arrow arrow-5">
-          <i class="fas fa-long-arrow-alt-left"></i>
+          <i className="fas fa-long-arrow-alt-left"></i>
         </div>
         <div className="arrow arrow-6">
-          <i class="fas fa-long-arrow-alt-left"></i>
+          <i className="fas fa-long-arrow-alt-left"></i>
         </div>
         <div className="arrow arrow-7">
-          <i class="fas fa-long-arrow-alt-left"></i>
+          <i className="fas fa-long-arrow-alt-left"></i>
         </div>
         <div className="arrow arrow-8">
-          <i class="fas fa-long-arrow-alt-left"></i>
+          <i className="fas fa-long-arrow-alt-left"></i>
         </div>
         <div className="arrow arrow-9">
-          <i class="fas fa-long-arrow-alt-right"></i>
+          <i className="fas fa-long-arrow-alt-right"></i>
         </div>
         <div className="arrow arrow-10">
-          <i class="fas fa-long-arrow-alt-right"></i>
+          <i className="fas fa-long-arrow-alt-right"></i>
         </div>
         <div className="arrow arrow-11">
-          <i class="fas fa-long-arrow-alt-right"></i>
+          <i className="fas fa-long-arrow-alt-right"></i>
         </div>
         
         <div className="line line-1">
@@ -213,7 +213,7 @@ class Main extends Component {
           onUpdate={this.addManualCount.bind(this)}
         >
           <div className="content">
-            <i class={`${icons[9]}`}></i>
+            <i className={`${icons[9]}`}></i>
             <h3>{titles[9]}</h3>
           </div>
         </motion.ul>
@@ -292,7 +292,7 @@ class Main extends Component {
           onUpdate={this.addAutoCount.bind(this)}
         >
           <div className="content">
-            <i class={`${icons[13]}`}></i>
+            <i className={`${icons[13]}`}></i>
             <h3>{titles[13]}</h3>
           </div>
         </motion.ul>
@@ -336,10 +336,10 @@ class Main extends Component {
           "fas fa-file-invoice"
         )}
         <div className="keys">
-          <i class={"fas fa-file-invoice green"}></i>
+          <i className={"fas fa-file-invoice green"}></i>
           <small>{"Automated"}</small>
           <p> </p>
-          <i class={"fas fa-file-invoice orange"}></i>
+          <i className={"fas fa-file-invoice orange"}></i>
           <small>{"Manual"}</small>
         </div>
       </div>
@@ -393,7 +393,7 @@ function main2() {
         return (
           <div className={`${icon}${stage}`}>
             <div className="content content-mini">
-              <i class={`${icons[stage]}`}></i>
+              <i className={`${icons[stage]}`}></i>
               <h3>{titles[stage]}</h3>
             </div>
           </div>
@@ -406,10 +406,10 @@ function main2() {
         return <div className={`pipe pipe-${stage}`} />
       })}
       <div className="keys">
-        <i class={"fas fa-file-invoice green"}></i>
+        <i className={"fas fa-file-invoice green"}></i>
         <small>{"Automated"}</small>
         <p> </p>
-        <i class={"fas fa-file-invoice orange"}></i>
+        <i className={"fas fa-file-invoice orange"}></i>
         <small>{"Manual"}</small>
       </div>
     </div>

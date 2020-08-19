@@ -13,7 +13,7 @@ export default class ProblemSection extends React.Component {
   renderLink(link) {
     if (link !== "#") {
       return (
-        <p class="read-more">
+        <p className="read-more">
           <a href={link}>Read More</a>
         </p>
       )

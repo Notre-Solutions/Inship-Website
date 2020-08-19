@@ -71,15 +71,15 @@ const Automate = ({ data }) => {
                     Why<span className="bold"> Automate</span>
                   </div>
                 </h1>
-                <div class="animation-wrapper">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
+                <div className="animation-wrapper">
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
+                  <div className="circle"></div>
                 </div>
               </div>
             </Background>
@@ -89,19 +89,19 @@ const Automate = ({ data }) => {
               <Animation />
             </div>
           </section>
-          <secionn className="section-b container">
-            <div class="process-card alt">
+          <section className="section-b container">
+            <div className="process-card alt">
               <div className="meta">
                 <div className="photo-4"></div>
                 <div className="details">
                   <div className="img-writing">Man V Auto</div>
                 </div>
               </div>
-              <div class="description">
+              <div className="description">
                 <Markdown markdown={sectionC.description} />
               </div>
             </div>
-          </secionn>
+          </section>
           <section className="section-a">
             <div className="title">
               <h2>{newsTitle}</h2>
@@ -143,7 +143,7 @@ export const pageQuery = graphql`
               thumbnail {
                 childImageSharp {
                   fluid(maxWidth: 1000, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
                   }
                 }
               }

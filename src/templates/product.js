@@ -62,7 +62,7 @@ function Heading(alias, style, title, description, featuredimage) {
         <a href="#video" className={`btn-${style}`}>
           Watch a video
         </a>
-        <div class="product-page-img-container">
+        <div className="product-page-img-container">
           <Img
             fluid={featuredimage.childImageSharp.fluid}
             className="product-page-img-container-logo"
@@ -74,7 +74,7 @@ function Heading(alias, style, title, description, featuredimage) {
     return (
       <div className="header-text-box">
         <h1 className="heading">
-          <div class="product-page-img-container">
+          <div className="product-page-img-container">
             <Img
               fluid={featuredimage.childImageSharp.fluid}
               className="product-page-img-container-logo"
@@ -248,7 +248,7 @@ export const pageQuery = graphql`
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }
