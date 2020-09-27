@@ -54,8 +54,22 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  padding: 2rem;
+  font-weight: 400;
+  text-align: left;
+  list-style-position: inside;
+  font-size: 1.6rem;
+}
+
 ol li {
-  margin-left: 2em;
+  list-style-position: inside;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+ol {
+  padding: 2rem;
 }
 
 div {
