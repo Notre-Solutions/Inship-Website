@@ -41,10 +41,10 @@ collections:
       - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Product Page", name: "productpage", widget: "object", fields: [
-          {label: "Timeline Items", name: "timeline", widget: list, fields:[
-            {label: "Title", name: "title", widget: string, required: true},
-            {label: "Description", name: "description", widget: "markdown", required: true}
-          ]},
+          # {label: "Timeline Items", name: "timeline", widget: list, fields:[
+          #   {label: "Title", name: "title", widget: string, required: true},
+          #   {label: "Description", name: "description", widget: "markdown", required: true}
+          # ]},
           {label: "Features", name: "features", widget: list, fields:[
             {label: "Title", name: "title", widget: string, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
