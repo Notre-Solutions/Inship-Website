@@ -3,7 +3,7 @@ templateKey: product
 backgroundimage: CAPS.jpg
 title: Complete Accounts Payable Solutions
 alias: CAPS
-url: 'https://www.youtube.com/watch?v=1el1FR1d1R4'
+url: "https://www.youtube.com/watch?v=1el1FR1d1R4"
 featuredimage: /img/caps-logo-3.jpeg
 featuredpost: true
 style: color-2
@@ -61,12 +61,12 @@ productpage:
         All documents from one supplier or all PO matched documents can be
         approved at once with a simple click.
     - title: Approval Limits
-      description: |-
+      description: >-
         A user limit may be set on documents 
 
         Don't understand what you want here?
     - title: Comments
-      description: 'Users can add new, pre-defined or forced comments on documents.'
+      description: "Users can add new, pre-defined or forced comments on documents."
     - title: Price Watch
       description: >-
         CAPs watches for price increases on items and displays any increase in
@@ -128,7 +128,7 @@ productpage:
     - percentage: 100
       description: Reduces document storage by 100%
   integration:
-    paragraph: 'Providing API end-points allows CAPs to update your system:'
+    paragraph: "Providing API end-points allows CAPs to update your system:"
     integrations:
       - icon: link
         description: |-
@@ -145,7 +145,7 @@ productpage:
           We can provide a simple csv or file format output for a direct file
           import.
       - icon: check-circle
-        description: |-
+        description: >-
           ##### Desktop App
 
           A simple desktop app can be designed to link the two systems.

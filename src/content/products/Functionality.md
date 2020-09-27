@@ -1,6 +1,6 @@
 ---
 templateKey: product
-backgroundimage: CAPS.jpg
+backgroundimage: office.jpg
 title: Functionality
 alias: Functionality
 url: "https://www.youtube.com/watch?v=1el1FR1d1R4"
@@ -61,9 +61,8 @@ productpage:
         All documents from one supplier or all PO matched documents can be
         approved at once with a simple click.
     - title: Approval Limits
-      description: |-
+      description: >-
         A user limit may be set on documents 
-
         Don't understand what you want here?
     - title: Comments
       description: "Users can add new, pre-defined or forced comments on documents."
@@ -131,7 +130,7 @@ productpage:
     paragraph: "Providing API end-points allows CAPs to update your system:"
     integrations:
       - icon: link
-        description: |-
+        description: >-
           ##### API Data Transfer
 
           Providing API end-points allows CAPs to update your system
@@ -145,7 +144,7 @@ productpage:
           We can provide a simple csv or file format output for a direct file
           import.
       - icon: check-circle
-        description: |-
+        description: >-
           ##### Desktop App
 
           A simple desktop app can be designed to link the two systems.

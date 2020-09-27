@@ -18,7 +18,7 @@ productPageTemplate:
       icon: cogs
     - name: Customers Reported
       link: customers-reported
-      icon: exclamation-triangle
+      icon: thumbs-up
     - name: Video
       link: video
       icon: play-circle

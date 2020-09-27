@@ -3,7 +3,7 @@ templateKey: product
 backgroundimage: T2P.jpg
 title: Tick To Post
 alias: T2P
-url: 'https://youtu.be/RXKh4eDqsgs'
+url: "https://youtu.be/RXKh4eDqsgs"
 featuredimage: /img/t2p-logo.jpeg
 featuredpost: true
 style: color-3
@@ -83,7 +83,7 @@ productpage:
           We can provide a simple csv or file format output for a direct file
           import.
       - icon: check-circle
-        description: |-
+        description: >-
           ##### Desk Top App 
 
           A simple desk top app can be designed to link to two systems.
