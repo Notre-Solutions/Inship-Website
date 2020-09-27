@@ -214,6 +214,43 @@ collections:
               {label: "Read More Link", name: "readMore", widget: string, required: true},
               {label: "Tile Over Icon", name: "titleOverlayIcon", widget: string, required: true},
               {label: "Description", name: "description", widget: "markdown", required: true}
+              ]
+            },
+            {label: "The Team", name: "theTeam", widget: object, fields: [
+              {label: "Title", name: "title", widget: string, required: true},
+              {label: "Subtitle", name: "subtitle", widget: string, required: true},
+              {label: "CEO", name: "ceo", widget: object, fields: [
+                {label: "Image", name: "img", widget: image},
+                {label: "Name", name: "name", widget: string, required: true},
+                {label: "Title", name: "title", widget: string, required: true},
+                {label: "Description", name: "section", widget: string, required: true}
+              ]},
+              {label: "C-Suite", name: "cSuite", widget: list, fields: [
+                {label: "Image", name: "img", widget: image},
+                {label: "Name", name: "name", widget: string, required: true},
+                {label: "Title", name: "title", widget: string, required: true},
+                {label: "Description", name: "section", widget: string, required: true}
+              ]},
+              {label: "Employees", name: "employees", widget: list, fields: [
+                {label: "Image", name: "img", widget: image},
+                {label: "Name", name: "name", widget: string, required: true},
+                {label: "Title", name: "title", widget: string, required: true},
+                {label: "Description", name: "section", widget: string, required: true}
               ]}
+              ]
+            },
+            {label: "Cards", name: "cards", widget: object, fields: [
+              {label: "Title", name: "title", widget: string, required: true},
+              {label: "Top 3", name: "top3", widget: list, fields: [
+                {label: "Icon", name: "icon", widget: string},
+                {label: "Description", name: "text", widget: string, required: true},
+              ]},
+              {label: "Features", name: "features", widget: list, fields: [
+                {label: "Icon", name: "icon", widget: string},
+                {label: "Heading", name: "heading", widget: string, required: true},
+                {label: "Description", name: "text", widget: markdown, required: true},
+              ]}
+              ]
+            }
           ]}
 

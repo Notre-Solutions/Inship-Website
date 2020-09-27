@@ -53,13 +53,13 @@ resourcesPage:
         trainers. Documentation is branded to meet your needs.
   theTeam:
     title: Our Team
-    subTitle: Our people are our greatest asset and biggest differentiator. They also believe in having a lot of fun along the way.
+    subtitle: Our people are our greatest asset and biggest differentiator. They also believe in having a lot of fun along the way.
     ceo:
       img: ../../img/stock.jpg
       name: Adrian Kelehan
       title: CEO
       section: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    cSweet:
+    cSuite:
       - img: ../../img/stock.jpg
         name: Dr. Kevin Casey
         title: CIO
@@ -100,8 +100,10 @@ resourcesPage:
           * Linked detailed user manual
       - icon: mobile
         heading: Mobile Approval
-        text: Simple remote approval for approvers who are always on the go
+        text: >-
+          Simple remote approval for approvers who are always on the go
       - icon: scroll
         heading: Purchase Order Creation
-        text: InShip links with many PO systems (Sage, Intact etc.). However some businesses require a supplementary/different system, where InShip is thge solution. Our system cna work as a stand alone PO system or in addition to you ERP or account software PO system. The PO system can be set up with simple/complex approval processes, for example; automatically routing PO approvals based on suppliers items purchases or values.
+        text: >-
+          InShip links with many PO systems (Sage, Intact etc.). However some businesses require a supplementary/different system, where InShip is thge solution. Our system cna work as a stand alone PO system or in addition to you ERP or account software PO system. The PO system can be set up with simple/complex approval processes, for example; automatically routing PO approvals based on suppliers items purchases or values.
 ---

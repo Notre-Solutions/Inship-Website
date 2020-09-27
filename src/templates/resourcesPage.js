@@ -71,7 +71,7 @@ const Resources = ({ data }) => {
             </section>
             <section className="team-section">
               <h2>{theTeam.title}</h2>
-              <h3>{theTeam.subTitle}</h3>
+              <h3>{theTeam.subtitle}</h3>
               <div className="ceo">
                 <div className="container">
                   <Img
@@ -84,16 +84,16 @@ const Resources = ({ data }) => {
                 </div>
               </div>
               <div className="cs">
-                {theTeam.cSweet.map(cSweet => {
+                {theTeam.cSuite.map(cSuite => {
                   return (
                     <div className="container">
                       <Img
-                        fluid={cSweet.img.childImageSharp.fluid}
+                        fluid={cSuite.img.childImageSharp.fluid}
                         className="image"
                       />
-                      <div className="jobTitle">{cSweet.title}</div>
-                      <div className="name">{cSweet.name}</div>
-                      <div className="section">{cSweet.section}</div>
+                      <div className="jobTitle">{cSuite.title}</div>
+                      <div className="name">{cSuite.name}</div>
+                      <div className="section">{cSuite.section}</div>
                     </div>
                   )
                 })}
@@ -143,7 +143,7 @@ export const pageQuery = graphql`
           }
           theTeam {
             title
-            subTitle
+            subtitle
             ceo {
               img {
                 childImageSharp {
@@ -156,7 +156,7 @@ export const pageQuery = graphql`
               title
               section
             }
-            cSweet {
+            cSuite {
               img {
                 childImageSharp {
                   fluid(maxWidth: 1000, quality: 100) {
