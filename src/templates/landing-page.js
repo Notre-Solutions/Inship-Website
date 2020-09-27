@@ -157,7 +157,12 @@ function displayLogos(sectionC2) {
   return (
     <div className="cards">
       {images.map(img => {
-        return <LogoCard fluidImage={img.image.childImageSharp.fluid} />
+        return (
+          <a href={img.link} target="_blank">
+            {" "}
+            <LogoCard fluidImage={img.image.childImageSharp.fluid} />
+          </a>
+        )
       })}
     </div>
   )
@@ -330,6 +335,7 @@ export const pageQuery = graphql`
           sectionC2 {
             title
             images {
+              link
               image {
                 childImageSharp {
                   fluid(maxWidth: 10000, quality: 100) {
@@ -342,6 +348,7 @@ export const pageQuery = graphql`
           sectionF {
             title
             images {
+              link
               image {
                 childImageSharp {
                   fluid(maxWidth: 10000, quality: 100) {

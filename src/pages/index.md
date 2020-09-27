@@ -107,7 +107,7 @@ landingPage:
         subtitle: Providing the Technology behind Automated Accounts Payable Processes
         photo: photo-1
         readMore: "#"
-        showReadMore: true
+        showReadMore: false
         description: >-
           InShip specializes in Accounts Payable plug-in solutions for
           accounting and enterprise resource planning (ERP) software. These
@@ -130,7 +130,7 @@ landingPage:
         subtitle: Moving from Paper to Digital
         photo: photo-2
         readMore: "#"
-        showReadMore: true
+        showReadMore: false
         description: >-
           Accounts Payable is timely and expensive; processing one invoice or
           bill can include as many as ten steps, costing approximately €4.50
@@ -152,7 +152,7 @@ landingPage:
         subtitle: Three Solutions Tailored for All Needs
         photo: photo-3
         readMore: "#"
-        showReadMore: true
+        showReadMore: false
         description: >-
           InShip has designed three solutions tailored for all needs which
           automates the AP process direct from e-mail or Drag and Drop (DND).
@@ -181,22 +181,29 @@ landingPage:
   sectionC2:
     title: We Integrate With 40+ Packages Including...
     images:
-      - image: ../img/integrations/acciq.png
-      - image: ../img/integrations/brc2.jpg
-      - image: ../img/integrations/xero.png
-      - image: ../img/integrations/surf.jpg
-      - image: ../img/integrations/sage.png
-      - image: ../img/integrations/qb.jpg
       - image: ../img/integrations/sage50.png
+        link: https://www.sage.com/en-gb/shop/sage50c/?utm_medium=paidsearch&utm_source=google&utm_campaign=uk%7cgoogle%7caccfin%7cbrand_50accounts-main(e)%7cgbr_s5fif&ppc_keyword=sage50&ds_rl=1282232&gclid=CjwKCAjw8MD7BRArEiwAGZsrBboKVDBcZ0TrgGYKiDz7wjly2L-TL2lgFRPAFTpQyXasCEQ4zqcQ8xoCk7EQAvD_BwE&gclsrc=aw.ds
+      - image: ../img/integrations/brc2.jpg
+        link: https://www.bigredcloud.com/
+      - image: ../img/integrations/xero.png
+        link: https://www.xero.com/uk/
+      - image: ../img/integrations/qb.jpg
+        link: https://quickbooks.intuit.com/uk/?ds_rl=1263531&cid=ppc_G_QB_UK_GGL_B_Quickbooks_Core_Exact_Search_ALL_quickbooks_txt&ds_rl=1263531&gclid=CjwKCAjw8MD7BRArEiwAGZsrBQcHp8I5K91tdriI_rEDeFtJVBtPMpKeRrSn33-rqnSo3CYdymq71hoCj8cQAvD_BwE&gclsrc=aw.ds
+      - image: ../img/integrations/sage.png
+        link: https://www.sage.com/en-gb/?utm_medium=paidsearch&utm_source=google&utm_campaign=uk%7cgoogle%7cbrand%7cbrand_mainsage-main(e)%7cgbr_sabc&ppc_keyword=sage&ds_rl=1282673&ds_rl=1282739&ds_rl=1287894&ds_rl=1282232&ds_rl=1287894&gclid=CjwKCAjw8MD7BRArEiwAGZsrBUMwhw2P93Ha8Funq-GZ0zoDS9nv809lPNZWnM2WhfpbJq-5MluVZBoCxrUQAvD_BwE&gclsrc=aw.ds
   sectionF:
     title: Over 500+ Companies Love InShip
     images:
       - image: ../img/integrations/cd.png
+        link: https://www.carraigdonn.com/
       - image: ../img/integrations/fastway.jpg
+        link: https://www.fastway.ie/
       - image: ../img/integrations/stacks.png
+        link: https://www.stackspharmacy.ie/
       - image: ../img/integrations/zeus.png
+        link: https://www.zeuspackaging.com/
       - image: ../img/integrations/hireco.jpg
-
+        link: https://hirecogroup.co.uk/
   sectionD:
     title: The Process
     show: true

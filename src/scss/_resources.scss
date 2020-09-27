@@ -101,6 +101,9 @@
           padding: 2rem;
           width: 50rem;
           font-size: small;
+          ul {
+            list-style-position: inside;
+          }
           h3 {
             font-weight: 700;
             font-size: large;
@@ -136,10 +139,11 @@
     .cs {
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 33%);
+      grid-template-columns: repeat(auto-fill, 40rem);
+      grid-auto-flow: row;
       justify-items: center;
-      margin-left: 17%;
-      width: 100%;
+      align-items: center;
+      margin-left: calc((100% - 80rem) / 2);
       .container {
         width: 30rem;
         @include info;
@@ -148,10 +152,11 @@
     .employees {
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 25%);
+      grid-template-columns: repeat(auto-fill, 30rem);
+      grid-auto-flow: row;
       justify-items: center;
-      margin-left: 12.5%;
-      width: 100%;
+      align-items: center;
+      margin-left: calc((100% - 90rem) / 2);
       gap: 1rem 1rem;
       .container {
         width: 25rem;
