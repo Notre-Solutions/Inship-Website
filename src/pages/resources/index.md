@@ -6,9 +6,9 @@ resourcesPage:
   titleBlurb: A flexible solution with backup
   cards:
     - title: Intergration
-      icon: chart-line
+      icon: sign-in-alt
       readMore: "#"
-      showReadMore: true
+      showReadMore: false
       subtitle: We do bespoke intergations
       titleOverlayIcon: Intergration
       description: >-
@@ -16,7 +16,7 @@ resourcesPage:
         ranging from household names to market leading ERP systems.
     - title: Experienced
       icon: laptop
-      showReadMore: true
+      showReadMore: false
       readMore: "#"
       subtitle: IT Professionals
       titleOverlayIcon: Experienced
@@ -24,9 +24,9 @@ resourcesPage:
         InShip has a dedicated team that have over 50 years experience
         delivering complex IT solutions in many industries.
     - title: Customer Focused
-      icon: puzzle-piece
+      icon: handshake
       readMore: "#"
-      showReadMore: true
+      showReadMore: false
       subtitle: Peace of mind
       titleOverlayIcon: Customer Focused
       description: >-
@@ -35,17 +35,17 @@ resourcesPage:
         needs.
     - title: Adaptable
       readMore: "#"
-      icon: comments
-      showReadMore: true
+      icon: dice-d20
+      showReadMore: false
       subtitle: Worked anywhere
       titleOverlayIcon: Adaptable
       description: >-
         InShip meets a diverse group of users needs from retail, wholesale,
         food, finance, manufacturing, aviation, service industry and many more.
     - title: Comprehensive Training
-      icon: paper-plane
+      icon: dumbbell
       readMore: "#"
-      showReadMore: true
+      showReadMore: false
       subtitle: users
       titleOverlayIcon: Training and on-board support.
       description: >-

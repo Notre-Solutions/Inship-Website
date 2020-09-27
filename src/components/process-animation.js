@@ -22,9 +22,6 @@ function animate(x, y, opacity, scale, delay, repeatDelay, duration) {
   return motion
 }
 
-var autoCounter = 0
-var manualCounter = 0
-
 const animation = (style, variant, icon, title, callback) => {
   if (callback && title) {
     return (
@@ -174,10 +171,8 @@ class Main extends Component {
         <div className="arrow arrow-11">
           <i className="fas fa-long-arrow-alt-right"></i>
         </div>
-        
-        <div className="line line-1">
-          
-        </div>
+
+        <div className="line line-1"></div>
         <div className="content counter counter-manual">
           <h2>{this.state.manualCounter}</h2>
           <h3>Processed Manually</h3>

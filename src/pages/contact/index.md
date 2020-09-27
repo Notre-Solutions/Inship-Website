@@ -7,7 +7,7 @@ contactPage:
   location:
     title: Location
     icon: map-marked
-    description: 
+    description:
       line1: GW108,
       line2: Greenway Hub,
       line3: 7 Grangegorman Lower,
@@ -21,5 +21,4 @@ contactPage:
     title: Email
     icon: envelope-open-text
     description: info@inshipaps.com
-    
 ---

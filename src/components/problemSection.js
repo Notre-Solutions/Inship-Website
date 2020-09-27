@@ -30,7 +30,7 @@ export default class ProblemSection extends React.Component {
             <div className="meta">
               <div className={`fa fa-${element.icon} icon`}></div>
               <div className="details">
-                <div className="img-writing">{element.titleOverlayIcon}</div>
+                <div className="img-writing"></div>
               </div>
             </div>
             <div className="description">
@@ -53,7 +53,7 @@ export default class ProblemSection extends React.Component {
             <div className="meta">
               <div className={`fa fa-${element.icon} icon`}></div>
               <div className="details">
-                <div className="img-writing">{element.titleOverlayIcon}</div>
+                <div className="img-writing"></div>
               </div>
             </div>
             <div className="description">

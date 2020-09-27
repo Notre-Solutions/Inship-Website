@@ -9,10 +9,7 @@ featuredpost: true
 style: color-standard
 id: 4
 description: >-
-  CAPs is a fully functional accounts payable department, online. CAPs allows
-  businesses to customise many aspects of the process from approval to automatic
-  invoice coding. CAPs boasts impressive features such as PO matching at line
-  level, statement reconciliation and much more.
+  How does it work?
 features:
   feature1: 15 Users
   feature2: true
@@ -24,15 +21,18 @@ productpage:
       description: >-
         Documents are e-mailed or uploaded to the system via DnD, removing all
         previous paper handling requirements.
+      icon: circle
     - title: User Defined Data Capture
       description: >-
         Data is captured automatically and the data capture requirements can
         easily be modified by the user. Capture fields can be added, edited and
-        deleted.
+        deleted..
+      icon: circle
     - title: Issue Checking
       description: >-
         CAPs comes with standard issue checks that can be modified at both a
         global and/or group level.
+      icon: circle
     - title: Document Routing
       description: >-
         CAPs includes a workflow process that mirrors and automates both simple
@@ -41,64 +41,81 @@ productpage:
       description: >-
         Workflow can be automated by routing using supplier codes, general
         ledger codes, delivery address, project code and more.
+      icon: circle
     - title: PO and GRN Matching
       description: >-
         CAPs can match invoices to purchase orders (POs) or goods received notes
         (GRNs) at a total or line by line level. Delivery, discounts and various
         surcharges can also be easily handled.
+      icon: circle
     - title: General Ledger Coding
       description: CAPs can auto-code invoices based on multiple factors.
+      icon: circle
     - title: Line by Line Data Capture
       description: >-
         CAPs can auto-capture line items on invoices for coding, reporting and
         searching purposes.
+      icon: circle
     - title: Approval
       description: >-
         With all relevant information displayed on screen, documents can be
         easily approved with one click .
+      icon: circle
     - title: Bulk Approvals
       description: >-
         All documents from one supplier or all PO matched documents can be
         approved at once with a simple click.
+      icon: circle
     - title: Approval Limits
       description: >-
         A user limit may be set on documents 
         Don't understand what you want here?
+      icon: circle
     - title: Comments
       description: "Users can add new, pre-defined or forced comments on documents."
+      icon: circle
     - title: Price Watch
       description: >-
         CAPs watches for price increases on items and displays any increase in
         price to the user.
+      icon: circle
     - title: Invoice Storage
       description: >-
         The original invoice can be stored for up to seven years, if required;
         the document can be searched for by the user at any time.
+      icon: circle
     - title: High Security Documents
       description: Highly confidential documents can be handled by CAPs.
+      icon: circle
     - title: Statement Reconciliation
       description: >-
         Statement are automatically reconciled; any invoice errors are detected
         and CAPs provides a simple method of notifying suppliers of any issues.
+      icon: circle
     - title: Search
       description: >-
         Documents can be searched for using multiple fields such as the
         supplier, invoice number, date, PO detail, value, to name a few.
+      icon: circle
     - title: Search Reporting
       description: >-
         All search results can be reported on either an invoice or an invoice
         line bases.
+      icon: circle
     - title: Document Tracking
       description: >-
         Invoices within CAPs that require approval are tracked, illustrating
         whose approval is required and the outstanding approval time of the
         document.
+      icon: circle
     - title: Issue Handling
       description: >-
         CAPs provides multiple ways to handle invoice issues which can be
         customised globally.
+      icon: circle
     - title: Mobile Approval
       description: Documents can be approved by CAPs mobile app.
+      icon: circle
   timeline:
     - title: Receiving Documents
       description: >-

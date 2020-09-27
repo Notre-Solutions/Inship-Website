@@ -152,7 +152,7 @@ function displayProducts(edges) {
   )
 }
 
-function displayLogs(sectionC2) {
+function displayLogos(sectionC2) {
   const images = sectionC2.images
   return (
     <div className="cards">
@@ -231,7 +231,7 @@ const Landing = ({ data }) => {
           <div className="line-1"></div>
           <section className="section-c-2">
             <h2 className="section-c-2-heading">{sectionC2.title}</h2>
-            {displayLogs(sectionC2)}
+            {displayLogos(sectionC2)}
           </section>
           <div className="line"></div>
           <div className="section-d">
@@ -243,7 +243,7 @@ const Landing = ({ data }) => {
             {showSectionF(sectionD.show)}
             <section className="section-c-2">
               <h2 className="section-c-2-heading">{sectionF.title}</h2>
-              {displayLogs(sectionF)}
+              {displayLogos(sectionF)}
             </section>
           </div>
         </div>

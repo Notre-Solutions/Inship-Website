@@ -278,4 +278,15 @@ $primary-color-orange-dark: #e08833;
       }
     }
   }
+  &.color-standard {
+    .bar,
+    .fill {
+      border-color: $inship-color-background !important;
+    }
+    &:hover {
+      > span {
+        color: black;
+      }
+    }
+  }
 }

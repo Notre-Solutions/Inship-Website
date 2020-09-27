@@ -20,6 +20,18 @@ function featureCard(style, feature) {
   )
 }
 
+function featureCardExtra(style, feature) {
+  return (
+    <div className={`card dark-${style}`}>
+      <div>
+        <div className={`icon fas fa-${feature.icon}`}></div>
+        <h1 className={`${style}`}>{feature.title}</h1>
+        <div className={`text-box`}>{feature.description}</div>
+      </div>
+    </div>
+  )
+}
+
 function CustomerReports(style, customerReports) {
   return (
     <div className="card">
