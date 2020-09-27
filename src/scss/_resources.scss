@@ -1,28 +1,3 @@
-@mixin info {
-  .image {
-    border-radius: 50%;
-  }
-  .jobTitle {
-    margin-top: 1rem;
-    color: grey;
-    font-size: 2rem;
-  }
-  .name {
-    color: black;
-    font-size: 2.2rem;
-  }
-  .section {
-    color: black;
-    font-size: 1.4rem;
-  }
-}
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .resources {
   &-header {
     @include header-dimensions;
@@ -73,6 +48,7 @@
       height: 20rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      // grid-auto-flow: column;
       margin-left: 5%;
       .benefits-container {
         position: relative;
@@ -95,7 +71,7 @@
           height: 12rem;
           border-radius: 1.5rem;
           top: 0;
-          left: 27%;
+          left: 12rem;
           .text-box {
             padding: 3rem;
             font-size: 1.4rem;
@@ -160,7 +136,7 @@
     .cs {
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: repeat(2, 33%);
+      grid-template-columns: repeat(auto-fill, 33%);
       justify-items: center;
       margin-left: 17%;
       width: 100%;
@@ -172,7 +148,7 @@
     .employees {
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: repeat(3, 25%);
+      grid-template-columns: repeat(auto-fill, 25%);
       justify-items: center;
       margin-left: 12.5%;
       width: 100%;

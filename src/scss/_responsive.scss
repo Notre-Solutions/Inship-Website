@@ -3,6 +3,19 @@
     font-size: 8px;
   }
 
+  .features {
+    .flex-container {
+      flex-direction: column !important;
+      text-align: center !important;
+      .text-box-container {
+        width: 30rem !important;
+      }
+      li {
+        text-decoration: none !important;
+      }
+    }
+  }
+
   .resources {
     .slide {
       img {
@@ -147,6 +160,14 @@
 }
 
 @include media-md {
+  .benefits-section {
+    .top-3-benefits {
+      grid-template-columns: repeat(1, 1fr) !important;
+      height: 60rem !important;
+      justify-items: center;
+      margin-left: -25rem !important;
+    }
+  }
   html {
     font-size: 9px;
   }
@@ -336,8 +357,8 @@
       visibility: hidden;
       display: none;
     }
-    .content{
-      h3{
+    .content {
+      h3 {
         width: 6rem !important;
       }
     }
