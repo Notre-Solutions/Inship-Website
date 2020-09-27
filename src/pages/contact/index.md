@@ -20,5 +20,5 @@ contactPage:
   email:
     title: Email
     icon: envelope-open-text
-    description: info@inshipaps.com
+    description: info@inship.ie
 ---

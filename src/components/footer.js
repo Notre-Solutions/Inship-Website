@@ -33,7 +33,7 @@ const Footer = () => {
             href="mailto:info@inship.ie?subject=From InShip APS Website"
             className="email-line"
           >
-            info@inshipaps.com
+            info@inship.ie
           </a>
           <a
             href="https://www.inship.ie"
