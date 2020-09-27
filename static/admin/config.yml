@@ -239,7 +239,7 @@ collections:
               ]}
               ]
             },
-            {label: "Cards", name: "cards", widget: object, fields: [
+            {label: "Benefits", name: "benefitsSection", widget: object, fields: [
               {label: "Title", name: "title", widget: string, required: true},
               {label: "Top 3", name: "top3", widget: list, fields: [
                 {label: "Icon", name: "icon", widget: string},
