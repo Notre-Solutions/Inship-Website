@@ -62,7 +62,12 @@ export default class Nav extends React.Component {
         className: "menu-nav__item",
       },
       {
-        name: "Solutions",
+        link: "/products/Functionality",
+        name: "Functionality",
+        className: "menu-nav__item",
+      },
+      {
+        name: "White Label Solutions",
         link: "",
       },
       {
@@ -92,6 +97,10 @@ export default class Nav extends React.Component {
       {
         link: "/contact",
         name: "Contact",
+        className: "menu-nav__item",
+      },
+      {
+        name: "login",
         className: "menu-nav__item",
       },
       {
@@ -156,7 +165,7 @@ export default class Nav extends React.Component {
                   )
                 } else if (
                   page.name !== "INSHIP" &&
-                  page.name !== "Solutions"
+                  page.name !== "White Label Solutions"
                 ) {
                   return (
                     <li className="burger-navigation__item">
@@ -185,21 +194,37 @@ export default class Nav extends React.Component {
                         <MyForm formTitle={"Contact Team for Pricing"}></MyForm>
                       }
                       buttonStyle="menu-nav__link nav-pricing"
-                      buttonName="Pricing"
+                      buttonName={page.name}
                     ></ReactModal>
+                  </li>
+                )
+              } else if (page.name === "login") {
+                return (
+                  <li className={page.className}>
+                    <Link
+                      to="https://www.inship.ie/login"
+                      className="menu-nav__link nav-pricing"
+                    >
+                      {page.name}
+                    </Link>
                   </li>
                 )
               } else if (page.name === "INSHIP") {
                 return (
                   <li className={page.className}>
-                    <Link to={page.link} className="menu-nav__link">
-                      <span className="thin">IN</span>SHIP
-                    </Link>
+                    <h4>
+                      <Link to={page.link} className="menu-nav__link">
+                        <span className="thin">IN</span>SHIP
+                      </Link>
+                    </h4>
                   </li>
                 )
-              } else if (page.name === "Solutions") {
-                return <DD bgStyle={this.props.style}></DD>
-              } else if (!page.link.match(/products/g)) {
+              } else if (page.name === "White Label Solutions") {
+                return <DD bgStyle={this.props.style} name={page.name}></DD>
+              } else if (
+                !page.link.match(/products/g) ||
+                page.link.match(/Functionality/g)
+              ) {
                 return (
                   <li className={page.className}>
                     <Link to={page.link} className="menu-nav__link">

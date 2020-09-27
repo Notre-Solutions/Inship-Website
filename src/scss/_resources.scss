@@ -1,3 +1,28 @@
+@mixin info {
+  .image {
+    border-radius: 50%;
+  }
+  .jobTitle {
+    margin-top: 1rem;
+    color: grey;
+    font-size: 2rem;
+  }
+  .name {
+    color: black;
+    font-size: 2.2rem;
+  }
+  .section {
+    color: black;
+    font-size: 1.4rem;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .resources {
   &-header {
     @include header-dimensions;
@@ -28,13 +53,133 @@
     }
 
     .sub-header {
-      // letter-spacing: 0.2rem;
       font-size: 2rem;
       display: block;
       text-align: center;
       animation-name: fadeIn;
       animation-duration: 3s;
       font-weight: 100;
+    }
+  }
+
+  .benefits-section {
+    text-align: center;
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+    .top-3-benefits {
+      margin-top: 2rem;
+      height: 20rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 5%;
+      .benefits-container {
+        position: relative;
+        .icon-container {
+          @include flex-center;
+          width: 14rem;
+          height: 14rem;
+          background-color: white;
+          border-radius: 50%;
+          border: 2px solid black;
+          font-size: 6rem;
+          color: $inship-color-background;
+        }
+        .text-box-container {
+          z-index: -1;
+          position: absolute;
+          @include flex-center;
+          background-color: rgb(182, 182, 182);
+          width: 24rem;
+          height: 12rem;
+          border-radius: 1.5rem;
+          top: 0;
+          left: 27%;
+          .text-box {
+            padding: 3rem;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .features {
+      text-align: left;
+      margin-top: 5rem;
+      @include flex-center;
+      flex-direction: column;
+      .flex-container {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: row;
+
+        .icon {
+          @include flex-center;
+          border-radius: 50%;
+          font-size: 9rem;
+          width: 18rem;
+          height: 18rem;
+          background-color: $inship-color-background;
+        }
+        .text-box-container {
+          padding: 2rem;
+          width: 50rem;
+          font-size: small;
+        }
+        h3 {
+          font-size: large;
+        }
+      }
+    }
+  }
+
+  .team-section {
+    text-align: center;
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+      width: 60%;
+      margin-left: 20%;
+    }
+
+    .ceo {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .container {
+        width: 35rem;
+        @include info;
+      }
+    }
+    .cs {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 33%);
+      justify-items: center;
+      margin-left: 17%;
+      width: 100%;
+      .container {
+        width: 30rem;
+        @include info;
+      }
+    }
+    .employees {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 25%);
+      justify-items: center;
+      margin-left: 12.5%;
+      width: 100%;
+      gap: 1rem 1rem;
+      .container {
+        width: 25rem;
+        @include info;
+      }
     }
   }
 }

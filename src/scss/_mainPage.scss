@@ -261,6 +261,41 @@
     }
   }
 
+  .section-c-2 {
+    text-align: center;
+    margin-top: 4rem;
+
+    &-heading {
+      font-size: 5rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      border-radius: 1rem;
+      padding: 2rem;
+
+      .img {
+        border-radius: 1rem;
+        border: 0.1rem solid rgb(73, 71, 71);
+        // object-fit: cover;
+        min-width: 30rem;
+        max-height: 20rem;
+      }
+
+      @include transition-ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  }
+
   .line {
     margin-top: 10%;
     @include line($inship-color, 0, 0, 95%, 0.2rem);
@@ -300,10 +335,12 @@
     text-align: center;
     .title {
       font-size: 4rem;
-      text-align: left;
+      text-align: center;
+      // text-align: left;
     }
 
     .cards {
+      font-family: "PT Serif", serif !important;
       margin: 5% 0 5% 0;
       display: flex;
 
@@ -330,7 +367,8 @@
 
     .slogan {
       margin-bottom: 10%;
-      font-size: 5rem;
+      font-size: 3.5rem;
+      font-style: italic;
     }
   }
 }

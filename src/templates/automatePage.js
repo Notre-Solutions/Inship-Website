@@ -102,14 +102,7 @@ const Automate = ({ data }) => {
               </div>
             </div>
           </section>
-          <section className="section-a">
-            <div className="title">
-              <h2>{newsTitle}</h2>
-            </div>
-            <div className="masonry">
-              <MY articles={edges}></MY>
-            </div>
-          </section>
+
           <section className="section-d">{sectionDfunction(sectionD)}</section>
           <div className="line"></div>
           <div className="section-b large">
@@ -118,6 +111,14 @@ const Automate = ({ data }) => {
             </div>
             <Carousels testimonials={testimonials}></Carousels>
           </div>
+          <section className="section-a">
+            <div className="title">
+              <h2>{newsTitle}</h2>
+            </div>
+            <div className="masonry">
+              <MY articles={edges}></MY>
+            </div>
+          </section>
         </div>
       </Layout>
     </>

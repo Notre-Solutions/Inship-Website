@@ -31,6 +31,10 @@ $product-title-size: 5rem;
       color: #343536;
       // color: $CAPS-dark;
     }
+    &-color-standard {
+      color: #343536;
+      // color: $CAPS-dark;
+    }
   }
 
   .btn {
@@ -62,10 +66,6 @@ $product-title-size: 5rem;
       @include hover-btn;
     }
 
-    &-color-3:active {
-      @include active-btn;
-    }
-
     &-color-2 {
       color: $CAPS-dark;
       @include btn($CAPS-dark, $CAPS-dark, "dark");
@@ -81,6 +81,22 @@ $product-title-size: 5rem;
     &-color-3:active {
       @include active-btn;
     }
+
+    &-color-standard {
+      @include btn($inship-color-background, $inship-color-background, "none");
+      @include transition-ease;
+      margin: 1rem;
+      margin-top: 2rem;
+      color: black;
+    }
+
+    &-color-standard:hover {
+      @include hover-btn;
+    }
+
+    &-color-standard:active {
+      @include active-btn;
+    }
   }
 
   .product-header {
@@ -94,6 +110,14 @@ $product-title-size: 5rem;
 
     &-color-2 {
       @include productHeader("../img/CAPS.jpg", center, 5%, 10%);
+
+      .header-text-box {
+        left: 2% !important;
+      }
+    }
+
+    &-color-standard {
+      @include productHeader("../img/office.jpg", center, 5%, 10%);
 
       .header-text-box {
         left: 2% !important;
@@ -131,6 +155,13 @@ $product-title-size: 5rem;
       }
     }
 
+    .color-standard {
+      &-line {
+        // background-color: $T2P-bg !important;
+        background-color: #777777;
+      }
+    }
+
     &-section-a {
       &-title {
         margin-bottom: 4rem;
@@ -163,7 +194,8 @@ $product-title-size: 5rem;
         .dark {
           &-color-1,
           &-color-2,
-          &-color-3 {
+          &-color-3,
+          &-color-standard {
             // background-color: #131730!important;
             // border-radius: 10rem;
             h1 {

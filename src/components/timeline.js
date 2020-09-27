@@ -56,6 +56,7 @@ function getTimelineElement(item, style, it) {
 }
 
 const TimeLine = ({ timeline, style }) => {
+  console.log(style)
   return (
     <VerticalTimeline>
       {timeline.map((item, i) => {

@@ -49,7 +49,22 @@ function IntergrationOptions(style, intergrationOption) {
 }
 
 function Heading(alias, style, title, description, featuredimage) {
-  if (alias === "CAPS") {
+  if (alias == "Functionality") {
+    return (
+      <div className={`header-text-box header-text-box-${style}`}>
+        <h1 className="heading">
+          <span className={`main-header header-${style}`}>{title}</span>
+          <span className={`sub-header header-${style}`}>
+            <Markdown markdown={description} />
+          </span>
+        </h1>
+
+        <a href="#video" className={`btn-${style}`}>
+          Watch a video
+        </a>
+      </div>
+    )
+  } else if (alias === "CAPS") {
     return (
       <div className={`header-text-box header-text-box-${style}`}>
         <h1 className="heading">
@@ -112,7 +127,9 @@ const Product = ({ data }) => {
     sectionCTitles,
     sideNavBar,
   } = data.allMarkdownRemark.edges[0].node.frontmatter.productPageTemplate
-
+  console.log(timeline)
+  console.log(backgroundimage)
+  console.log(style)
   return (
     <>
       <Layout current={alias} style={style}>
@@ -155,7 +172,7 @@ const Product = ({ data }) => {
                 })}
               </div>
             </div>
-            <div id="integration-options" className="product-main-section-d">
+            {/* <div id="integration-options" className="product-main-section-d">
               <div className={`product-main-section-d-title ${style}`}>
                 {sectionDTitle}
               </div>
@@ -167,7 +184,7 @@ const Product = ({ data }) => {
                   return IntergrationOptions(style, intergration)
                 })}
               </div>
-            </div>
+            </div> */}
             <div id="video" className="product-main-section-d">
               <div className={`product-main-section-d-title ${style}`}>
                 {sectionETitle}

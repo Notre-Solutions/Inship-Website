@@ -2,6 +2,7 @@ import React from "react"
 import "../css/main.css"
 import Markdown from "../components/markdown"
 import ProductCard from "../components/productCard"
+import LogoCard from "../components/logoCard"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import ReactModal from "../components/modal"
@@ -16,21 +17,21 @@ function showSectionE(show, title, cards, slogan) {
     return (
       <>
         <div className="section-e">
-          <div className="title">{title}</div>
+          <h2 className="title">{title}</h2>
           <div className="cards">
             {cards.map(element => {
               return (
                 <>
                   <div className="card">
                     <i className={`fa fa-${element.icon} card-icon`}></i>
-                    <div className="card-title">{element.title}</div>
+                    <h3 className="card-title">{element.title}</h3>
                     <div className="card-text">{element.text}</div>
                   </div>
                 </>
               )
             })}
           </div>
-          <div className="slogan">{slogan}</div>
+          <h2 className="slogan">{slogan}</h2>
         </div>
       </>
     )
@@ -151,6 +152,17 @@ function displayProducts(edges) {
   )
 }
 
+function displayLogs(sectionC2) {
+  const images = sectionC2.images
+  return (
+    <div className="cards">
+      {images.map(img => {
+        return <LogoCard fluidImage={img.image.childImageSharp.fluid} />
+      })}
+    </div>
+  )
+}
+
 const Landing = ({ data }) => {
   const {
     subtitle,
@@ -158,10 +170,14 @@ const Landing = ({ data }) => {
     sectionB,
     sectionB_alt,
     sectionC,
+    sectionC2,
     sectionD,
     sectionE,
+    sectionF,
   } = data.markdownRemark.frontmatter.landingPage
   const edges = data.allMarkdownRemark.edges
+
+  console.log(sectionC2)
 
   return (
     <>
@@ -177,7 +193,8 @@ const Landing = ({ data }) => {
             <div className="header-text-box">
               <h1 className="heading">
                 <span className="main-header">
-                  IN<span className="bold">SHIP</span> APS
+                  IN<span className="bold">SHIP</span>{" "}
+                  <span className="mid">APS</span>
                 </span>
                 <span className="sub-header">{subtitle.line1}</span>
                 <span className="sub-header">{subtitle.line2}</span>
@@ -212,9 +229,9 @@ const Landing = ({ data }) => {
             show={sectionB_alt.show}
           ></ProblemSection>
           <div className="line-1"></div>
-          <section className="section-c">
-            <h2 className="section-c-heading">{sectionC.title}</h2>
-            {displayProducts(edges)}
+          <section className="section-c-2">
+            <h2 className="section-c-2-heading">{sectionC2.title}</h2>
+            {displayLogs(sectionC2)}
           </section>
           <div className="line"></div>
           <div className="section-d">
@@ -224,6 +241,10 @@ const Landing = ({ data }) => {
               className="prosses-img"
             />  */}
             {showSectionF(sectionD.show)}
+            <section className="section-c-2">
+              <h2 className="section-c-2-heading">{sectionF.title}</h2>
+              {displayLogs(sectionF)}
+            </section>
           </div>
         </div>
       </Layout>
@@ -305,6 +326,30 @@ export const pageQuery = graphql`
           sectionC {
             title
             show
+          }
+          sectionC2 {
+            title
+            images {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 10000, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
+                }
+              }
+            }
+          }
+          sectionF {
+            title
+            images {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 10000, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
+                }
+              }
+            }
           }
           sectionD {
             show

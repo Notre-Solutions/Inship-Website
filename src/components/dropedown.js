@@ -13,7 +13,7 @@ export default class DD extends React.Component {
       <>
         <li className="dropdown menu-nav__item">
           <a href="javascript:void(0)" className="dropbtn">
-            Solutions <i className="fa fa-angle-down"></i>
+            {this.props.name} <i className="fa fa-angle-down"></i>
           </a>
           <div
             className={`dropdown-content dropdown-content-${this.props.bgStyle}`}

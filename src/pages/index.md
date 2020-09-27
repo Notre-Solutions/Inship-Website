@@ -6,26 +6,27 @@ landingPage:
     line2: Behind Automated Accounts
     line3: Payable Processes
   sectionE:
-    title: 'How INSHIP works:'
+    title: "InShip works for you, with you."
     show: true
-    slogon: It really is that simple...and it works.
+    slogon: It really is that simple.
     cards:
       - icon: envelope
         title: Step 1
-        text: Your suppliers email their invoices to your INSHIP email account.
-      - icon: copy
+        text: Suppliers e-mail documents.
+      - icon: cog
         title: Step 2
         text: >-
-          INSHIP takes over: the system simply extracts the invoices and then
-          codes, processes, distributes and stores it.
-      - icon: balance-scale
+          InShip extracts.
+      - icon: check
         title: Step 3
         text: >-
-          INSHIP updates your accounts, reconciles them with your statements and
-          automatically searches for any missing invoices, while never losing
-          any of your documents.
+          You approve.
+      - icon: university
+        title: Step 4
+        text: >-
+          To your accounts package.
   sectionA:
-    url: 'https://www.youtube.com/watch?v=FBxFqmtJ3YA'
+    url: "https://www.youtube.com/watch?v=FBxFqmtJ3YA"
     title: What We Do
     show: false
     body: >-
@@ -105,7 +106,7 @@ landingPage:
       - title: What we do
         subtitle: Providing the Technology behind Automated Accounts Payable Processes
         photo: photo-1
-        readMore: '#'
+        readMore: "#"
         showReadMore: true
         description: >-
           InShip specializes in Accounts Payable plug-in solutions for
@@ -128,7 +129,7 @@ landingPage:
       - title: The Problem
         subtitle: Moving from Paper to Digital
         photo: photo-2
-        readMore: '#'
+        readMore: "#"
         showReadMore: true
         description: >-
           Accounts Payable is timely and expensive; processing one invoice or
@@ -150,7 +151,7 @@ landingPage:
       - title: Solutions
         subtitle: Three Solutions Tailored for All Needs
         photo: photo-3
-        readMore: '#'
+        readMore: "#"
         showReadMore: true
         description: >-
           InShip has designed three solutions tailored for all needs which
@@ -177,6 +178,25 @@ landingPage:
   sectionC:
     title: Products
     show: false
+  sectionC2:
+    title: We Integrate With 40+ Packages Including...
+    images:
+      - image: ../img/integrations/acciq.png
+      - image: ../img/integrations/brc2.jpg
+      - image: ../img/integrations/xero.png
+      - image: ../img/integrations/surf.jpg
+      - image: ../img/integrations/sage.png
+      - image: ../img/integrations/qb.jpg
+      - image: ../img/integrations/sage50.png
+  sectionF:
+    title: Over 500+ Companies Love InShip
+    images:
+      - image: ../img/integrations/cd.png
+      - image: ../img/integrations/fastway.jpg
+      - image: ../img/integrations/stacks.png
+      - image: ../img/integrations/zeus.png
+      - image: ../img/integrations/hireco.jpg
+
   sectionD:
     title: The Process
     show: true
