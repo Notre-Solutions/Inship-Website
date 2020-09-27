@@ -80,7 +80,7 @@ const Resources = ({ data }) => {
                   />
                   <div className="jobTitle">{theTeam.ceo.title}</div>
                   <div className="name">{theTeam.ceo.name}</div>
-                  <div className="section">{theTeam.ceo.section}</div>
+                  {/* <div className="section">{theTeam.ceo.section}</div> */}
                 </div>
               </div>
               <div className="cs">
@@ -93,7 +93,7 @@ const Resources = ({ data }) => {
                       />
                       <div className="jobTitle">{cSuite.title}</div>
                       <div className="name">{cSuite.name}</div>
-                      <div className="section">{cSuite.section}</div>
+                      {/* <div className="section">{cSuite.section}</div> */}
                     </div>
                   )
                 })}
@@ -108,7 +108,7 @@ const Resources = ({ data }) => {
                       />
                       <div className="jobTitle">{employee.title}</div>
                       <div className="name">{employee.name}</div>
-                      <div className="section">{employee.section}</div>
+                      {/* <div className="section">{employee.section}</div> */}
                     </div>
                   )
                 })}

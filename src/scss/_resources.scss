@@ -100,9 +100,11 @@
         .text-box-container {
           padding: 2rem;
           width: 50rem;
-          font-size: small;
+          font-size: 1.4rem;
           ul {
             list-style-position: inside;
+            font-size: 1.4rem;
+            padding: none !important;
           }
           h3 {
             font-weight: 700;
