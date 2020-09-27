@@ -15,6 +15,8 @@ function getComponentStyle(style, it) {
       return "#FEAE01"
     } else if (style === "color-3") {
       return "#574A85"
+    } else if (style === "color-standard") {
+      return "#00b493"
     }
   } else {
     if (style === "color-1") {
@@ -23,6 +25,8 @@ function getComponentStyle(style, it) {
       return "#343536"
     } else if (style === "color-3") {
       return "#252941"
+    } else if (style === "color-standard") {
+      return "#567e76"
     }
   }
 }

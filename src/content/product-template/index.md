@@ -19,9 +19,6 @@ productPageTemplate:
     - name: Customers Reported
       link: customers-reported
       icon: exclamation-triangle
-    - name: Integration Options
-      link: integration-options
-      icon: smile-beam
     - name: Video
       link: video
       icon: play-circle
