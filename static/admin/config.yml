@@ -41,21 +41,21 @@ collections:
       - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: true}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Product Page", name: "productpage", widget: "object", fields: [
-          # {label: "Timeline Items", name: "timeline", widget: list, fields:[
-          #   {label: "Title", name: "title", widget: string, required: true},
-          #   {label: "Description", name: "description", widget: "markdown", required: true}
-          # ]},
-          {label: "Features", name: "features", widget: list, fields:[
+          {label: "Timeline Items", name: "timeline", widget: list, fields: [
             {label: "Title", name: "title", widget: string, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
-          {label: "Custermers Reported", name: "customerReports", widget: list, fields:[
+          {label: "Features", name: "features", widget: list, fields: [
+            {label: "Title", name: "title", widget: string, required: true},
+            {label: "Description", name: "description", widget: "markdown", required: true}
+          ]},
+          {label: "Custermers Reported", name: "customerReports", widget: list, fields: [
             {label: "Percentage", name: "percentage", widget: number, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]},
          {label: "Integration Section", name: "integration", widget: "object", fields: [
           {label: "Paragraph", name: "paragraph", widget: string, required: true},
-          {label: "Integration Options", name: "integrations", widget: list, fields:[
+          {label: "Integration Options", name: "integrations", widget: list, fields: [
             {label: "Icon", name: "icon", widget: string, required: true},
             {label: "Description", name: "description", widget: "markdown", required: true}
           ]}
@@ -70,7 +70,7 @@ collections:
         name: "landingPage"
         fields:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "landing-page"}
-          - {label: "Landing Page", name: landingPage, widget: object, fields:[
+          - {label: "Landing Page", name: landingPage, widget: object, fields: [
               {label: "Subtitle", name: subtitle, widget: object, fields: [
                 {label: "Line 1", name: line1, widget: string, required: true},
                 {label: "Line 2", name: line2, widget: string, required: true},
@@ -80,7 +80,7 @@ collections:
                 {label: "Title", name: title, widget: string, required: true},
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
                 {label: "Slogon", name: slogon, widget: markdown, required: true},
-                {label: "Cards", name: "cards", widget: list, fields:[
+                {label: "Cards", name: "cards", widget: list, fields: [
                   {label: "Title", name: "title", widget: string, required: true},
                   {label: "Icon", name: "icon", widget: string, required: true},
                   {label: "Description", name: "text", widget: "string", required: true}
@@ -94,7 +94,7 @@ collections:
               {label: "The Problem", name: sectionB, widget: object, fields: [
                 {label: "Title", name: title, widget: string, required: true},
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
-                {label: "Cards", name: "cards", widget: list, fields:[
+                {label: "Cards", name: "cards", widget: list, fields: [
                   {label: "Title", name: "title", widget: string, required: true},
                   {label: "Description", name: "description", widget: "markdown", required: true}
               ]}
@@ -102,7 +102,7 @@ collections:
               {label: "The Problem *NEW*", name: sectionB_alt, widget: object, fields: [
                 {label: "Title", name: title, widget: string, required: true},
                 {label: "Show?", name: show, widget: boolean, required: true, default: true},
-                {label: "Cards", name: "cards", widget: list, fields:[
+                {label: "Cards", name: "cards", widget: list, fields: [
                   {label: "Title", name: "title", widget: string, required: true},
                   {label: "Show Read More?", name: "showReadMore", widget: boolean, required: true},
                   {label: "Read More Link", name: "readMore", widget: string, required: true},
@@ -110,10 +110,10 @@ collections:
                   {label: "Description", name: "description", widget: "markdown", required: true}
               ]}
               ]},
-              {label: "Products", name: sectionC, widget: object, fields:[
+              {label: "Products", name: sectionC, widget: object, fields: [
                 {label: "Show?", name: show, widget: boolean, required: true, default: true}
               ]},
-              {label: "Process Flow", name: sectionD, widget: object, fields:[
+              {label: "Process Flow", name: sectionD, widget: object, fields: [
               {label: "Title", name: title, widget: string, required: true},
               {label: "Show?", name: "show", widget: boolean, required: true}
               ]}
@@ -134,7 +134,7 @@ collections:
             {label: "Section D Title", name: sectionDTitle, widget: string},
             {label: "Section D Subtitle", name: sectionDSubtitle, widget: string},
             {label: "Section E Title", name: sectionETitle, widget: string},
-            {label: "Side Nav Bar", name: "sideNavBar", widget: list, fields:[
+            {label: "Side Nav Bar", name: "sideNavBar", widget: list, fields: [
               {label: "Name", name: "name", widget: string, required: true},
               {label: "Icon", name: "icon", widget: "string", required: true}
           ]}
@@ -180,7 +180,7 @@ collections:
             {label: "News Title", name: newsTitle, widget: string},
             {label: "Testimonials", name: sectionB, widget: object, fields: [
               {label: "Testimonial Title", name: title, widget: string},
-              {label: "Testimonials", name: "testimonials", widget: list, fields:[
+              {label: "Testimonials", name: "testimonials", widget: list, fields: [
                 {label: "Title", name: "title", widget: string, required: true},
                 {label: "Stars", name: "stars", widget: number, required: true},
                 {label: "Name", name: "name", widget: string, required: true},
@@ -190,7 +190,7 @@ collections:
             {label: "Process Blurb", name: sectionC, widget: object, fields: [
               {label: "Description", name: description, widget: markdown, required: true}
             ]},
-            {label: "Case Studies", name: "sectionD", widget: list, fields:[
+            {label: "Case Studies", name: "sectionD", widget: list, fields: [
               {label: "Title", name: "title", widget: string, required: true},
               {label: "The Issue", name: "theIssue", widget: string, required: true},
               {label: "The Brief", name: "theBrief", widget: string, required: true},
@@ -206,7 +206,7 @@ collections:
           - {label: "Template Key", name: templateKey, widget: "hidden", default: "resourcesPage"}
           - {label: "Resources Page", name: resourcesPage, widget: object, fields: [
             {label: "Sub Title", name: titleBlurb, widget: string},
-            {label: "Cards", name: "cards", widget: list, fields:[
+            {label: "Cards", name: "cards", widget: list, fields: [
               {label: "Title", name: "title", widget: string, required: true},
               {label: "Subtitle", name: "subtitle", widget: string, required: true},
               {label: "Icon", name: "icon", widget: string, required: true},
