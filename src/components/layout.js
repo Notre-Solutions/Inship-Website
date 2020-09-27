@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 import Nav from "./nav"
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
+import DemoButton from "./book-demo-button"
 
 const Layout = ({ children, current, style }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ children, current, style }) => {
       <Helmet></Helmet>
       <Nav current={current} style={style}></Nav>
       {children}
+      <DemoButton></DemoButton>
       <Footer></Footer>
     </>
   )

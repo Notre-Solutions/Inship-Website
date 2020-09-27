@@ -264,3 +264,22 @@
     }
   }
 }
+
+.demo-button {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background-color: $inship-color-background;
+  text-align: center;
+  font-size: 1.4rem;
+  @include transition-ease;
+  z-index: 100;
+
+  &:hover {
+    cursor: pointer;
+    @include hover-scale;
+  }
+}
