@@ -185,7 +185,8 @@ landingPage:
 
           1. *Tick To Post or T2P,* with T2P We provide an online front end customisation and own labeled bolt on to your system. Here your users can review and approve invoices before they are push to your software based on your requirements the document can be stored by us or your software.    assumenda.
       - title: Why Change
-        description: 1. *Complete Accounts Payable Solution or CAPS*, is a fully online
+        description:
+          1. *Complete Accounts Payable Solution or CAPS*, is a fully online
           accounts payable department. Allowing businesses to replicate the
           complex process and automate it. The full systems includes po matching
           both at a GRN and line level, auto coding,  auto routeing for approval

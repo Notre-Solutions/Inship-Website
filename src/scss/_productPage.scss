@@ -16,6 +16,8 @@ $product-title-size: 5rem;
       padding: 1rem;
       background-color: #20253870;
     }
+    .header-color-standard {
+    }
   }
 
   .header,
@@ -117,7 +119,7 @@ $product-title-size: 5rem;
     }
 
     &-color-standard {
-      @include productHeader("../img/office.jpg", center, 5%, 10%);
+      @include productHeader("../img/hand-shake.jpg", center, 5%, 10%);
 
       .header-text-box {
         left: 2% !important;
