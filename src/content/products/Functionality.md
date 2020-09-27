@@ -1,6 +1,6 @@
 ---
 templateKey: product
-backgroundimage: CAPS.jpg
+backgroundimage: office.jpg
 title: Functionality
 alias: Functionality
 url: "https://www.youtube.com/watch?v=1el1FR1d1R4"
