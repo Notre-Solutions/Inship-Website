@@ -28,7 +28,7 @@ automatePage:
 
       * Install an expensive process that will take a number of years to produce a ROI.
 
-      * **Install InShip's user friendly and flexible solution, that give you the functionality of a large enterprise solution but at the cost of a simple dat capture tool.**
+      * **Install InShip's user friendly and flexible solution, that give you the functionality of a large enterprise solution but at the cost of a simple data capture tool.**
   sectionB:
     title: Testimonials
     testimonials:
