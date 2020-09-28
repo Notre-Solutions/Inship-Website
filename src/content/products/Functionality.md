@@ -8,7 +8,14 @@ featuredimage: /img/caps-logo-3.jpeg
 featuredpost: true
 style: color-standard
 id: 4
-description: How does it work?
+description: >-
+  How does it work?
+
+
+  InShip comes you a vast range of function. We recognise that you will not need or be aware of all of the possibilities but this allow us to tailor a solution to meet you needs. Allowing you to focus on what and who you a buying from rather then processing as many invoices as possible.
+
+
+  This changes the AP team from processors to reviewers.
 features:
   feature1: 15 Users
   feature2: true
