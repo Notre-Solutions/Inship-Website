@@ -124,7 +124,7 @@ productpage:
     - percentage: 100
       description: Reduces document storage by 100%
   integration:
-    paragraph: "Providing API end-points allows CAPs to update your system:"
+    paragraph: "Providing API end-points allows InShip to update your system:"
     integrations:
       - icon: link
         description: |-
