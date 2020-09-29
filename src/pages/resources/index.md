@@ -11,8 +11,7 @@ resourcesPage:
       showReadMore: false
       subtitle: We do bespoke intergations
       titleOverlayIcon: Intergration
-      description:
-        InShip has integrated with over 35 ERPs and accounting software
+      description: InShip has integrated with over 35 ERPs and accounting software
         systems; ranging from household names to market leading ERP systems.
     - title: Experienced
       icon: laptop
@@ -20,8 +19,7 @@ resourcesPage:
       readMore: "#"
       subtitle: IT Professionals
       titleOverlayIcon: Experienced
-      description:
-        InShip has a dedicated team that have over 50 years experience
+      description: InShip has a dedicated team that have over 50 years experience
         delivering complex IT solutions in many industries.
     - title: Customer Focused
       icon: handshake
@@ -29,8 +27,7 @@ resourcesPage:
       showReadMore: false
       subtitle: Peace of mind
       titleOverlayIcon: Customer Focused
-      description:
-        InShip is used in a wide range of industries and is NOT designed as
+      description: InShip is used in a wide range of industries and is NOT designed as
         a one solution suits all. We always tailor our solution to meet your
         users needs.
     - title: Adaptable
@@ -39,8 +36,7 @@ resourcesPage:
       showReadMore: false
       subtitle: Worked anywhere
       titleOverlayIcon: Adaptable
-      description:
-        InShip meets a diverse group of users needs from retail, wholesale,
+      description: InShip meets a diverse group of users needs from retail, wholesale,
         food, finance, manufacturing, aviation, service industry and many more.
     - title: Comprehensive Training
       icon: dumbbell
@@ -48,8 +44,7 @@ resourcesPage:
       showReadMore: false
       subtitle: users
       titleOverlayIcon: Training and on-board support.
-      description:
-        InShip provides initial and ongoing training and support for your
+      description: InShip provides initial and ongoing training and support for your
         trainers. Documentation is branded to meet your needs.
   theTeam:
     title: Our Team
@@ -65,18 +60,16 @@ resourcesPage:
         scrambled it to make a type specimen book.
     cSuite:
       - img: ../../img/wil.jpeg
-        name: Wil Wash
+        name: Wil Walsh
         title: MD
-        section:
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+        section: Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
       - img: ../../img/placeHolderMale.png
         name: Jack Dunne
         title: CTO
-        section:
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+        section: Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
@@ -84,24 +77,21 @@ resourcesPage:
       - img: ../../img/kevin.jpeg
         name: Dr. Kevin Casey
         title: CIO
-        section:
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+        section: Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
       - img: ../../img/female-placeholder.jpg
         name: Maria Johnson
         title: Client Account Manager
-        section:
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+        section: Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
       - img: ../../img/Conal.jpeg
         name: Conal O'Hare
         title: Software Engineer
-        section:
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+        section: Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           sincthe 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
@@ -127,8 +117,7 @@ resourcesPage:
         text: Simple remote approval for approvers who are always on the go
       - icon: scroll
         heading: Purchase Order Creation
-        text:
-          InShip links with many PO systems (Sage, Intact etc.). However some
+        text: InShip links with many PO systems (Sage, Intact etc.). However some
           businesses require a supplementary/different system, where InShip is
           thge solution. Our system cna work as a stand alone PO system or in
           addition to you ERP or account software PO system. The PO system can
