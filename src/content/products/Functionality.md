@@ -3,7 +3,7 @@ templateKey: product
 backgroundimage: hand-shake.jpg
 title: Functionality
 alias: Functionality
-url: https://youtu.be/qnWCwpm8nCI
+url: https://youtu.be/Y6CH7Ml3S2Q
 featuredimage: /img/caps-logo-3.jpeg
 featuredpost: true
 style: color-standard
