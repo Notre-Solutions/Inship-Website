@@ -101,7 +101,7 @@ resourcesPage:
       - icon: tree
         text: A paper free process
       - icon: clock
-        text: Save up to 9-% of time & cost of processing paper invoices
+        text: Save up to 90% of time & cost of processing paper invoices
       - icon: list
         text: Bursting with features
     features:
