@@ -64,8 +64,7 @@ productpage:
         approved at once with a simple click.
       icon: circle
     - title: Approval Limits
-      description: A user limit may be set on documents  Don't understand what you
-        want here?
+      description: A user limit may be set by supplier, user and or General Ledger Code.
       icon: circle
     - title: Comments
       description: Users can add new, pre-defined or forced comments on documents.
