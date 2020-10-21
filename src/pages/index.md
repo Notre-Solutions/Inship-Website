@@ -123,7 +123,7 @@ landingPage:
           If a business automates this process, 80-90% of that cost can be removed.  
 
 
-          Along with standard processing invoices get miss laid, management may require files to be searched to obtain copy invoices for detailed review.
+          Along with standard processing invoices get mislaid, management may require files to be searched to obtain copy invoices for detailed review.
   sectionC2:
     title: We Integrate With 40+ Packages Including...
     images:
