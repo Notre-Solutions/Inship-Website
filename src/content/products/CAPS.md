@@ -51,9 +51,8 @@ productpage:
       description: All documents from one supplier or all PO matched documents can be
         approved at once with a simple click.
     - title: Approval Limits
-      description: |-
-        A user limit may be set on documents 
-        Don't understand what you want here?
+      description: Approval limits can be set by users, suppliers and or General
+        Ledger Codes
     - title: Comments
       description: Users can add new, pre-defined or forced comments on documents.
     - title: Price Watch
