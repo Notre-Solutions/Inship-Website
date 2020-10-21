@@ -47,43 +47,13 @@ landingPage:
           pushing the data to your accounts package.
 
 
-          This removes the paper invoice from  your office, while allowing you the functionality you required to complete day to day tasks.
+          This removes the paper invoice from  your office, while allowing you the functionality you require to complete day to day tasks.
 
 
           As most accounts departments handle invoices in different ways, InShip can be configured to meet your needs be that a complex approval process, specialised data extraction, matching to a Purchase Order, looking out for price increases etc.
 
 
           With InShip you have a customisable closed loop system that allows your business to process invoices the way you want.
-      - title: The Problem
-        subtitle: Moving from Paper to Digital
-        photo: photo-2
-        readMore: "#"
-        showReadMore: false
-        description: >-
-          In most companies their current paper based system of handling
-          invoices comes with an array of issues:
-
-
-          1. Envelopes must be opened.
-
-          2. Emails must be printed.
-
-          3. Invoices need to be matched and sorted.
-
-          4. Invoices need to get approvals.
-
-          5. Manually entered on a computer system.
-
-          6. Emails must be reconciled to statements and filed. 
-
-
-          This is timely and expensive process ; in fact processing one invoice or bill can include as many as ten steps, costing approximately €4.50 (source: pwc). 
-
-
-          If a business automates this process, 80-90% of that cost can be removed.  
-
-
-          Along with standard processing invoices get miss laid, management may require files to be searched to obtain copy invoices for detailed review.
       - title: Solutions
         subtitle: Tailored for Your Needs
         photo: photo-3
@@ -124,6 +94,36 @@ landingPage:
 
 
           With InShip we can set up our solution to meet your complex needs, with InShip you do not change your process to meet our solution we change our process to meet your needs. Let us know what your special requirements are, so we can explain how we deal with them.
+      - title: The Problem
+        subtitle: Moving from Paper to Digital
+        photo: photo-2
+        readMore: "#"
+        showReadMore: false
+        description: >-
+          In most companies their current paper based system of handling
+          invoices comes with an array of issues:
+
+
+          1. Envelopes must be opened.
+
+          2. Emails must be printed.
+
+          3. Invoices need to be matched and sorted.
+
+          4. Invoices need to get approvals.
+
+          5. Manually entered on a computer system.
+
+          6. Emails must be reconciled to statements and filed. 
+
+
+          This is timely and expensive process ; in fact processing one invoice or bill can include as many as ten steps, costing approximately €4.50 (source: pwc). 
+
+
+          If a business automates this process, 80-90% of that cost can be removed.  
+
+
+          Along with standard processing invoices get miss laid, management may require files to be searched to obtain copy invoices for detailed review.
   sectionC2:
     title: We Integrate With 40+ Packages Including...
     images:
@@ -181,12 +181,12 @@ landingPage:
         description: >-
           **InShip APS provides a number of different solutions.** 
 
+
           1. *Accounts Payable Combined or APC*  is as a back-end document handling tool, your users are supplied with a email address (and if required a dnd solution) where both they and their suppliers and email invoices and bills to. APC using InShip's AI extracts the relevant data from each document and pushes both a copy of the Bill/Invoice to you Accounts Software ready for in a draft state ready for approval.
 
-          1. *Tick To Post or T2P,* with T2P We provide an online front end customisation and own labeled bolt on to your system. Here your users can review and approve invoices before they are push to your software based on your requirements the document can be stored by us or your software.    assumenda.
+          2. *Tick To Post or T2P,* with T2P We provide an online front end customisation and own labeled bolt on to your system. Here your users can review and approve invoices before they are push to your software based on your requirements the document can be stored by us or your software.
       - title: Why Change
-        description:
-          1. *Complete Accounts Payable Solution or CAPS*, is a fully online
+        description: 1. *Complete Accounts Payable Solution or CAPS*, is a fully online
           accounts payable department. Allowing businesses to replicate the
           complex process and automate it. The full systems includes po matching
           both at a GRN and line level, auto coding,  auto routeing for approval
