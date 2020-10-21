@@ -108,7 +108,7 @@ resourcesPage:
       - icon: user-check
         heading: Support & Training
         text: |-
-          * Assigned a friendly agent to guid you though your InShip journey
+          * Assigned a friendly agent to guide you though your InShip journey
           * *9-5 ticket support*  
           * Approx. 50 general and specific video tutorials 
           * Linked detailed user manual
@@ -119,8 +119,8 @@ resourcesPage:
         heading: Purchase Order Creation
         text: InShip links with many PO systems (Sage, Intact etc.). However some
           businesses require a supplementary/different system, where InShip is
-          thge solution. Our system cna work as a stand alone PO system or in
-          addition to you ERP or account software PO system. The PO system can
+          the solution. Our system can work as a stand alone PO system or in
+          addition to your ERP or account software PO system. The PO system can
           be set up with simple/complex approval processes, for example;
           automatically routing PO approvals based on suppliers items purchases
           or values.
