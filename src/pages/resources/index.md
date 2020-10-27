@@ -109,7 +109,7 @@ resourcesPage:
         heading: Support & Training
         text: |-
           * Assigned a friendly agent to guide you though your InShip journey
-          * *9-5 ticket support*  
+          * Ticket support  
           * Approx. 50 general and specific video tutorials 
           * Linked detailed user manual
       - icon: mobile
