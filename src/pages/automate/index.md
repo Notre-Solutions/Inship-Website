@@ -13,7 +13,7 @@ automatePage:
       ## "Our Process is unique"
 
 
-      Processing invoices manually is a costly and timely process that typically involves 8 to 10 steps. It has been proven that automating this process can reduce processing time by 80-90%, making it obvious as to why business are looking at an automated solution.
+      Processing invoices manually is a costly and timely process that typically involves 8 to 10 steps. It has been proven that automating this process can reduce processing time by 80-90%, making it obvious as to why businesses are looking for an automated solution.
 
 
       You may be concerned about automating your process, as it may seem complex or "unique" but with InShip we focus on providing a flexible system that can be simply tailored to meet different businesses different needs.
