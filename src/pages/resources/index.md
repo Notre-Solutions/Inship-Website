@@ -34,7 +34,7 @@ resourcesPage:
       readMore: "#"
       icon: dice-d20
       showReadMore: false
-      subtitle: Worked anywhere
+      subtitle: Works anywhere
       titleOverlayIcon: Adaptable
       description: InShip meets a diverse group of users needs from retail, wholesale,
         food, finance, manufacturing, aviation, service industry and many more.
