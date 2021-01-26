@@ -8,10 +8,9 @@ featuredimage: /img/caps-logo-3.jpeg
 featuredpost: true
 style: color-2
 id: 3
-description: CAPs is a fully functional accounts payable department, online.
-  CAPs allows businesses to customise many aspects of the process from approval
-  to automatic invoice coding. CAPs boasts impressive features such as PO
-  matching at line level, statement reconciliation and much more.
+description: InShip CAPS is our flagship solution. This comprehensive, automated
+  accounts payable solution works to significantly increase processing
+  efficiency and accuracy.
 features:
   feature1: 15 Users
   feature2: true
@@ -20,83 +19,90 @@ features:
 productpage:
   features:
     - title: Paper Elimination
-      description: Documents are e-mailed or uploaded to the system via DnD, removing
-        all previous paper handling requirements.
+      description: documents are emailed or uploaded to the system via Drag and Drop,
+        removing all previous paper handling requirements
     - title: User Defined Data Capture
-      description: Data is captured automatically and the data capture requirements
-        can easily be modified by the user. Capture fields can be added, edited
-        and deleted.
+      description: data is captured automatically according to user-defined
+        requirements and rules. Those rules can be easily modified by the user.
+        Capture fields can be added, edited, and deleted
     - title: Issue Checking
-      description: CAPs comes with standard issue checks that can be modified at both
-        a global and/or group level.
+      description: CAPS comes with standard issue checking that can be easily modified
+        at either a global and / or group level
     - title: Document Routing
-      description: CAPs includes a workflow process that mirrors and automates both
-        simple and complex process flows to meet any businesses needs.
+      description: CAPS includes a workflow process that mirrors and automates both
+        simple and more complex process flows to meet any business need
     - title: Auto-Routing
-      description: Workflow can be automated by routing using supplier codes, general
-        ledger codes, delivery address, project code and more.
+      description: workflow can be automated by routing using supplier codes, general
+        ledger codes, delivery address, project code and more
     - title: PO and GRN Matching
-      description: CAPs can match invoices to purchase orders (POs) or goods received
-        notes (GRNs) at a total or line by line level. Delivery, discounts and
-        various surcharges can also be easily handled.
+      description: CAPS can match invoices to purchase orders (POs) or goods received
+        notes (GRNs) at a total or line-by-line level. Delivery, discounts and
+        various surcharges can also be easily handled
     - title: General Ledger Coding
-      description: CAPs can auto-code invoices based on multiple factors.
+      description: CAPs can auto-code invoices based on multiple factors
     - title: Line by Line Data Capture
-      description: CAPs can auto-capture line items on invoices for coding, reporting
-        and searching purposes.
+      description: CAPS can auto-capture line items on invoices for coding, reporting
+        and searching purposes
     - title: Approval
-      description: With all relevant information displayed on screen, documents can be
+      description: with all relevant information displayed on screen, documents can be
         easily approved with one click .
     - title: Bulk Approvals
-      description: All documents from one supplier or all PO matched documents can be
-        approved at once with a simple click.
+      description: all documents from one supplier or all PO matched documents can be
+        approved at once with a simple click
     - title: Approval Limits
-      description: Approval limits can be set by users, suppliers and or General
+      description: approval limits can be set by users, suppliers and / or General
         Ledger Codes
     - title: Comments
-      description: Users can add new, pre-defined or forced comments on documents.
+      description: users can add new, pre-defined or forced comments on documents
     - title: Price Watch
-      description: CAPs watches for price increases on items and displays any increase
-        in price to the user.
+      description: CAPS watches for price increases on items and displays any increase
+        in price to the user
     - title: Invoice Storage
-      description: The original invoice can be stored for up to seven years, if
-        required; the document can be searched for by the user at any time.
+      description: the original digitized invoice can be stored for up to 7 years;
+        documents can be searched for by the user at any time
     - title: High Security Documents
-      description: Highly confidential documents can be handled by CAPs.
+      description: highly confidential documents can be handled by CAPS within a
+        secure cloud environment
     - title: Statement Reconciliation
-      description: Statement are automatically reconciled; any invoice errors are
-        detected and CAPs provides a simple method of notifying suppliers of any
-        issues.
+      description: statements are automatically reconciled; any invoice errors are
+        detected and CAPS provides a simple method of notifying suppliers of any
+        issues
     - title: Search
-      description: Documents can be searched for using multiple fields such as the
-        supplier, invoice number, date, PO detail, value, to name a few.
+      description: documents can be searched for using multiple fields such as
+        supplier name, invoice number, date, PO detail, value, to name a few
     - title: Search Reporting
-      description: All search results can be reported on either an invoice or an
-        invoice line bases.
+      description: all search results can be reported on either an invoice or an
+        invoice line basis
     - title: Document Tracking
-      description: Invoices within CAPs that require approval are tracked,
+      description: invoices within CAPS that require approval are tracked,
         illustrating whose approval is required and the outstanding approval
-        time of the document.
+        time of the document
     - title: Issue Handling
-      description: CAPs provides multiple ways to handle invoice issues which can be
-        customised globally.
+      description: CAPS provides multiple ways to handle invoice issues which can be
+        customised globally
     - title: Mobile Approval
-      description: Documents can be approved by CAPs mobile app.
+      description: documents can be approved by the CAPS mobile application, on the fly
   timeline:
     - title: Receiving Documents
-      description: Invoices and credit notes are e-mailed by the user or it's
-        suppliers to a dedicated e-mail address, alternatively any user can DnD
-        documents into CAPs.
+      description: Invoices and credit notes are emailed by the user or their
+        suppliers to a dedicated email address. Alternatively, any user can Drag
+        and Drop documents into CAPS.
     - title: Processing Documents
-      description: Once a new document is received, CAPs identifies the document,
-        automatically capturing the required information and setting it's coding
-        rules.
+      description: "InShip CAPS identifies the document, and automatically captures
+        the required information based on coding rules (as an example: that data
+        can include supplier name, invoice number, date, amount, product
+        categories and similar)"
     - title: Matching and Approval
-      description: Based on a company's needs, document approval can be simple or
-        complex. The system allows for single or bulk document approval, PO
-        matching, mobile approval and authorisation levels.
+      description: depending on the end-user’s requirements, document approval can
+        meet either simple, or more complex, approval rules. CAPS allows for
+        single or bulk document approval and PO / GRN matching. Digital copies
+        of the invoices as well as captured data can be forwarded to specified
+        staff for approval, anywhere they are located, and also meets defined
+        authorization levels. Too, CAPS can provide approval on mobile devices
+        (cell phones, tablets)
     - title: Bulk Upload
-      description: Files are transferred to your accounts/ERP system.
+      description: files are transferred to users ERP / Accounting system for
+        ledgering, accounting, and analysis
   customerReports:
     - percentage: 90
       description: Document processing time is reduced by 90%
