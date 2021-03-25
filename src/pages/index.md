@@ -44,19 +44,16 @@ landingPage:
         readMore: "#"
         showReadMore: false
         description: >-
-          At INSHIP Accounts Payable Solutions, we provide an automatic
-          suppliers (accounts payable) invoice processing system. Grabbing
-          invoices from emails, extracting the require data and after approval
-          pushing the data to your accounts package.
+          InShip specializes in Accounts Payable plug-in solutions for
+          accounting and enterprise resource planning (ERP) software. These
+          modules can be added to any software in approximately eight weeks,
+          providing a new source of revenue and additional functionality.
 
 
-          This removes the paper invoice from  your office, while allowing you the functionality you require to complete day to day tasks.
+          Our commercial package is designed to give you total freedom in your customer pricing model and our offering gives you the possibility of retaining up to 80% of the revenue you generate while still going to the market with a competitively priced product.
 
 
-          As most accounts departments handle invoices in different ways, InShip can be configured to meet your needs be that a complex approval process, specialised data extraction, matching to a Purchase Order, looking out for price increases etc.
-
-
-          With InShip you have a customisable closed loop system that allows your business to process invoices the way you want.
+          With three versions, your company is guaranteed to finding something to meet your customers needs. These range from a simple A.I. data extraction that can be added as a hidden module to any accounts package to a full Accounts Payable solution system that can be tailored to meet the needs of most medium and large businesses.
       - title: Solutions
         subtitle: Tailored for Your Needs
         photo: photo-3
@@ -161,7 +158,7 @@ landingPage:
       With three versions, your company is guaranteed to finding something to meet your customers needs. These range from a simple A.I. data extraction that can be added as a hidden module to any accounts package to a full Accounts Payable solution system that can be tailored to meet the needs of most medium and large businesses.
   sectionB:
     title: The Problem
-    show: false
+    show: true
     cards:
       - title: Problem
         description: >-
