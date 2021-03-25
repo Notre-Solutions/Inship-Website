@@ -2,9 +2,12 @@
 templateKey: landing-page
 landingPage:
   sectionE:
-    title: "InShip specializes in Accounts Payable plug-in solutions for accounting and enterprise resource planning (ERP) software. "
+    title: "InShip specializes in Accounts Payable plug-in solutions for accounting
+      and enterprise resource planning (ERP) software. "
     show: true
-    slogon: Developing a AP solution will takes 6 development years, with InShip's White Label Solution you could be live in 6 weeks at a fraction of the cost.
+    slogon: Developing a AP solution will takes 6 development years, with InShip's
+      White Label Solution you could be live in 6 weeks at a fraction of the
+      cost.
     cards:
       - icon: envelope
         title: Step 1
@@ -138,9 +141,9 @@ landingPage:
       - image: ../img/integrations/sage.png
         link: https://www.sage.com/en-gb/?utm_medium=paidsearch&utm_source=google&utm_campaign=uk%7cgoogle%7cbrand%7cbrand_mainsage-main(e)%7cgbr_sabc&ppc_keyword=sage&ds_rl=1282673&ds_rl=1282739&ds_rl=1287894&ds_rl=1282232&ds_rl=1287894&gclid=CjwKCAjw8MD7BRArEiwAGZsrBUMwhw2P93Ha8Funq-GZ0zoDS9nv809lPNZWnM2WhfpbJq-5MluVZBoCxrUQAvD_BwE&gclsrc=aw.ds
   subtitle:
-    line1: Providing the Technology
-    line2: Behind Automated Accounts
-    line3: Payable Processes
+    line1: "Delivering Fully-Integrated "
+    line2: "Automated Accounts Payable Processing "
+    line3: for Our Global Partners, to the Benefit of Their Customers
   sectionA:
     url: https://www.youtube.com/watch?v=FBxFqmtJ3YA
     title: What We Do
