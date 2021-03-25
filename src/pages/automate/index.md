@@ -61,6 +61,94 @@ automatePage:
       **Step 4 -**The approval, together with the data, is migrated to the end-user’s ERP and/or accounts package for payment, compliance, and financial accounting
 
       It really is that simple.
+
+
+
+
+      #### Intelligent Rules-Based Processing for Flexibility 
+
+
+      Because every business is different, users access the InShip Dashboard to establish specific rules to tailor our solution to their requirements. InShip does not ask users to change their internal processes to meet the InShip solution. Rather, InShip changes its processes to meet end-user needs. 
+
+
+      Flexible User Defined Data Capture – InShip captures all data automatically and those data capture requirements can be easily modified by the user. Capture fields can be added, edited and deleted.
+
+      Benefit:  InShip can be reconfigured as requirements change
+
+
+      **Matching POs to GRN–** InShip automatically matches Purchase Orders to Goods Received Notes to ensure that the customer has received exactly what has been ordered.
+
+      **Benefit:** eliminates manual matching; ensures accuracy
+
+
+      **Watching for Price Increases –** if prices of specified products / services increase above a set threshold, InShip’s Price Watch function notifies specified stakeholders within the user company. InShip can also provide alternative suppliers based on purchasing histories.
+
+      **Benefit:** eliminates manual research and overview of pricing; increases the likelihood users are receiving the best price for purchased products and servicesSimplifying Complex Approval Processes – InShip takes care of this by using pre-established rules set by the user. Examples include: requests for approval can be automatically routed by specific sets or sub-sets of products (and their invoices) to specified employees, and/or; products purchased in specified geographic markets (or regional areas) can be automatically routed to specified employees within those markets or elsewhere, and/or; approval can be routed to a single headquarters office.
+
+
+      **InShip is flexible -** Its rules-based architecture can be configured to meet the unique approval requirements of most businesses.
+
+      **Benefit:** speeds the approval process while increasing security
+
+
+      **Simplified Bulk Approvals –** all documents from one supplier, or all PO matched documents, can be approved with a single click.
+
+      **Benefit:** increased efficiency for larger suppliers, while ensuring approval security
+
+
+      **Online Mobile App Approval –** InShip is available as a secure application for use on mobile devices. Authorized users can be granted approval permissions, enabling them to approve invoices on-the-fly.
+
+      **Benefit:** increased efficiency and productivity 
+
+
+      **Remote Online Access –** because InShip is fully online, it is available 24 hours a day, seven days a week, from anywhere in the world. Robust security ensures that only authorized employees can access the company’s InShip website, as well as all supporting documents. 
+
+      **Benefit:** increases efficiency, productivity and security
+
+
+      **Line-by-Line Data Capture –** InShip captures every line of every invoice for deeper insight, while eliminating the need for re-keying data into ERP and accounting systems.
+
+      **Benefit:** speeds all supplier invoice processing while increasing payment and reporting accuracy
+
+
+      **Automatic Migration to the User’s Accounting Solution –** InShip automatically migrates data into the user’s accounting solution by specified rules (for example: invoice data can be migrated to the General Ledger as well as supplier ledgers. Taxes such as sales taxes / VAT can be migrated to the specified ledger to ensure compliance). 
+
+      **Benefit:** increased efficiency, productivity and accuracy; eliminates data re-keying
+
+
+      **Automatic Statement Reconciliation –** manual reconciliation of statements against invoices takes hours. InShip eliminates this by automatically reconciling invoices against relevant statements. InShip also detects missing invoicing, and spots double invoicing, prompting appropriate action on the part of the user. 
+
+      **The Benefit:** eliminates hours of manual reconciliation while improving accuracy, and minimizes accidental payment of double invoices
+
+
+      **Purchase Order Creation –** InShip integrates with many ERP and Accounting packages. However, because some businesses require a supplemental or stand-alone system, InShip can act as a separate solution to create Purchase Orders. In this scenario, InShip can work as a stand-alone system, or in addition to existing ERP and Accounting PO functions. InShip POs are routed according to rules-based instructions, and across a variety of parameters (for example: PO approvals can be routed to specified employees based on suppliers, items purchased, or values).
+
+      **Benefit:** flexible PO functionality increases speed, accuracy, and security
+
+
+      **Comments –** users can add new, pre-defined, or forced comments onto documents.
+
+      **Benefit:** enhanced user collaboration
+
+
+      **Seven Years of Invoice History at Users’ Fingertips –** all documents received by InShip into the user’s secure online portal are automatically stored, and accessible, for up to seven years. Older documents are migrated to a relevant Archive. 
+
+      **The Benefit:** simplified search functionalities enable users to find required documents in moments (using a variety of search terms including supplier name, invoice number, date, PO, value, and many others) rather than resorting to a manual search of stored paper files
+
+
+      **Paperless Automated Accounts Payable –** because supplier invoices and statements are securely stored online, InShip eliminates paper storage requirements.
+
+      **Benefit:** eliminates paper-based storage
+
+
+      **Document Tracking –** invoices processed by InShip that require approval are tracked. The InShip Dashboard illustrates whose approval is required, and by when. 
+
+      **Benefit:** ‘At-a-Glance’ ability to manage invoice flows, while ensuring timely payments
+
+
+      **Other Benefits –** InShip is scalable, delivering the flexibility to handle changing user requirements. Our solution also enhances collaboration among users who may be located thousands of miles away. Too, InShip reporting tools work to help users pay suppliers within agreed terms, helping to promote goodwill
+
+      **A Superlative ROI** – InShip significantly reduces the cost of manual processing, while increasing accuracy and payment security. Combining all of the benefits, users discover that InShip provides an exceptional Return on Investment.
   sectionB:
     title: Testimonials
     testimonials:
