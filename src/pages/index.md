@@ -98,7 +98,7 @@ landingPage:
           accuracy and efficiency.
 
 
-          Our various white label packages will give your users functionality they need.
+          Our various white label packages will give your users the functionality they need.
 
 
           Why Offer Your End-Customers Automated Accounts Payable?
