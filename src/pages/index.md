@@ -147,7 +147,7 @@ landingPage:
   sectionA:
     url: https://www.youtube.com/watch?v=FBxFqmtJ3YA
     title: What We Do
-    show: false
+    show: true
     body: >-
       InShip specializes in Accounts Payable plug-in solutions for accounting
       and enterprise resource planning (ERP) software. These modules can be
