@@ -54,46 +54,19 @@ landingPage:
 
 
           With three versions, your company is guaranteed to finding something to meet your customers needs. These range from a simple A.I. data extraction that can be added as a hidden module to any accounts package to a full Accounts Payable solution system that can be tailored to meet the needs of most medium and large businesses.
-      - title: Solutions
-        subtitle: Tailored for Your Needs
+      - title: Intelligent Accounts Payable Automated Processing
+        subtitle: Can Boost Your Business
         photo: photo-3
         readMore: "#"
         showReadMore: false
         description: >-
-          InShip is not a one fits all solution. We recognise that every
-          business has different needs. With this in mind, we have built a
-          system that works differently for different companies.
+          Since 2016, InShip has delivered proven Automated Accounts Payable
+          Processing software to white label partners and onward to their
+          end-customers. Our White Label partners choose InShip for many
+          compelling reasons:
 
 
-          InShip is an online solution with unlimited user numbers. 
-
-
-          Once your suppliers email their invoices InShip grabs the invoice from their email and process it based on the rules you have set.
-
-
-          With InShip you focus can be on
-
-
-          * Matching to PO/GRN.
-
-          * Watching for Price Increases.
-
-          * A complex approval process.
-
-          * Remote access and approval.
-
-          * High Security Documents.
-
-          * Auto Routing for Approval.
-
-          * Line by Line data capture.
-
-          * Statement reconciliation.
-
-          * And more.
-
-
-          With InShip we can set up our solution to meet your complex needs, with InShip you do not change your process to meet our solution we change our process to meet your needs. Let us know what your special requirements are, so we can explain how we deal with them.
+          Designed and Developed for our Prospective Partners and their End-Customers – InShip meets automated Accounts Payable best practices, enabling our partners to offer InShip technology with complete confidence to their end-customers
       - title: The Problem
         subtitle: Moving from Paper to Digital
         photo: photo-2
@@ -144,7 +117,7 @@ landingPage:
   sectionA:
     url: https://www.youtube.com/watch?v=FBxFqmtJ3YA
     title: What We Do
-    show: true
+    show: false
     body: >-
       InShip specializes in Accounts Payable plug-in solutions for accounting
       and enterprise resource planning (ERP) software. These modules can be
