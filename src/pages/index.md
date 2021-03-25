@@ -5,7 +5,9 @@ landingPage:
     title: "InShip specializes in Accounts Payable plug-in solutions for accounting
       and enterprise resource planning (ERP) software. "
     show: true
-    slogon: It really is that simple.
+    slogon: Developing a AP solution will takes 6 development years, with InShip's
+      White Label Solution you could be live in 6 weeks at a fraction of the
+      cost.
     cards:
       - icon: envelope
         title: Step 1
