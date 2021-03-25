@@ -7,28 +7,77 @@ automatePage:
   newsTitle: News
   sectionC:
     description: >-
-      # Moving from Manual To Automatic
+      # How It Works
 
 
-      ## "Our Process is unique"
+      ## The Significant Benefits of InShip to Your Customers 
 
 
-      Processing invoices manually is a costly and timely process that typically involves 8 to 10 steps. It has been proven that automating this process can reduce processing time by 80-90%, making it obvious as to why businesses are looking for an automated solution.
+      More and more companies are moving to Automated Accounts Payable processing for some simple reasons: it saves money. Prospective InShip white label partners may already be aware of what’s driving businesses to automated accounts payable technologies. 
 
 
-      You may be concerned about automating your process, as it may seem complex or "unique" but with InShip we focus on providing a flexible system that can be simply tailored to meet different businesses different needs.
+      But as a recap:
+
+      Manual Processing as a Pain-Point
+
+      Manual invoice processing is a time-consuming chore. Often the workflow includes:
 
 
-      As you are probably aware, AP automation is a hot topic and more and more businesses beginning to investigate automation options. This leaves you with a number of options: 
+      * Opening all supplier envelopes and extracting the invoice
+
+      * If invoices are emailed, then printing those invoices
+
+      * Sorting the invoices and manually allocating them against relevant POs and GRNs
+
+      * Forwarding the paper invoices to appropriate company employees for approval
+
+      * Keying all invoice data into the company’s ERP / accounting software	
+
+      * Manually reconciling statements to invoices; requesting missing invoices and spotting duplicate invoices
+
+      * Filing and storing all hard copies
 
 
-      * Continue with the old fashion costly and timely method of manually handling invoices, with its various problems.
+      **The Savings with InShip**
 
-      * Use a data capture tool that barely extracts some of the details you want.
+      This time consuming, expensive process, which can include as many as 10 steps per invoice, has been estimated to cost (minimum). US$5.30 (€4.50) per item (source: PwC).
 
-      * Install an expensive process that will take a number of years to produce a ROI.
+      With InShip, the cost can be minimized to only 53 US cents (45 euro-cents) per item. InShip has been proven to save users between 80 – 90 percent, compared to manual accounts payable processing. 
 
-      * **Install InShip's user friendly and flexible solution, that give you the functionality of a large enterprise solution but at the cost of a simple data capture tool.**
+      Why is InShip so Cost Effective?
+
+      InShip’s online functionalities eliminate manual Accounts Payable processing by automating associated workflows. With InShip:
+
+
+
+      **Step 1**
+
+
+      * Suppliers email invoices, statements, and related documents to a secure online address
+
+
+      **Step 2**
+
+
+
+      * InShip’s cloud-enabled architecture automatically extracts data held in those documents
+
+
+
+      **Step 3**
+
+
+
+      * The data is forwarded to the relevant internal employee for secure, authorized approval
+
+
+
+      **Step 4**
+
+
+
+      * The approval, together with the data, is migrated to the end-user’s ERP and/or accounts package for payment, compliance, and financial accounting
+        It really is that simple.
   sectionB:
     title: Testimonials
     testimonials:
