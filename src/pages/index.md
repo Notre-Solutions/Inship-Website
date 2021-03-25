@@ -82,36 +82,35 @@ landingPage:
 
           * See our paper for additional information regarding these points, as well as market forces that are creating opportunities within the global Automated AP Processing marketplace.
             Why ERP and Accounting Software Providers Should Consider Adding InShip Automated Accounts Payable Processing to Their Portfolio.
-      - title: The Problem
-        subtitle: Moving from Paper to Digital
+      - title: The End-Customers
+        subtitle: How Do Our Partners’ End-Customers Benefit?
         photo: photo-2
         readMore: "#"
         showReadMore: false
         description: >-
-          In most companies their current paper based system of handling
-          invoices comes with an array of issues:
+          InShip Automated Accounts Payable Processing works to eliminate manual
+          supplier invoice processing and payment workflows. Most end users of
+          our solution save up to 90 percent in accounts payable related costs
+          compared to legacy manual processing. Moreover, because InShip is
+          fully cloud-enabled and integrated into their accounting and/or ERP
+          systems, and due to its seamless ease-of-use, end-users eliminate data
+          re-keying as well as other time consuming chores for increased
+          accuracy and efficiency.
 
 
-          1. Envelopes must be opened.
-
-          2. Emails must be printed.
-
-          3. Invoices need to be matched and sorted.
-
-          4. Invoices need to get approvals.
-
-          5. Manually entered on a computer system.
-
-          6. Emails must be reconciled to statements and filed. 
+          Our various white label packages will give your users functionality they need. 
 
 
-          This is timely and expensive process ; in fact processing one invoice or bill can include as many as ten steps, costing approximately €4.50 (source: pwc). 
+
+          Why Offer Your End-Customers Automated Accounts Payable?
 
 
-          If a business automates this process, 80-90% of that cost can be removed.  
+
+          Globenewswire recently reported that the global Accounts Payable automation market is expected to grow at an annual compounded rate of 11 percent, from US$1.9 billion in 2019 to US$3.1 billion in 2024. The article cites a number of factors driving this growth including: faster payments and better cash flow, reduced employee fraud, and reduced cost of supplier invoice processing and payments. 
 
 
-          Along with standard processing invoices get mislaid, management may require files to be searched to obtain copy invoices for detailed review.
+
+          In short, prospective end users see the real benefits of Automated Accounts Payable processing and are quickly embracing this innovative technology.
   sectionC2:
     title: We Integrate With 40+ Packages Including...
     images:
