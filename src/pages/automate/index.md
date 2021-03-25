@@ -148,7 +148,67 @@ automatePage:
 
       **Other Benefits –** InShip is scalable, delivering the flexibility to handle changing user requirements. Our solution also enhances collaboration among users who may be located thousands of miles away. Too, InShip reporting tools work to help users pay suppliers within agreed terms, helping to promote goodwill
 
-      **A Superlative ROI** – InShip significantly reduces the cost of manual processing, while increasing accuracy and payment security. Combining all of the benefits, users discover that InShip provides an exceptional Return on Investment.
+      **A Superlative ROI** – InShip significantly reduces the cost of manual processing, while increasing accuracy and payment security. Combining all of the benefits, users discover that InShip provides an exceptional Return on Investment. 
+
+
+
+
+      ### Why End-Users Switch to InShip
+
+
+      ##### Why do Businesses Switch to InShip?
+
+
+      Document processing time: reduced by 90%
+
+      Manual Paper Handling: reduced by 93%
+
+      Errors (manual processing v InShip): reduced by 97%
+
+      Hard copy document storage: reduced by 100%
+
+      The Efficiencies and Results are Due to InShip’s Intelligent Automated Features
+
+
+      **Paper Elimination –** stores invoices, statements and related documents in a secure cloud
+
+      **User Defined Data Capture –** rules-based automated data capture
+
+      **Issue Checking –** can be modified at global or group level
+
+      **Document Routing –** mirrors and automates both simple and complex process flows
+
+      **Auto-Routing –** automate the workflow using supplier codes, general ledger codes, delivery address, project codes, and more
+
+      **PO and GRN Matching –** match invoices to POs and GRNs at a total or line-by-line level. Manage delivery, discounts and surcharges
+
+      **General Ledger Coding –** auto-code invoices based on multiple factors
+
+      **Line-by-Line Data Capture –** auto-capture line items on invoices for reporting, coding, and search purposes
+
+      **One-click Approval –** with all relevant information on one easy-to-use Dashboard, approve documents with a single click
+
+      **One-click Bulk Approval –** similarly, all documents from one supplier or PO can be approved with one click
+
+      **Approval Limits Set-Up –** set up limits by supplier, user, or General Ledger code
+
+      **Document Comment Insertion –** authorized users can add comments all along the workflow for outstanding collaboration
+
+      **Price Watch –** watches for supplier price increases and displays those increases to users
+
+      **Secure Online Invoice Storage –** store all invoices, statements and documents for 7 years
+
+      **Store High-Security Documents –** highly confidential documents can also be securely stored
+
+      **Statement Reconciliation –** automatically reconcile invoices with statements
+
+      **Quick Document Search / Search Reporting –** find invoices and statements in moments with online search functionalities. Report searches on either an invoice or invoice line bases
+
+      **Document Tracking –** documents are tracked all along the approval process
+
+      **Issue Handling –** multiple methods to manage invoice issues 
+
+      **Mobile Approval –** approve documents using the InShip mobile app
   sectionB:
     title: Testimonials
     testimonials:
