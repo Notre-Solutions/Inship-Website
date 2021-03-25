@@ -148,7 +148,17 @@ landingPage:
     url: https://www.youtube.com/watch?v=FBxFqmtJ3YA
     title: What We Do
     show: false
-    body: Test
+    body: >-
+      InShip specializes in Accounts Payable plug-in solutions for accounting
+      and enterprise resource planning (ERP) software. These modules can be
+      added to any software in approximately eight weeks, providing a new source
+      of revenue and additional functionality.
+
+
+      Our commercial package is designed to give you total freedom in your customer pricing model and our offering gives you the possibility of retaining up to 80% of the revenue you generate while still going to the market with a competitively priced product.
+
+
+      With three versions, your company is guaranteed to finding something to meet your customers needs. These range from a simple A.I. data extraction that can be added as a hidden module to any accounts package to a full Accounts Payable solution system that can be tailored to meet the needs of most medium and large businesses.
   sectionB:
     title: The Problem
     show: false
