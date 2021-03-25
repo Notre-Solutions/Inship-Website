@@ -39,13 +39,13 @@ productpage:
         notes (GRNs) at a total or line-by-line level. Delivery, discounts and
         various surcharges can also be easily handled
     - title: General Ledger Coding
-      description: CAPs can auto-code invoices based on multiple factors
+      description: CAPS can auto-code invoices based on multiple factors
     - title: Line by Line Data Capture
       description: CAPS can auto-capture line items on invoices for coding, reporting
         and searching purposes
     - title: Approval
       description: with all relevant information displayed on screen, documents can be
-        easily approved with one click .
+        easily approved with one click
     - title: Bulk Approvals
       description: all documents from one supplier or all PO matched documents can be
         approved at once with a simple click
@@ -88,7 +88,7 @@ productpage:
         suppliers to a dedicated email address. Alternatively, any user can Drag
         and Drop documents into CAPS.
     - title: Processing Documents
-      description: "InShip CAPS identifies the document, and automatically captures
+      description: " InShip CAPS identifies the document, and automatically captures
         the required information based on coding rules (as an example: that data
         can include supplier name, invoice number, date, amount, product
         categories and similar)"
