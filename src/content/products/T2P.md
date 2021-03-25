@@ -30,9 +30,12 @@ productpage:
       description: InShip T2P can be localized to deal with different languages, tax
         regimes and data capture requirements
     - title: Search & Storage
-      description: all documents are saved digitally within a secure cloud for an
-        agreed storage period, usually 7 years. Users can easily search for past
+      description: >-
+        all documents are saved digitally within a secure cloud for an agreed
+        storage period, usually 7 years. Users can easily search for past
         documents
+
+        How it Works
   timeline:
     - title: Receiving Documents
       description: Invoices and credit notes are emailed by the user or their
@@ -46,7 +49,7 @@ productpage:
     - title: Approving Documents
       description: end-users approve and edit documents one by one or in bulk
     - title: Uploading Documents
-      description: data can be transferred immediately, or by batch, to your ERP /
+      description: data can be transferred immediately, or by batch, to the ERP /
         Accounting system for further processing
   customerReports:
     - percentage: 90
