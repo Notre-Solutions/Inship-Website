@@ -19,8 +19,8 @@ productpage:
       description: no new screens for the user to navigate. Little additional end-user
         training is required
     - title: Ease of Use
-      description: the only actions the end-user must take is to email or Drag and
-        Drop documents and convert them from draft to live
+      description: the only actions the end-user must take is to email or Drag & Drop
+        documents and convert them from draft to live
     - title: Localisation
       description: InShip APC can be localized to deal with different languages, tax
         regimes and data capture requirements
