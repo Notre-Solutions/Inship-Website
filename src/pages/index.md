@@ -46,8 +46,8 @@ landingPage:
         description: >-
           InShip specializes in Accounts Payable plug-in solutions for
           accounting and enterprise resource planning (ERP) software. These
-          modules can be added to any software in approximately eight weeks,
-          providing a new source of revenue and additional functionality.
+          modules can be added to any software in approximately six to eight
+          weeks, providing a new source of revenue and additional functionality.
 
 
           Our commercial package is designed to give you total freedom in your customer pricing model and our offering gives you the possibility of retaining up to 80% of the revenue you generate while still going to the market with a competitively priced product.
