@@ -2,7 +2,8 @@
 templateKey: landing-page
 landingPage:
   sectionE:
-    title: InShip works for you, with you.
+    title: "InShip specializes in Accounts Payable plug-in solutions for accounting
+      and enterprise resource planning (ERP) software. "
     show: true
     slogon: It really is that simple.
     cards:
@@ -11,13 +12,13 @@ landingPage:
         text: Suppliers e-mail documents.
       - icon: cog
         title: Step 2
-        text: InShip extracts.
+        text: InShip extracts required.
       - icon: check
         title: Step 3
-        text: You approve.
+        text: Users approve or auto approval.
       - icon: university
         title: Step 4
-        text: To your accounts package.
+        text: Updates ERP/ accounts package.
   sectionF:
     title: Over 500+ Companies Love InShip
     images:
