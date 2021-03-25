@@ -10,7 +10,7 @@ automatePage:
       # How It Works
 
 
-      ## The Significant Benefits of InShip to Your Customers 
+      ## The Significant Benefits of InShip to Your Customers
 
 
       More and more companies are moving to Automated Accounts Payable processing for some simple reasons: it saves money. Prospective InShip white label partners may already be aware of what’s driving businesses to automated accounts payable technologies. 
@@ -49,35 +49,18 @@ automatePage:
       InShip’s online functionalities eliminate manual Accounts Payable processing by automating associated workflows. With InShip:
 
 
-
-      **Step 1**
-
-
-      * Suppliers email invoices, statements, and related documents to a secure online address
+      **Step 1 -** Suppliers email invoices, statements, and related documents to a secure online address
 
 
-      **Step 2**
+      **Step 2 -** InShip’s cloud-enabled architecture automatically extracts data held in those documents
 
 
-
-      * InShip’s cloud-enabled architecture automatically extracts data held in those documents
-
+      **Step 3 -** The data is forwarded to the relevant internal employee for secure, authorized approval
 
 
-      **Step 3**
+      **Step 4 -**The approval, together with the data, is migrated to the end-user’s ERP and/or accounts package for payment, compliance, and financial accounting
 
-
-
-      * The data is forwarded to the relevant internal employee for secure, authorized approval
-
-
-
-      **Step 4**
-
-
-
-      * The approval, together with the data, is migrated to the end-user’s ERP and/or accounts package for payment, compliance, and financial accounting
-        It really is that simple.
+      It really is that simple.
   sectionB:
     title: Testimonials
     testimonials:
