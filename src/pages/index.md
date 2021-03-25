@@ -98,16 +98,13 @@ landingPage:
           accuracy and efficiency.
 
 
-          Our various white label packages will give your users functionality they need. 
-
+          Our various white label packages will give your users functionality they need.
 
 
           Why Offer Your End-Customers Automated Accounts Payable?
 
 
-
-          Globenewswire recently reported that the global Accounts Payable automation market is expected to grow at an annual compounded rate of 11 percent, from US$1.9 billion in 2019 to US$3.1 billion in 2024. The article cites a number of factors driving this growth including: faster payments and better cash flow, reduced employee fraud, and reduced cost of supplier invoice processing and payments. 
-
+          Globenewswire recently reported that the global Accounts Payable automation market is expected to grow at an annual compounded rate of 11 percent, from US$1.9 billion in 2019 to US$3.1 billion in 2024. The article cites a number of factors driving this growth including: faster payments and better cash flow, reduced employee fraud, and reduced cost of supplier invoice processing and payments.
 
 
           In short, prospective end users see the real benefits of Automated Accounts Payable processing and are quickly embracing this innovative technology.
