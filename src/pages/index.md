@@ -66,7 +66,22 @@ landingPage:
           compelling reasons:
 
 
-          Designed and Developed for our Prospective Partners and their End-Customers – InShip meets automated Accounts Payable best practices, enabling our partners to offer InShip technology with complete confidence to their end-customers
+          * Designed and Developed for our Prospective Partners and their End-Customers – InShip meets automated Accounts Payable best practices, enabling our partners to offer InShip technology with complete confidence to their end-customers.
+
+          * Fully Integrated – InShip Accounts Payable Automated Processing is a cloud-enabled system which can be fully integrated into any ERP or accounting back office solution. Full integration with our partners’ existing systems increases efficiency and productivity for their end customers by delivering a seamless, accurate, secure and robust experience.
+
+          * InShip can be seamlessly integrated with most ERP or Accounting Solutions available in today’s global market.
+
+          * Minimizing CapEx Development Costs – many ERP and Accounting software providers recognize that their customers are demanding Accounts Payable Automation to decrease overheads, while maximizing remote efficiency and cash flow. InShip delivers a robust, proven, cloud-enabled PaaS (platform as a service) demanded by end-customers, enabling our partners to avoid expensive development costs.
+
+          * Branding InShip as Your Own – InShip is fully branded with our partners’ logos, thereby reinforcing this service as part of providers’ full-service offerings.
+
+          * Increasing Revenues and Profits – our partners benefit with a recurring revenue stream as their customers adopt InShip Automated Accounts Payable systems and workflows.
+
+          * Tailoring to Meet our Partners’ Requirements – InShip engineers tailor our solution to match the precise requirements of our partners and their end customers.
+
+          * See our paper for additional information regarding these points, as well as market forces that are creating opportunities within the global Automated AP Processing marketplace.
+            Why ERP and Accounting Software Providers Should Consider Adding InShip Automated Accounts Payable Processing to Their Portfolio.
       - title: The Problem
         subtitle: Moving from Paper to Digital
         photo: photo-2
@@ -131,7 +146,7 @@ landingPage:
       With three versions, your company is guaranteed to finding something to meet your customers needs. These range from a simple A.I. data extraction that can be added as a hidden module to any accounts package to a full Accounts Payable solution system that can be tailored to meet the needs of most medium and large businesses.
   sectionB:
     title: The Problem
-    show: true
+    show: false
     cards:
       - title: Problem
         description: >-
