@@ -69,39 +69,39 @@ automatePage:
       Because every business is different, users access the InShip Dashboard to establish specific rules to tailor our solution to their requirements. InShip does not ask users to change their internal processes to meet the InShip solution. Rather, InShip changes its processes to meet end-user needs. 
 
 
-      Flexible User Defined Data Capture – InShip captures all data automatically and those data capture requirements can be easily modified by the user. Capture fields can be added, edited and deleted.
+      Flexible User-Defined Data Capture – InShip captures all data automatically and those data capture requirements can be easily modified by the user. Capture fields can be added, edited, and deleted.
 
-      Benefit:  InShip can be reconfigured as requirements change
+      Benefit:  InShip can be reconfigured as requirements change.
 
 
       **Matching POs to GRN–** InShip automatically matches Purchase Orders to Goods Received Notes to ensure that the customer has received exactly what has been ordered.
 
-      **Benefit:** eliminates manual matching; ensures accuracy
+      **Benefit:** eliminates manual matching; ensures accuracy.
 
 
       **Watching for Price Increases –** if prices of specified products / services increase above a set threshold, InShip’s Price Watch function notifies specified stakeholders within the user company. InShip can also provide alternative suppliers based on purchasing histories.
 
-      **Benefit:** eliminates manual research and overview of pricing; increases the likelihood users are receiving the best price for purchased products and servicesSimplifying Complex Approval Processes – InShip takes care of this by using pre-established rules set by the user. Examples include: requests for approval can be automatically routed by specific sets or sub-sets of products (and their invoices) to specified employees, and/or; products purchased in specified geographic markets (or regional areas) can be automatically routed to specified employees within those markets or elsewhere, and/or; approval can be routed to a single headquarters office.
+      **Benefit:** eliminates manual research and overview of pricing; increases the likelihood users are receiving the best price for purchased products and services, Simplifying Complex Approval Processes – InShip takes care of this by using pre-established rules set by the user. Examples include requests for approval can be automatically routed by specific sets or sub-sets of products (and their invoices) to specified employees, and/or products purchased in specified geographic markets (or regional areas) can be automatically routed to specified employees within those markets or elsewhere, and/or approval can be routed to a single headquarters office.
 
 
       **InShip is flexible -** Its rules-based architecture can be configured to meet the unique approval requirements of most businesses.
 
-      **Benefit:** speeds the approval process while increasing security
+      **Benefit:** speeds the approval process while increasing security.
 
 
       **Simplified Bulk Approvals –** all documents from one supplier, or all PO matched documents, can be approved with a single click.
 
-      **Benefit:** increased efficiency for larger suppliers, while ensuring approval security
+      **Benefit:** increased efficiency for larger suppliers, while ensuring approval security.
 
 
-      **Online Mobile App Approval –** InShip is available as a secure application for use on mobile devices. Authorized users can be granted approval permissions, enabling them to approve invoices on-the-fly.
+      **Online Mobile App Approval –** InShip is available as a secure application for use on mobile devices. Authorized users can be granted approval permissions, enabling them to approve invoices remotely.
 
-      **Benefit:** increased efficiency and productivity 
+      **Benefit:** increased efficiency and productivity.
 
 
-      **Remote Online Access –** because InShip is fully online, it is available 24 hours a day, seven days a week, from anywhere in the world. Robust security ensures that only authorized employees can access the company’s InShip website, as well as all supporting documents. 
+      **Remote Online Access –**  InShip is fully online, it is available 24 hours a day, 7 days a week, from anywhere in the world. Robust security ensures that only authorized employees can access the company’s InShip website, as well as all supporting documents. 
 
-      **Benefit:** increases efficiency, productivity and security
+      **Benefit:** increases efficiency, productivity, and security.
 
 
       **Line-by-Line Data Capture –** InShip captures every line of every invoice for deeper insight, while eliminating the need for re-keying data into ERP and accounting systems.
