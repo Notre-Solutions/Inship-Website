@@ -134,36 +134,38 @@ automatePage:
       **The Benefit:** simplified search functionalities enable users to find required documents in moments, using a variety of search terms including supplier name, invoice number, date, PO, value etc. Rather than resorting to a manual search of stored paper files.
 
 
-      **Paperless Automated Accounts Payable –** because supplier invoices and statements are securely stored online, InShip eliminates paper storage requirements.
+      **Paperless Automated Accounts Payable –** Supplier invoices and statements are securely stored online, InShip eliminates paper storage requirements.
 
-      **Benefit:** eliminates paper-based storage
+      **Benefit:** eliminates paper-based storage.
 
 
       **Document Tracking –** invoices processed by InShip that require approval are tracked. The InShip Dashboard illustrates whose approval is required, and by when. 
 
-      **Benefit:** ‘At-a-Glance’ ability to manage invoice flows, while ensuring timely payments
+      **Benefit:** ‘At-a-Glance’ ability to manage invoice flows, while ensuring timely payments.
 
 
-      **Other Benefits –** InShip is scalable, delivering the flexibility to handle changing user requirements. Our solution also enhances collaboration among users who may be located thousands of miles away. Too, InShip reporting tools work to help users pay suppliers within agreed terms, helping to promote goodwill
+      **Other Benefits –** InShip is scalable, delivering the flexibility to handle changing user requirements. Our solution also enhances collaboration among users who may be located thousands of miles away. InShip reporting tools work to help users pay suppliers within agreed terms, helping to promote goodwill.
 
       **A Superlative ROI** – InShip significantly reduces the cost of manual processing, while increasing accuracy and payment security. Combining all of the benefits, users discover that InShip provides an exceptional Return on Investment. 
 
 
-      # **Why End-Users Switch to InShip**
+      # **Why Businesses Switch to InShip?**
 
 
-      ## **Why do Businesses Switch to InShip?**
+
+      **The Efficiencies and Results are Due to InShip’s Intelligent Automated Features**
 
 
-      Document processing time: reduced by 90%
+      Document processing time reduced by 90%
 
-      Manual Paper Handling: reduced by 93%
 
-      Errors (manual processing v InShip): reduced by 97%
+      Manual Paper Handling reduced by 93%
 
-      Hard copy document storage: reduced by 100%
 
-      The Efficiencies and Results are Due to InShip’s Intelligent Automated Features
+      Errors (manual processing -V- InShip)  reduced by 97%
+
+
+      Hard copy document storage reduced by 100%
 
 
       **Paper Elimination –** stores invoices, statements and related documents in a secure cloud
