@@ -114,24 +114,24 @@ automatePage:
       **Benefit:** increased efficiency, productivity, accuracy, and eliminates data re-keying.
 
 
-      **Automatic Statement Reconciliation –** manual reconciliation of statements against invoices takes hours. InShip eliminates this by automatically reconciling invoices against relevant statements. InShip also detects missing invoicing, and spots double invoicing, prompting appropriate action on the part of the user. 
+      **Automatic Statement Reconciliation –** manual reconciliation of statements against invoices takes hours. InShip eliminates this by automatically reconciling invoices against relevant statements. InShip also detects missing invoices, and spots double invoicing, prompting appropriate action on the part of the user. 
 
-      **The Benefit:** eliminates hours of manual reconciliation while improving accuracy, and minimizes accidental payment of double invoices
+      **The Benefit:** eliminates hours of manual reconciliation while improving accuracy, and minimizes accidental payment of duplicate invoices.
 
 
-      **Purchase Order Creation –** InShip integrates with many ERP and Accounting packages. However, because some businesses require a supplemental or stand-alone system, InShip can act as a separate solution to create Purchase Orders. In this scenario, InShip can work as a stand-alone system, or in addition to existing ERP and Accounting PO functions. InShip POs are routed according to rules-based instructions, and across a variety of parameters (for example: PO approvals can be routed to specified employees based on suppliers, items purchased, or values).
+      **Purchase Order Creation –** InShip integrates with many ERP and Accounting packages. However, some businesses require a supplemental or stand-alone system, where InShip can act as a separate solution to create Purchase Orders. In this scenario, InShip can work as a stand-alone system, or in addition to existing ERP and Accounting PO functions. InShip POs are routed according to rules-based instructions, and across a variety of parameters. For example, PO approvals can be routed to specified employees based on suppliers, items purchased, or values.
 
-      **Benefit:** flexible PO functionality increases speed, accuracy, and security
+      **Benefit:** flexible PO functionality increases speed, accuracy, and security.
 
 
       **Comments –** users can add new, pre-defined, or forced comments onto documents.
 
-      **Benefit:** enhanced user collaboration
+      **Benefit:** enhanced user collaboration.
 
 
-      **Seven Years of Invoice History at Users’ Fingertips –** all documents received by InShip into the user’s secure online portal are automatically stored, and accessible, for up to seven years. Older documents are migrated to a relevant Archive. 
+      **7 Years of Invoice History at Users’ Fingertips –** all documents received by InShip into the user’s secure online portal are automatically stored, and accessible, for up to 7 years. Older documents are migrated to a relevant Archive for a further 5 years. 
 
-      **The Benefit:** simplified search functionalities enable users to find required documents in moments (using a variety of search terms including supplier name, invoice number, date, PO, value, and many others) rather than resorting to a manual search of stored paper files
+      **The Benefit:** simplified search functionalities enable users to find required documents in moments, using a variety of search terms including supplier name, invoice number, date, PO, value etc. Rather than resorting to a manual search of stored paper files.
 
 
       **Paperless Automated Accounts Payable –** because supplier invoices and statements are securely stored online, InShip eliminates paper storage requirements.
