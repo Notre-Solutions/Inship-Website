@@ -38,13 +38,15 @@ automatePage:
 
       **The Savings with InShip**
 
-      This time-consuming, expensive process, which can include as many as 10 steps per invoice, has been estimated to cost (minimum) US$5.30 (€4.50) per item (source: PWC).
+      This time-consuming, expensive process, which can include as many as 10 steps per invoice, has been estimated to cost (minimum) €4.50 (US$5.30) per item (source: PWC).
 
-      With InShip, the cost can be minimized to only 53 US cents (45 euro-cents) per item. InShip has been proven to save users between 80 – 90 percent, compared to manual accounts payable processing. 
+      InShip has been proven to save users between 80 – 90%, compared to manual accounts payable processing. 
 
-      Why is InShip so Cost Effective?
 
-      InShip’s online functionalities eliminate manual Accounts Payable processing by automating associated workflows. With InShip:
+
+      **Why is InShip so Cost-Effective?**
+
+      InShip’s online functionalities eliminate manual Accounts Payable processing by automating associated workflows.
 
 
       **Step 1 -** Suppliers email invoices, statements, and related documents to a secure online address
@@ -56,7 +58,7 @@ automatePage:
       **Step 3 -** The data is forwarded to the relevant internal employee for secure, authorized approval
 
 
-      **Step 4 -**The approval, together with the data, is migrated to the end-user’s ERP and/or accounts package for payment, compliance, and financial accounting
+      **Step 4 -**The approval, together with the data, is migrated to the End-Customer’s ERP and/or accounts package for payment, compliance, and financial accounting
 
       It really is that simple.
 
