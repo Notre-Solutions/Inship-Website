@@ -10,28 +10,26 @@ automatePage:
       # How It Works
 
 
-      ## The Significant Benefits of InShip to Your Customers
+      ## The Significant Benefits of InShip for Your Customers
 
 
-      More and more companies are moving to Automated Accounts Payable processing for some simple reasons: it saves money. Prospective InShip white label partners may already be aware of what’s driving businesses to automated accounts payable technologies. 
+      Increasingly, companies are moving to Automated Accounts Payable processing for the simple reason - it saves money. 
 
 
-      But as a recap:
-
-      Manual Processing as a Pain-Point
+      To summarise,
 
       Manual invoice processing is a time-consuming chore. Often the workflow includes:
 
 
-      * Opening all supplier envelopes and extracting the invoice
+      * Opening all supplier envelopes and extracting invoices
 
-      * If invoices are emailed, then printing those invoices
+      * If invoices are emailed - printing those invoices
 
       * Sorting the invoices and manually allocating them against relevant POs and GRNs
 
       * Forwarding the paper invoices to appropriate company employees for approval
 
-      * Keying all invoice data into the company’s ERP / accounting software	
+      * Keying all invoice data into the company’s ERP/accounting software	
 
       * Manually reconciling statements to invoices; requesting missing invoices and spotting duplicate invoices
 
@@ -40,7 +38,7 @@ automatePage:
 
       **The Savings with InShip**
 
-      This time consuming, expensive process, which can include as many as 10 steps per invoice, has been estimated to cost (minimum). US$5.30 (€4.50) per item (source: PwC).
+      This time-consuming, expensive process, which can include as many as 10 steps per invoice, has been estimated to cost (minimum) US$5.30 (€4.50) per item (source: PWC).
 
       With InShip, the cost can be minimized to only 53 US cents (45 euro-cents) per item. InShip has been proven to save users between 80 – 90 percent, compared to manual accounts payable processing. 
 
@@ -169,77 +167,58 @@ automatePage:
       **Paper Elimination –** stores invoices, statements and related documents in a secure cloud
 
 
-
       **User Defined Data Capture –** rules-based automated data capture
-
 
 
       **Issue Checking –** can be modified at global or group level
 
 
-
       **Document Routing –** mirrors and automates both simple and complex process flows
-
 
 
       **Auto-Routing –** automate the workflow using supplier codes, general ledger codes, delivery address, project codes, and more
 
 
-
       **PO and GRN Matching –** match invoices to POs and GRNs at a total or line-by-line level. Manage delivery, discounts and surcharges
-
 
 
       **General Ledger Coding –** auto-code invoices based on multiple factors
 
 
-
       **Line-by-Line Data Capture –** auto-capture line items on invoices for reporting, coding, and search purposes
-
 
 
       **One-click Approval –** with all relevant information on one easy-to-use Dashboard, approve documents with a single click
 
 
-
       **One-click Bulk Approval –** similarly, all documents from one supplier or PO can be approved with one click
-
 
 
       **Approval Limits Set-Up –** set up limits by supplier, user, or General Ledger code
 
 
-
       **Document Comment Insertion –** authorized users can add comments all along the workflow for outstanding collaboration
-
 
 
       **Price Watch –** watches for supplier price increases and displays those increases to users
 
 
-
       **Secure Online Invoice Storage –** store all invoices, statements and documents for 7 years
-
 
 
       **Store High-Security Documents –** highly confidential documents can also be securely stored
 
 
-
       **Statement Reconciliation –** automatically reconcile invoices with statements
-
 
 
       **Quick Document Search / Search Reporting –** find invoices and statements in moments with online search functionalities. Report searches on either an invoice or invoice line bases
 
 
-
       **Document Tracking –** documents are tracked all along the approval process
 
 
-
       **Issue Handling –** multiple methods to manage invoice issues 
-
 
 
       **Mobile Approval –** approve documents using the InShip mobile app
