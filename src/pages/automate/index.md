@@ -106,12 +106,12 @@ automatePage:
 
       **Line-by-Line Data Capture –** InShip captures every line of every invoice for deeper insight, while eliminating the need for re-keying data into ERP and accounting systems.
 
-      **Benefit:** speeds all supplier invoice processing while increasing payment and reporting accuracy
+      **Benefit:** speeds all supplier invoice processing while increasing payment and reporting accuracy.
 
 
-      **Automatic Migration to the User’s Accounting Solution –** InShip automatically migrates data into the user’s accounting solution by specified rules (for example: invoice data can be migrated to the General Ledger as well as supplier ledgers. Taxes such as sales taxes / VAT can be migrated to the specified ledger to ensure compliance). 
+      **Automatic Migration to the User’s Accounting Solution –** InShip automatically migrates data into the user’s accounting solution by specified rules. For example, invoice data can be migrated to the General Ledger as well as Supplier Ledgers. Taxes, such as sales taxes / VAT, can be migrated to the specified ledger to ensure compliance). 
 
-      **Benefit:** increased efficiency, productivity and accuracy; eliminates data re-keying
+      **Benefit:** increased efficiency, productivity, accuracy, and eliminates data re-keying.
 
 
       **Automatic Statement Reconciliation –** manual reconciliation of statements against invoices takes hours. InShip eliminates this by automatically reconciling invoices against relevant statements. InShip also detects missing invoicing, and spots double invoicing, prompting appropriate action on the part of the user. 
