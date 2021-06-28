@@ -5,7 +5,7 @@ landingPage:
     title: "InShip specializes in Accounts Payable plug-in solutions for accounting
       and enterprise resource planning (ERP) software. "
     show: true
-    slogon: Developing a AP solution will takes at least 6 development years, with
+    slogon: Developing an AP solution will take at least 6 development years, with
       InShip's White Label Solution you could be live in 6 weeks at a fraction
       of the cost.
     cards:
@@ -132,14 +132,14 @@ landingPage:
     body: >-
       InShip specializes in Accounts Payable plug-in solutions for accounting
       and enterprise resource planning (ERP) software. These modules can be
-      added to any software in approximately eight weeks, providing a new source
-      of revenue and additional functionality.
+      added to any software in approximately 8 weeks, providing a new source of
+      revenue and additional functionality.
 
 
       Our commercial package is designed to give you total freedom in your customer pricing model and our offering gives you the possibility of retaining up to 80% of the revenue you generate while still going to the market with a competitively priced product.
 
 
-      With three versions, your company is guaranteed to finding something to meet your customers needs. These range from a simple A.I. data extraction that can be added as a hidden module to any accounts package to a full Accounts Payable solution system that can be tailored to meet the needs of most medium and large businesses.
+      With 3 versions, your company is guaranteed to finding something to meet your customers' needs. These range from a simple A.I. data extraction, that can be added as a hidden module to any accounts package, to a full Accounts Payable solution system. InShip APS can be tailored to meet the needs of most medium and large businesses.
   sectionB:
     title: The Problem
     show: false
@@ -147,20 +147,20 @@ landingPage:
       - title: Problem
         description: >-
           Accounts Payable is a very manual and expensive process. Processing
-          each invoice or bill can include up to ten steps and costs around
-          €4.50 (based on a pwc report).  However if a business automates this
+          each invoice or bill can include up to 10 steps and costs around €4.50
+          (based on a PWC report).  However, if a business automates this
           process they can remove 80-90% of that cost.
 
 
-          InShip provide three end to end solutions, these solutions are built to meet the disparate needs of all businesses no matter their size be they sole traders or large multinationals.
+          InShip provides 3 end-to-end solutions. These solutions are built to meet the disparate needs of all businesses, no matter their size - be they sole traders or large multinationals.
 
 
-          An automated process puts structure on an unstructured process while increasing efficiency, fool-proof, streamlined & controlled. 
+          An automated solution puts structure on an unstructured process while increasing efficiency, fail-safe, streamlined & controlled. 
 
-          Removes the need for a business to handle, distribute, process, file & store paper invoices but still giving the business the flexibility to handle the documents online as their business requires. 
+          Removes the need for a business to handle, distribute, process, file & store paper invoices, while still giving the business the flexibility to handle the documents online, as their business requires. 
 
 
-          InShip can deliver a customized solution in 8 to 12 weeks that will suit the needs of most accounting software or erp solutions, at a price that is a fraction of your development cost plus a recurring cost less they your maintenance cost.
+          InShip can deliver a customized solution in 8 to 12 weeks, that will suit the needs of most accounting software or ERP solutions. The cost is a fraction of doing your own development.
       - title: Solution
         description: >-
           **InShip APS provides a number of different solutions.** 
