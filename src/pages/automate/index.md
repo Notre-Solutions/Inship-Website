@@ -43,7 +43,6 @@ automatePage:
       InShip has been proven to save users between 80 – 90%, compared to manual accounts payable processing. 
 
 
-
       **Why is InShip so Cost-Effective?**
 
       InShip’s online functionalities eliminate manual Accounts Payable processing by automating associated workflows.
@@ -152,20 +151,21 @@ automatePage:
       # **Why Businesses Switch to InShip?**
 
 
-
       **The Efficiencies and Results are Due to InShip’s Intelligent Automated Features**
 
 
-      Document processing time reduced by 90%
+      *Document processing time reduced by 90%*
 
 
-      Manual Paper Handling reduced by 93%
+      *Manual Paper Handling reduced by 93%*
 
 
-      Errors (manual processing -V- InShip)  reduced by 97%
+      *Errors (manual processing -V- InShip)  reduced by 97%*
 
 
-      Hard copy document storage reduced by 100%
+      *Hard copy document storage reduced by 100%*
+
+
 
 
       **Paper Elimination –** stores invoices, statements and related documents in a secure cloud
