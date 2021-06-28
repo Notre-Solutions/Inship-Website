@@ -84,26 +84,21 @@ landingPage:
         readMore: "#"
         showReadMore: false
         description: >-
-          InShip Automated Accounts Payable Processing works to eliminate manual
-          supplier invoice processing and payment workflows. Most end users of
-          our solution save up to 90 percent in accounts payable related costs
-          compared to legacy manual processing. Moreover, because InShip is
-          fully cloud-enabled and integrated into their accounting and/or ERP
-          systems, and due to its seamless ease-of-use, end-users eliminate data
-          re-keying as well as other time consuming chores for increased
-          accuracy and efficiency.
+          InShip Automated Accounts Payable Processing eliminates manual
+          supplier invoices, processing, and payment workflows. End-Customers
+          save up to 90% in accounts payable related costs. InShip is fully
+          cloud-enabled and integrated into their accounting and/or ERP systems.
+          Eliminating data re-keying and other time-consuming chores for
+          increased accuracy and efficiency.
 
 
-          Our various white label packages will give your users the functionality they need.
+          **Why Offer Your End-Customers Automated Accounts Payable?**
 
 
-          Why Offer Your End-Customers Automated Accounts Payable?
+          Globenewswire reported that the Global accounts payable automation market is expected to grow at an annual compounded rate of 11%, from US$1.9 billion in 2019 to US$3.1 billion in 2024. The article cites a number of factors driving this growth, including faster payments and better cash flow, reduced employee fraud, and reduced cost of supplier invoice processing and payments.
 
 
-          Globenewswire recently reported that the global Accounts Payable automation market is expected to grow at an annual compounded rate of 11 percent, from US$1.9 billion in 2019 to US$3.1 billion in 2024. The article cites a number of factors driving this growth including: faster payments and better cash flow, reduced employee fraud, and reduced cost of supplier invoice processing and payments.
-
-
-          In short, prospective end users see the real benefits of Automated Accounts Payable processing and are quickly embracing this innovative technology.
+          In short, prospective End-Customers see the real benefits of Automated Accounts Payable processing and are quickly embracing this innovative technology.
   sectionC2:
     title: We Integrate With 40+ Packages Including...
     images:
