@@ -170,6 +170,6 @@ landingPage:
     title: Products
     show: false
   sectionD:
-    title: The automated process Via a manual process
+    title: The automated process -V- manual process
     show: true
 ---
