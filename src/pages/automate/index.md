@@ -401,10 +401,19 @@ automatePage:
         Sage Accounts system minimizes data entry requirements as well as the
         possibility of human error, while the likelihood of paying inadvertent
         supplier overcharges has also been reduced. "
-      theIssue: "Challenge: manual accounts payable processing was a time-consuming,
-        expensive chore which delivered inefficient management of critical
-        supplier invoices.  The Challenge — Coping with 7,000 Invoices Every
-        Month"
+      theIssue: Having to manually handle and process 12,000 invoices every month,
+        across their 17 Branch Network, accounts payable processing was a
+        time-consuming, expensive chore which delivered inefficient management
+        of critical supplier invoices.   Adding to its processing costs was the
+        fact that all those physical paper invoices had to be stored
+        somewhere.   “The manual system was cumbersome,” reflects Managing
+        Director Ade Stack.  “It is particularly important to keep our suppliers
+        happy by paying them on-time and within their terms because we respect
+        their efforts, and our customers rely on their products. However, our
+        manual processes could occasionally delay payments, while sometimes
+        allowing inaccurately priced invoices to go unnoticed. I recognised that
+        we needed a more efficient system to streamline our accounts payable
+        process.”
       theBrief: Deliver a solution that:- •	90 percent time savings compared to manual
         systems •	Reduces supplier invoice processing costs by an estimated 85
         percent •	Automatically ‘flags’ invoiced pricing that is different to
