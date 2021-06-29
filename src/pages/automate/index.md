@@ -307,20 +307,13 @@ automatePage:
         INSHIP is saving the company money each week by ensuring all charges are
         dealt with correctly.”
     - title: Stacks Pharmacy
-      clientFeedback: Suppliers benefit because they no longer have to post costly
-        paper invoices, nor re-print and re-post duplicates if they are
-        required. Too, the data and processes provided by the Smart Office AP
-        system ensures that as long as invoices are accurate, suppliers are paid
-        within agreed terms — a benefit that has increased goodwill between
-        critical suppliers and the Group.“With Smart Office AP, we save 90
-        percent of the time we had historically spent processing supplier
-        invoices,” the Group Managing Director observes. “The Smart Office
-        application gives me the visibility I require to control my suppliers’
-        paperwork, while allowing me to know at any moment in time what my
-        outstanding debts are, no matter where in the world the physical
-        invoices are located, or if they’ve been processed or not. “Smart Office
-        enables Stacks Pharmacy Group to better serve our suppliers, and through
-        them, our end-customers who rely on our suppliers’ crucial products.”
+      clientFeedback: With Smart Office AP, we save 90 percent of the time we had
+        historically spent processing supplier invoices,” the Group Managing
+        Director observes.   “The Smart Office application gives me the
+        visibility I require to control my suppliers’ paperwork, while allowing
+        me to know at any moment in time what my outstanding debts are, no
+        matter where in the world the physical invoices are located, or if
+        they’ve been processed or not. “
       theSolution: InShip Irish Partner, Smart Office AP was chosen by STACKS to
         resolve the company’s challenges. Stack Pharmacy Group replaced its
         manual supplier invoice processing workflow with Smart Office AP.  Fully
