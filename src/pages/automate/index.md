@@ -321,86 +321,21 @@ automatePage:
         invoices are located, or if they’ve been processed or not. “Smart Office
         enables Stacks Pharmacy Group to better serve our suppliers, and through
         them, our end-customers who rely on our suppliers’ crucial products.”
-      theSolution: "Founded in 2000 by owner and managing director Ade Stack (MPSI),
-        Stacks Pharmacy Group has grown exponentially. The company now
-        incorporates seventeen pharmacy outlets located across Ireland, as well
-        as Care Home Services, which serves the Irish nursing care sector with
-        quality medication management services. Since its foundation, Stacks has
-        been driven by the founder’s vision of quality, friendliness, and trust
-        — not only to the customers her pharmacies serve, but also to the
-        suppliers with whom her organisation engages. The Challenge — Coping
-        with 7,000 Invoices Every Month The timely delivery of medications and
-        other goods to each Stacks Pharmacy outlet is crucial because customers’
-        lives can depend on them. Historically, Stacks used a manual process to
-        manage the mountain of invoices it received from multiple suppliers.
-        When goods were delivered to separate Stacks locations, they were
-        accompanied by line-itemed invoices. Local Stacks Pharmacy employees
-        checked the goods received against relevant invoice paperwork. Having
-        approved the invoices, every week each store couriered that paperwork to
-        the Stacks Dublin-based Head Office for processing and payment. There,
-        it was the full-time job for a single Group employee to manually sort
-        through and process the four full boxes of invoices received every
-        month. Each supplier invoice, and every line item on it, had to be keyed
-        in to the Group’s Sage 50c accounting software system, itself a slow and
-        tedious process. Often, supplier invoices and statements could be
-        missing. In that event, the Stacks accounts payable officer had to
-        contact those specific suppliers to post replacement copies of the
-        paperwork. Delayed documentation could result in late payments to
-        suppliers, a situation Stacks Pharmacy always tried to avoid. Monthly
-        supplier statements would also have to be manually reconciled. Due to
-        the significant amount of time spent on manual processing, the accounts
-        payable officer had little time to examine pricing and compare them to
-        past invoices. For that reason, inadvertent overcharges could sometimes
-        slip through.  Adding to its processing costs was the fact that all
-        those physical paper invoices had to be stored somewhere.  “The manual
-        system was cumbersome,” reflects Managing Director Ade Stack. “It is
-        very important to keep our suppliers happy by paying them on-time and
-        within their terms because we respect their efforts, and our customers
-        rely on their products.  “However, our manual processes could
-        occasionally delay payments, while sometimes allowing inaccurately
-        priced invoices to go unnoticed. I recognised that we needed a more
-        efficient system to streamline our accounts payable process.” The
-        Solution: Smart Office AP Automated Accounts Payable Processing To
-        resolve the company’s challenges, the Stack Pharmacy Group replaced its
-        manual supplier invoice processing workflow with Smart Office AP. Fully
-        integrated with the Group’s Sage 50c accounting solution, Smart Office
-        AP automates the entire accounts payable management process using
-        seamless, digital online technologies. While goods are still delivered
-        directly to all seventeen Stacks Pharmacy outlets, suppliers now email
-        invoices to a secure Smart Office AP online portal specifically designed
-        for, and allocated to, the Stacks Pharmacy Group. There, the Smart
-        Office system ‘grabs’ each invoice and extracts all required data
-        including supplier name, line-itemed product names and codes, pricing,
-        and the outlet which received the goods. Digitized copies of the
-        invoices are pushed to the relevant pharmacy outlet for approval.
-        Simultaneously, that data is migrated to the Group’s Sage Accounts
-        system for financial processing and analysis. The Smart Office AP system
-        automatically compares invoiced pricing with past pricing. Should the
-        system notice a discrepancy, it notifies the Group managing director as
-        well as accounts payable staff. Supplier statements are also
-        automatically reconciled with invoices received. Should an invoice be
-        missing, the system prompts the accounts payable officer to ask the
-        supplier to email the missing document.  The new Smart Office AP
-        solution has also resulted in additional savings by dispensing with the
-        requirement to courier invoices from pharmacy outlets to the Group’s
-        Head Office, and to store that growing mountain of paperwork. If Group
-        Finance needs to find a specific invoice, the Smart Office AP online
-        application facilitates easy document searches, while securely storing
-        all invoices and statements for at least seven years. Streamlining the
-        AP Process with 24/7 Visibility  Stacks Pharmacy Group, as well as its
-        suppliers, have benefited significantly from automated accounts payable
-        processing. Because AP workflows are fully automated, the Group’s
-        accounts payable officer can spend more time examining pricing in
-        detail, ensuring that invoices are accurate and that supplier payments
-        are made within agreed terms. The Group has reduced its physical
-        handling of 7,000 paper invoices per month down to almost nil. Because
-        the time-consuming chore of handling paper invoices has been reduced,
-        the time it takes to manage accounts payable has also been reduced. The
-        Group also saves on physical paperwork storage because it is no longer
-        required. Automated migration of accounts payable data to the Group’s
-        Sage Accounts system minimizes data entry requirements as well as the
-        possibility of human error, while the likelihood of paying inadvertent
-        supplier overcharges has also been reduced. "
+      theSolution: InShip Irish Partner, Smart Office AP was chosen by STACKS to
+        resolve the company’s challenges. Stack Pharmacy Group replaced its
+        manual supplier invoice processing workflow with Smart Office AP.  Fully
+        integrated with the Group’s accounting solution, Smart Office AP
+        automates the entire accounts payable management process using seamless,
+        digital online technologies.  The Group has reduced its physical
+        handling of 12,000 paper invoices per month, plus Supplier Statements,
+        Credit & Debit notes, down to almost nil.   Because the time-consuming
+        chore of handling paper invoices has been reduced, the time it takes to
+        manage accounts payable has also been reduced.  The Group also saves on
+        physical paperwork storage because it is no longer required.   Automated
+        migration of accounts payable data to the Group’s Accounts system
+        removes data entry requirements as well as the possibility of human
+        error, while the likelihood of paying inadvertent supplier overcharges
+        has also been reduced.
       theIssue: Having to manually handle and process 12,000 invoices every month,
         across their 17 Branch Network, accounts payable processing was a
         time-consuming, expensive chore which delivered inefficient management
