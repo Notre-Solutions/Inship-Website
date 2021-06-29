@@ -342,5 +342,5 @@ automatePage:
         allowing inaccurately priced invoices to go unnoticed. I recognised that
         we needed a more efficient system to streamline our accounts payable
         process.”
-      theBrief: .
+      theBrief: "    "
 ---
