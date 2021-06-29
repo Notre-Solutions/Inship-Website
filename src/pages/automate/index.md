@@ -342,15 +342,5 @@ automatePage:
         allowing inaccurately priced invoices to go unnoticed. I recognised that
         we needed a more efficient system to streamline our accounts payable
         process.”
-      theBrief: Deliver a solution that:- •	90 percent time savings compared to manual
-        systems •	Reduces supplier invoice processing costs by an estimated 85
-        percent •	Automatically ‘flags’ invoiced pricing that is different to
-        past invoiced prices. •	Reduces manual processing of 7,000 paper
-        invoices per month to almost nil, replacing them with digitized copies
-        •	Automatic statement reconciliation •	Suppliers no longer send in paper
-        invoices (or copies, if required), avoiding print, postage, and handling
-        costs •	Full integration with Sage Accounts automatically migrates
-        invoice data for efficient financial processing  •	Always-on, secure
-        visibility of all invoices from every supplier •	Seamless process
-        increases AP accuracy and payment process tracking
+      theBrief: .
 ---
