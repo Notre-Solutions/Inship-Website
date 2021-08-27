@@ -163,6 +163,17 @@ export default class Nav extends React.Component {
                       ></ReactModal>
                     </li>
                   )
+                } else if (page.name === "login") {
+                  return (
+                    <li className={page.className}>
+                      <Link
+                        to="https://www.inship.ie/login"
+                        className="burger-navigation__link nav-pricing"
+                      >
+                        {page.name}
+                      </Link>
+                    </li>
+                  )
                 } else if (
                   page.name !== "INSHIP" &&
                   page.name !== "White Label Solutions"
@@ -201,12 +212,12 @@ export default class Nav extends React.Component {
               } else if (page.name === "login") {
                 return (
                   <li className={page.className}>
-                    <Link
-                      to="https://www.inship.ie/login"
+                    <a
+                      href="https://www.inship.ie/login"
                       className="menu-nav__link nav-pricing"
                     >
                       {page.name}
-                    </Link>
+                    </a>
                   </li>
                 )
               } else if (page.name === "INSHIP") {
